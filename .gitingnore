@@ -1,0 +1,6 @@
+.history
+.vscode
+*.log
+node_modules
+vendor
+artics-apache.conf
