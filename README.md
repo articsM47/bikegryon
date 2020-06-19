@@ -1,0 +1,13 @@
+#Téléchager git desktop  
+
+Cloner le repo  
+
+#Commande d’'instalation  
+
+Git pull  
+
+aller dans laravel -> Composer install  
+
+Aller dans frontend -> npm ci  
+
+changer le .env vers sqllite pour les test ou vers msql pour le deployment 
