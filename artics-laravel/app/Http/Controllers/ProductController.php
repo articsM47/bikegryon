@@ -29,6 +29,7 @@ class ProductController extends Controller
         $data = $request->only(['shortDesc','longDesc','distinctiveSign', 'brand_id', 'picture']) ;
         // todo : validation
         $product = Product::create($data);
+        // cration des dépendance
         return new ProductResource($product);
     }
 
