@@ -16,8 +16,8 @@ class Product extends JsonResource
     {
         return [
             'id' => $this->id,
-            'shortDesc' => $this->shortDesc,
-            'longDesc' => $this->longDesc,
+            'shortDescr' => $this->shortDescr,
+            'longDescr' => $this->longDescr,
             'distinctiveSign' => $this->distinctiveSign,
             'brand_id' => $this->brand_id,
             'picture' => $this->picture,
