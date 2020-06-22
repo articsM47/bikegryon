@@ -17,3 +17,26 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResources([
+    'addresses' => 'AddressController', // to do
+    'badges' => 'BadgeController', // to do
+    'bikes' => 'BikeController', // to do
+    'brands' => 'BrandController', // to do
+    'clients' => 'ClientController', // to do
+    'compagnies' => 'CompagnyController', // to do
+    'countries' => 'CountryController', // to do
+    'cities' => 'CityController', // to do
+    'editions' => 'EditionController', // to do
+    'exponents' => 'ExponentController', // to do
+    'feedbacks' => 'FeedbackController', // to do
+    'happenings' => 'HappeningController', // to do
+    'persons' => 'PersonController', // to do
+    'products' => 'ProductController', // test silver boulet
+    'questions' => 'QuestionController', // to do
+    'staffs' => 'StaffController', // to do
+    'tests' => 'TestController', // to do
+    'testdays' => 'TestdayController', // to do
+
+
+]);
