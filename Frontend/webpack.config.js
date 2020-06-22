@@ -6,7 +6,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../Backend/laravel/public')
+    path: path.resolve(__dirname, '../artics-laravel/public')
   },
   watch: false,
   module: {
