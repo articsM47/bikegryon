@@ -5,3 +5,4 @@ node_modules
 vendor
 artics-apache.conf
 .env
+.DS_Store
