@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --mode=development --watch --devtool eval-source-map --src/Exam.js -o dist/bundle_Exam.js"
+    "watch": "webpack --mode=development --watch --devtool eval-source-map "
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^3.6.0",
     "handlebars-loader": "^1.7.1",
     "style-loader": "^1.2.1",
