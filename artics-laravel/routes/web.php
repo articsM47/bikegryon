@@ -27,3 +27,8 @@ Route::get('catalogue', 'ProductController@affiche');
 
 Route::get('product/{product}', 'ProductController@afficheproduit');
 
+
+
+Route::get('import_data', function () {
+    return view("import_data");
+});
