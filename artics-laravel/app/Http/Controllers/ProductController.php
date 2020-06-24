@@ -18,6 +18,12 @@ class ProductController extends Controller
         return ProductResource::collection(Product::all());
     }
 
+public function affiche() {
+     return view('catalogue');
+
+
+}
+
     /**
      * Store a newly created resource in storage.
      *
@@ -33,6 +39,9 @@ class ProductController extends Controller
         return new ProductResource($product);
     }
 
+    public function create() {
+        return view('ajouteArticle');
+    }
     /**
      * Display the specified resource.
      *
@@ -44,6 +53,9 @@ class ProductController extends Controller
         return new ProductResource($product);
     }
 
+    public function afficheproduit(Product $product) {
+     return view('product');
+}
     /**
      * Update the specified resource in storage.
      *
