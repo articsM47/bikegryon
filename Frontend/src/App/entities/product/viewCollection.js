@@ -2,6 +2,7 @@ import {
     ImView
 } from 'lib/ImBackbone';
 import View from 'App/entities/product/viewModel';
+//import tmplCollection from 'App/entities/product/tmpl_collecton.handlebars';
 
 
 export default class extends ImView {
