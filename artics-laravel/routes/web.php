@@ -22,12 +22,16 @@ Route::get('home', function () {
     return view("home");
 });
 
+Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
+
 Route::get('catalogue', 'ProductController@affiche');
+
+
 
 
 Route::get('product/{product}', 'ProductController@afficheproduit');
 
 Route::get('newproduct', 'ProductController@create');
 
-Route::get('import_data', 'ProductController@uploadFile');
+/* Route::get('import_data', 'ProductController@uploadFile'); */
 
