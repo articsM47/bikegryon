@@ -21,14 +21,43 @@
     <body>
         <header class="jumbotron">
             <div class="container">
-                <h1 class="page-header"><a href=""> home </a><a href=""> home </a><a href=""> home </a></h1>
 
+                <!--menu's icon -->
+                <button class= "" src="../fonts/menu.svg" alt="menu" style="width:42px;height:42px;"></button>
+
+            <!--logo bike test -->
+            <a class="" href="">
+                <img src="../fonts/logo_biketest.svg" alt="wishlist">
+            </a>
+
+            <!--wishlist's icon-->
+            <a class="" href="">
+                <img src="fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
+            </a>
+
+             <!--accunt's icon-->
+            <a class="" href="">
+                <img src="fonts/person.svg" alt="person" style="width:42px;height:42px;">
+            </a>
+
+            <button class="data-action search" src="fonts/search.svg" alt="search" style="width:42px;height:42px;"></button>
+      
 
                 @yield('header')
             </div>
         </header>
         <div class="container">
             @yield('contenu')
+        </div>
+
+        <div class="container">
+            @yield('footer')
+
+<div style="background:gray">
+  <div class="column">Footer colonn 1</div>
+  <div class="column">Footer colonn 2</div>
+  <div class="column">Footer colonn 3</div>
+</div>
         </div>
     </body>
     <script type="text/javascript" src="bundle.js"></script>
