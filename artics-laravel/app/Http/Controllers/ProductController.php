@@ -32,7 +32,7 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data = $request->only(['shortDesc','longDesc','distinctiveSign', 'brand_id', 'picture']) ;
+        $data = $request->only(['shortDescr','longDescr','distinctiveSign', 'brand_id', 'picture']) ;
         // todo : validation
         $product = Product::create($data);
         // cration des dépendance
@@ -40,7 +40,7 @@ public function affiche() {
     }
 
     public function create() {
-        return view('ajouteArticle');
+        return view('ajouteProduct');
     }
     /**
      * Display the specified resource.
@@ -65,7 +65,7 @@ public function affiche() {
      */
     public function update(Request $request, Product $product)
     {
-        $data = $request->only(['shortDesc','longDesc','distinctiveSign', 'brand_id', 'picture']) ;
+        $data = $request->only(['shortDescr','longDescr','distinctiveSign', 'brand_id', 'picture']) ;
         // todo : validation
         $product->update($data);
         return new ProductResource($product);
@@ -81,4 +81,81 @@ public function affiche() {
     {
         $product->delete();
     }
+
+    public function uploadFile(Request $request){
+
+    if ($request->input('submit') != null ){
+
+      $file = $request->file('file');
+
+      // File Details
+      $filename = $file->getClientOriginalName();
+      $extension = $file->getClientOriginalExtension();
+      $tempPath = $file->getRealPath();
+      $fileSize = $file->getSize();
+      $mimeType = $file->getMimeType();
+
+      // Valid File Extensions
+      $valid_extension = array("csv");
+
+      // 2MB in Bytes
+      $maxFileSize = 2097152;
+
+      // Check file extension
+      if(in_array(strtolower($extension),$valid_extension)){
+
+        // Check file size
+        if($fileSize <= $maxFileSize){
+
+
+
+
+          // Reading file
+          $file = fopen($filepath,"r");
+
+          $importData_arr = array();
+          $i = 0;
+
+          while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
+             $num = count($filedata );
+
+             // Skip first row (Remove below comment if you want to skip the first row)
+             /*if($i == 0){
+                $i++;
+                continue;
+             }*/
+             for ($c=0; $c < $num; $c++) {
+                $importData_arr[$i][] = $filedata [$c];
+             }
+             $i++;
+          }
+          fclose($file);
+
+          // Insert to MySQL database
+          foreach($importData_arr as $importData){
+
+            $insertData = array(
+               "shortDescr"=>$importData[1],
+               "longDescr"=>$importData[2],
+               "distinctiveSign"=>$importData[3],
+               "brand_id"=>$importData[4],
+               "picture"=>$importData[5]);
+            Product::insertData($insertData);
+
+          }
+
+          Session::flash('message','Import Successful.');
+        }else{
+          Session::flash('message','File too large. File must be less than 2MB.');
+        }
+
+      }else{
+         Session::flash('message','Invalid File Extension.');
+      }
+
+    }
+
+    // Redirect to index
+    return redirect()->action('PoductController@affiche');
+  }
 }
