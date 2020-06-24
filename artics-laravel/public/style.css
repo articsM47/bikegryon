@@ -1,6 +1,8 @@
 
 textarea {resize:none}
 
+
+/* MENU*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -51,3 +53,4 @@ textarea {resize:none}
     right: 35px;
     }
   }
+
