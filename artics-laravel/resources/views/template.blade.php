@@ -31,9 +31,9 @@
 
 <!-- Overlay content -->
 <div class="overlay-content">
-  <a href="#">Accueil</a>
+  <a href="Home">Accueil</a>
   <a href="#">Évenement</a>
-  <a href="#">Les vélos</a>
+  <a href="catalogue">Les vélos</a>
   <a href="#">Plan</a>
   <a href="#">Contact</a>
   <a style="color:#FF9900" href="#">Reserver un billet</a>
@@ -56,14 +56,14 @@ function closeNav() {
  <!-- END MENU -->
 
             <!--logo bike test -->
-            <a class="" href="">
+            <a class="" href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
 
             <input type="text" name="search" placeholder="Search..">
-          
-      
+
+
 
             <!--wishlist's icon-->
             <a class="" href="">

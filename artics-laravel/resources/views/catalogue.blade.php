@@ -3,7 +3,7 @@
 
 @section('contenu')
 
-<Div id="container">
+<Div id="container" class="row row-cols-1 row-cols-md-3">
 
     </Div>
 
