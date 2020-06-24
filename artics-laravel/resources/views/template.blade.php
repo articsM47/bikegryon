@@ -60,10 +60,23 @@ function closeNav() {
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
-
-            <input type="text" name="search" placeholder="Search..">
+            <!--search -->
+            <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="menu" style="width:42px;height:42px;">
+           
+            <div class="SearchToggle">
+            <input type="text" name="search" placeholder="Search..">  
+            </div>
           
-      
+            <script>
+            function openSearch() {
+                var x = document.getElementById("SearchToggle");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
 
             <!--wishlist's icon-->
             <a class="" href="">
