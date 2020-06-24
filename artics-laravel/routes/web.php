@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
@@ -27,8 +27,7 @@ Route::get('catalogue', 'ProductController@affiche');
 
 Route::get('product/{product}', 'ProductController@afficheproduit');
 
+Route::get('newproduct', 'ProductController@create');
 
+Route::get('import_data', 'ProductController@uploadFile');
 
-Route::get('import_data', function () {
-    return view("import_data");
-});
