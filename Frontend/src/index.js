@@ -1,3 +1,6 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 console.log('hello from frontend')
 
 import Products from 'App/entities/product/collection.js';

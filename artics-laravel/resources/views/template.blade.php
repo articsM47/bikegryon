@@ -16,32 +16,66 @@
     <meta name="author" content="artics, COMEM+ M47 2020, projarticulation">
         <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-        <style> textarea {resize:none} </style>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style.css">
     </head>
     <body>
         <header class="jumbotron">
             <div class="container">
 
-                <!--menu's icon -->
-                <button class= "" src="../fonts/menu.svg" alt="menu" style="width:42px;height:42px;"></button>
+ <!-- MENU -->
+
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+<!-- Button to close the overlay navigation -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<!-- Overlay content -->
+<div class="overlay-content">
+  <a href="#">Accueil</a>
+  <a href="#">Évenement</a>
+  <a href="#">Les vélos</a>
+  <a href="#">Plan</a>
+  <a href="#">Contact</a>
+  <a style="color:#FF9900" href="#">Reserver un billet</a>
+</div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+<img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+ <!-- END MENU -->
 
             <!--logo bike test -->
             <a class="" href="">
-                <img src="../fonts/logo_biketest.svg" alt="wishlist">
+                <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
+
+
+            <input type="text" name="search" placeholder="Search..">
+          
+      
 
             <!--wishlist's icon-->
             <a class="" href="">
-                <img src="fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
+                <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
 
              <!--accunt's icon-->
             <a class="" href="">
-                <img src="fonts/person.svg" alt="person" style="width:42px;height:42px;">
+                <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
             </a>
 
-            <button class="data-action search" src="fonts/search.svg" alt="search" style="width:42px;height:42px;"></button>
-      
+
 
                 @yield('header')
             </div>
