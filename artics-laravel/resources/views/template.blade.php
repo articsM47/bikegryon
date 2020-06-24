@@ -33,7 +33,7 @@
 <div class="overlay-content">
   <a href="#">Accueil</a>
   <a href="#">Évenement</a>
-  <a href="#">Les vélos</a>
+  <a href="catalogue">Les vélos</a>
   <a href="#">Plan</a>
   <a href="#">Contact</a>
   <a style="color:#FF9900" href="#">Reserver un billet</a>
@@ -56,17 +56,17 @@ function closeNav() {
  <!-- END MENU -->
 
             <!--logo bike test -->
-            <a class="" href="">
+            <a class="" href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
             <!--search -->
             <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="menu" style="width:42px;height:42px;">
-           
+
             <div class="SearchToggle">
-            <input type="text" name="search" placeholder="Search..">  
+            <input type="text" name="search" placeholder="Search..">
             </div>
-          
+
             <script>
             function openSearch() {
                 var x = document.getElementById("SearchToggle");
