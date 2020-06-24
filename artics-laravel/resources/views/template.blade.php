@@ -26,18 +26,18 @@
 
  <!-- The overlay -->
 <div id="myNav" class="overlay">
-<!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-<!-- Overlay content -->
-<div class="overlay-content">
-  <a href="#">Accueil</a>
-  <a href="#">Évenement</a>
-  <a href="#">Les vélos</a>
-  <a href="#">Plan</a>
-  <a href="#">Contact</a>
-  <a style="color:#FF9900" href="#">Reserver un billet</a>
-</div>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#">Accueil</a>
+        <a href="#">Évenement</a>
+        <a href="#">Les vélos</a>
+        <a href="#">Plan</a>
+        <a href="#">Contact</a>
+        <a style="color:#FF9900" href="#">Reserver un billet</a>
+    </div>
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
@@ -53,7 +53,9 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
+
  <!-- END MENU -->
+
 
             <!--logo bike test -->
             <a class="" href="">
@@ -63,9 +65,9 @@ function closeNav() {
             <!--search -->
             <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="menu" style="width:42px;height:42px;">
            
-            <div class="SearchToggle">
-            <input type="text" name="search" placeholder="Search..">  
-            </div>
+            <span class="SearchToggle">
+  <p>ciao</p>
+            </span>
           
             <script>
             function openSearch() {
@@ -73,7 +75,7 @@ function closeNav() {
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
-                    x.style.display = "none";
+                    x.style.displa y = "none";
                 }
             }
             </script>
