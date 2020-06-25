@@ -56,7 +56,7 @@ function closeNav() {
  <!-- END MENU -->
 
             <!--logo bike test -->
-            <a class="" href="/">
+            <a class="" href=/home>
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
