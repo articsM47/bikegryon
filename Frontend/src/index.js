@@ -10,6 +10,7 @@ let vproducts = new Productscollection({
     collection : products,
     el: '#container'
 });
+
 products.fetch();
 
 //service worker pour pwa 

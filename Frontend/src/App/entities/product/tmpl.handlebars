@@ -1,9 +1,11 @@
  <div class="col mb-4">
     <div class="card h-100">
-      <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}}>
+      <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}} >
       <div class="card-body">
         <h5 class="card-title">{{shortDescr}}</h5>
         <p class="card-text">{{longDescr}}</p>
          <a href="#" class="btn btn-primary">Ajouter a la wishlist</a>
+        <a href="newproduct" class="btn btn-primary">Ajouter produit</a>
+        <a href="product/{{id}}" class="btn btn-primary">le produit</a>
       </div>
     </div>

@@ -26,18 +26,18 @@
 
  <!-- The overlay -->
 <div id="myNav" class="overlay">
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- Button to close the overlay navigation -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <!-- Overlay content -->
-    <div class="overlay-content">
-        <a href="#">Accueil</a>
-        <a href="#">Évenement</a>
-        <a href="#">Les vélos</a>
-        <a href="#">Plan</a>
-        <a href="#">Contact</a>
-        <a style="color:#FF9900" href="#">Reserver un billet</a>
-    </div>
+<!-- Overlay content -->
+<div class="overlay-content">
+  <a href="#">Accueil</a>
+  <a href="#">Évenement</a>
+  <a href="catalogue">Les vélos</a>
+  <a href="#">Plan</a>
+  <a href="#">Contact</a>
+  <a style="color:#FF9900" href="#">Reserver un billet</a>
+</div>
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
@@ -53,29 +53,27 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
-
  <!-- END MENU -->
 
-
             <!--logo bike test -->
-            <a class="" href="">
+            <a class="" href=/home>
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
             <!--search -->
             <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="menu" style="width:42px;height:42px;">
-           
-            <span class="SearchToggle">
-  <p>ciao</p>
-            </span>
-          
+
+            <div class="SearchToggle">
+            <input type="text" name="search" placeholder="Search..">
+            </div>
+
             <script>
             function openSearch() {
                 var x = document.getElementById("SearchToggle");
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
-                    x.style.displa y = "none";
+                    x.style.display = "none";
                 }
             }
             </script>
