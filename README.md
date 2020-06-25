@@ -17,3 +17,6 @@ php artisan key:generate pour rendre le site disponible
 php artisan migrate:install 
 php artisan migrate
 php artisan db:seed
+
+
+

@@ -1,42 +1,100 @@
+
 @extends('template')
 
 @section('contenu')
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Tu n’as pas encore de compte ? </h1>
-        <p class="mt-5" >Avec un compte, tu pourras facilement revoir tous les vélos que tu aura essayé au Bike Test !</p>
+      <div class="col-lg-12 ">
+        <h1 class="mt-5">Réserve ton billet pour l’édition 2020 !</h1>
+      </div>
+      <div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title text-center">Vendredi</h3>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
+</p>
+<h4 class="text-center">20.-</h4>
     </div>
-</div>
-<div class="card-group">
-    <div class="card">
 
-        <div class="card-body">
-        <h5 class="card-title">Tes informations :</h5>
-        <input class="form-control" type="text" placeholder="ton Nom + prenom" readonly>
-        <input class="form-control" type="text" placeholder="dd.mm.yyyy" readonly>
-        <a href="#" class="badge badge-light">ce n'est pas mois</a>
-        </div>
-    </div>
-    <div class="card">
-
-        <div class="card-body">
-        <h5 class="card-title">Tu n’as plus qu’à choisir un mot de passe :</h5>
-
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Password">
-        <label for="confrimpassword" class="sr-only">Password</label>
-        <input type="password" class="form-control" id="confrimpassword" placeholder="confirme Password">
-    </div>
-</div>
   </div>
+  <div class="card">
 
+    <div class="card-body">
+      <h3 class="card-title text-center">Samedi</h3>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
 
-    <div class="form-group text-center ">
-    <button type="submit" class="btn btn-primary mb-2">Crée un compte </button>
-    <a  href="/confirmation"type="button" class="badge badge-light">continuer sans compte</a>
+</p>
+<h4 class="text-center">20.-</h4>
     </div>
-    <div class="form-group text-center ">
-    <a  href="/login"type="button" class="badge badge-light ">j'ai déjà un compte</a>
+
   </div>
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="card-title text-center">Dimanche</h3>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
+adipiscing elit. Ut viverra eu feugiat bland
+
+</p>
+<h4 class="text-center">20.-</h4>
+    </div>
+
+  </div>
+</div>
+
+<div id = "reservation">
+    <div class="form-row align-items-center">
+    <label for="personne1">Reservation de bilet</label>
+    <div class="form-group col-auto">
+
+    <input type="text" class="form-control" id="firstname" placeholder="ton nom">
+    </div>
+    <div class="form-group col-auto">
+    <input type="text" class="form-control" id="surname" placeholder="ton prenom">
+    </div>
+    <div class="form-group col-auto">
+    <input type="date" class="form-control" id="birthday" placeholder="ta date de naissance">
+</div>
+    <div class="form-group col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="vendredi">
+        <label class="form-check-label" for="vendredi">
+          vendredi
+        </label>
+      </div>
+    </div>
+    <div class="form-group col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="samedi">
+        <label class="form-check-label" for="samedi">
+          samedi
+        </label>
+      </div>
+    </div>
+    <div class="form-group col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="dimanche">
+        <label class="form-check-label" for="dimanche">
+          dimanche
+        </label>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-12 text-center">
+        <p class="mt-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh vitae quis auctor nulla. Praesent tempor, aliquet leo orci a tellus enim turpis suscipit.</p>
+</div>
+
+    </div>
+ <div class="form-group text-center ">
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+     <a  href="/creecompte"type="button" class="btn btn-primary btn-lg ">reserver</a>
+</div>
+
+
 @endsection
