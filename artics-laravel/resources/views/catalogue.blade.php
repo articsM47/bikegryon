@@ -8,7 +8,7 @@
 <h1>Toutes les vélos disponibles</h1>
 <h2>au Bike Test Gryon 2020 </h2>
 
-<button href="/newproduct" class="representant">Ajouter un vélo</button>
+<a href="/newproduct" class="representant badge badge-light">Ajouter un vélo</a>
 
 <!--IMAGES-->
 <ul class="categories_photos">
@@ -124,7 +124,7 @@ function filterCategories() {
 <form class="example" action="/action_page.php">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
-</form> 
+</form>
 
 <!-- grid des produits -->
 <Div id="catalogue" class="row row-cols-1 row-cols-md-3">
