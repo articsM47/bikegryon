@@ -5,7 +5,7 @@
 <div class="col-sm-offset-3 col-sm-6">
     <div class="panel panel-info">
         <div class="panel-heading">Ajout d'un Produit</div>
-        <div class="panel-body">
+        <div class="panel-body addform">
             <form method="POST" action="{{route('products.store')}}" accept-charset="UTF-8">
             @csrf
             <div class="form-group {!! $errors->has('shortDescr') ? 'has-error' : '' !!}">

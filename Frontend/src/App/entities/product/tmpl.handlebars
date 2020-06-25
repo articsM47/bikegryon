@@ -4,8 +4,11 @@
       <div class="card-body">
         <h5 class="card-title">{{shortDescr}}</h5>
         <p class="card-text">{{longDescr}}</p>
-         <a href="#" class="btn btn-primary">Ajouter a la wishlist</a>
-        <a href="newproduct" class="btn btn-primary">Ajouter produit</a>
-        <a href="product/{{id}}" class="btn btn-primary">le produit</a>
+         <a class="btn btn-primary">Ajouter a la wishlist</a>
+        <a href="newproduct" class="btn btn-primary" data-action="add-newproduct">Ajouter produit</a>
+        <a href="/product/{{id}}"class="btn btn-primary" data-action="show-product{{id}}">le produit</a>
+    {{!--     modal id -> (modale-velo{{id}}})--- display none  --}}
+
+
       </div>
     </div>

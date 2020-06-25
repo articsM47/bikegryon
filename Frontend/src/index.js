@@ -6,10 +6,17 @@ console.log('hello from frontend')
 import Products from 'App/entities/product/collection.js';
 import Productscollection from 'App/entities/product/viewCollection';
 let products = new Products();
+let view = new Products();
+
 let vproducts = new Productscollection({
     collection : products,
-    el: '#container'
+    el: '#catalogue'
 });
+let vproduct = new Productscollection({
+    collection: products,
+    el: '#product'
+});
+
 
 products.fetch();
 
