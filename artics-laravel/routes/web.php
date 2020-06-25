@@ -22,6 +22,18 @@ Route::get('home', function () {
     return view("home");
 });
 
+Route::get('levenement', function () {
+    return view("levenement");
+});
+
+Route::get('reservation', function () {
+    return view("reservation");
+});
+
+Route::get('creecompte', function () {
+    return view("creecompte");
+});
+
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
 Route::get('catalogue', 'ProductController@affiche');
