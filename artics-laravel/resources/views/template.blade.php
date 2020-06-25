@@ -35,7 +35,7 @@
   <form id="SearchToggle" style="display:none">
             <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
 </form>
- 
+
            <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:42px;height:42px;">
 
             <script>
@@ -68,12 +68,12 @@
 
 <!-- Overlay content -->
 <div class="overlay-content">
-  <a href="#">Accueil</a>
-  <a href="#">Évenement</a>
-  <a href="catalogue">Les vélos</a>
+  <a href="/">Accueil</a>
+  <a href="/levenement">Évenement</a>
+  <a href="/catalogue">Les vélos</a>
   <a href="#">Plan</a>
   <a href="#">Contact</a>
-  <a style="color:#FF9900" href="#">Reserver un billet</a>
+  <a style="color:#FF9900" href="/reservation">Reserver un billet</a>
 </div>
 </div>
 
@@ -90,7 +90,7 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
- <!-- END MENU --> 
+ <!-- END MENU -->
         </span>
                 @yield('header')
             </div>
