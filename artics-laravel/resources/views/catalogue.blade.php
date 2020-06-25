@@ -49,7 +49,7 @@ function filterFunction() {
 <br>
 
 <!-- grid des produits -->
-<Div id="container" class="row row-cols-1 row-cols-md-3">
+<Div id="catalogue" class="row row-cols-1 row-cols-md-3">
 
     </Div>
 
