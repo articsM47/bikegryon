@@ -148,3 +148,20 @@ form button {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+
+  /*CATEGORIES'S PHOTOS*/
+  .categories_photos {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .categories_photos li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  /*SEARCH CATALOGUE*/

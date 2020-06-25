@@ -2,19 +2,38 @@
 
 
 @section('contenu')
-<!-- filters -->
 
+
+
+<h1>Toutes les vélos disponibles</h1>
+<h2>au Bike Test Gryon 2020 </h2>
+
+<button href="/newproduct" class="representant">Ajouter un vélo</button>
+
+<!--IMAGES-->
+<ul class="categories_photos">
+  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains"></li>
+  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="street"></li>
+  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="e-bike"></li>
+</ul>
+
+<br>
+<br>
+
+<h3>Filtrer</h3>
+<!-- filters -->
+<!-- categories -->
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Catégories</button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-    <option value="E-bike">E-bike (trekking)</option>
-    <option href="#base">E-Road</option>
-    <option href="#blog">E-VTT</option>
-    <option href="#contact">Gravel</option>
-    <option href="#custom">Junior</option>
-    <option href="#support">Road</option>
-    <option href="#tools">VTT</option>
+  <div id="Catégories" class="dropdown-content">
+    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterCategories()">
+    <a value="E-bike">E-bike (trekking)</a>
+    <a href="#base">E-Road</a>
+    <a href="#blog">E-VTT</a>
+    <a href="#contact">Gravel</a>
+    <a href="#custom">Junior</a>
+    <a href="#support">Road</a>
+    <a href="#tools">VTT</a>
     <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
     <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
   </div>
@@ -24,15 +43,15 @@
     /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("Catégories").classList.toggle("show");
 }
 
-function filterFunction() {
-  var input, filter, ul, li, option, i;
+function filterCategories() {
+  var input, filter, ul, li, a, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("option");
+  div = document.getElementById("Catégories");
+  a = div.getElementsByTagName("a");
   for (i = 0; i < a.length; i++) {
     txtValue = a[i].textContent || a[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -45,8 +64,67 @@ function filterFunction() {
 </script>
 
 
+<!--  -->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Marques</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+    <a value="E-bike">E-bike (trekking)</a>
+    <a href="#base">E-Road</a>
+    <a href="#blog">E-VTT</a>
+    <a href="#contact">Gravel</a>
+    <a href="#custom">Junior</a>
+    <a href="#support">Road</a>
+    <a href="#tools">VTT</a>
+    <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
+    <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Hauteur</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+    <a value="E-bike">E-bike (trekking)</a>
+    <a href="#base">E-Road</a>
+    <a href="#blog">E-VTT</a>
+    <a href="#contact">Gravel</a>
+    <a href="#custom">Junior</a>
+    <a href="#support">Road</a>
+    <a href="#tools">VTT</a>
+    <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
+    <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Taille du cadre</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+    <a value="E-bike">E-bike (trekking)</a>
+    <a href="#base">E-Road</a>
+    <a href="#blog">E-VTT</a>
+    <a href="#contact">Gravel</a>
+    <a href="#custom">Junior</a>
+    <a href="#support">Road</a>
+    <a href="#tools">VTT</a>
+    <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
+    <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+  </div>
+</div>
+
 
 <br>
+
+<br>
+
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form> 
 
 <!-- grid des produits -->
 <Div id="container" class="row row-cols-1 row-cols-md-3">
