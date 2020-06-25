@@ -19,11 +19,48 @@
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style.css">
     </head>
     <body>
-        <header class="jumbotron">
+
             <div class="container">
 
- <!-- MENU -->
 
+            <!--logo bike test -->
+            <a href=/home>
+                <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
+            </a>
+
+
+            <span id="iconsgroup">
+                      <!--search -->
+
+  <form id="SearchToggle" style="display:none">
+            <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
+</form>
+ 
+           <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:42px;height:42px;">
+
+            <script>
+            function openSearch() {
+                var x = document.getElementById("SearchToggle");
+                if (x.style.display === "none") {
+                    x.style.display = "inline";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+
+            <!--wishlist's icon-->
+            <a class="" href="">
+                <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
+            </a>
+
+             <!--accunt's icon-->
+            <a class="" href="">
+                <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
+            </a>
+
+
+             <!-- MENU -->
  <!-- The overlay -->
 <div id="myNav" class="overlay">
 <!-- Button to close the overlay navigation -->
@@ -53,43 +90,8 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
- <!-- END MENU -->
-
-            <!--logo bike test -->
-            <a class="" href=/home>
-                <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
-            </a>
-
-            <!--search -->
-            <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="menu" style="width:42px;height:42px;">
-
-            <div class="SearchToggle">
-            <input type="text" name="search" placeholder="Search..">
-            </div>
-
-            <script>
-            function openSearch() {
-                var x = document.getElementById("SearchToggle");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            </script>
-
-            <!--wishlist's icon-->
-            <a class="" href="">
-                <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
-            </a>
-
-             <!--accunt's icon-->
-            <a class="" href="">
-                <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
-            </a>
-
-
-
+ <!-- END MENU --> 
+        </span>
                 @yield('header')
             </div>
         </header>
@@ -100,12 +102,13 @@ function closeNav() {
         <div class="container">
             @yield('footer')
 
-<div style="background:gray">
-  <div class="column">Footer colonn 1</div>
-  <div class="column">Footer colonn 2</div>
-  <div class="column">Footer colonn 3</div>
+
+<div id="footer" >
+    <p class="left">Left aligned text here<br />Next line here</p>
+    <p class="right">Right aligned text here<br />Next line here</p>
+    <p class="centered">Center Text here<br />Next line here</p>
 </div>
-        </div>
+
     </body>
     <script type="text/javascript" src="bundle.js"></script>
 </html>
