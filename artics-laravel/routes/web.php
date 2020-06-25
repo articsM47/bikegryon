@@ -34,6 +34,10 @@ Route::get('creecompte', function () {
     return view("creecompte");
 });
 
+Route::get('confirmation', function () {
+    return view("confirmation");
+});
+
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
 Route::get('catalogue', 'ProductController@affiche');

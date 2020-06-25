@@ -8,14 +8,16 @@ import Productscollection from 'App/entities/product/viewCollection';
 let products = new Products();
 let view = new Products();
 
+
 let vproducts = new Productscollection({
     collection : products,
     el: '#catalogue'
 });
-let vproduct = new Productscollection({
+console.log(vproducts)
+/* let view = new Productscollection({
     collection: products,
     el: '#product'
-});
+}); */
 
 
 products.fetch();

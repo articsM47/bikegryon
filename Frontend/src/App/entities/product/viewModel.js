@@ -10,14 +10,14 @@ export default class extends ImView {
     this.listenTo(this.model, 'change', this.render);
     }
 
-// pas fini
+/* // pas fini
     events() {
         return {
             'click [data-action="show-product"]': 'show-product',
             'click [data-action="remove-from-cart"]': 'removeFromCart',
         }
 
-    }
+    } */
 /* // pas fini 
       showProduct(id) {
           // prendre le produit
