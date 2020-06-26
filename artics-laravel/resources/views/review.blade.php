@@ -9,19 +9,16 @@
 
 <table style="width:100%">
   <tr>
+  <thead>
     <th>N°</th>
     <th>Badge</th> 
     <th>Distinctive sign</th>
     <th>Temps d'essai</th>
     <th>Action</th>
   </tr>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-    <th>Age</th>
-    <th>Age</th>
-  </tr>
+</thead>
+<tbody id="reviews">
+ </tbody>
 </table>
 
 @endsection
