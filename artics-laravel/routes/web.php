@@ -38,6 +38,14 @@ Route::get('confirmation', function () {
     return view("confirmation");
 });
 
+Route::get('wishlist', function () {
+    return view("wishlist");
+});
+
+Route::get('review', function () {
+    return view("review");
+});
+
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
 Route::get('catalogue', 'ProductController@affiche');
