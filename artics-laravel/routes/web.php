@@ -49,6 +49,13 @@ Route::get('compte', function () {
 Route::get('mesattentes', function () {
     return view("mesattentes");
 });
+Route::get('wishlist', function () {
+    return view("wishlist");
+});
+
+Route::get('review', function () {
+    return view("review");
+});
 
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 

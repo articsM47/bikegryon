@@ -1,19 +1,32 @@
+//IMPORT
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from 'App/entities/product/collection.js';
+import Wishslist from 'App/entities/product/collectionWishlist.js';
 
+import Productscollection from 'App/entities/product/viewCollection';
+//FIRST TEST
 console.log('hello from frontend')
 
-import Products from 'App/entities/product/collection.js';
-import Productscollection from 'App/entities/product/viewCollection';
+//CODE
 let products = new Products();
-let view = new Products();
+let productsWishlist = new Wishlist();
+//let view = new Products();
 
 
 let vproducts = new Productscollection({
     collection : products,
     el: '#catalogue'
 });
+
+let vproductsWishlist = new Productscollection({
+    collection : wishlist,
+    el: '#wishlist'
+});
+
+
 console.log(vproducts)
+console.log(vproductsWishlist)
 /* let view = new Productscollection({
     collection: products,
     el: '#product'
@@ -21,6 +34,7 @@ console.log(vproducts)
 
 
 products.fetch();
+productssWishlist.fetch();
 
 //service worker pour pwa 
 /* const installWorker = workerPath => new Promise(async (resolve, reject) => {
