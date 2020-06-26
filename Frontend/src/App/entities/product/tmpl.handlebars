@@ -1,15 +1,12 @@
  <div class="col mb-4">
     <div class="card h-100">
-      <a href="/product/{{id}}">
       <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}} >
-      </a>
       <div class="card-body">
-              <a href="/product/{{id}}">
-             <h5 class="card-title">{{shortDescr}}</h5>
-             </a>
+        <h5 class="card-title">{{shortDescr}}</h5>
         <p class="card-text">{{longDescr}}</p>
          <a class="btn btn-primary">Ajouter a la wishlist</a>
-        <a href="newproduct" class="btn btn-primary" data-action="add-newproduct">Ajouter produit</a>
+        <a href="/AddProduct" class="btn btn-primary" data-action="add-newproduct">Ajouter produit</a>
+        <a href="/Product/{{id}}"class="btn btn-primary" data-action="show-product{{id}}">le produit</a>
     {{!--     modal id -> (modale-velo{{id}}})--- display none  --}}
 
 

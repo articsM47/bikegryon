@@ -24,7 +24,7 @@
 
 
             <!--logo bike test -->
-            <a href=/home>
+            <a href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
 
@@ -50,17 +50,17 @@
             </script>
 
             <!--wishlist's icon-->
-            <a class="" href="/wishlist">
+            <a class="" href="/Wishlist">
                 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
 
                  <!--reviews's icon-->
-                 <a class="" href="/review">
+                 <a class="" href="/Review">
                 <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
             </a>
 
              <!--accunt's icon-->
-            <a class="" href="/compte">
+            <a class="" href="/Compte">
                 <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
             </a>
 
@@ -74,11 +74,11 @@
 <!-- Overlay content -->
 <div class="overlay-content">
   <a href="/">Accueil</a>
-  <a href="/levenement">Évenement</a>
-  <a href="/catalogue">Les vélos</a>
+  <a href="/Event">Évenement</a>
+  <a href="/Catalogue">Les vélos</a>
   <a href="#">Plan</a>
   <a href="#">Contact</a>
-  <a style="color:#FF9900" href="/reservation">Reserver un billet</a>
+  <a style="color:#FF9900" href="/Inscriptions">Reserver un billet</a>
 </div>
 </div>
 

@@ -46,7 +46,7 @@ adipiscing elit. Ut viverra eu feugiat bland
 
   </div>
 </div>
-      <a type="button" class="btn btn-secondary btn-lg btn-block fixed-bottom" href="/reservation">Je réserve mon billet !</a>
+      <a type="button" class="btn btn-secondary btn-lg btn-block fixed-bottom" href="/Inscriptions">Je réserve mon billet !</a>
     </div>
 
 @endsection
