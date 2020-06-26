@@ -1,0 +1,16 @@
+  <tr>
+    <th>{{number}}</th>
+    <th>Badge</th>
+    <th>{{distSign}}</th> 
+    {{#if actual}}
+            <th>{{startTime}}</th> <!--COUNTER TEMP -->
+    {{else}}
+            <th>{{startTime}}</th> <!-- TEMP DE DEPART-->
+    {{/if}}
+    {{#if actual}}
+            <th> <button data-action="stop">Terminer test</button></th> <!-- STOP TEST TEST -->
+    {{else}}
+            <th> <button data-action="look_review">Voir l'avis du client</button></th>  <!--LOOK REVIEW -->
+    {{/if}}
+
+  </tr>
