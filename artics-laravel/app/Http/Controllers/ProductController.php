@@ -19,7 +19,7 @@ class ProductController extends Controller
     }
 
 public function affiche() {
-     return view('catalogue');
+     return view('Catalogue');
 
 
 }
@@ -40,7 +40,7 @@ public function affiche() {
     }
 
     public function create() {
-        return view('ajouteProduct');
+        return view('AddProduct');
     }
     /**
      * Display the specified resource.
@@ -54,7 +54,7 @@ public function affiche() {
     }
 
     public function afficheproduit(Product $product) {
-     return view('product');
+     return view('Product');
 }
     /**
      * Update the specified resource in storage.

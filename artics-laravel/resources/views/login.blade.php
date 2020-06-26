@@ -9,7 +9,7 @@
       <label for="inputPassword" class="sr-only">Password</label>
 
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <a  href="/confirmation"type="button" class="badge badge-light float-right">Tu as oublié ton mot de passe ?</a>
+      <a  href="/Confirmation"type="button" class="badge badge-light float-right">Tu as oublié ton mot de passe ?</a>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
@@ -26,6 +26,6 @@
 
     </div>
     <div class="form-group text-center ">
-    <a  href="/login"type="button" class="badge badge-light ">Je n’ai pas encore de compte</a>
+    <a  href="/Login"type="button" class="badge badge-light ">Je n’ai pas encore de compte</a>
   </div>
 @endsection

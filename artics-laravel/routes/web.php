@@ -14,59 +14,63 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('Acceuil');
 });
 
 
-Route::get('home', function () {
-    return view("home");
+Route::get('Acceuil', function () {
+    return view("Acceuil");
 });
 
-Route::get('login', function () {
-    return view("login");
+Route::get('Login', function () {
+    return view("Login");
 });
 
-Route::get('levenement', function () {
-    return view("levenement");
+Route::get('Logout', function () {
+    return view("Logout");
 });
 
-Route::get('reservation', function () {
-    return view("reservation");
+Route::get('Event', function () {
+    return view("Event");
 });
 
-Route::get('creecompte', function () {
-    return view("creecompte");
+Route::get('Inscriptions', function () {
+    return view("Inscriptions");
 });
 
-Route::get('confirmation', function () {
-    return view("confirmation");
+Route::get('Creation', function () {
+    return view("Creation");
 });
 
-Route::get('compte', function () {
-    return view("compte");
+Route::get('Confirmation', function () {
+    return view("Confirmation");
 });
 
-Route::get('mesattentes', function () {
-    return view("mesattentes");
-});
-Route::get('wishlist', function () {
-    return view("wishlist");
+Route::get('Compte', function () {
+    return view("Compte");
 });
 
-Route::get('review', function () {
-    return view("review");
+Route::get('Attente', function () {
+    return view("Attente");
+});
+Route::get('Wishlist', function () {
+    return view("Wishlist");
+});
+
+Route::get('Review', function () {
+    return view("Review");
 });
 
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
-Route::get('catalogue', 'ProductController@affiche');
+Route::get('Catalogue', 'ProductController@affiche');
 
 
 
 
-Route::get('product/{product}', 'ProductController@afficheproduit');
+Route::get('Product/{product}', 'ProductController@afficheproduit');
 
-Route::get('newproduct', 'ProductController@create');
+Route::get('AddProduct', 'ProductController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 

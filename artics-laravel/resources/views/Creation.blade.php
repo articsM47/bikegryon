@@ -15,7 +15,7 @@
         <h5 class="card-title">Tes informations :</h5>
         <input class="form-control" type="text" placeholder="ton Nom + prenom" readonly>
         <input class="form-control" type="text" placeholder="dd.mm.yyyy" readonly>
-        <a href="#" class="badge badge-light">ce n'est pas mois</a>
+        <a href="Login" class="badge badge-light">ce n'est pas mois</a>
         </div>
     </div>
     <div class="card">
@@ -34,9 +34,9 @@
 
     <div class="form-group text-center ">
     <button type="submit" class="btn btn-primary mb-2">Crée un compte </button>
-    <a  href="/confirmation"type="button" class="badge badge-light">continuer sans compte</a>
+    <a  href="/Confirmation"type="button" class="badge badge-light">continuer sans compte</a>
     </div>
     <div class="form-group text-center ">
-    <a  href="/login"type="button" class="badge badge-light ">j'ai déjà un compte</a>
+    <a  href="/Login"type="button" class="badge badge-light ">j'ai déjà un compte</a>
   </div>
 @endsection

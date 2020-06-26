@@ -71,10 +71,10 @@
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Mot de passe</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Mes tests</a>
-        <a href="/mesattentes" class="list-group-item list-group-item-action bg-light">Mes attentes</a>
+        <a href="/Attente" class="list-group-item list-group-item-action bg-light">Mes attentes</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Mes réservations</a>
 <hr>
-        <a href="/logout" class="list-group-item list-group-item-action bg-light">Me déconnecter</a>
+        <a href="/Logout" class="list-group-item list-group-item-action bg-light">Me déconnecter</a>
       </div>
     </div>
      <!-- /#sidebar-wrapper -->
