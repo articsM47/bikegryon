@@ -22,6 +22,10 @@ Route::get('home', function () {
     return view("home");
 });
 
+Route::get('login', function () {
+    return view("login");
+});
+
 Route::get('levenement', function () {
     return view("levenement");
 });
@@ -36,6 +40,14 @@ Route::get('creecompte', function () {
 
 Route::get('confirmation', function () {
     return view("confirmation");
+});
+
+Route::get('compte', function () {
+    return view("compte");
+});
+
+Route::get('mesattentes', function () {
+    return view("mesattentes");
 });
 
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);

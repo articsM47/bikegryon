@@ -55,7 +55,7 @@
             </a>
 
              <!--accunt's icon-->
-            <a class="" href="">
+            <a class="" href="/compte">
                 <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
             </a>
 
