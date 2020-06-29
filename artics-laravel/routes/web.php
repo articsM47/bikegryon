@@ -61,6 +61,7 @@ Route::get('Review', function () {
     return view("Review");
 });
 
+
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
 Route::get('Catalogue', 'ProductController@affiche');

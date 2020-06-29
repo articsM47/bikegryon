@@ -2,6 +2,7 @@
 textarea {resize:none}
 
 .container{
+  width: 100%;
 }
 
 
@@ -180,5 +181,5 @@ form button {
   background-size: cover;
 
     /* Full height */
-    height: 100%; 
+  height: 100%; 
   }

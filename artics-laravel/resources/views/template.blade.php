@@ -9,7 +9,7 @@
     <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
     <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
         <title>
-            bike test gryon
+            Bike test gryon
         </title>
         <meta name="description"
         content="le Bike test gryon est un événement de test de vélon à gryon">
@@ -116,7 +116,6 @@ function closeNav() {
       <td>
       <a href="mailto:info@biketestgryon.ch">Contactez-nous</a>
       </td>
-      <td><a href="/FAQ">FAQ</a></td>
       <td><a href="/Inscriptions">Réserver un billet</a></td>
       <td> 
       <a href=""><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
