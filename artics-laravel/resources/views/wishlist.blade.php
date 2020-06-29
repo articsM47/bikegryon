@@ -9,43 +9,52 @@
 <!-- grid des produits de la wishlist -->
 <Div id="wishlist" class="row row-cols-1 row-cols-md-3">
 
-    </Div>
+</Div>
 
     <h1>Les plus aimés dans la communauté</h1>
 
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="5000">
-    <div class="row row-cols-1 row-cols-md-3">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+          <div class="card h-100">
+          <a href="/Product/1">
+               <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+           </a>
+          <div class="card-body">
+             <a href="/Product/1">
+             <h5 class="card-title">Model1</h5>
+              </a>
+              <p class="card-text">Brand 2</p>
+              <a class="btn btn-primary">Ajouter a la wishliste</a>
+          </div>
+        </div>
+  </div>
   <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
   </div>
   <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
-        <a class="btn btn-primary">Ajouter a la wishliste</a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-  <div class="card h-100">
-      <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
-      <div class="card-body">
-        <h5 class="card-title">Model1</h5>
-        <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
@@ -54,35 +63,44 @@
     </div>
     <div class="carousel-item" data-interval="5000">
     <div class="row row-cols-1 row-cols-md-3">
-  <div class="col mb-4">
+    <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
   </div>
   <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
   </div>
   <div class="col mb-4">
-  <div class="card h-100">
+    <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
@@ -91,35 +109,44 @@
     </div>
     <div class="carousel-item"data-interval="5000">
     <div class="row row-cols-1 row-cols-md-3">
-  <div class="col mb-4">
+    <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
   </div>
   <div class="col mb-4">
     <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
   </div>
   <div class="col mb-4">
-  <div class="card h-100">
+    <div class="card h-100">
+      <a href="/Product/1">
       <img src="http://127.0.0.1:8000/pictures/products/product1.png" class="card-img-top" alt="Model1">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Model1</h5>
+      <a href="/Product/1">
+      <h5 class="card-title">Model1</h5>
+      </a>
         <p class="card-text">Brand 2</p>
-        <a class="btn btn-primary">Afficher le produit</a>
         <a class="btn btn-primary">Ajouter a la wishliste</a>
       </div>
     </div>
