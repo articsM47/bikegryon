@@ -13,4 +13,6 @@
       <a type="button" class="btn btn-secondary btn-lg btn-block" href="/Inscription">Je réserve mon billet !</a>
     </div>
 
+  
+
 @endsection

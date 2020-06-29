@@ -73,10 +73,11 @@
 
 <!-- Overlay content -->
 <div class="overlay-content">
-<a style="color:#FF9900" href="/Inscriptions">Reserver</a>
+<a style="color:#FF9900" href="/Inscriptions">Réserver un billet</a>
   <a href="/Event">Le programme</a>
   <a href="/Catalogue">Les vélos a tester</a>
-  <a href="#">Infos pratiques</a>
+  <a href="/Plan">Plan de l'événement</a>
+  <a href="/Infos">Infos pratiques</a>
   <br>
   <br>
   <p>© ARTICS | ProjArt | Heig-vd | 2020</p>
@@ -109,7 +110,7 @@ function closeNav() {
             @yield('footer')
  <!-- FOOTER -->
  <br>
-<table class="footer">
+<table class="footer" style="width:100%">
   <tbody>
     <tr class="d-flex justify-content-between align-items-center">
       <td><img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt ="logo_2" style="width:160px;height:160px;"></img></td>
@@ -118,9 +119,9 @@ function closeNav() {
       </td>
       <td><a href="/Inscriptions">Réserver un billet</a></td>
       <td> 
-      <a href=""><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
+      <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
           
-      <a href=""><img src="http://127.0.0.1:8000/fonts/facebook.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
+      <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/facebook.svg" alt ="facebook_logo" style="width:42px;height:42px;"></img> </a>
         </td> 
 
     </tr>

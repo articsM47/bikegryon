@@ -183,3 +183,13 @@ form button {
     /* Full height */
   height: 100%; 
   }
+
+
+  /* EVENT*/
+  .checked {
+    color:  #FF9900;
+  }
+
+  .table {
+    text-align: center;
+  }
