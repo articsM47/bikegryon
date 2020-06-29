@@ -29,7 +29,7 @@
             </a>
 
 
-            <span id="iconsgroup">
+            <span class="iconsgroup">
                       <!--search -->
 
   <form id="SearchToggle" style="display:none">
@@ -73,12 +73,13 @@
 
 <!-- Overlay content -->
 <div class="overlay-content">
-  <a href="/">Accueil</a>
-  <a href="/Event">Évenement</a>
-  <a href="/Catalogue">Les vélos</a>
-  <a href="#">Plan</a>
-  <a href="#">Contact</a>
-  <a style="color:#FF9900" href="/Inscriptions">Reserver un billet</a>
+<a style="color:#FF9900" href="/Inscriptions">Reserver</a>
+  <a href="/Event">Le programme</a>
+  <a href="/Catalogue">Les vélos a tester</a>
+  <a href="#">Infos pratiques</a>
+  <br>
+  <br>
+  <p>© ARTICS | ProjArt | Heig-vd | 2020</p>
 </div>
 </div>
 
@@ -106,13 +107,27 @@ function closeNav() {
 
         <div class="container">
             @yield('footer')
+ <!-- FOOTER -->
+ <br>
+<table class="footer">
+  <tbody>
+    <tr class="d-flex justify-content-between align-items-center">
+      <td><img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt ="logo_2" style="width:160px;height:160px;"></img></td>
+      <td>
+      <a href="mailto:info@biketestgryon.ch">Contactez-nous</a>
+      </td>
+      <td><a href="/FAQ">FAQ</a></td>
+      <td><a href="/Inscriptions">Réserver un billet</a></td>
+      <td> 
+      <a href=""><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
+          
+      <a href=""><img src="http://127.0.0.1:8000/fonts/facebook.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
+        </td> 
 
+    </tr>
+  </tbody>
+</table>
 
-<div id="footer" >
-    <p class="left">Left aligned text here<br />Next line here</p>
-    <p class="right">Right aligned text here<br />Next line here</p>
-    <p class="centered">Center Text here<br />Next line here</p>
-</div>
 
     </body>
     <script type="text/javascript" src="bundle.js"></script>
