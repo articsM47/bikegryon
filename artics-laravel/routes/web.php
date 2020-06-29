@@ -34,12 +34,20 @@ Route::get('Event', function () {
     return view("Event");
 });
 
-Route::get('Inscriptions', function () {
-    return view("Inscriptions");
-});
+Route::get('Inscriptions', 'InscriptionController@rendFormulaire');
+Route::post('Inscriptions', 'Inscriptionontroller@valideEtTraiteFormulaire');
+
 
 Route::get('Creation', function () {
     return view("Creation");
+});
+
+Route::get('Email', function () {
+    return view("Email");
+});
+
+Route::get('Create', function () {
+    return view("Create");
 });
 
 Route::get('Confirmation', function () {
@@ -74,3 +82,7 @@ Route::get('AddProduct', 'ProductController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

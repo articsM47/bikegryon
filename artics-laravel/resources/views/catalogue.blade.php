@@ -7,8 +7,10 @@
 
 <h1>Toutes les vélos disponibles</h1>
 <h2>au Bike Test Gryon 2020 </h2>
+@can('isRole1')
+	<a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+@endcan
 
-<a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
 
 <!--IMAGES-->
 <ul class="categories_photos">
