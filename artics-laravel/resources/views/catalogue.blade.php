@@ -11,6 +11,12 @@
 	<a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
 @endcan
 
+<a class="float-right" href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+
+<form  action="/action_page.php">
+  <input type="text" placeholder="Rechercher..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 
 <!--IMAGES-->
 <ul class="categories_photos">
@@ -122,11 +128,6 @@ function filterCategories() {
 
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
 
 <!-- grid des produits -->
 <Div id="catalogue" class="row row-cols-1 row-cols-md-3">

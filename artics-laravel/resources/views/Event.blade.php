@@ -19,6 +19,7 @@ adipiscing elit. Ut viverra eu feugiat bland
     </div>
 
   </div>
+
   <div class="card">
 
     <div class="card-body">
@@ -32,6 +33,7 @@ adipiscing elit. Ut viverra eu feugiat bland
     </div>
 
   </div>
+  
   <div class="card">
 
     <div class="card-body">
@@ -46,7 +48,21 @@ adipiscing elit. Ut viverra eu feugiat bland
 
   </div>
 </div>
-      <a type="button" class="btn btn-secondary btn-lg btn-block fixed-bottom" href="/Inscriptions">Je réserve mon billet !</a>
+
+<br> 
+<br> 
+<a type="button" class="btn btn-secondary btn-lg btn-block" href="/Inscriptions">Je réserve mon billet !</a>
+
+
+
+<h2>Comment ca fonctionne</h2>
+<br> 
+
+<div class="w-100">
+  <img src="http://127.0.0.1:8000/fonts/"></img>
+</div>
+
+  
     </div>
 
 @endsection
