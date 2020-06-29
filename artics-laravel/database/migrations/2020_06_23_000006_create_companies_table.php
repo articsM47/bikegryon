@@ -17,6 +17,8 @@ class CreateCompaniesTable extends Migration
             $table->increments('id'); //autoincrement
             $table->string('name')->unique(); //must be unique
             $table->string('picture')->nullable();
+            $table->timestamps();
+            $table->softDeletes();// timestamp for deletion management
         });
     }
 

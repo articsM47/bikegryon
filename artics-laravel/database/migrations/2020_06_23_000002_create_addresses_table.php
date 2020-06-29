@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStaffsTable extends Migration
+class CreateAddressesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateStaffsTable extends Migration
      */
     public function up()
     {
-        Schema::create('staffs', function (Blueprint $table) {
-            $table->primary('person_id');
-            $table->string('description')->nullable(); // Accueil, Autre, Bar, Direction, Information
+        Schema::create('addresses', function (Blueprint $table) {
+            $table->increments('id'); //autoincrement
+            $table->string('street1');
+            $table->string('street2')->nullable();//optional
+            $table->integer('streetNo')->nullable();
+            $table->string('poBox')->nullable();
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('person_id')->unsigned();//foreign key
-            $table->foreignId('person_id')->constrained()
+            $table->foreignId('city_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
         });
@@ -32,12 +34,11 @@ class CreateStaffsTable extends Migration
      */
     public function down()
     {
-
         // Pas supporté par sqlite
-        //Schema::table('staffs', function(Blueprint $table) {
-        //    $table->dropForeign('staffs_person_id_foreign');
+        //Schema::table('brands', function(Blueprint $table) {
+        //    $table->dropForeign('addresses_city_id_foreign');
         //});
 
-        Schema::dropIfExists('staffs');
+        Schema::dropIfExists('addresses');
     }
 }

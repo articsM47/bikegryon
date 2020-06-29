@@ -7,7 +7,7 @@ class ProductsTableSeeder extends Seeder
 {
 
     private function randPicture() {
-        $nbPicture = rand(1,4);
+        $nbPicture = rand(1,5);
         $picture = 'bike' . $nbPicture . '.png';
         return $picture;
     }

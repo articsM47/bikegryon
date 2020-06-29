@@ -13,9 +13,9 @@ class CreateTestdaysTable extends Migration
      */
     public function up()
     {
-        Schema::create('test_days', function (Blueprint $table) {
-            $table->primary(['edition', 'event', 'date']);
-            $table->dateTime('date',8);
+        Schema::create('testdays', function (Blueprint $table) {
+            $table->increments('id'); //autoincrement
+            $table->date('date');//unique en fct de edition et event, AAAA-MM-JJ
             $table->string('event');
             $table->integer('edition');
             $table->string('schedule');//am,pm

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateClientTestdaysTable extends Migration
+class CreateTestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,25 +13,20 @@ class CreateClientTestdaysTable extends Migration
      */
     public function up()
     {
-        Schema::create('client_testdays', function (Blueprint $table) {
-            $table->primary(['client_person_id', 'testday_date', 'testday_event', 'testday_edition']);
-            $table->integer('badgeNo');
-            $table->timestamps();
+        Schema::create('tests', function (Blueprint $table) {
+            $table->increments('id'); //autoincrement
+            $table->dateTime('endTime')->nullable();//optional, AAAA-MM-JJ HH:MM:SS
+            $table->json('review');
+            $table->timestamps();//created_At is the start_time
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('client_person_id')->unsigned();//foreign key
+            $table->integer('client_person_id')->unsigned();//foreign key, besoin de cette ligne car la suivante est un foreign et non un foreign id
             $table->foreign('client_person_id')->references('person_id')->on('client')
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
-            $table->integer('testday_date')->unsigned();//foreign key
-            $table->foreignId('testday_date')->constrained()
+            $table->foreignId('testday_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
-            $table->integer('testday_event')->unsigned();//foreign key
-            $table->foreignId('testday_event')->constrained()
-                    ->onDelete('cascade')
-                    ->onUpdate('cascade');
-            $table->integer('testday_edition')->unsigned();//foreign key
-            $table->foreignId('testday_edition')->constrained()
+            $table->foreignId('bike_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
         });
@@ -50,8 +45,9 @@ class CreateClientTestdaysTable extends Migration
         //    $table->dropForeign(['testday_date']);
         //    $table->dropForeign(['testday_edition']);
         //    $table->dropForeign(['testday_event']);
+        //    $table->dropForeign(['bike_id']);
         // });
 
-        Schema::dropIfExists('client_testdays');
+        Schema::dropIfExists('tests');
     }
 }

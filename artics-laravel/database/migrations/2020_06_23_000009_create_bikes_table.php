@@ -24,7 +24,6 @@ class CreateBikesTable extends Migration
             $table->string('category');
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('brand_id')->unsigned();//foreign key
             $table->foreignId('brand_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');

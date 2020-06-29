@@ -15,15 +15,13 @@ class CreateCompanyPersonTable extends Migration
     {
         Schema::create('company_person', function (Blueprint $table) {
             $table->primary(['person_id', 'company_id']);
-            $table->dateTime('since', 8);
-            $table->dateTime('until', 8)->nullable();
+            $table->dateTime('since');
+            $table->dateTime('until')->nullable();
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('person_id')->unsigned();//foreign key
             $table->foreignId('person_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
-            $table->integer('company_id')->unsigned();//foreign key
             $table->foreignId('company_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');

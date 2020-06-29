@@ -27,7 +27,6 @@ class CreatePersonsTable extends Migration
             $table->string('role')->nullable(); // admin, staff, client, exponent
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('address_id')->unsigned();//foreign key
             $table->foreignId('address_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');

@@ -14,11 +14,11 @@ class CreateCitiesTable extends Migration
     public function up()
     {
         Schema::create('cities', function (Blueprint $table) {
-            $table->integer('id')->unique(); //unique
+            $table->primary('id');
+            $table->integer('id')->unique();
             $table->integer('postalCode');//must be unique for a country
             $table->string('cityName');
             $table->string('canton',2)->nullable();
-            $table->integer('country_id')->unsigned();//foreign key
             $table->foreignId('country_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');

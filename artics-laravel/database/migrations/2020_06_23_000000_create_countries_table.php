@@ -14,14 +14,15 @@ class CreateCountriesTable extends Migration
     public function up()
     {
         Schema::create('countries', function (Blueprint $table) {
-            $table->integer('id')->unique(); //unique
-            $table->integer('code')->unique(); //must be unique
-            $table->string('alpha2',2)->unique();
-            $table->string('alpha3',3)->unique();
-            $table->string('nameFR')->unique();
-            $table->string('nameEN')->unique();
-            $table->string('nameDE')->unique();
-            $table->string('nameIT')->unique();
+            $table->primary('id');
+            $table->integer('id')->unique(); 
+            $table->integer('code'); //must be unique
+            $table->string('alpha2',2);
+            $table->string('alpha3',3);
+            $table->string('nameFR');
+            $table->string('nameEN');
+            $table->string('nameDE');
+            $table->string('nameIT');
             $table->integer('sortingSequence');
         });
     }
