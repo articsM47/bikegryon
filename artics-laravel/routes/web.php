@@ -37,10 +37,18 @@ Route::get('Event', function () {
 Route::get('Inscriptions', function () {
     return view("Inscriptions");
 });
-Route::post('Inscriptions', 'InscriptionsController@valideEtTraiteFormulaire');
+/* Route::post('Inscriptions', 'InscriptionsController@valideEtTraiteFormulaire'); */
 
 Route::get('Creation', function () {
     return view("Creation");
+});
+
+Route::get('Email', function () {
+    return view("Email");
+});
+
+Route::get('Create', function () {
+    return view("Create");
 });
 
 Route::get('Confirmation', function () {
@@ -88,3 +96,7 @@ Route::get('AddProduct', 'ProductController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
