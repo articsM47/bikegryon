@@ -48,17 +48,19 @@
                 }
             }
             </script>
-
+<!--  @can('isRole1') -->
             <!--wishlist's icon-->
             <a class="" href="/Wishlist">
                 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
+<!-- @endcan -->
 
+@can('isRole1')
                  <!--reviews's icon-->
                  <a class="" href="/Review">
                 <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
             </a>
-
+@endcan
              <!--accunt's icon-->
             <a class="" href="/Compte">
                 <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
@@ -117,11 +119,11 @@ function closeNav() {
       <a href="mailto:info@biketestgryon.ch">Contactez-nous</a>
       </td>
       <td><a href="/Inscriptions">Réserver un billet</a></td>
-      <td> 
+      <td>
       <a href=""><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
-          
+
       <a href=""><img src="http://127.0.0.1:8000/fonts/facebook.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
-        </td> 
+        </td>
 
     </tr>
   </tbody>

@@ -27,17 +27,32 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies($gate);
 
         /**
-         * Rend true si l'utilisateur a le rôle "role1"
+         * Rend true si l'utilisateur a le rôle "Client"
          */
         $gate->define('isRole1', function($user) {
             return $user->user_type == 'Role1';
         });
 
         /**
-         * Rend true si l'utilisateur a le rôle "role2"
+         * Rend true si l'utilisateur a le rôle "Représentant"
          */
         $gate->define('isRole2', function($user) {
             return $user->user_type == 'Role2';
         });
+
+        /**
+         * Rend true si l'utilisateur a le rôle "staff"
+         */
+        $gate->define('isRole1', function($user) {
+            return $user->user_type == 'Role1';
+        });
+
+        /**
+         * Rend true si l'utilisateur a le rôle "admin"
+         */
+        $gate->define('isRole1', function($user) {
+            return $user->user_type == 'Role1';
+        });
+
     }
 }
