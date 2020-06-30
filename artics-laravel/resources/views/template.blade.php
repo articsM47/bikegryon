@@ -108,11 +108,11 @@ function closeNav() {
                 @yield('header')
             </div>
         </header>
-        <div class="container">
+        <div class="container-fluid">
             @yield('contenu')
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
             @yield('footer')
  <!-- FOOTER -->
  <br>
