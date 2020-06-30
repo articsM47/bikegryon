@@ -61,6 +61,19 @@ Route::get('Review', function () {
     return view("Review");
 });
 
+Route::get('Infos', function () {
+    return view("Infos");
+});
+
+Route::get('Plan', function () {
+    return view("Plan");
+});
+
+Route::get('Check-in', function () {
+    return view("Check-in");
+});
+
+
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
 Route::get('Catalogue', 'ProductController@affiche');
