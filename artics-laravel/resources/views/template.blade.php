@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
-    <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
+        <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+
         <title>
             Bike test gryon
         </title>
