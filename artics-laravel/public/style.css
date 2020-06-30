@@ -1,14 +1,21 @@
 * {
-  margin : 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 textarea {resize:none}
 
-.container-fluid{
+/********** Container avec width 100% *************/
+.container-fluid {
   margin : 0 auto;
   max-width: 100%;
   padding : 0px !important;
+}
 
+/********** H1 *************/
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900 !important;
+  font-size : 4rem !important;
 }
 
 /* MENU*/
@@ -179,7 +186,7 @@ form button {
 
   /*HOME PAGE PHOTO*/
 .accueil {
-    background-image: url('http://127.0.0.1:8000/fonts/biker.jpg');
+    /* background-image: url('http://127.0.0.1:8000/fonts/biker.jpg'); */
     /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
