@@ -39,10 +39,10 @@ class BikesTableSeeder extends Seeder
     }
 
     private function randCategory() {
-        $cat = ["VTT", "Gravel", "e-VTT", "Road", "e-Road", "Junior"];
+        $cat = ["Mountain", "Gravel", "e-Mountain", "Road", "e-Road"];
         return $cat[rand(0,count($cat)-1)];
     }
-
+    
     /**
      * Run the database seeds.
      *
