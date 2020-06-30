@@ -2,7 +2,7 @@ import {
     ImCollection
 }
 from 'lib/ImBackbone';
-import Model from 'App/entities/review/model';
+import Model from 'App/entities/Test/model';
 
 export default class extends ImCollection {
 
