@@ -147,17 +147,10 @@ form button {
     .footer {
         background-color: #5355FA;
         width: 100%;
-<<<<<<< Updated upstream
-        height: 50px !important;
-=======
-<<<<<<< Updated upstream
-=======
         position: absolute;
         bottom: 0;
         height: 20px;
         margin: 0 auto;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     }
 
     .footer tr {
