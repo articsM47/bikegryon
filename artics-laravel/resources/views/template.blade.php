@@ -59,6 +59,12 @@
                 <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
             </a>
 
+                  <!--accunt's icon-->
+                  <a class="" href="/Check-in">
+                <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:42px;height:42px;">
+            </a>
+
+
              <!--accunt's icon-->
             <a class="" href="/Compte">
                 <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">

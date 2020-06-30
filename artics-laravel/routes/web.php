@@ -69,6 +69,10 @@ Route::get('Plan', function () {
     return view("Plan");
 });
 
+Route::get('Check-in', function () {
+    return view("Check-in");
+});
+
 
 Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
 
