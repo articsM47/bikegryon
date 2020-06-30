@@ -156,7 +156,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/product1.png" alt="Card image cap">
+        <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike1.png" alt="Card image cap">
       </div>
     </div>
   </div>
@@ -199,7 +199,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/product1.png" alt="Card image cap">
+        <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike2.png" alt="Card image cap">
       </div>
     </div>
   </div>
