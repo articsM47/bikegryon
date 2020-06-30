@@ -20,11 +20,9 @@ export default class extends ImView {
     
       //modifier la tache 
       modify(evt) {
-        let task = this.$el.find('.tasks-input-task').val(); // On récupère les champs de l'HTML correspondant
-        // Conversion d'un champ date en timestamp Unix (en seconde)
+        let email = this.$el.find('.people-input-email').val(); // On récupère les champs de l'HTML correspondant
         let dateInput = this.$el.find('.tasks-input-time').val();
         let date = new Date(dateInput);
-        let time = Math.round(date.getTime() / 1000);
         this.model.set({task, time, editable: false});
         this.model.save();
       }

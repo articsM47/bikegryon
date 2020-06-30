@@ -26,12 +26,12 @@ Ajouter une personne
 
 <!-- grid des personnes -->
 <thead>
-    <td>Nom</td>
-    <td>Prénom</td>
-    <td>Anniversaire</td>
-    <td>Email</td>
-    <td>N° Badge</td>
-    <td>Actions</td>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Anniversaire</th>
+    <th>Email</th>
+    <th>N° Badge</th>
+    <th>Actions</th>
   </thead>
   <tbody>
 <Div id="people">
