@@ -31,11 +31,7 @@ Route::apiResources([
     'exponents' => 'ExponentController', // to do
     'feedbacks' => 'FeedbackController', // to do
     'happenings' => 'HappeningController', // to do
-<<<<<<< Updated upstream
     'Pepole' => 'MemberController', // to do
-=======
-    'members' => 'MemberController', // to do
->>>>>>> Stashed changes
     'products' => 'ProductController', // test silver boulet
     'questions' => 'QuestionController', // to do
     'staffs' => 'StaffController', // to do
