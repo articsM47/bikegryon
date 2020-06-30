@@ -1,7 +1,7 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import tmpl from 'App/entities/product/tmpl.handlebars';
+import tmpl from 'App/entities/person/tmpl.handlebars';
 
 
 export default class extends ImView {
