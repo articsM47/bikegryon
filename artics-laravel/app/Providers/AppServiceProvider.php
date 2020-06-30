@@ -25,10 +25,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        JsonResource::withoutWrapping();
-        if (DB::connection() instanceof \Illuminate\Database\SQLiteConnection) {
+         JsonResource::withoutWrapping();
+        /* if (DB::connection() instanceof \Illuminate\Database\SQLiteConnection) {
             DB::statement(DB::raw('PRAGMA foreign_keys=1'));
-        }
-        //Schema::enableForeignKeyConstraints();
+        }  */
+        Schema::enableForeignKeyConstraints();
     }
 }
