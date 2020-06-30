@@ -74,8 +74,7 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color:#5355FA;
     overflow-y: hidden;
     transition: 0.5s;
   }
@@ -92,7 +91,7 @@ h1 {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #ffff;
     display: block;
     transition: 0.3s;
   }
@@ -148,13 +147,35 @@ form button {
     .footer {
         background-color: #5355FA;
         width: 100%;
+<<<<<<< Updated upstream
         height: 50px !important;
+=======
+<<<<<<< Updated upstream
+=======
+        position: absolute;
+        bottom: 0;
+        height: 20px;
+        margin: 0 auto;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
 
     .footer tr {
     margin-right: 80px;
     margin-left: 80px;
     }
+    .linkFooter{
+      color: #ffff; 
+      font-size: 1.5rem; 
+      text-decoration: none;
+    }
+    .linkFooter :hover{
+      color: #ffff; 
+    }
+    #instaFooter{
+      margin-right: 10px; 
+    }
+
 
     /*FILTERS*/
     /* Dropdown Button */
