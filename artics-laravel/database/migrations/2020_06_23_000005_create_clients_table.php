@@ -14,11 +14,12 @@ class CreateClientsTable extends Migration
     public function up()
     {
         Schema::create('clients', function (Blueprint $table) {
-            $table->primary('person_id');
+            //$table->primary('member_id');
+            $table->increments('id'); //autoincrement
             $table->string('canton',2)->nullable(); //optional
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->foreignId('person_id')->constrained()
+            $table->foreignId('member_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
         });
@@ -33,7 +34,7 @@ class CreateClientsTable extends Migration
     {
         // Pas supporté par sqlite
         //Schema::table('clients', function(Blueprint $table) {
-        //    $table->dropForeign('person_id');
+        //    $table->dropForeign('member_id');
         //});
         Schema::dropIfExists('clients');
     }

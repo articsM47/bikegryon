@@ -12,9 +12,9 @@ class ClientsTableSeeder extends Seeder
     public function run()
     {
         //DB::table('clients')->delete();
-        for ($i = 8; $i <= 30; $i++) {
+        for ($i = 11; $i <= 30; $i++) {
             DB::table('clients')->insert([
-                'person_id' => $i,
+                'member_id' => $i,
             ]);
         }
     }

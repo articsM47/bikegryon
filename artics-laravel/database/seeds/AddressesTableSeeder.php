@@ -12,6 +12,7 @@ class AddressesTableSeeder extends Seeder
      */
     public function run()
     {
+        //DB::table('addresses')->delete();
         factory(Address::class,20)->create();
     }
 }

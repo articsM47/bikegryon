@@ -16,15 +16,11 @@ class StaffsTableSeeder extends Seeder
     public function run()
     {
         //DB::table('staffs')->delete();
-        DB::table('staffs')->insert([
-            'person_id' => 2,
-            //'description' => $this->randJob()
-        ]);
-        /*for ($i = 2; $i <= 6; $i++) {
+        for ($i = 2; $i <= 6; $i++) {
             DB::table('staffs')->insert([
-                'person_id' => $i,
+                'member_id' => $i,
                 'description' => $this->randJob()
             ]);
-        }*/
+        }
     }
 }

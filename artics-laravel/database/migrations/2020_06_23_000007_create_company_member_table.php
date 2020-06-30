@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCompanyPersonTable extends Migration
+class CreateCompanyMemberTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateCompanyPersonTable extends Migration
      */
     public function up()
     {
-        Schema::create('company_person', function (Blueprint $table) {
-            $table->primary(['person_id', 'company_id']);
+        Schema::create('company_member', function (Blueprint $table) {
+            $table->primary(['member_id', 'company_id']);
             $table->dateTime('since');
             $table->dateTime('until')->nullable();
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->foreignId('person_id')->constrained()
+            $table->foreignId('member_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
             $table->foreignId('company_id')->constrained()
@@ -36,11 +36,11 @@ class CreateCompanyPersonTable extends Migration
     public function down()
     {
         // Pas supporté par sqlite
-        //Schema::table('company_person', function(Blueprint $table) {
-        //    $table->dropForeign(['person_id']);
+        //Schema::table('company_member', function(Blueprint $table) {
+        //    $table->dropForeign(['member_id']);
         //    $table->dropForeign(['company_id']);
         // });
 
-        Schema::dropIfExists('company_person');
+        Schema::dropIfExists('company_member');
     }
 }

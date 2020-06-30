@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class CompanyPersonTableSeeder extends Seeder
+class CompanyMemberTableSeeder extends Seeder
 {
     private function randDate() {
         $nbJours = rand(-1000,0);
@@ -16,10 +16,10 @@ class CompanyPersonTableSeeder extends Seeder
      */
     public function run()
     {
-        //DB::table('company_person')->delete();
+        //DB::table('company_member')->delete();
         for ($i = 7; $i <= 10; $i++) {
-            DB::table('company_person')->insert([
-                'person_id' => $i,
+            DB::table('company_member')->insert([
+                'member_id' => $i,
                 'company_id' => rand(1,3),
                 'since'=> $this->randDate()
             ]);

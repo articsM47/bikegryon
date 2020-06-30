@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Person;
+use App\Member;
 
-class PersonsTableSeeder extends Seeder
+class MembersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,9 +12,9 @@ class PersonsTableSeeder extends Seeder
      */
     public function run()
     {
-        //DB::table('persons')->delete();
+        //DB::table('members')->delete();
         //admin & staff
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Dupont",
             'firstname' => "Pierre",
             'birthDay' => "19801010",
@@ -24,7 +24,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "admin",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Dupont",
             'firstname' => "Emma",
             'birthDay' => "20000115",
@@ -34,7 +34,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "staff",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Rapin",
             'firstname' => "Arnaud",
             'birthDay' => "19950824",
@@ -44,7 +44,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "staff",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Rapin",
             'firstname' => "Marine",
             'birthDay' => "19990603",
@@ -54,7 +54,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "staff",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Ducret",
             'firstname' => "Anita",
             'birthDay' => "19691223",
@@ -64,7 +64,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "staff",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Bader",
             'firstname' => "Jenny",
             'birthDay' => "20030214",
@@ -75,7 +75,7 @@ class PersonsTableSeeder extends Seeder
             'address_id' => rand(1,20)]
         );
         //exponent
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Sommer",
             'firstname' => "Alain",
             'birthDay' => "19660607",
@@ -85,7 +85,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "exponent",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Meystre",
             'firstname' => "Fred",
             'birthDay' => "19601226",
@@ -95,7 +95,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "exponent",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Antonetti",
             'firstname' => "Marco",
             'birthDay' => "19860403",
@@ -105,7 +105,7 @@ class PersonsTableSeeder extends Seeder
             'role' => "exponent",
             'address_id' => rand(1,20)]
         );
-        DB::table('persons')->insert([
+        DB::table('members')->insert([
             'name' => "Ruedi",
             'firstname' => "Pedro",
             'birthDay' => "19901125",
@@ -115,6 +115,6 @@ class PersonsTableSeeder extends Seeder
             'role' => "exponent",
             'address_id' => rand(1,20)]
         );
-        factory(Person::class,20)->create();//for the clients
+        factory(Member::class,20)->create();//for the clients
     }
 }

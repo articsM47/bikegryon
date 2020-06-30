@@ -16,42 +16,18 @@ class TestdaysTableSeeder extends Seeder
             'date' => '2020-10-02',
             'event' => "Bike-Test Gryon",
             'edition' => '12',
-            'schedule' => 'am',
-            'incriptionsMax' => '300']
-        );
-        DB::table('testdays')->insert([
-            'date' => '2020-10-02',
-            'event' => "Bike-Test Gryon",
-            'edition' => '12',
-            'schedule' => 'pm',
             'incriptionsMax' => '300']
         );
         DB::table('testdays')->insert([
             'date' => '2020-10-03',
             'event' => "Bike-Test Gryon",
             'edition' => '12',
-            'schedule' => 'am',
-            'incriptionsMax' => '300']
-        );
-        DB::table('testdays')->insert([
-            'date' => '2020-10-03',
-            'event' => "Bike-Test Gryon",
-            'edition' => '12',
-            'schedule' => 'pm',
             'incriptionsMax' => '300']
         );
         DB::table('testdays')->insert([
             'date' => '2020-10-04',
             'event' => "Bike-Test Gryon",
             'edition' => '12',
-            'schedule' => 'am',
-            'incriptionsMax' => '300']
-        );
-        DB::table('testdays')->insert([
-            'date' => '2020-10-04',
-            'event' => "Bike-Test Gryon",
-            'edition' => '12',
-            'schedule' => 'pm',
             'incriptionsMax' => '300']
         );
     }

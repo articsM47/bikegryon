@@ -5,9 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Person extends Model
+class Member extends Model
 {
-    protected $table='persons';
+    protected $table='members';
     protected $fillable=['name','firstname','birthDay','phone1','phone2','mail1','mail2','comment','psw','address_id'];
     protected $hidden = ['psw'];
     use SoftDeletes;

@@ -16,6 +16,6 @@ class Address extends Model
     } 
 
     public function persons() {          
-        return $this->hasMany('App\Person');  
+        return $this->hasMany('App\Member');  
     }
 }

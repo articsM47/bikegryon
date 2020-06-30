@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePersonsTable extends Migration
+class CreateMembersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePersonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('persons', function (Blueprint $table) {
+        Schema::create('members', function (Blueprint $table) {
             $table->increments('id'); //autoincrement
             $table->string('name');
             $table->string('firstname');
@@ -41,10 +41,10 @@ class CreatePersonsTable extends Migration
     public function down()
     {
         // Pas supporté par sqlite
-        //Schema::table('persons', function(Blueprint $table) {
-        //    $table->dropForeign('persons_address_id_foreign');
+        //Schema::table('members', function(Blueprint $table) {
+        //    $table->dropForeign('members_address_id_foreign');
         //});
 
-        Schema::dropIfExists('persons');
+        Schema::dropIfExists('members');
     }
 }

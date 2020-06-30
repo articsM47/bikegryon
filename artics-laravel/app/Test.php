@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Test extends Model
 {
     protected $table='tests';
-    protected $fillable=['review','client_person_id','testday_id','bike_id'];
+    protected $fillable=['review','client_id','testday_id','bike_id'];
     const CREATED_AT = 'startTime'; 
     use SoftDeletes;
 

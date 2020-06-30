@@ -18,7 +18,7 @@ class CreateTestdaysTable extends Migration
             $table->date('date');//unique en fct de edition et event, AAAA-MM-JJ
             $table->string('event');
             $table->integer('edition');
-            $table->string('schedule');//am,pm
+            $table->string('schedule')->nullable();//am,pm
             $table->integer('incriptionsMax')->unsigned();
             $table->softDeletes();// timestamp for deletion management
         });

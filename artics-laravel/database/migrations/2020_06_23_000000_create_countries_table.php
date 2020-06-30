@@ -19,7 +19,7 @@ class CreateCountriesTable extends Migration
             $table->integer('code'); //must be unique
             $table->string('alpha2',2);
             $table->string('alpha3',3);
-            $table->string('nameFR');
+            $table->string('nameFR')->unique();
             $table->string('nameEN');
             $table->string('nameDE');
             $table->string('nameIT');

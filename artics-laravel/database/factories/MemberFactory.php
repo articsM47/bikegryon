@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Person;
+use App\Member;
 use Faker\Generator as Faker;
 
-$factory->define(Person::class, function (Faker $faker) {
+$factory->define(Member::class, function (Faker $faker) {
     $phoneOption=rand(0,1);
     if($phoneOption==1){
         $phonePart1 = "+417";

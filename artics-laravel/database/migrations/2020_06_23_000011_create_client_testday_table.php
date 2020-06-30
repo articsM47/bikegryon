@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTestsTable extends Migration
+class CreateClientTestdayTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,19 @@ class CreateTestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tests', function (Blueprint $table) {
-            $table->increments('id'); //autoincrement
-            $table->dateTime('endTime')->nullable();//optional, AAAA-MM-JJ HH:MM:SS
-            $table->json('review');
-            $table->timestamps();//created_At is the start_time
+        Schema::create('client_testday', function (Blueprint $table) {
+            $table->primary(['client_id', 'testday_id']);
+            $table->integer('badgeNo')->nullable();
+            $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->integer('client_person_id')->unsigned();//foreign key, besoin de cette ligne car la suivante est un foreign et non un foreign id
-            $table->foreign('client_person_id')->references('person_id')->on('client')
+            // $table->integer('client_member_id')->unsigned();//foreign key
+            // $table->foreign('client_member_id')->references('member_id')->on('clients')
+            //         ->onDelete('cascade')
+            //         ->onUpdate('cascade');
+            $table->foreignId('client_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
             $table->foreignId('testday_id')->constrained()
-                    ->onDelete('cascade')
-                    ->onUpdate('cascade');
-            $table->foreignId('bike_id')->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
         });
@@ -41,13 +40,12 @@ class CreateTestsTable extends Migration
     {
         // Pas supporté par sqlite
         //Schema::table('client_testdays', function(Blueprint $table) {
-        //    $table->dropForeign(['client_person_id']);
+        //    $table->dropForeign(['client_member_id']);
         //    $table->dropForeign(['testday_date']);
         //    $table->dropForeign(['testday_edition']);
         //    $table->dropForeign(['testday_event']);
-        //    $table->dropForeign(['bike_id']);
         // });
 
-        Schema::dropIfExists('tests');
+        Schema::dropIfExists('client_testday');
     }
 }

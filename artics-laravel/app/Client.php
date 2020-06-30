@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
     protected $table='clients';
-    protected $fillable=['person_id','canton'];
-    protected $primaryKey = 'person_id';//The primary key associated with the table
+    protected $fillable=['member_id','canton'];
+    protected $primaryKey = 'member_id';//The primary key associated with the table
     use SoftDeletes;
 
-    public function person() {
-        return $this->belongsTo('App\Person');
+    public function member() {
+        return $this->belongsTo('App\Member');
     }
 
     public function testdays() {
