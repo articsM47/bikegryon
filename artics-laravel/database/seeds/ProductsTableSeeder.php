@@ -7,8 +7,8 @@ class ProductsTableSeeder extends Seeder
 {
 
     private function randPicture() {
-        $nbPicture = rand(1,4);
-        $picture = 'product' . $nbPicture . '.png';
+        $nbPicture = rand(1,5);
+        $picture = 'bike' . $nbPicture . '.png';
         return $picture;
     }
 
@@ -24,7 +24,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->delete();
+        //DB::table('products')->delete();
         for ($i = 1; $i <= 10; $i++) {
             $date=$this->randDate();
             DB::table('products')->insert([
