@@ -9,7 +9,7 @@
       <li><a href="/Catalogue">Les vélos</a> <span class="divider"></span></li>
       <li class="active">Le Produit</li>
     </ul>
- 
+
 
   <div class="row">
     <div class="col-sm-6">

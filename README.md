@@ -16,6 +16,9 @@ php artisan key:generate pour rendre le site disponible
 
 php artisan migrate:install 
 php artisan migrate
+
+intégrer les SQL cities_countries
+
 php artisan db:seed
 
 
