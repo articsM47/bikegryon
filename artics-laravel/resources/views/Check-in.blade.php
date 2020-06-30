@@ -2,6 +2,9 @@
 
 @section('contenu')
 <h1>Check-in clients</h1>
+<a href="/Inscriptions">
+Ajouter une personne
+</a>
 
 
 <h2>Pour quel jour de l'événement?</h2>
@@ -22,9 +25,19 @@
 
 
 <!-- grid des personnes -->
+<thead>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Anniversaire</th>
+    <th>Email</th>
+    <th>N° Badge</th>
+    <th>Actions</th>
+  </thead>
+  <tbody>
 <Div id="people">
 
     </Div>
+</tbody>
 
 
 @endsection
