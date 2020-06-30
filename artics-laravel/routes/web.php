@@ -37,6 +37,7 @@ Route::get('Event', function () {
 Route::get('Inscriptions', function () {
     return view("Inscriptions");
 });
+Route::post('Inscriptions', 'InscriptionsController@valideEtTraiteFormulaire');
 
 Route::get('Creation', function () {
     return view("Creation");
