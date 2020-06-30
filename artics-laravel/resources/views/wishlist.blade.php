@@ -2,7 +2,7 @@
 
 @section('contenu')
 
-<h1>Ma liste d'envie</h1> 
+<h1>Ma liste d'envie</h1>
 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist">
 
 
