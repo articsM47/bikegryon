@@ -31,7 +31,7 @@ Route::apiResources([
     'exponents' => 'ExponentController', // to do
     'feedbacks' => 'FeedbackController', // to do
     'happenings' => 'HappeningController', // to do
-    'member' => 'MemberController', // to do
+    'Pepole' => 'MemberController', // to do
     'products' => 'ProductController', // test silver boulet
     'questions' => 'QuestionController', // to do
     'staffs' => 'StaffController', // to do
