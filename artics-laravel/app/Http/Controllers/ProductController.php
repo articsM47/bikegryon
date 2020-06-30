@@ -31,7 +31,12 @@ public function affiche() {
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
+        /* if (!Gate::allows('isRole1')) {
+            abort(403,"Tu n'est pas authorisé à faire cette action");
+        } */
+
         $data = $request->only(['shortDescr','longDescr','distinctiveSign', 'brand_id', 'picture']) ;
         // todo : validation
         $product = Product::create($data);
@@ -40,6 +45,10 @@ public function affiche() {
     }
 
     public function create() {
+
+       /*  if (!Gate::allows('isRole1')) {
+            abort(403,"Tu n'est pas authorisé à faire cette action");
+        } */
         return view('AddProduct');
     }
     /**
@@ -65,6 +74,10 @@ public function affiche() {
      */
     public function update(Request $request, Product $product)
     {
+
+        /* if (!Gate::allows('isRole1')) {
+            abort(403,"Tu n'est pas authorisé à faire cette action");
+        } */
         $data = $request->only(['shortDescr','longDescr','distinctiveSign', 'brand_id', 'picture']) ;
         // todo : validation
         $product->update($data);
@@ -83,6 +96,10 @@ public function affiche() {
     }
 
     public function uploadFile(Request $request){
+
+        /* if (!Gate::allows('isRole1')) {
+            abort(403,"Tu n'est pas authorisé à faire cette action");
+        } */
 
     if ($request->input('submit') != null ){
 

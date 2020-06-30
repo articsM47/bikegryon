@@ -8,18 +8,29 @@
 <h1>Toutes les vélos disponibles</h1>
 <h2>au Bike Test Gryon 2020 </h2>
 
-<a class="float-right" href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+
+@can('isRole1')
+	<a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+@endcan
+
+
 
 <form  action="/action_page.php">
-  <input type="text" placeholder="Rechercher..." name="search">
+  <input type="text" placeholder="Rechercher..." name="search" onkeyup="filterBike()">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 
 <!--IMAGES-->
 <ul class="categories_photos">
-  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains"></li>
-  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="street"></li>
-  <li><img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="e-bike"></li>
+  <li><a href="">
+  <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
+      </a></li>
+  <li><a href="">
+  <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
+      </a></li>
+  <li><a href="">
+  <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
+      </a></li>
 </ul>
 
 <br>
@@ -72,22 +83,6 @@ function filterCategories() {
 <!--  -->
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Marques</button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-    <a value="E-bike">E-bike (trekking)</a>
-    <a href="#base">E-Road</a>
-    <a href="#blog">E-VTT</a>
-    <a href="#contact">Gravel</a>
-    <a href="#custom">Junior</a>
-    <a href="#support">Road</a>
-    <a href="#tools">VTT</a>
-    <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
-    <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
-  </div>
-</div>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Hauteur</button>
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
     <a value="E-bike">E-bike (trekking)</a>

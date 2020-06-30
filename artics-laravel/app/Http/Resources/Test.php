@@ -14,6 +14,14 @@ class Test extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'review' => $this->review,
+            'client_id' => $this->client_id,
+            'testday_id' => $this->testday_id,
+            'bike_id' => $this->bike_id,
+            'endTime' => $this->endTime,
+
+        ];
     }
 }
