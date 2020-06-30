@@ -57,8 +57,8 @@ Route::get('Wishlist', function () {
     return view("Wishlist");
 });
 
-Route::get('Review', function () {
-    return view("Review");
+Route::get('Test', function () {
+    return view("Test");
 });
 
 Route::get('Infos', function () {

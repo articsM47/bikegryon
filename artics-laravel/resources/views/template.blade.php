@@ -54,8 +54,8 @@
                 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
 
-                 <!--reviews's icon-->
-                 <a class="" href="/Review">
+                 <!--test's icon-->
+                 <a class="" href="/Test">
                 <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
             </a>
 

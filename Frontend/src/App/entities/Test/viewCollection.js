@@ -1,7 +1,7 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import View from 'App/entities/review/viewModel';
+import View from 'App/entities/Test/viewModel';
 
 
 export default class extends ImView {
