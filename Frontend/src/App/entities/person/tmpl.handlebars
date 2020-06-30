@@ -1,17 +1,29 @@
- <div class="col mb-4">
-    <div class="card h-100">
-      <a href="/Product/{{id}}">
-        <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}} >
-      </a>
-      <div class="card-body">
-          <a href="/Product/{{id}}">
-        <h5 class="card-title">{{shortDescr}}</h5>
-      </a>
-       
-        <p class="card-text">{{longDescr}}</p>
+<tr>
+  <td>{{name}}</td>
+  <td>{{firstname}}</td>
+  <td>{{birtdDay}}</td>
 
-         <a class="btn btn-primary float-right">
-           <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg">
-          </a>
-      </div>
-    </div>
+  <td>
+  {{#if editable}}
+  <input type="text" class="tasks-input-task" value="{{email1}}">
+  {{else}}
+  {{email1}}
+  {{/if}}
+</td>
+
+  <td>
+  {{#if editable}}
+  <input type="text" class="tasks-input-task" value="{{badgeNo}}">
+  {{else}}
+  {{badgeNo}}
+  {{/if}}
+</td>
+
+  <td>
+  {{#if editable}}
+   <button data-action="modify"></button>
+  {{else}}
+ <button data-action="edit">Modifier</button>
+  {{/if}}
+</td>
+</tr>

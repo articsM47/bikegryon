@@ -6,46 +6,44 @@ import tmpl from 'App/entities/person/tmpl.handlebars';
 
 export default class extends ImView {
 
-    initialize(attrs, options) {
-    this.listenTo(this.model, 'change', this.render);
-    }
-
-/* // pas fini
     events() {
         return {
-            'click [data-action="show-product"]': 'show-product',
-            'click [data-action="remove-from-cart"]': 'removeFromCart',
+          'click [data-action="edit"]': 'edit',
+          'click [data-action="modify"]': 'modify',
         }
-
-    } */
-/* // pas fini 
-      showProduct(id) {
-          // prendre le produit
-          let id = this.model.id;
-          console.log(product)
-          modal .show 
-          this.view.add(product);
       }
- */
-    edit() {
-
-    }
-
-    del() {
-
-    }
-
-    restore() {
-
-    }
-
-
-    render() {
+    
+      //entrer dans le menu pour editer la tache
+      edit(evt) {
+        this.model.set({editable: true});
+      }
+    
+      //modifier la tache 
+      modify(evt) {
+        let task = this.$el.find('.tasks-input-task').val(); // On récupère les champs de l'HTML correspondant
+        // Conversion d'un champ date en timestamp Unix (en seconde)
+        let dateInput = this.$el.find('.tasks-input-time').val();
+        let date = new Date(dateInput);
+        let time = Math.round(date.getTime() / 1000);
+        this.model.set({task, time, editable: false});
+        this.model.save();
+      }
+    
+    
+      //methodes obbligatoire
+      //va sauver le modèle sur this.model
+      initialize(attrs, options) {
+        this.listenTo(this.model, 'change', this.render);
+      }
+    
+      //affichage de la vue
+      render() {
         let dom = $(tmpl(this.model.toJSON()));
         this.$el.replaceWith(dom);
         this.setElement(dom);
         return this;
+      }
+    
+    
     }
-
-
 }

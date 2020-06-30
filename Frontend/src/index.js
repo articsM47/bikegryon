@@ -57,9 +57,6 @@ people.fetch();
 
 
 
-
-
-
 //service worker pour pwa 
 /* const installWorker = workerPath => new Promise(async (resolve, reject) => {
     let worker = await navigator.serviceWorker.register(workerPath)
