@@ -22,7 +22,7 @@
 
 
 <!-- grid des personnes -->
-<Div id="personnes">
+<Div id="people">
 
     </Div>
 
