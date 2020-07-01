@@ -20,6 +20,7 @@
         <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/stylejulie.css">
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style-ingrid.css">
     </head>
     <body>
@@ -28,7 +29,6 @@
             <a href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
             </a>
-
 
             <span class="iconsgroup">
                       <!--search -->
