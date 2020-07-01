@@ -6,6 +6,7 @@ html{
   min-height: 100%;
   position: relative;
 }
+
 body{
   margin-bottom: 60 px;
 }
@@ -71,8 +72,6 @@ textarea {resize:none}
     right: 35px;
     }
   }
-
-
 
   .iconsgroup {
     float: right;

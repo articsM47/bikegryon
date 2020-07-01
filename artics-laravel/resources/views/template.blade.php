@@ -63,13 +63,13 @@
                 <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
             </a>
 
-            <!--accunt's icon-->
+            <!--account's icon-->
             <a class="" href="/Check-in">
                 <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:42px;height:42px;">
             </a>
 
 
-            <!--accunt's icon-->
+            <!--account's icon-->
             <a class="" href="/Compte">
                 <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
             </a>
@@ -92,32 +92,36 @@
                     <br>
                 </div>
             </div>
-        </header>
-        <div class="container-fluid">
-            @yield('contenu')
-        </div>
-        <div class="push"></div>
-        <div class="container-fluid">
-            @yield('footer')
- <!-- FOOTER -->
- <br>
- <footer id="sticky-footer">
-<table class="footer" class="footer-block" style="width:100%">
-  <tbody>
-    <tr class="d-flex justify-content-between align-items-center">
-      <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt ="logo_2" style="width:80px;height:80px;"></img></td>
-      <td>
-      <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
-      </td>
-      <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
-      <td>
-      <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt ="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
-      <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt ="facebook_logo" style="width:30px;height:30px;" ></img> </a>
-    </td>
-    </tr>
-  </tbody>
-</table>
-<footer>
-    </body>
-    <script type="text/javascript" src="bundle.js"></script>
+            </header>
+    </div>
+
+    <div class="container-fluid">
+        @yield('contenu')
+    </div>
+    
+    <div class="push"></div>
+    <div class="container-fluid">
+        @yield('footer')
+        <!-- FOOTER -->
+        <br>
+        <footer id="sticky-footer">
+            <table class="footer" class="footer-block" style="width:100%">
+                <tbody>
+                    <tr class="d-flex justify-content-between align-items-center">
+                        <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt="logo_2" style="width:80px;height:80px;"></img></td>
+                        <td>
+                            <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
+                        </td>
+                        <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
+                        <td>
+                            <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
+                            <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <footer>
+</body>
+<script type="text/javascript" src="bundle.js"></script>
+
 </html>
