@@ -10,7 +10,7 @@ class InscriptionController extends Controller
 	return view('Inscriptions');
 }
 
- public function valideEtTraiteFormulaire(Request $request) {
+ public function valideEtTraiteFormulaire(InscriptionRequest $request) {
 
 /*     // Envoi d'un mail
     Mail::send('Email', $request->all(), function($message){
@@ -19,8 +19,16 @@ class InscriptionController extends Controller
 
     // Confirmation de réception
 
-
-
+/*     $name = $request->input('name');
+    $email1 = $request->input('email1');
+    $firstname = $request->input('firstname');
+    $birthDay = $request->input('birthDay');
+    session(['$name' => 'name']);
+    session(['$email1' => 'email1']);
+    session(['$firstname' => 'firstname']);
+    session(['$birthDay' => 'birthDay']);
+    echo("$request");
+ */
     return view('Creation', $request->all());
 }
 
