@@ -15,7 +15,7 @@ class CreateClientTestdayTable extends Migration
     {
         Schema::create('client_testday', function (Blueprint $table) {
             $table->primary(['client_id', 'testday_id']);
-            $table->integer('badgeNo')->nullable();
+            $table->integer('badgeNo')->nullable()->unique();
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
             // $table->integer('client_member_id')->unsigned();//foreign key

@@ -30,6 +30,7 @@ let vreviews = new Reviewscollection({
 /* 
 console.log(vproducts);
 console.log(vproductsWishlist);
+
 let view = new Productscollection({
     collection: products,
     el: '#product'

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +38,7 @@ Route::get('Event', function () {
 Route::get('Inscriptions', function () {
     return view("Inscriptions");
 });
-/* Route::post('Inscriptions', 'InscriptionsController@valideEtTraiteFormulaire'); */
+ Route::post('Creation', 'InscriptionController@valideEtTraiteFormulaire');
 
 Route::get('Creation', function () {
     return view("Creation");
@@ -97,6 +98,7 @@ Route::get('AddProduct', 'ProductController@create');
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
 
-Auth::routes();
+/* Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+ */
