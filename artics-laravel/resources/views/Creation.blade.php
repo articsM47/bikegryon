@@ -12,8 +12,8 @@
     <div class="card">
         <div class="card-body">
         <h5 class="card-title">Tes informations :</h5>
-        <input class="form-control" type="text" value="{{$name ?? ''}} {{$firstname ?? ''}}" readonly>
-        <input class="form-control" type="text" value="{{$birthDay ?? ''}}" readonly>
+        <input class="form-control" type="text" name="fullname" value="{{$name ?? ''}} {{$firstname ?? ''}}" readonly>
+        <input class="form-control" type="text" name="birthDay" value="{{$birthDay ?? ''}}" readonly>
         <a href="Login" class="badge badge-light">ce n'est pas mois</a>
         </div>
     </div>
@@ -23,9 +23,9 @@
         <h5 class="card-title">Tu n’as plus qu’à choisir un mot de passe :</h5>
 
         <label for="password" class="sr-only">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Password">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
         <label for="confrimpassword" class="sr-only">Password</label>
-        <input type="password" class="form-control" id="confrimpassword" placeholder="confirme Password">
+        <input type="password" class="form-control" name="confrimpassword" id="confrimpassword" placeholder="confirme Password">
     </div>
 </div>
   </div>
