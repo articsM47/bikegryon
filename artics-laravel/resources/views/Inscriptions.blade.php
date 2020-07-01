@@ -7,7 +7,8 @@
       <div class="col-lg-12 ">
         <h1 class="mt-5">Réserve ton billet pour l’édition 2020 !</h1>
       </div>
-      <div class="card-deck">
+
+<div class="card-deck">
   <div class="card">
     <div class="card-body">
       <h3 class="card-title text-center">Vendredi</h3>
@@ -33,7 +34,6 @@ adipiscing elit. Ut viverra eu feugiat bland
 
   </div>
   <div class="card">
-
     <div class="card-body">
       <h3 class="card-title text-center">Dimanche</h3>
       <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra eu feugiat bland
@@ -46,7 +46,6 @@ adipiscing elit. Ut viverra eu feugiat bland
 
   </div>
 </div>
-
 <div id = "reservation">
     <div class="form-row align-items-center">
     <label for="personne1">Reservation de bilet</label>
@@ -95,6 +94,5 @@ adipiscing elit. Ut viverra eu feugiat bland
     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
      <a  href="/Creation"type="button" class="btn btn-primary btn-lg ">reserver</a>
 </div>
-
 
 @endsection
