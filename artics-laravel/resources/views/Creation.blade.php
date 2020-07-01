@@ -12,8 +12,8 @@
     <div class="card">
         <div class="card-body">
         <h5 class="card-title">Tes informations :</h5>
-        <input class="form-control" type="text" placeholder="{{$name ?? ''}} {{$firstname ?? ''}}" readonly>
-        <input class="form-control" type="text" placeholder="{{$birthDay ?? ''}}" readonly>
+        <input class="form-control" type="text" value="{{$name ?? ''}} {{$firstname ?? ''}}" readonly>
+        <input class="form-control" type="text" value="{{$birthDay ?? ''}}" readonly>
         <a href="Login" class="badge badge-light">ce n'est pas mois</a>
         </div>
     </div>
