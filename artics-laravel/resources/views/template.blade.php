@@ -21,6 +21,7 @@
         <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style.css">
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/stylejulie.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style-ingrid.css">
     </head>
     <body>
             <div class="container">
@@ -118,10 +119,10 @@ function closeNav() {
  <!-- FOOTER -->
  <br>
  <footer id="sticky-footer">
-<table class="footer" style="width:100%">
+<table class="footer" class="footer-block" style="width:100%">
   <tbody>
     <tr class="d-flex justify-content-between align-items-center">
-      <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt ="logo_2" style="width:100px;height:100px;"></img></td>
+      <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt ="logo_2" style="width:50px;height:50px;"></img></td>
       <td>
       <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
       </td>
