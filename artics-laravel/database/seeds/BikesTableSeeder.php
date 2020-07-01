@@ -34,8 +34,17 @@ class BikesTableSeeder extends Seeder
         return $sign;
     }
     private function randFrameSize() {
-        $size = ["S", "M", "L", "48", "50", "52"];
-        return $size[rand(0,count($size)-1)];
+        $sizes = ["S", "M", "L", "48", "50", "52"];
+        $size= $sizes[rand(0,count($sizes)-1)];
+        return $size ;
+    }
+    private function FrameUnit($size) {
+        if($size==='S' ||$size==='M' || $size==='L'){
+            $unit= null;
+        }else{
+            $unit="cm";
+        }
+        return $unit;
     }
 
     private function randCategory() {
@@ -53,13 +62,14 @@ class BikesTableSeeder extends Seeder
         //DB::table('bikes')->delete();
         for ($i = 1; $i <= 15; $i++) {
             $date=$this->randDate();
+            $size=$this->randFrameSize();
             DB::table('bikes')->insert([
                 'shortDescr' => $this->randName(),
                 'longDescr' => $this->randDescr(),
                 'distinctiveSign' => $this->randSign(),
                 'picture' => $this->randPicture(),
-                'frameSize' => $this->randFrameSize(),
-                'frameUnit' => 'cm',
+                'frameSize' => $size,
+                'frameUnit' => $this->FrameUnit($size),
                 'category' => $this->randCategory(),
                 'brand_id'=>rand(1,6),
                 'created_at'=>$date,
