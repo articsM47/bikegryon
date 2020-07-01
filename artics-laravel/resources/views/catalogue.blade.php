@@ -8,7 +8,12 @@
 <h1>Toutes les vélos disponibles</h1>
 <h2>au Bike Test Gryon 2020 </h2>
 
-<a class="float-right" href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+
+@can('isRole1')
+	<a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
+@endcan
+
+
 
 <form  action="/action_page.php">
   <input type="text" placeholder="Rechercher..." name="search" onkeyup="filterBike()">

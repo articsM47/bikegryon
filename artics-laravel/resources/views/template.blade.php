@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
-    <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
+        <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+
         <title>
             Bike test gryon
         </title>
@@ -48,11 +51,13 @@
                 }
             }
             </script>
-
+<!--  @can('isRole1') -->
             <!--wishlist's icon-->
             <a class="" href="/Wishlist">
                 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
+<!-- @endcan -->
+
 
                  <!--test's icon-->
                  <a class="" href="/Test">
@@ -79,14 +84,13 @@
 
 <!-- Overlay content -->
 <div class="overlay-content">
-<a style="color:#FF9900" href="/Inscriptions">Réserver un billet</a>
+<a style="color:#ffff" href="/Inscriptions">Réserver un billet</a>
   <a href="/Event">Le programme</a>
   <a href="/Catalogue">Les vélos a tester</a>
   <a href="/Plan">Plan de l'événement</a>
   <a href="/Infos">Infos pratiques</a>
   <br>
   <br>
-  <p>© ARTICS | ProjArt | Heig-vd | 2020</p>
 </div>
 </div>
 
@@ -108,28 +112,26 @@ function closeNav() {
                 @yield('header')
             </div>
         </header>
-        <div class="container">
+        <div class="container-fluid">
             @yield('contenu')
         </div>
-
-        <div class="container">
+        <div class="push"></div>
+        <div class="container-fluid">
             @yield('footer')
  <!-- FOOTER -->
  <br>
 <table class="footer" style="width:100%">
   <tbody>
     <tr class="d-flex justify-content-between align-items-center">
-      <td><img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt ="logo_2" style="width:160px;height:160px;"></img></td>
+      <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt ="logo_2" style="width:100px;height:100px;"></img></td>
       <td>
-      <a href="mailto:info@biketestgryon.ch">Contactez-nous</a>
+      <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
       </td>
-      <td><a href="/Inscriptions">Réserver un billet</a></td>
+      <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
       <td>
-      <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/instagram.svg" alt ="instagram_logo" style="width:42px;height:42px;"></img> </a>
-
-      <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/facebook.svg" alt ="facebook_logo" style="width:42px;height:42px;"></img> </a>
-        </td>
-
+      <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt ="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
+      <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt ="facebook_logo" style="width:30px;height:30px;" ></img> </a>
+    </td>
     </tr>
   </tbody>
 </table>
