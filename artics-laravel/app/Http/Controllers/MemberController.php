@@ -55,6 +55,10 @@ public function affiche() {
 
     public function afficheproduit(Member $Member) {
      return view('Member');
+
+     //$bike = Bike::where('id', $id)->with('brand')->first();
+     //return view('Product', compact ('bike'));
+}
 }
     /**
      * Update the specified resource in storage.

@@ -90,7 +90,7 @@ Route::get('Catalogue', 'ProductController@affiche');
 
 
 
-Route::get('Product/{product}', 'BikeController@afficheproduit');
+Route::get('Product/{id}', 'BikeController@afficheproduit');
 
 Route::get('AddProduct', 'BikeController@create');
 
