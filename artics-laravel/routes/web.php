@@ -40,6 +40,9 @@ Route::get('Inscriptions', function () {
 });
  Route::post('Creation', 'InscriptionController@valideEtTraiteFormulaire');
 
+ Route::post('Confirmation', 'InscriptionController@validetoConfirmation');
+
+
 Route::get('Creation', function () {
     return view("Creation");
 });

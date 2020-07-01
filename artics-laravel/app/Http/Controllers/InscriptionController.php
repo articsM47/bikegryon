@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Requests\InscriptionRequest;
 use Illuminate\Http\Request;
-
+use Mail;
 class InscriptionController extends Controller
 {
     public function rendFormulaire() {
@@ -14,7 +14,7 @@ class InscriptionController extends Controller
 
 /*     // Envoi d'un mail
     Mail::send('Email', $request->all(), function($message){
-		$message->to('Email')->subject('Confirmation de Reservation');
+		$message->to('stephane.bondabelo@heig-vd.ch')->subject('Confirmation de Reservation');
     }); */
 
     // Confirmation de réception
@@ -29,7 +29,12 @@ class InscriptionController extends Controller
     session(['$birthDay' => 'birthDay']);
     echo("$request");
  */
+POST::route('member.store', $request->all());
+
     return view('Creation', $request->all());
 }
+public function validetoConfirmation(Request $request) {
 
+    return view('Confirmation', $request->all());
+}
 }
