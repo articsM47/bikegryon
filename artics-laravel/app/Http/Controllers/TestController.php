@@ -17,11 +17,11 @@ class TestController extends Controller
         return TestResource::collection(Test::all());
     }
 
-public function affiche() {
-     return view('Review');
+    public function affiche() {
+        return view('Test');
 
 
-}
+    }
 
     /**
      * Store a newly created resource in storage.
