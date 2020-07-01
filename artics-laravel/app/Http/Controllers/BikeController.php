@@ -58,6 +58,7 @@ public function affiche() {
     }
 
     public function afficheproduit($Bike) {
+      
       $bike = Bike::findOrFail($Bike);
       return view('Product', compact ('bike'));
       //return view('Product')->with('shortDescr', 'Victoria');
