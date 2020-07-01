@@ -96,15 +96,7 @@ Route::get('AddProduct', 'ProductController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
+ Auth::routes();
 
-Auth::routes();
+ Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
