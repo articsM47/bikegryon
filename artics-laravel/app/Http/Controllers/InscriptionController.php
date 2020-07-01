@@ -19,7 +19,7 @@ class InscriptionController extends Controller
 
     // Confirmation de réception
 
-    $name = $request->input('name');
+/*     $name = $request->input('name');
     $email1 = $request->input('email1');
     $firstname = $request->input('firstname');
     $birthDay = $request->input('birthDay');
@@ -28,7 +28,7 @@ class InscriptionController extends Controller
     session(['$firstname' => 'firstname']);
     session(['$birthDay' => 'birthDay']);
     echo("$request");
-
+ */
     return view('Creation', $request->all());
 }
 
