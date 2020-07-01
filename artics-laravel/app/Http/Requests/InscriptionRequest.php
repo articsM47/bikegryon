@@ -24,10 +24,10 @@ class InscriptionRequest extends FormRequest
     public function rules()
     {
         return [
-           /*   'name'=>'required|min:3|max:20|alpha',
+              'name'=>'required|min:3|max:20|alpha',
         	'firstname'=>'required|min:3|max:20|alpha',
             'birthDay'=>'required|max:10',
-            'email1'=>'required|email',  */
+            'email1'=>'required|email',
         ];
     }
 }
