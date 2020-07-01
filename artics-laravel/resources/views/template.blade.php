@@ -22,10 +22,7 @@
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style.css">
     </head>
     <body>
-
             <div class="container">
-
-
             <!--logo bike test -->
             <a href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
@@ -120,6 +117,7 @@ function closeNav() {
             @yield('footer')
  <!-- FOOTER -->
  <br>
+ <footer id="sticky-footer">
 <table class="footer" style="width:100%">
   <tbody>
     <tr class="d-flex justify-content-between align-items-center">
@@ -135,8 +133,7 @@ function closeNav() {
     </tr>
   </tbody>
 </table>
-
-
+<footer>
     </body>
     <script type="text/javascript" src="bundle.js"></script>
 </html>
