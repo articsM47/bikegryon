@@ -81,9 +81,9 @@ Route::get('Catalogue', 'ProductController@affiche');
 
 
 
-Route::get('Product/{product}', 'ProductController@afficheproduit');
+Route::get('Product/{product}', 'BikeController@afficheproduit');
 
-Route::get('AddProduct', 'ProductController@create');
+Route::get('AddProduct', 'BikeController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 

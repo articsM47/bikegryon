@@ -42,7 +42,7 @@ public function affiche() {
     }
 
     public function create() {
-        return view('AddBike');
+        return view('AddProduct');
     }
     /**
      * Display the specified resource.
@@ -56,7 +56,7 @@ public function affiche() {
     }
 
     public function afficheproduit(Bike $Bike) {
-     return view('Bike');
+     return view('Product');
 }
     /**
      * Update the specified resource in storage.
