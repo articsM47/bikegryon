@@ -5,7 +5,8 @@ import tmpl from 'App/entities/person/tmpl.handlebars';
 
 
 export default class extends ImView {
-/*
+
+  
     events() {
         return {
           'click [data-action="edit"]': 'edit',
@@ -19,15 +20,12 @@ export default class extends ImView {
       }
     
       //modifier la tache 
-      modify(evt) { /*
-        let email = this.$el.find('.people-input-email').val(); // On récupère les champs de l'HTML correspondant
-        let dateInput = this.$el.find('.tasks-input-time').val();
-        let date = new Date(dateInput);
-        this.model.set({task, time, editable: false});
+      modify(evt) { 
+        let email = this.$el.find('.people-input-email').val();
+        let badge = this.$el.find('.people-input-badge').val();
+        this.model.set({email, badge, editable: false});
         this.model.save();
-
       }
-    
     
       //methodes obbligatoire
       //va sauver le modèle sur this.model
@@ -45,5 +43,3 @@ export default class extends ImView {
     
    
     }
-            */
-}

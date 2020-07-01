@@ -37,6 +37,8 @@ public function affiche() {
         $data = $request->only(['shortDescr','longDescr','distinctiveSign','picture','frameSize','frameUnit','category','brand_id']) ;
         // todo : validation
         $Bike = Bike::create($data);
+        //$Brand = Brand::create($data)-> where($id =>$data->brand_id);
+
         // cration des dépendance
         return new BikeResource($Bike);
     }
@@ -55,8 +57,10 @@ public function affiche() {
         return new BikeResource($Bike);
     }
 
-    public function afficheproduit(Bike $Bike) {
-     return view('Product');
+    public function afficheproduit($Bike) {
+      $bike = Bike::findOrFail($Bike);
+      return view('Product', compact ('bike'));
+      //return view('Product')->with('shortDescr', 'Victoria');
 }
     /**
      * Update the specified resource in storage.

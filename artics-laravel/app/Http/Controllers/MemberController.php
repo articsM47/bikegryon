@@ -19,7 +19,7 @@ class MemberController extends Controller
     }
 
 public function affiche() {
-     return view('Pepole');
+     return view('People');
 
 
 }
@@ -32,7 +32,7 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'mail1', 'mail2','comment','address_id','role']) ;
+        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
         // todo : validation
         $Member = Member::create($data);
         // cration des dépendance
