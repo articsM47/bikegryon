@@ -18,7 +18,6 @@ class BikeController extends Controller
     public function index()
     {
         return BikeResource::collection(Bike::all());
-        return BrandResource::collection(Brand::all());
     }
 
 public function affiche() {
@@ -55,6 +54,7 @@ public function affiche() {
         return new BikeResource($Bike);
     }
 
+    
     public function afficheproduit($id) {
 
       $bike = Bike::where('id', $id)->with('brand')->first();
