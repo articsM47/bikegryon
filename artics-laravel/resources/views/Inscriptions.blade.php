@@ -48,17 +48,19 @@ adipiscing elit. Ut viverra eu feugiat bland
 </div>
 
 <div id = "reservation">
+    <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
+         @csrf
     <div class="form-row align-items-center">
     <label for="personne1">Reservation de bilet</label>
     <div class="form-group col-auto">
 
-    <input type="text" class="form-control" id="firstname" placeholder="ton nom">
+    <input type="text" class="form-control" id="name" placeholder="ton nom">
     </div>
     <div class="form-group col-auto">
-    <input type="text" class="form-control" id="surname" placeholder="ton prenom">
+    <input type="text" class="form-control" id="firstname" placeholder="ton prenom">
     </div>
     <div class="form-group col-auto">
-    <input type="date" class="form-control" id="birthday" placeholder="ta date de naissance">
+    <input type="date" class="form-control" id="birthDay" placeholder="ta date de naissance">
 </div>
     <div class="form-group col-auto">
       <div class="form-check mb-2">
@@ -92,8 +94,10 @@ adipiscing elit. Ut viverra eu feugiat bland
 
     </div>
  <div class="form-group text-center ">
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-     <a  href="/Creation"type="button" class="btn btn-primary btn-lg ">reserver</a>
+    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
+<!--      <a  href="/Creation" type="button" class="btn btn-primary btn-lg ">reserver</a> -->
+<input class="btn btn-primary btn-lg" type="submit" value="reserver !">
+            </form>
 </div>
 
 
