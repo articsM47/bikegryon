@@ -22,11 +22,11 @@ class BikesTableSeeder extends Seeder
     }
     private function randDescr() {
         $descr = [
-            "Premium Carbon chassis with MTT Technology and D-Shape Carbon seatpost, ICS technology stem and Easton EC70 AX Carbon bar",
-            "Premium Carbon chassis, ICS Stem and BMC Carbon Bar, Premium Carbon D-Shape Seatpost",
-            "Full Carbon chassis with MTT Technology and D-Shape seatpost, ICS Aero cockpit, Shimano Steps E-8000 Drive Unit",
-            "Featuring a carbon front triangle and premium aluminium rear triangle, plus our APS endurance-tuned suspension delivers the pedaling efficiency XC racers seek, while remaining fully active to soak up the terrain trail riders crave."];
-        return $descr[rand(0,count($descr)-1)];
+            "Grâce à un support électrique fiable, tu peux te déplacer d'un point A à un point B de manière rapide, flexible et détendue. Même les longues distances ou les excursions à la campagne sont encore plus amusantes !",
+            "Que ce soit pour des excursions de loisirs pendant les chaudes journées d'été ou pour le trajet quotidien vers le travail : ce vélo te fera encore plus apprécier le voyage. Grâce à un support électrique fiable, tu peux atteindre n'importe quelle destination rapidement et sans effort.",
+            "Ce petit vélo électrique convainc par son moteur central puissant et ses composants de haute qualité. Grâce aux freins à disque, l'e-bike s'arrête rapidement, même à grande vitesse.",
+            "Grâce à des pneus de haute qualité et à la fourche à suspension, tu peux te déplacer en toute confiance, même sur les chemins de terre accidentés. De plus, les freins à disque hydrauliques assurent des descentes sûres et contrôlées en terrain raide."];
+            return $descr[rand(0,count($descr)-1)];
     }
     private function randSign() {
         $number = rand(100,300);
@@ -48,7 +48,7 @@ class BikesTableSeeder extends Seeder
     }
 
     private function randCategory() {
-        $cat = ["Mountain", "Gravel", "e-Mountain", "Road", "e-Road"];
+        $cat = ["Montagne", "Gravel", "e-Montagne", "Route", "e-Route"];
         return $cat[rand(0,count($cat)-1)];
     }
     

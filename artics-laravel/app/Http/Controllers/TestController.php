@@ -14,6 +14,7 @@ class TestController extends Controller
      */
     public function index()
     {
+
         return TestResource::collection(Test::all());
     }
 
@@ -31,7 +32,7 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime']) ;
+        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime', 'startTime']) ;
         // todo : validation
         $Test = Test::create($data);
         // cration des dépendance
@@ -53,7 +54,8 @@ public function affiche() {
     }
 
     public function afficheproduit(Test $Test) {
-     return view('Test');
+
+        return view('Test');
 }
     /**
      * Update the specified resource in storage.
@@ -64,7 +66,7 @@ public function affiche() {
      */
     public function update(Request $request, Test $Test)
     {
-        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime']) ;
+        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime', 'startTime']) ;
         // todo : validation
         $Test->update($data);
         return new TestResource($Test);

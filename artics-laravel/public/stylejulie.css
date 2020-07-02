@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    color : #333333;
 }
 
 /********** Container avec width 100% *************/
@@ -9,11 +10,45 @@
     padding: 0px !important;
 }
 
+/********** Nav *************/
+.container-nav {
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+}
+
+.nav-menu-text a {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: 25px;
+}
+
+.nav-menu-text a:hover {
+    text-decoration: none;
+    color:#5355FA;
+    font-weight: 900;
+}
+
+.nav-menu-text a:active {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
 /********** H1 *************/
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 5.5rem !important;
+    color : #333333;
+}
+
+.title-page {
+    margin-top: 50px;
+}
+
+.second-title-page {
+    font-weight: 400 !important;
 }
 
 /********** H2 *************/
@@ -21,6 +56,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 4rem !important;
+    color : #333333;
 }
 
 /********** H3 *************/
@@ -28,6 +64,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 3rem !important;
+    color : #333333;
 }
 
 /********** H4 *************/
@@ -35,6 +72,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 2.5rem !important;
+    color : #333333;
 }
 
 /********** Buttons *************/
@@ -84,8 +122,68 @@ h4 {
     color: white;
 }
 
+.button-home {
+    margin-top: 30px;
+}
+
 .button-event {
     margin-bottom: 40px;
+}
+
+.button-like {
+    padding: 15px 42px;
+    text-align: center;
+    border-radius: 40px;
+    border : 4px solid #5355FA;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color : #5355FA;
+}
+
+.button-like:hover {
+    background-color: #5355FA;
+    color : white;
+    text-decoration: none;
+}
+
+.button-catalogue {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    color : white;
+    padding-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+/********** Breadcrumb *************/
+.button-breadcrumb {
+    border-style: none;
+    background-color: transparent;
+}
+
+.breadcrumb {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.breadcrumb-catalogue {
+    color : black;
+    font-weight: 500;
+}
+.breadcrumb-catalogue:hover {
+    color : black;
 }
 
 /********** Cards *************/
@@ -106,4 +204,16 @@ h4 {
 /********** Table *************/
 .table-parcours {
     font-size: 2rem;
+}
+
+/********** Product page *************/
+.container-catalogue {
+    margin-top: 50px;
+}
+
+.product-title {
+    margin-top: 0px;
+}
+.product-descr-text {
+    margin-bottom: 50px;
 }
