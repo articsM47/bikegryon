@@ -20,7 +20,7 @@ class Test extends JsonResource
             'client_id' => $this->client_id,
             'testday_id' => $this->testday_id,
             'bike_id' => $this->bike_id,
-            'startTime' => $this->startTime,
+            'created_at' => $this->created_at,
             'endTime' => $this->endTime,
 
         ];
