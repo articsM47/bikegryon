@@ -12,33 +12,35 @@
         <div class="col-lg-4 ">
           <div class="card-deck">
             <div class="card hiddenText">
-              <input type="checkbox" id="faq-1" class="prog">
-              <h3 class="card-header text-center visible" for="faq-1">Vendredi </h3>
-              <div class="card-body program-content">
-                <table class="card-text">
-                  <tr>
-                    <td width="80"><b>9h00</b></td>
-                    <td>P'tit café à la cantine</td>
-                  </tr>
-                  <tr>
-                    <td><b>10h00</b></td>
-                    <td>Début des tests</td>
-                  </tr>
-                  <tr>
-                    <td><b>11h30</b></td>
-                    <td>Ouverture de la cuisine</td>
-                  </tr>
-                  <tr>
-                    <td><b>16h30</b></td>
-                    <td>Fermeture télé-cabine</td>
-                  </tr>
-                  <tr>
-                    <td><b>17h00</b></td>
-                    <td>Fin des tests</td>
-                  </tr>
-                </table>
+              <div>
+                <input type="checkbox" id="faq-1" class="prog">
+                <h3> <label class="card-header text-center visible" for="faq-1">Vendredi</label></h3>
+                <div class="card-body program-content">
+                  <table class="card-text">
+                    <tr>
+                      <td width="80"><b>9h00</b></td>
+                      <td>P'tit café à la cantine</td>
+                    </tr>
+                    <tr>
+                      <td><b>10h00</b></td>
+                      <td>Début des tests</td>
+                    </tr>
+                    <tr>
+                      <td><b>11h30</b></td>
+                      <td>Ouverture de la cuisine</td>
+                    </tr>
+                    <tr>
+                      <td><b>16h30</b></td>
+                      <td>Fermeture télé-cabine</td>
+                    </tr>
+                    <tr>
+                      <td><b>17h00</b></td>
+                      <td>Fin des tests</td>
+                    </tr>
+                  </table>
+                </div>
+                <h4 class="card-footer text-center program-content">20.-</h4>
               </div>
-              <h4 class="card-footer text-center program-content">20.-</h4>
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@
           <div class="card-deck">
             <div class="card hiddenText">
               <input type="checkbox" id="faq-2" class="prog">
-              <h3 class="card-header text-center visible" for="faq-2">Samedi</h3>
+              <h3> <label class="card-header text-center visible" for="faq-2">Samedi</label></h3>
               <div class="card-body program-content">
                 <table class="card-text">
                   <tr>
@@ -79,7 +81,7 @@
           <div class="card-deck">
             <div class="card hiddenText">
               <input type="checkbox" id="faq-3" class="prog">
-              <h3 class="card-header text-center visible" for="faq-3">Dimanche</h3>
+              <h3> <label class="card-header text-center visible" for="faq-3"> Dimanche</label></h3>
               <div class="card-body program-content">
                 <table class="card-text">
                   <tr>
@@ -110,60 +112,60 @@
         </div>
       </div>
     </div>
-    </div>
-    <div id="reservation">
-      <label for="personne1" class="personTicket">Personne 1</label>
-      <div class="form-row align-items-center reservationBar">
-        <div class="form-group col-auto">
-          <input type="text" class="inputUser" id="firstname" placeholder="Ton nom">
-        </div>
-        <div class="form-group col-auto">
-          <input type="text" class="inputUser" id="surname" placeholder="Ton prenom">
-        </div>
-        <div class="form-group col-auto">
-          <input type="date" class="inputUser" id="birthday" placeholder="Ta date de naissance">
-        </div>
-        <div class="form-group col-auto">
-          <div>
-            <label class="form-check-label checkBox" for="vendredi">
-              Vendredi
-              <input type="checkbox" id="vendredi">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </div>
+  </div>
+  <div id="reservation">
+    <label for="personne1" class="personTicket">Personne 1</label>
+    <div class="form-row align-items-center reservationBar">
+      <div class="form-group col-auto">
+        <input type="text" class="inputUser" id="firstname" placeholder="Ton nom">
+      </div>
+      <div class="form-group col-auto">
+        <input type="text" class="inputUser" id="surname" placeholder="Ton prenom">
+      </div>
+      <div class="form-group col-auto">
+        <input type="date" class="inputUser" id="birthday" placeholder="Ta date de naissance">
+      </div>
+      <div class="form-group col-auto">
         <div>
-          <div class="form-check mb-2">
-            <label class="form-check-label checkBox" for="samedi">
-              Samedi
-              <input type="checkbox" id="samedi">
-              <span class="checkmark"></span>
-            </label>
-          </div>
+          <label class="form-check-label checkBox" for="vendredi">
+            Vendredi
+            <input type="checkbox" id="vendredi">
+            <span class="checkmark"></span>
+          </label>
         </div>
-        <div>
-          <div class="form-check mb-2">
-            <label class="form-check-label checkBox" for="dimanche">
-              Dimanche
-              <input type="checkbox" id="dimanche">
-              <span class="checkmark"></span>
-            </label>
-          </div>
+      </div>
+      <div>
+        <div class="form-check mb-2">
+          <label class="form-check-label checkBox" for="samedi">
+            Samedi
+            <input type="checkbox" id="samedi">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <div class="form-check mb-2">
+          <label class="form-check-label checkBox" for="dimanche">
+            Dimanche
+            <input type="checkbox" id="dimanche">
+            <span class="checkmark"></span>
+          </label>
         </div>
       </div>
     </div>
-    <div class="col-lg-12 text-center emailText">
-      <hr>
-      </hr>
-      <p class="mt-5">Il nous faut juste ton adresse e-mail pour
-        confirmer ta réservation</p>
-    </div>
-
   </div>
-  <div class="form-group text-center ">
-    <input type="email" class="inputUser email" id="email" aria-describedby="emailHelp" placeholder="Email">
-    <br>
-    <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a>
+  <div class="col-lg-12 text-center emailText">
+    <hr>
+    </hr>
+    <p class="mt-5">Il nous faut juste ton adresse e-mail pour
+      confirmer ta réservation</p>
   </div>
 
-  @endsection
+</div>
+<div class="form-group text-center ">
+  <input type="email" class="inputUser email" id="email" aria-describedby="emailHelp" placeholder="Email">
+  <br>
+  <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a>
+</div>
+
+@endsection
