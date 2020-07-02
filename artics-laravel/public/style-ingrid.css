@@ -117,24 +117,12 @@
     font-size: 1.6rem !important;
 }
 
-
 /*********** Page inscription *************/
 
 /****** Program ******/
+.program-container{
 
-/*
-.hiddenText {
-    visibility: hidden;
-  
-  }
-  .hiddenText:hover {
-    visibility: visible;
-  }
-  .visible {
-    visibility: visible;
-  }
-
-*/
+}
 .prog{
     position: absolute;
     top: 0;
@@ -147,6 +135,8 @@
 
   .visible {
     cursor: pointer;
+    border:none !important;
+    font-size: 2rem !important;
   }
   .visible {
     position: relative;
@@ -180,24 +170,43 @@
     visibility: hidden;
     padding-left: 30px;
     transition: max-height 0.4s ease;
-    border-color: #ffff;
+    border:none !important;
   }
 .prog:checked ~ h3 ~ .program-content {
     max-height: 100%;
     visibility: visible;
   }
+.hiddenText{
+  border:none !important;
+}
 
 /******* Resarvation bar ******/
 
 #reservation {
     font-size: 1.8rem;
+    margin-bottom: 45px;
 }
 
-.emailText {
+.email-text{
+  font-size: 1.8rem !important;
+}
+
+.normal-text {
     font-size: 1.8rem !important;
 }
 .personTicket{
     padding-bottom:15px !important;
+}
+#program-text{
+  margin-bottom: 30px !important;
+}
+
+.trash-reservation{
+  margin: 15px !important;
+}
+
+.trash-reservation:hover{
+  fill: #5355FA ;
 }
 
 /* The checkBox */
@@ -212,7 +221,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   
   .checkBox input {
@@ -264,17 +273,18 @@
 
 /*button*/
 .reserve-button {
-    margin-top: 40px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 40px;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.6rem !important;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.reserve-button span{
+  font-size: 2rem !important;
+  font-weight: 700;
 }
 
 .email {
     width: 30% !important;
     display: inline-block;
 }
+
+/*********** Page inscription *************/
+/****** Program ******/
