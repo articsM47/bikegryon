@@ -24,9 +24,9 @@ class InscriptionRequest extends FormRequest
     public function rules()
     {
         return [
-              'name'=>'required|min:3|max:20|alpha',
-        	'firstname'=>'required|min:3|max:20|alpha',
-            'birthDay'=>'required|max:10|after_or_equal:tomorrow',
+            'firstname'=>'required|min:2|max:20|regex:[^[A-Z].*]',
+        	'surname'=>'required|min:2|max:20|regex:[^[A-Z].*]',
+            'birthday'=>'required|date|before:13 years ago',
             'email1'=>'required|email',
         ];
     }

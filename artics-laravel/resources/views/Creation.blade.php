@@ -14,10 +14,10 @@
     <div class="card">
         <div class="card-body">
         <h5 class="card-title">Tes informations :</h5>
-        <input class="form-control" type="text" name="fullname" value="{{$name ?? ''}} {{$firstname ?? ''}}" readonly>
-        <input class="form-control" type="text" name="birthDay" value="{{$birthDay ?? ''}}" readonly>
+        <input class="form-control" type="text" name="fullname" value="{{$surname ?? ''}} {{$firstname ?? ''}}" readonly>
+        <input class="form-control" type="text" name="birthday" value="{{$birthday ?? ''}}" readonly>
         <input type="email" class="form-control d-none" name="email1" value="{{$email1 ?? ''}}" >
-        <input class="form-control d-none" type="text" name="name" value="{{$name ?? ''}}">
+        <input class="form-control d-none" type="text" name="surnamesurname" value="{{$surname ?? ''}}">
         <input class="form-control d-none" type="text" name="firstname" value="{{$firstname ?? ''}}">
         <a href="Login" class="badge badge-light">ce n'est pas mois</a>
         </div>

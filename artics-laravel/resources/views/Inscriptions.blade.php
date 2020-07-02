@@ -112,22 +112,27 @@
     </div>
     </div>
     <div id="reservation">
+    <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
+    @csrf
       <label for="personne1" class="personTicket">Personne 1</label>
       <div class="form-row align-items-center reservationBar">
-        <div class="form-group col-auto">
-          <input type="text" class="inputUser" id="firstname" placeholder="Ton nom">
+        <div class="form-group col-auto {!! $errors->has('firstname') ? 'has-error' : 'aled' !!}">
+          <input type="text" class="inputUser" name="firstname" placeholder="Ton nom" required>
+          {!! $errors->first('firstname', '<small class="help-block">:message</small>') !!}
         </div>
-        <div class="form-group col-auto">
-          <input type="text" class="inputUser" id="surname" placeholder="Ton prenom">
+        <div class="form-group col-auto {!! $errors->has('surname') ? 'has-error' : 'aled' !!}">
+          <input type="text" class="inputUser" name="surname" placeholder="Ton prenom" required>
+          {!! $errors->first('surname', '<small class="help-block">:message</small>') !!}
         </div>
-        <div class="form-group col-auto">
-          <input type="date" class="inputUser" id="birthday" placeholder="Ta date de naissance">
+        <div class="form-group col-auto {!! $errors->has('birthday') ? 'has-error' : 'aled' !!}">
+          <input type="date" class="inputUser" name="birthday" placeholder="Ta date de naissance" required>
+        {!! $errors->first('birthday', '<small class="help-block">:message</small>') !!}
         </div>
-        <div class="form-group col-auto">
+        <div class="form-group col-auto ">
           <div>
             <label class="form-check-label checkBox" for="vendredi">
               Vendredi
-              <input type="checkbox" id="vendredi">
+              <input type="checkbox" name="vendredi">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -136,7 +141,7 @@
           <div class="form-check mb-2">
             <label class="form-check-label checkBox" for="samedi">
               Samedi
-              <input type="checkbox" id="samedi">
+              <input type="checkbox" name="samedi">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -145,7 +150,7 @@
           <div class="form-check mb-2">
             <label class="form-check-label checkBox" for="dimanche">
               Dimanche
-              <input type="checkbox" id="dimanche">
+              <input type="checkbox" name="dimanche">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -160,10 +165,15 @@
     </div>
 
   </div>
-  <div class="form-group text-center ">
-    <input type="email" class="inputUser email" id="email" aria-describedby="emailHelp" placeholder="Email">
+  <div class="form-group text-center {!! $errors->has('email1') ? 'has-error' : 'aled' !!}">
+    <input type="email" class="inputUser email" name="email1" aria-describedby="emailHelp" placeholder="Email" required >
     <br>
-    <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a>
+    <!-- <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a> -->
+    <input class="button reserve-button" type="submit" value="Réserver">
+    {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
+
+
+    </form>
   </div>
 
   @endsection
