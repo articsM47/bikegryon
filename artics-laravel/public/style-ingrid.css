@@ -1,34 +1,65 @@
-/*********** card page réservation *************/
+/*********** Page mon compte *************/
+.buttonSubmit {
+    margin-top: 40px;
+    background-color: #5355FA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem !important;
+}
 
-/*the container must be positioned relative:*/
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .select-selected {
-    background-color: DodgerBlue;
-  }
-  
-  /*style the arrow inside the select element:*/
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
+#sidebar-block {
+    border-right: 1.5px solid #5355FA;
 
-  /*hide the items when the select box is closed:*/
-  .select-hide {
-    display: none;
-  }
-  
+}
+
+#sidebar-list {
+    margin-left: 20px;
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #2d2d2d !important;
+}
+
+.sidebar-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+#welcomeText {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.inputContent {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+#sidebar-block {
+    margin-left: 30px;
+}
+
+.inputUser {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.inputUser:hover {
+    color: #5355FA;
+}
+
+.user{
+    margin-left: 20px;
+}
