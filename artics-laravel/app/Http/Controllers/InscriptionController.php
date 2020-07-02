@@ -29,7 +29,7 @@ class InscriptionController extends Controller
     session(['$birthDay' => 'birthDay']);
     echo("$request");
  */
-POST::route('member.store', $request->all());
+/* POST::route('member.store', $request->all()); */
 
     return view('Creation', $request->all());
 }
