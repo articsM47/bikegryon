@@ -47,21 +47,23 @@ adipiscing elit. Ut viverra eu feugiat bland
   </div>
 </div>
 <div id = "reservation">
+    <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
+         @csrf
     <div class="form-row align-items-center">
     <label for="personne1">Reservation de bilet</label>
     <div class="form-group col-auto">
 
-    <input type="text" class="form-control" id="firstname" placeholder="ton nom">
+    <input type="text" class="form-control" name="name" placeholder="ton nom">
     </div>
     <div class="form-group col-auto">
-    <input type="text" class="form-control" id="surname" placeholder="ton prenom">
+    <input type="text" class="form-control" name="firstname" placeholder="ton prenom">
     </div>
     <div class="form-group col-auto">
-    <input type="date" class="form-control" id="birthday" placeholder="ta date de naissance">
+    <input type="date" class="form-control" name="birthDay" placeholder="ta date de naissance">
 </div>
     <div class="form-group col-auto">
       <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="vendredi">
+        <input class="form-check-input" type="checkbox" name="vendredi">
         <label class="form-check-label" for="vendredi">
           vendredi
         </label>
@@ -69,7 +71,7 @@ adipiscing elit. Ut viverra eu feugiat bland
     </div>
     <div class="form-group col-auto">
       <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="samedi">
+        <input class="form-check-input" type="checkbox" name="samedi">
         <label class="form-check-label" for="samedi">
           samedi
         </label>
@@ -77,7 +79,7 @@ adipiscing elit. Ut viverra eu feugiat bland
     </div>
     <div class="form-group col-auto">
       <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="dimanche">
+        <input class="form-check-input" type="checkbox" name="dimanche">
         <label class="form-check-label" for="dimanche">
           dimanche
         </label>
@@ -91,8 +93,10 @@ adipiscing elit. Ut viverra eu feugiat bland
 
     </div>
  <div class="form-group text-center ">
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-     <a  href="/Creation"type="button" class="btn btn-primary btn-lg ">reserver</a>
+    <input type="email" class="form-control" name="email1" aria-describedby="emailHelp" placeholder="Email">
+<!--      <a  href="/Creation" type="button" class="btn btn-primary btn-lg ">reserver</a> -->
+<input class="btn btn-primary btn-lg" type="submit" value="reserver !">
+            </form>
 </div>
 
 @endsection

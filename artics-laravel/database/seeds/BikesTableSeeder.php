@@ -22,11 +22,11 @@ class BikesTableSeeder extends Seeder
     }
     private function randDescr() {
         $descr = [
-            "Premium Carbon chassis with MTT Technology and D-Shape Carbon seatpost, ICS technology stem and Easton EC70 AX Carbon bar",
-            "Premium Carbon chassis, ICS Stem and BMC Carbon Bar, Premium Carbon D-Shape Seatpost",
-            "Full Carbon chassis with MTT Technology and D-Shape seatpost, ICS Aero cockpit, Shimano Steps E-8000 Drive Unit",
-            "Featuring a carbon front triangle and premium aluminium rear triangle, plus our APS endurance-tuned suspension delivers the pedaling efficiency XC racers seek, while remaining fully active to soak up the terrain trail riders crave."];
-        return $descr[rand(0,count($descr)-1)];
+            "Grâce à un support électrique fiable, tu peux te déplacer d'un point A à un point B de manière rapide, flexible et détendue. Même les longues distances ou les excursions à la campagne sont encore plus amusantes !",
+            "Que ce soit pour des excursions de loisirs pendant les chaudes journées d'été ou pour le trajet quotidien vers le travail : ce vélo te fera encore plus apprécier le voyage. Grâce à un support électrique fiable, tu peux atteindre n'importe quelle destination rapidement et sans effort.",
+            "Ce petit vélo électrique convainc par son moteur central puissant et ses composants de haute qualité. Grâce aux freins à disque, l'e-bike s'arrête rapidement, même à grande vitesse.",
+            "Grâce à des pneus de haute qualité et à la fourche à suspension, tu peux te déplacer en toute confiance, même sur les chemins de terre accidentés. De plus, les freins à disque hydrauliques assurent des descentes sûres et contrôlées en terrain raide."];
+            return $descr[rand(0,count($descr)-1)];
     }
     private function randSign() {
         $number = rand(100,300);
@@ -34,12 +34,21 @@ class BikesTableSeeder extends Seeder
         return $sign;
     }
     private function randFrameSize() {
-        $size = ["S", "M", "L", "48", "50", "52"];
-        return $size[rand(0,count($size)-1)];
+        $sizes = ["S", "M", "L", "48", "50", "52"];
+        $size= $sizes[rand(0,count($sizes)-1)];
+        return $size ;
+    }
+    private function FrameUnit($size) {
+        if($size==='S' ||$size==='M' || $size==='L'){
+            $unit= null;
+        }else{
+            $unit="cm";
+        }
+        return $unit;
     }
 
     private function randCategory() {
-        $cat = ["Mountain", "Gravel", "e-Mountain", "Road", "e-Road"];
+        $cat = ["Montagne", "Gravel", "e-Montagne", "Route", "e-Route"];
         return $cat[rand(0,count($cat)-1)];
     }
     
@@ -53,13 +62,14 @@ class BikesTableSeeder extends Seeder
         //DB::table('bikes')->delete();
         for ($i = 1; $i <= 15; $i++) {
             $date=$this->randDate();
+            $size=$this->randFrameSize();
             DB::table('bikes')->insert([
                 'shortDescr' => $this->randName(),
                 'longDescr' => $this->randDescr(),
                 'distinctiveSign' => $this->randSign(),
                 'picture' => $this->randPicture(),
-                'frameSize' => $this->randFrameSize(),
-                'frameUnit' => 'cm',
+                'frameSize' => $size,
+                'frameUnit' => $this->FrameUnit($size),
                 'category' => $this->randCategory(),
                 'brand_id'=>rand(1,6),
                 'created_at'=>$date,
