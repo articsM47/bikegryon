@@ -26,7 +26,7 @@ class InscriptionRequest extends FormRequest
         return [
             'firstname'=>'required|min:2|max:20|regex:[^[A-Z].*]',
         	'surname'=>'required|min:2|max:20|regex:[^[A-Z].*]',
-            'birthday'=>'required|date|before:13 years ago',
+            'birthday'=>'required|date|before:14 years ago',
             'email1'=>'required|email',
         ];
     }
