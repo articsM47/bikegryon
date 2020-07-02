@@ -50,12 +50,12 @@
                     }
                 }
             </script>
-            <!--  @can('isRole1') -->
+
             <!--wishlist's icon-->
             <a class="" href="/Wishlist">
                 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
             </a>
-            <!-- @endcan -->
+
 
 
             <!--test's icon-->
@@ -98,7 +98,7 @@
     <div class="container-fluid">
         @yield('contenu')
     </div>
-    
+
     <div class="push"></div>
     <div class="container-fluid">
         @yield('footer')
