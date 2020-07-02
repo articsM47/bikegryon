@@ -92,6 +92,20 @@
                     <br>
                 </div>
             </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+
+<img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+ <!-- END MENU -->
             </header>
     </div>
 
