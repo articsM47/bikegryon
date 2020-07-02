@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\InscriptionRequest;
 use Illuminate\Http\Request;
 
 class InscriptionController extends Controller
@@ -10,15 +10,18 @@ class InscriptionController extends Controller
 	return view('Inscriptions');
 }
 
- public function valideEtTraiteFormulaire(ContactRequest $request) {
+ public function valideEtTraiteFormulaire(InscriptionRequest $request) {
 
-    // Envoi d'un mail
+/*     // Envoi d'un mail
     Mail::send('Email', $request->all(), function($message){
 		$message->to('Email')->subject('Confirmation de Reservation');
-    });
+    }); */
 
     // Confirmation de réception
-    return view('Creation', $request);
+
+
+
+    return view('Creation', $request->all());
 }
 
 }
