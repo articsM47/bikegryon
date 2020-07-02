@@ -1,20 +1,9 @@
 /*********** Page mon compte *************/
-.buttonSubmit {
-    margin-top: 40px;
-    background-color: #5355FA;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 40px;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.6rem !important;
-}
 
+/****** Sidebar ******/
 #sidebar-block {
     border-right: 1.5px solid #5355FA;
+    margin-left: 100px;
 
 }
 
@@ -33,9 +22,54 @@
     background-color: white;
 }
 
+
+
+/****** Sidebar hover effect ******/
+
+.listGroup {
+    text-decoration: none !important;
+    color: #2d2d2d;
+}
+
+.listGroup:hover {
+    color: #2d2d2d;
+}
+
+.listGroup:before,
+.listGroup:after,
+.listGroup {
+    color: #2d2d2d;
+    content: '';
+    position: absolute !important;
+    transition: transform .5s ease !important;
+}
+
+.listGroup {
+    padding-top: 10px;
+}
+
+.listGroup:before {
+    color: #2d2d2d;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #2d2d2d;
+    ;
+    transform: scaleX(0) !important;
+}
+
+.listGroup:hover:before {
+    color: #2d2d2d;
+    transform: scaleX(1) !important;
+}
+
+
+/****** Page content ******/
+
 #welcomeText {
     font-size: 1.6rem;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .inputContent {
@@ -43,8 +77,14 @@
     text-align: left;
 }
 
-#sidebar-block {
-    margin-left: 30px;
+.inputUser:focus {
+    outline: 0 !important;
+}
+
+.inputUser:focus {
+    border-color: #5355FA;
+    color: #2d2d2d;
+    font-weight: 400;
 }
 
 .inputUser {
@@ -54,12 +94,184 @@
     border: 1px solid;
     border-radius: 5px;
     font-size: 1.3rem;
+    color: #a1a1a1;
+    font-weight: 400;
+    border-radius: 20px;
 }
 
-.inputUser:hover {
-    color: #5355FA;
+.user {
+    margin-left: 60px;
 }
 
-.user{
-    margin-left: 20px;
+.buttonSubmit {
+    margin-top: 40px;
+    background-color: #5355FA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem !important;
+}
+
+
+/*********** Page inscription *************/
+
+/****** Program ******/
+
+/*
+.hiddenText {
+    visibility: hidden;
+  
+  }
+  .hiddenText:hover {
+    visibility: visible;
+  }
+  .visible {
+    visibility: visible;
+  }
+
+*/
+.prog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .visible {
+    cursor: pointer;
+  }
+  .visible {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+  }
+  .visible::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 10px;
+    border-left: 8px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-top: -8px;
+  }
+.prog:checked ~ .visible::before {
+    border-left: 8px solid transparent;
+    border-top: 8px solid black;
+    border-right: 8px solid transparent;
+    margin-left: -4px;
+    margin-top: -4px;
+  }
+  
+  .program-content {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    padding-left: 30px;
+    transition: max-height 0.4s ease;
+  }
+.prog:checked ~ .visible ~ .program-content {
+    max-height: 100%;
+    visibility: visible;
+  }
+
+/******* Resarvation bar ******/
+
+#reservation {
+    font-size: 1.8rem;
+}
+
+.emailText {
+    font-size: 1.8rem !important;
+}
+.personTicket{
+    padding-bottom:15px !important;
+}
+
+/* The checkBox */
+.checkBox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 60px;
+  }
+  
+  .checkBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .checkBox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .checkBox input:checked ~ .checkmark {
+    background-color: #5355FA;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkBox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkBox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/*button*/
+.reserve-button {
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem !important;
+}
+
+.email {
+    width: 30% !important;
+    display: inline-block;
 }
