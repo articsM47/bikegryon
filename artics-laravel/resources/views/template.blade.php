@@ -31,10 +31,16 @@
             <a href="/">
                 <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
             </a>
+            <div class="">
+                <a style="color:#ffff" href="/Inscriptions">Réserver un billet</a>
+                <a href="/Event">Le programme</a>
+                <a href="/Catalogue">Les vélos à tester</a>
+                <a href="/Plan">Plan de l'événement</a>
+                <a href="/Infos">Infos pratiques</a>
+            </div>
 
             <span class="iconsgroup">
                 <!--search -->
-
                 <form id="SearchToggle" style="display:none">
                     <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
                 </form>
@@ -57,8 +63,6 @@
                     <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
                 </a>
 
-
-
                 <!--test's icon-->
                 <a class="" href="/Test">
                     <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
@@ -69,33 +73,22 @@
                     <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:42px;height:42px;">
                 </a>
 
-
                 <!--account's icon-->
                 <a class="" href="/Compte">
                     <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
                 </a>
 
-
                 <!-- MENU -->
                 <!-- The overlay -->
-                <div id="myNav" class="overlay">
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- <div id="myNav" class=""> -->
+                <!-- Button to close the overlay navigation -->
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
-                    <!-- Overlay content -->
-                    <div class="overlay-content">
-                        <a style="color:#ffff" href="/Inscriptions">Réserver un billet</a>
-                        <a href="/Event">Le programme</a>
-                        <a href="/Catalogue">Les vélos a tester</a>
-                        <a href="/Plan">Plan de l'événement</a>
-                        <a href="/Infos">Infos pratiques</a>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <!-- Use any element to open/show the overlay navigation menu -->
+                <!-- Overlay content -->
+        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
 
-                <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+        <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
 
                 <script>
                     function openNav() {
@@ -105,11 +98,11 @@
                     function closeNav() {
                         document.getElementById("myNav").style.height = "0%";
                     }
-                </script>
-                <!-- END MENU -->
-                </header>
-        </div>
+                </script> -->
+        </header>
     </div>
+    </div>
+    <!-- END MENU -->
 
     <div class="container-fluid">
         @yield('contenu')
