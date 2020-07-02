@@ -45,7 +45,7 @@
                 <!-- icons -->
                 <span class="iconsgroup align-self-center">
                     <!--search -->
-                    <form id="SearchToggle" style="display:none">
+                    <!-- <form id="SearchToggle" style="display:none">
                         <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
                     </form>
 
@@ -60,7 +60,7 @@
                                 x.style.display = "none";
                             }
                         }
-                    </script>
+                    </script> -->
 
                     <!--wishlist's icon-->
                     <a class="" href="/Wishlist">
