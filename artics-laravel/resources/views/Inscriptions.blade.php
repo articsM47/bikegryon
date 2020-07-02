@@ -116,13 +116,13 @@
   <div id="reservation">
     <label for="personne1" class="personTicket">Personne 1</label>
     <div class="form-row align-items-center reservationBar">
-      <div class="form-group col-auto">
+      <div class="form-group col-auto {!! $errors->has('Ton nom') ? 'has-error' : '' !!}">
         <input type="text" class="inputUser" id="firstname" placeholder="Ton nom">
       </div>
-      <div class="form-group col-auto">
+      <div class="form-group col-auto {!! $errors->has('Ton prenom') ? 'has-error' : '' !!}">
         <input type="text" class="inputUser" id="surname" placeholder="Ton prenom">
       </div>
-      <div class="form-group col-auto">
+      <div class="form-group col-auto {!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
         <input type="date" class="inputUser" id="birthday" placeholder="Ta date de naissance">
       </div>
       <div class="form-group col-auto">

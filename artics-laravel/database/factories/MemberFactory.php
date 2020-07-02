@@ -22,10 +22,11 @@ $factory->define(Member::class, function (Faker $faker) {
         $email= null;
         $psw= null;
     }
+    $birthday = $faker->dateTimeBetween($startDate = '-60 years', $endDate = '-10years', $timezone = null);
     return [
         'name' => $faker->lastName,
         'firstname' => $faker->firstName,
-        'birthDay' => $faker->dateTimeBetween($startDate = '-60 years', $endDate = '-10years', $timezone = null),
+        'birthDay' => $birthday->format('Y-m-d'),
         'phone1' => $phone,
         'email1' => $email,
         'psw' => $psw, //Hash::make($psw), pas utilisé pour l'instant pour avoir accès aux mdp et utiliser les comptes

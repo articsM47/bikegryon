@@ -1,29 +1,32 @@
 <tr>
   <td>{{name}}</td>
   <td>{{firstname}}</td>
-  <td>{{birtdDay}}</td>
+  <td>{{birthDay}}</td>
+  <!--
+  <td>{{phone1}}</td>
+  <td>{{badgeNo}}</td>
+  -->
+  <td>
+  {{#if editable}} 
+    <input type="text" class="people-input-email" value="{{email1}}" placeholder="{{email1}}">
+ {{else}} 
+   {{email1}}
+    {{/if}}
+  </td>
 
   <td>
   {{#if editable}}
-  <input type="text" class="people-input-email" value="{{email1}}">
+    <input type="text" class="people-input-badge" value="{{badgeNo}}" placeholder="{{badgeNo}}">
   {{else}}
-  {{email1}}
+    {{badgeNo}}
   {{/if}}
 </td>
 
   <td>
   {{#if editable}}
-  <input type="text" class="people-input-badge" value="{{badgeNo}}">
-  {{else}}
-  {{badgeNo}}
-  {{/if}}
-</td>
-
-  <td>
-  {{#if editable}}
-   <button data-action="modify"></button>
+   <button data-action="modify">Enregistrer</button>
   {{else}}
  <button data-action="edit">Modifier</button>
   {{/if}}
-</td>
+</td>-->
 </tr>

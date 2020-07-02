@@ -20,8 +20,8 @@ class Member extends JsonResource
             'birthDay' => $this->birthDay,
             'phone1' => $this->phone1,
             'phone2' => $this->phone2,
-            'mail1' => $this->mail1,
-            'mail2' => $this->mail2,
+            'email1' => $this->email1,
+            'email2' => $this->email2,
             'comment' => $this->comment,
             'address_id' => $this->address_id,
             'role' => $this->role

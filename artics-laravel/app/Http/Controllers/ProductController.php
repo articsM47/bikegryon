@@ -63,7 +63,9 @@ public function affiche() {
     }
 
     public function afficheproduit(Product $product) {
-     return view('Product');
+      //$bike = Bike::findOrFail($product);
+     //return view('Product', compact ('bike'));
+     //return view('Product')->with('shortDescr', 'Victoria');
 }
     /**
      * Update the specified resource in storage.

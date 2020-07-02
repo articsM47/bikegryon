@@ -6,7 +6,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">Ajout d'un Produit</div>
         <div class="panel-body addform">
-            <form method="POST" action="{{route('Bike.store')}}" accept-charset="UTF-8">
+            <form method="POST" action="{{route('Bike.update')}}" accept-charset="UTF-8">
             @csrf
             <div class="form-group {!! $errors->has('shortDescr') ? 'has-error' : '' !!}">
                 <input class="form-control" placeholder="name" name="shortDescr" type="text" required>
