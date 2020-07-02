@@ -51,17 +51,17 @@ adipiscing elit. Ut viverra eu feugiat bland
          @csrf
     <div class="form-row align-items-center">
     <label for="personne1">Reservation de bilet</label>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto {!! $errors->has('debut') ? 'has-error' : '' !!}">
 
     <input type="text" class="form-control" name="name" placeholder="ton nom">
     </div>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto {!! $errors->has('debut') ? 'has-error' : '' !!}">
     <input type="text" class="form-control" name="firstname" placeholder="ton prenom">
     </div>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto {!! $errors->has('debut') ? 'has-error' : '' !!}">
     <input type="date" class="form-control" name="birthDay" placeholder="ta date de naissance">
 </div>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto ">
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" name="vendredi">
         <label class="form-check-label" for="vendredi">
@@ -69,7 +69,7 @@ adipiscing elit. Ut viverra eu feugiat bland
         </label>
       </div>
     </div>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto ">
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" name="samedi">
         <label class="form-check-label" for="samedi">
@@ -77,7 +77,7 @@ adipiscing elit. Ut viverra eu feugiat bland
         </label>
       </div>
     </div>
-    <div class="form-group col-auto">
+    <div class="form-group col-auto ">
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" name="dimanche">
         <label class="form-check-label" for="dimanche">

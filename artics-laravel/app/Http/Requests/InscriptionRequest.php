@@ -26,7 +26,7 @@ class InscriptionRequest extends FormRequest
         return [
               'name'=>'required|min:3|max:20|alpha',
         	'firstname'=>'required|min:3|max:20|alpha',
-            'birthDay'=>'required|max:10',
+            'birthDay'=>'required|max:10|after_or_equal:tomorrow',
             'email1'=>'required|email',
         ];
     }
