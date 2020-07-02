@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  color:#2d2d2d
 }
 
 html{
@@ -102,11 +103,12 @@ form button {
     }
     .linkFooter{
       color: #ffff; 
+      text-decoration: none !important;
       font-size: 1.5rem; 
       text-decoration: none;
     }
     .linkFooter :hover{
-      color: #ffff; 
+      color: #ffff !important; 
     }
     #instaFooter{
       margin-right: 10px; 
