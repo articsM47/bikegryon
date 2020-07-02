@@ -92,6 +92,25 @@ h4 {
     margin-bottom: 40px;
 }
 
+/********** Breadcrumb *************/
+.button-breadcrumb {
+    border-style: none;
+    background-color: #F5F5F5;
+}
+
+.breadcrumb {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.breadcrumb-catalogue {
+    color : black;
+    font-weight: 500;
+}
+.breadcrumb-catalogue:hover {
+    color : black;
+}
+
 /********** Cards *************/
 .card-text {
     font-size: 2rem;
@@ -110,4 +129,9 @@ h4 {
 /********** Table *************/
 .table-parcours {
     font-size: 2rem;
+}
+
+/********** Product page *************/
+.row-catalogue {
+    margin-top: 80px;
 }

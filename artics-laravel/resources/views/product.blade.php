@@ -7,19 +7,20 @@
 
 
     <ul class="breadcrumb">
-      <button href="/Catalogue" ><a href="/Catalogue"><img src="http://127.0.0.1:8000/fonts/arrow_back.svg" alt="arrow_back"></a></button>
-      <li><a href="/Catalogue">Catalogue</a> <span class="divider"></span></li>
-      <li>{{$bike -> category}}<span class="divider"></span></li>
+      <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://127.0.0.1:8000/fonts/arrow_back.svg" alt="arrow_back"></a></button>
+      <li><a href="/Catalogue" class="breadcrumb-catalogue">Catalogue</a> <span class="divider"></span></li>
+      <li class="breadcrumb-catalogue">{{$bike -> category}}<span class="divider"></span></li>
       <li class="active">{{$bike -> shortDescr}}</li>
     </ul>
 
 
-  <div class="row">
+  <div class="row row-catalogue">
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">{{$bike -> brand->shortDescr}}</h5>
-          <h3 class="card-title">{{$bike -> shortDescr}}</h3>
+          <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width = 200px>
+          <!-- <h5 class="card-title">{{$bike -> brand->shortDescr}}</h5> -->
+          <h1 class="card-title">{{$bike -> shortDescr}}</h3>
           <p class="card-text">{{$bike -> frameSize}} {{$bike -> frameUnit}}</p>
           <p class="card-text">{{$bike -> category}}</p>
 
@@ -57,7 +58,6 @@
 
           endif--> 
   
-          <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width = 100%>
         </div>
       </div>
     </div>
