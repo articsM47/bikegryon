@@ -157,8 +157,13 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700 !important;
     font-size: 2rem !important;
-    color : #333333;
+    color : white;
+    padding-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
+
 
 /********** Breadcrumb *************/
 .button-breadcrumb {

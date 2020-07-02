@@ -30,11 +30,11 @@
   <!-- Filtre images -->
   <div class="container">
     <div class="row">
-      <div class="col-4">
-        <a href="#"><button class="button-catalogue">Plutôt montagne</button></a>
+      <div class="col-4 button-text">
+        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button></a>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue">Plutôt ville</button></a>
+        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button></a>
       </div>
       <div class="col-4">
         <a href="#"><button class="button-catalogue">E-bike</button></a>
