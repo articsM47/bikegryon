@@ -114,19 +114,21 @@
     <div id="reservation">
     <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
     @csrf
-      <label for="personne1" class="personTicket">Personne 1</label>
+      <label for="personne1" class="personTicket">Tes informations</label>
       <div class="form-row align-items-center reservationBar">
-        <div class="form-group col-auto {!! $errors->has('firstname') ? 'has-error' : 'aled' !!}">
-          <input type="text" class="inputUser" name="firstname" placeholder="Ton nom" required>
-          {!! $errors->first('firstname', '<small class="help-block">:message</small>') !!}
+        <div class="form-group col-auto {!! $errors->has('nom') ? 'has-error' : '' !!}">
+          <input type="text" class="inputUser" name="nom" placeholder="Ton nom" required>
+          {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
         </div>
-        <div class="form-group col-auto {!! $errors->has('surname') ? 'has-error' : 'aled' !!}">
-          <input type="text" class="inputUser" name="surname" placeholder="Ton prenom" required>
-          {!! $errors->first('surname', '<small class="help-block">:message</small>') !!}
+        <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">
+          <input type="text" class="inputUser" name="prenom" placeholder="Ton prenom" required>
+          {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
         </div>
-        <div class="form-group col-auto {!! $errors->has('birthday') ? 'has-error' : 'aled' !!}">
+        <div class="form-group col-auto ">
           <input type="date" class="inputUser" name="birthday" placeholder="Ta date de naissance" required>
-        {!! $errors->first('birthday', '<small class="help-block">:message</small>') !!}
+        @if($errors->has('birthday'))
+    <p>L'inscription est intérdit au moins de 14ans</p>
+@endif
         </div>
         <div class="form-group col-auto ">
           <div>
