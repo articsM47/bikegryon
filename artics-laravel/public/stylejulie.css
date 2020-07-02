@@ -9,9 +9,29 @@
     padding: 0px !important;
 }
 
-/********** Container nav *************/
+/********** Nav *************/
 .container-nav {
     box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+}
+
+.nav-menu-text a {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: 25px;
+}
+
+.nav-menu-text a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.nav-menu-text a:active {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
 
 /********** H1 *************/
@@ -19,6 +39,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 5.5rem !important;
+    color : #333333;
 }
 
 /********** H2 *************/
@@ -26,6 +47,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 4rem !important;
+    color : #333333;
 }
 
 /********** H3 *************/
@@ -33,6 +55,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 3rem !important;
+    color : #333333;
 }
 
 /********** H4 *************/
@@ -40,6 +63,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 2.5rem !important;
+    color : #333333;
 }
 
 /********** Buttons *************/

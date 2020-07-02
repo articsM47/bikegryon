@@ -27,68 +27,72 @@
 <body>
     <div class="container-fluid container-nav">
         <div class="container">
-            <!--logo bike test -->
-            <a href="/">
-                <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
-            </a>
-            <div class="">
-                <a style="color:#ffff" href="/Inscriptions">Réserver un billet</a>
-                <a href="/Event">Le programme</a>
-                <a href="/Catalogue">Les vélos à tester</a>
-                <a href="/Plan">Plan de l'événement</a>
-                <a href="/Infos">Infos pratiques</a>
-            </div>
+            <div class="row">
+                <!--logo bike test -->
+                <div class="col-2">
+                    <a href="/">
+                        <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
+                    </a>
+                </div>
+                <!-- menu -->
+                <div class="col-8 nav-menu-text align-self-center">
+                    <a href="/Inscriptions">Réserver</a>
+                    <a href="/Event">Le programme</a>
+                    <a href="/Catalogue">Les vélos à tester</a>
+                    <a href="/Plan">Plan de l'événement</a>
+                    <a href="/Infos">Infos pratiques</a>
+                </div>
+                <!-- icons -->
+                <span class="iconsgroup align-self-center">
+                    <!--search -->
+                    <form id="SearchToggle" style="display:none">
+                        <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
+                    </form>
 
-            <span class="iconsgroup">
-                <!--search -->
-                <form id="SearchToggle" style="display:none">
-                    <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
-                </form>
+                    <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:32px;height:32px;">
 
-                <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:42px;height:42px;">
-
-                <script>
-                    function openSearch() {
-                        var x = document.getElementById("SearchToggle");
-                        if (x.style.display === "none") {
-                            x.style.display = "inline";
-                        } else {
-                            x.style.display = "none";
+                    <script>
+                        function openSearch() {
+                            var x = document.getElementById("SearchToggle");
+                            if (x.style.display === "none") {
+                                x.style.display = "inline";
+                            } else {
+                                x.style.display = "none";
+                            }
                         }
-                    }
-                </script>
+                    </script>
 
-                <!--wishlist's icon-->
-                <a class="" href="/Wishlist">
-                    <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
-                </a>
+                    <!--wishlist's icon-->
+                    <a class="" href="/Wishlist">
+                        <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
+                    </a>
 
-                <!--test's icon-->
-                <a class="" href="/Test">
-                    <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
-                </a>
+                    <!--test's icon-->
+                    <a class="" href="/Test">
+                        <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:32px;height:32px;">
+                    </a>
 
-                <!--account's icon-->
-                <a class="" href="/Check-in">
-                    <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:42px;height:42px;">
-                </a>
+                    <!--account's icon-->
+                    <a class="" href="/Check-in">
+                        <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:32px;height:32px;">
+                    </a>
 
-                <!--account's icon-->
-                <a class="" href="/Compte">
-                    <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
-                </a>
+                    <!--account's icon-->
+                    <a class="" href="/Compte">
+                        <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:32px;height:32px;">
+                    </a>
 
-                <!-- MENU -->
-                <!-- The overlay -->
-                <!-- <div id="myNav" class=""> -->
-                <!-- Button to close the overlay navigation -->
-                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <!-- MENU -->
+                    <!-- The overlay -->
+                    <!-- <div id="myNav" class=""> -->
+                    <!-- Button to close the overlay navigation -->
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
-                <!-- Overlay content -->
-        </div>
-        <!-- Use any element to open/show the overlay navigation menu -->
+                    <!-- Overlay content -->
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
 
-        <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+            <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
 
                 <script>
                     function openNav() {
@@ -99,7 +103,8 @@
                         document.getElementById("myNav").style.height = "0%";
                     }
                 </script> -->
-        </header>
+            </header>
+        </div>
     </div>
     </div>
     <!-- END MENU -->

@@ -1,6 +1,5 @@
 @extends('template')
 
-
 @section('contenu')
 <div class="container">
   <div id="product">
