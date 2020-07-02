@@ -91,13 +91,12 @@ Route::get('Catalogue', 'ProductController@affiche');
 
 
 
-Route::get('Product/{product}', 'ProductController@afficheproduit');
+Route::get('Product/{id}', 'BikeController@afficheproduit');
 
-Route::get('AddProduct', 'ProductController@create');
+Route::get('AddProduct', 'BikeController@create');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
 // Auth::routes();
 
 //  Route::get('/home', 'HomeController@index')->name('home');
-

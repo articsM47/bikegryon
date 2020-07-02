@@ -18,11 +18,7 @@ class MemberController extends Controller
         return MemberResource::collection(Member::all());
     }
 
-public function affiche() {
-     return view('Pepole');
 
-
-}
 
     /**
      * Store a newly created resource in storage.
@@ -32,16 +28,20 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'mail1', 'mail2','comment','address_id','role']) ;
+        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
         // todo : validation
         $Member = Member::create($data);
         // cration des dépendance
         return new MemberResource($Member);
     }
 
+
     public function create() {
         return view('AddMember');
     }
+
+
+
     /**
      * Display the specified resource.
      *
@@ -50,12 +50,10 @@ public function affiche() {
      */
     public function show(Member $Member)
     {
-        return new MemberResource($Member);
+        $person = $Member->with('client_testday');
+      return view('Check-in', compact ('person'));
     }
 
-    public function afficheproduit(Member $Member) {
-     return view('Member');
-}
     /**
      * Update the specified resource in storage.
      *
@@ -65,7 +63,7 @@ public function affiche() {
      */
     public function update(Request $request, Member $Member)
     {
-        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'mail1', 'mail2','comment','address_id','role']) ;
+        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
         // todo : validation
         $Member->update($data);
         return new MemberResource($Member);

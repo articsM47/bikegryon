@@ -18,7 +18,7 @@ class TestController extends Controller
     }
 
 public function affiche() {
-     return view('Review');
+     return view('Test');
 
 
 }
