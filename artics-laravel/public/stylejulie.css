@@ -9,6 +9,11 @@
     padding: 0px !important;
 }
 
+/********** Container nav *************/
+.container-nav {
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+}
+
 /********** H1 *************/
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -119,6 +124,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     background-color: transparent;
+    margin-top: 50px;
 }
 
 .breadcrumb-catalogue {

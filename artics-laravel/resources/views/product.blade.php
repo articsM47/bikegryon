@@ -19,7 +19,7 @@
     <!-- Brand image -->
     <div class="row" style="margin-top: 50px; margin-bottom: 20px">
       <div class="col-sm-12">
-        <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=200px>
+        <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=150px>
       </div>
     </div>
     <!-- Product info -->
@@ -83,6 +83,9 @@
           <tr style="text-align: center;">
             <td>
               <img src="http://127.0.0.1:8000/fonts/height_bike.svg" alt="height_bike" width="30px">
+            </td>
+            <td>
+            <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain" width="40px">
             </td>
           </tr>
           <tr style="text-align: center;">
