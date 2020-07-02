@@ -112,12 +112,13 @@ h4 {
 /********** Breadcrumb *************/
 .button-breadcrumb {
     border-style: none;
-    background-color: #F5F5F5;
+    background-color: transparent;
 }
 
 .breadcrumb {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    background-color: transparent;
 }
 
 .breadcrumb-catalogue {

@@ -4,17 +4,26 @@
 @section('contenu')
 <div class="container">
   <div id="product">
-    <ul class="breadcrumb">
-      <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://127.0.0.1:8000/fonts/arrow_back.svg" alt="arrow_back"></a></button>
-      <li><a href="/Catalogue" class="breadcrumb-catalogue">Catalogue</a> <span class="divider"></span></li>
-      <li class="breadcrumb-catalogue">{{$bike -> category}}<span class="divider"></span></li>
-      <li class="active">{{$bike -> shortDescr}}</li>
-    </ul>
-
-    <div class="row" style="margin-top: 50px; margin-bottom: 20px">
-      <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=200px>
+    <!-- Breadcrumb -->
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="breadcrumb">
+          <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://127.0.0.1:8000/fonts/arrow_back.svg" alt="arrow_back"></a></button>
+          <li><a href="/Catalogue" class="breadcrumb-catalogue">Catalogue</a> <span class="divider"></span></li>
+          <li class="breadcrumb-catalogue">{{$bike -> category}}<span class="divider"></span></li>
+          <li class="active">{{$bike -> shortDescr}}</li>
+        </ul>
+      </div>
     </div>
-    <div class="row row-catalogue">
+
+    <!-- Brand image -->
+    <div class="row" style="margin-top: 50px; margin-bottom: 20px">
+      <div class="col-sm-12">
+        <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=200px>
+      </div>
+    </div>
+    <!-- Product info -->
+    <div class="row">
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
@@ -67,23 +76,26 @@
       </div>
     </div>
 
-    <!-- Icônes -->
+    <!-- Product height and category -->
     <div class="row">
-      <div class="col-sm-3">
-        <img src="http://127.0.0.1:8000/fonts/height_bike.svg" alt="height_bike" width="30px">
+      <div class="col-sm-6">
+        <table>
+          <tr style="text-align: center;">
+            <td>
+              <img src="http://127.0.0.1:8000/fonts/height_bike.svg" alt="height_bike" width="30px">
+            </td>
+          </tr>
+          <tr style="text-align: center;">
+            <td width="100px" height="50px">
+              <p class="card-text">{{$bike -> frameSize}} {{$bike -> frameUnit}}</p>
+            </td>
+            <td>
+              <p class="card-text">{{$bike -> category}}</p>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="col-sm-3">
-        
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-3">
-        <p class="card-text">{{$bike -> frameSize}} {{$bike -> frameUnit}}</p>
-      </div>
-      <div class="col-sm-3">
-        <p class="card-text">{{$bike -> category}}</p>
-      </div>
       <div class="col-sm-6">
         <a href="#" class="button-like">S’en souvenir</a>
       </div>
