@@ -7,9 +7,9 @@
 
 
 <!-- grid des produits de la wishlist -->
-<Div id="wishlist" class="row row-cols-1 row-cols-md-3">
+<div id="wishlist" class="row row-cols-1 row-cols-md-3">
 
-</Div>
+</div>
 
     <h1>Les plus aimés dans la communauté</h1>
 

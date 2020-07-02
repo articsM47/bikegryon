@@ -4,10 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'js/catalogue.js';
 import 'js/check-in.js';
 import 'js/test.js';
+import 'js/wishlist.js';
 
 
 //FIRST TEST
 console.log('hello from frontend')
+
+
 
 //CODE
 /* let productsWishlist = new Wishlist();
