@@ -122,21 +122,6 @@ form button {
       margin: 20px 0;
     }
 
-
-    /*FILTERS*/
-    /* Dropdown Button */
-.dropbtn {
-    background-color:white;
-    color: black;
-    cursor: pointer;
-    border: 0.5px solid black ;
-  }
-
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #FF9900;
-  }
-
   /* The search field */
   #myInput {
     box-sizing: border-box;
@@ -161,6 +146,7 @@ form button {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
+    font-size: 1.5rem;
     position: absolute;
     background-color: #f6f6f6;
     min-width: 230px;

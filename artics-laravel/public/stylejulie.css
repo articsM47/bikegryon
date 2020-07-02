@@ -1,6 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
-    color : #333333;
+    color: #333333;
 }
 
 /********** Container avec width 100% *************/
@@ -12,7 +12,7 @@
 
 /********** Nav *************/
 .container-nav {
-    box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .2);
 }
 
 .nav-menu-text a {
@@ -25,7 +25,7 @@
 
 .nav-menu-text a:hover {
     text-decoration: none;
-    color:#5355FA;
+    color: #5355FA;
     font-weight: 900;
 }
 
@@ -40,7 +40,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 5.5rem !important;
-    color : #333333;
+    color: #333333;
 }
 
 .title-page {
@@ -56,7 +56,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 !important;
     font-size: 4rem !important;
-    color : #333333;
+    color: #333333;
 }
 
 /********** H3 *************/
@@ -64,7 +64,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 3rem !important;
-    color : #333333;
+    color: #333333;
 }
 
 /********** H4 *************/
@@ -72,7 +72,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600 !important;
     font-size: 2.5rem !important;
-    color : #333333;
+    color: #333333;
 }
 
 /********** Buttons *************/
@@ -134,16 +134,16 @@ h4 {
     padding: 15px 42px;
     text-align: center;
     border-radius: 40px;
-    border : 4px solid #5355FA;
+    border: 4px solid #5355FA;
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
-    color : #5355FA;
+    color: #5355FA;
 }
 
 .button-like:hover {
     background-color: #5355FA;
-    color : white;
+    color: white;
     text-decoration: none;
 }
 
@@ -157,13 +157,49 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700 !important;
     font-size: 2rem !important;
-    color : white;
+    color: white;
     padding-top: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+.button-catalogue:hover {
+    background-color: black;
+    opacity: 0.5;
+}
+
+/********** Filters *************/
+.dropbtn {
+    margin-top: 20px;
+    background-color: transparent;
+    color: #333333;
+    cursor: pointer;
+    border: 0.5px solid #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #333333;
+    color : white;
+}
+
+.dropbtn-options {
+    border: none;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/********** Catalogue *************/
+#catalogue {
+    margin-top: 30px;
+}
 
 /********** Breadcrumb *************/
 .button-breadcrumb {
@@ -179,11 +215,12 @@ h4 {
 }
 
 .breadcrumb-catalogue {
-    color : black;
+    color: black;
     font-weight: 500;
 }
+
 .breadcrumb-catalogue:hover {
-    color : black;
+    color: black;
 }
 
 /********** Cards *************/
@@ -214,6 +251,7 @@ h4 {
 .product-title {
     margin-top: 0px;
 }
+
 .product-descr-text {
     margin-bottom: 50px;
 }

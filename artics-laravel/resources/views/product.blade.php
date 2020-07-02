@@ -8,7 +8,7 @@
       <div class="col-sm-12">
         <ul class="breadcrumb">
           <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://127.0.0.1:8000/fonts/arrow_back.svg" alt="arrow_back"></a></button>
-          <li><a href="/Catalogue" class="breadcrumb-catalogue">Catalogue</a> <span class="divider"></span></li>
+          <li><a href="/Catalogue" class="breadcrumb-catalogue">Les vélos à tester</a> <span class="divider"></span></li>
           <li class="breadcrumb-catalogue">{{$bike -> category}}<span class="divider"></span></li>
           <li class="active">{{$bike -> shortDescr}}</li>
         </ul>
@@ -18,7 +18,7 @@
     <!-- Brand image -->
     <div class="row" style="margin-top: 50px; margin-bottom: 20px">
       <div class="col-sm-12">
-        <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=150px>
+        <img src="http://127.0.0.1:8000/pictures/brands/{{$bike -> brand->picture}}" alt="{{$bike -> brand->shortDescr}}" width=100px>
       </div>
     </div>
     <!-- Product info -->

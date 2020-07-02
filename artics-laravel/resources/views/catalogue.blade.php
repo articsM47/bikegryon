@@ -37,7 +37,7 @@
         <a href="#"><button class="button-catalogue" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button></a>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue">E-bike</button></a>
+        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button></a>
       </div>
     </div>
   </div>
@@ -46,7 +46,7 @@
   <!-- filters -->
   <!-- categories -->
   <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Catégories</button>
+    <button onclick="myFunction()" class="dropbtn">Catégorie</button>
     <div id="Catégories" class="dropdown-content">
       <input type="text" placeholder="Search..." id="myInput" onkeyup="filterCategories()">
       <a value="E-bike">E-bike (trekking)</a>
@@ -56,8 +56,8 @@
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
       <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
+      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
   </div>
 
@@ -88,7 +88,7 @@ toggle between hiding and showing the dropdown content */
 
   <!--  -->
   <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Marques</button>
+    <button onclick="myFunction()" class="dropbtn">Marque</button>
     <div id="myDropdown" class="dropdown-content">
       <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
       <a value="E-bike">E-bike (trekking)</a>
@@ -98,8 +98,8 @@ toggle between hiding and showing the dropdown content */
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
       <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
+      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
   </div>
 
@@ -114,8 +114,8 @@ toggle between hiding and showing the dropdown content */
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
       <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn">Enregistrer</button>
+      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
+      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
   </div>
 
