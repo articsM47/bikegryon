@@ -50,6 +50,7 @@
                     x.style.display = "none";
                 }
             }
+            
             </script>
 <!--  @can('isRole1') -->
             <!--wishlist's icon-->
