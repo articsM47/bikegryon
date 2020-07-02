@@ -15,7 +15,7 @@
           <a href="#" class="listGroup">Mes réservations</a><br>
           <br>
           <br>
-          <a href="#" class="list-group-item-action ">Me déconnecter</a><br>
+          <a href="/Logout" class="listGroup">Me déconnecter</a><br>
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -27,7 +27,7 @@
         <body>
           <form class="form-edit user">
             <h2 class="h3 mb-3 font-weight-normal">Bonjour Lucie !</h2>
-            <p id="welcomeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p id="welcomeText">Tu peux voir et mettre à jour tes informations ici. </p>
 
             <div class="form-group row">
               <label class="col-sm-2 inputContent" for="firstname">Nom</label>

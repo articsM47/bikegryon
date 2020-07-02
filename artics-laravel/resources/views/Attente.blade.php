@@ -62,22 +62,21 @@
 </style>
 
 <div class="row">
-<div class="col col-lg-2">
-    <!-- Sidebar -->
-
-
-      <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Mon compte </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Mot de passe</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Mes tests</a>
-        <a href="/Attente" class="list-group-item list-group-item-action bg-light">Mes attentes</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Mes réservations</a>
-<hr>
-        <a href="/Logout" class="list-group-item list-group-item-action bg-light">Me déconnecter</a>
+<div class="col col-lg-2" id="sidebar-block">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <div class="sidebar-heading">Mon compte </div>
+        <div id="sidebar-list">
+          <a href="#" class="listGroup">Mot de passe</a><br>
+          <a href="#" class="listGroup">Mes tests</a><br>
+          <a href="/Attente" class="listGroup">Mes attentes</a><br>
+          <a href="#" class="listGroup">Mes réservations</a><br>
+          <br>
+          <br>
+          <a href="/Logout" class="listGroup">Me déconnecter</a><br>
+        </div>
       </div>
-    </div>
-     <!-- /#sidebar-wrapper -->
+      <!-- /#sidebar-wrapper -->
     </div>
 <div class="col">
       <!-- Page Content -->
