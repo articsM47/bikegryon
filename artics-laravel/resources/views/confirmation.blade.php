@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Merci pour ta réservation ! </h1>
+        <h1 class="mt-5">Merci {{$firstname ?? ''}} pour ta réservation ! </h1>
 
     </div>
 </div>
@@ -13,10 +13,10 @@
     <div class="card">
 
         <div class="card-body">
-        <h3 class="card-title text-center">Résumé de ta commande</h3>
+        <h3 class="card-title text-center">Nous avons envoyé une confirmation à l’adresse : {{$email1 ?? ''}}</h3>
 
         <Div id="commande" >
-        <p class="text-center mb-2"> resume</p>
+        <p class="text-center mb-2"> Nous te conseillons de vérifier les informations contenues dans ce email afin de t’assurer qu’elles soient correctes</p>
 
     </Div>
     </div>
@@ -24,23 +24,7 @@
   </div>
 
 
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
 
-    <li class="page-item justify-content-end">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
 
   <!-- grid des produits -->
 <h3 >Les vélos que tu pourras essayer à l’événement </h1>

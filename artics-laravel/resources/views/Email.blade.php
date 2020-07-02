@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Salut [nom] ! </h1>
+        <h1 class="mt-5">Salut {{$name ?? ''}} ! </h1>
 
     </div>
 </div>

@@ -18,7 +18,11 @@ class MemberController extends Controller
         return MemberResource::collection(Member::all());
     }
 
+public function affiche() {
+     return view('People');
 
+
+}
 
     /**
      * Store a newly created resource in storage.
@@ -35,13 +39,9 @@ class MemberController extends Controller
         return new MemberResource($Member);
     }
 
-
     public function create() {
         return view('AddMember');
     }
-
-
-
     /**
      * Display the specified resource.
      *
@@ -50,10 +50,12 @@ class MemberController extends Controller
      */
     public function show(Member $Member)
     {
-        $person = $Member->with('client_testday');
-      return view('Check-in', compact ('person'));
+        return new MemberResource($Member);
     }
 
+    public function afficheproduit(Member $Member) {
+     return view('Member');
+}
     /**
      * Update the specified resource in storage.
      *
@@ -63,7 +65,7 @@ class MemberController extends Controller
      */
     public function update(Request $request, Member $Member)
     {
-        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
+        $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'mail1', 'mail2','comment','address_id','role']) ;
         // todo : validation
         $Member->update($data);
         return new MemberResource($Member);

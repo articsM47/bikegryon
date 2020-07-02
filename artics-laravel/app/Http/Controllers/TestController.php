@@ -22,7 +22,7 @@ public function affiche() {
      return view('Test');
 
 
-    }
+}
 
     /**
      * Store a newly created resource in storage.
