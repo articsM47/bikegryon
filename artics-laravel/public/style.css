@@ -1,70 +1,18 @@
 * {
   font-family: 'Roboto', sans-serif;
+  color:#2d2d2d
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  margin-bottom: 60 px;
 }
 
 textarea {resize:none}
-
-/********** Container avec width 100% *************/
-.container-fluid {
-  margin : 0 auto;
-  max-width: 100%;
-  padding : 0px !important;
-}
-
-/********** H1 *************/
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900 !important;
-  font-size : 4rem !important;
-}
-
-/********** Buttons *************/
-.button {
-  margin-top: 40px;
-  background-color: #5355FA;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 40px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  font-size : 2.5rem;
-  color : white;
-}
-
-.button span:after {
-  content: '\279C';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 35px;
-  color : white;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-  color : white;
-}
-
-.button:hover:focus:active span{
-  color : white;
-}
 
 /* MENU*/
 .overlay {
@@ -126,11 +74,8 @@ h1 {
     }
   }
 
-
-
   .iconsgroup {
     float: right;
-    margin-top: 50px;
   }
 
 /*SEARCH BUTTON*/
@@ -146,11 +91,10 @@ form button {
   /*FOOTER*/
     .footer {
         background-color: #5355FA;
-        width: 100%;
-        position: absolute;
         bottom: 0;
-        height: 20px;
-        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        height: 60px;
     }
 
     .footer tr {
@@ -159,30 +103,24 @@ form button {
     }
     .linkFooter{
       color: #ffff; 
+      text-decoration: none !important;
       font-size: 1.5rem; 
       text-decoration: none;
     }
     .linkFooter :hover{
-      color: #ffff; 
+      color: #ffff !important; 
     }
     #instaFooter{
       margin-right: 10px; 
     }
+    #sticky-footer{
+      padding-top: 60px;
+      flex-shrink: none;
+    }
 
-
-    /*FILTERS*/
-    /* Dropdown Button */
-.dropbtn {
-    background-color:white;
-    color: black;
-    cursor: pointer;
-    border: 0.5px solid black ;
-  }
-
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #FF9900;
-  }
+    .footer-block {
+      margin: 20px 0;
+    }
 
   /* The search field */
   #myInput {
@@ -208,6 +146,7 @@ form button {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
+    font-size: 1.5rem;
     position: absolute;
     background-color: #f6f6f6;
     min-width: 230px;

@@ -22,6 +22,8 @@ class BikeController extends Controller
 
 public function affiche() {
      return view('Catalogue');
+
+
 }
 
     /**
@@ -32,9 +34,10 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data1 = $request->only(['shortDescr','longDescr','distinctiveSign','picture','frameSize','frameUnit','category','brand_id']) ;
+        $data = $request->only(['shortDescr','longDescr','distinctiveSign','picture','frameSize','frameUnit','category','brand_id']) ;
         // todo : validation
-        $Bike = Bike::create($data1);
+        $Bike = Bike::create($data);
+        //$Brand = Brand::create($data)-> where($id =>$data->brand_id);
 
         // cration des dépendance
         return new BikeResource($Bike);
@@ -54,14 +57,12 @@ public function affiche() {
         return new BikeResource($Bike);
     }
 
-    
-    public function afficheproduit($id) {
+    public function afficheproduit($Bike) {
 
-      $bike = Bike::where('id', $id)->with('brand')->first();
+      $bike = Bike::findOrFail($Bike);
       return view('Product', compact ('bike'));
+      //return view('Product')->with('shortDescr', 'Victoria');
 }
-
-
     /**
      * Update the specified resource in storage.
      *
@@ -71,17 +72,11 @@ public function affiche() {
      */
     public function update(Request $request, Bike $Bike)
     {
-        $data1 = $request->only(['shortDescr','longDescr','distinctiveSign','picture','frameSize','frameUnit','category','brand_id']) ;
+        $data = $request->only(['shortDescr','longDescr','distinctiveSign','picture','frameSize','frameUnit','category','brand_id']) ;
         // todo : validation
         $Bike->update($data);
         return new BikeResource($Bike);
     }
-
-
-
-
-
-
 
     /**
      * Remove the specified resource from storage.
@@ -93,11 +88,6 @@ public function affiche() {
     {
         $Bike->delete();
     }
-
-
-
-
-
 
     public function uploadFile(Request $request){
 
