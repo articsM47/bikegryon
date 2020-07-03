@@ -2,19 +2,18 @@
 <html lang='fr'>
 
 <head>
-    <title>Bike test gryon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1">
     <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <!--<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"> -->
-    <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> 
-    <link rel="shortcut icon" type="image/png" href="http://127.0.0.1:8000/fonts/add_circle.svg">
-  <link rel="apple-touch-icon" sizes="32x32" href="http://127.0.0.1:8000/fonts/add_circle.svg">-->
+    <!-- <link rel="icon" type="image/png" href="/artics-laravel/public/fonts/favicon.png"> -->
+    <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-
+    <title>
+        Bike test gryon
+    </title>
     <meta name="description" content="le Bike test gryon est un événement de test de vélon à gryon">
     <meta name="author" content="artics, COMEM+ M47 2020, projarticulation">
     <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -44,7 +43,7 @@
                 </div>
                 <!-- icons -->
                 <span class="iconsgroup align-self-center">
-
+                    
                     <!--wishlist's icon-->
                     <a class="" href="/Wishlist">
                         <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
