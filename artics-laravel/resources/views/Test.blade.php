@@ -7,12 +7,13 @@
 <button type="button" class="btn btn-thirdly" data-toggle="modal" data-target="#addTestModal">
   Ajouter un test
 </button>
+
 <br>
 <div class="btn-group filters-Test" role="group" aria-label="Basic example">
 
     <button type="button" class="btn btn-secondary" class="activ" data-filter="new" >Actuels</button>
 
-    <button type="button" class="btn btn-secondary" data-filter="old" >Historique</button>
+    <button type="button" class="btn btn-secondary" data-filter="old">Historique</button>
     </div>
 
 <table style="width:100%">

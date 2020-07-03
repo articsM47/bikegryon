@@ -1,6 +1,7 @@
 @extends('template')
 
 @section('contenu')
-<h1>Informations pratiques</h1>
-
+<div class="container">
+    <h1 class="title-page">Informations pratiques</h1>
+</div>
 @endsection

@@ -11,7 +11,6 @@
     <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-
     <title>
         Bike test gryon
     </title>
@@ -25,76 +24,77 @@
 </head>
 
 <body>
-    <div class="container">
-        <!--logo bike test -->
-        <a href="/">
-            <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:160px;height:160px;">
-        </a>
-
-        <span class="iconsgroup">
-            <!--search -->
-
-            <form id="SearchToggle" style="display:none">
-                <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
-            </form>
-
-            <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:42px;height:42px;">
-
-            <script>
-                function openSearch() {
-                    var x = document.getElementById("SearchToggle");
-                    if (x.style.display === "none") {
-                        x.style.display = "inline";
-                    } else {
-                        x.style.display = "none";
-                    }
-                }
-            </script>
-
-            <!--wishlist's icon-->
-            <a class="" href="/Wishlist">
-                <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:42px;height:42px;">
-            </a>
-
-            <!--test's icon-->
-            <a class="" href="/Test">
-                <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:42px;height:42px;">
-            </a>
-
-            <!--account's icon-->
-            <a class="" href="/Check-in">
-                <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:42px;height:42px;">
-            </a>
-
-            <!--account's icon-->
-            <a class="" href="/Compte">
-                <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:42px;height:42px;">
-            </a>
-
-            <!-- MENU -->
-            <!-- The overlay -->
-            <div id="myNav" class="overlay">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <a style="color:#ffff" href="/Inscriptions">Réserver un billet</a>
+    <div class="container-fluid container-nav">
+        <div class="container">
+            <div class="row">
+                <!--logo bike test -->
+                <div class="col-2">
+                    <a href="/">
+                        <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
+                    </a>
+                </div>
+                <!-- menu -->
+                <div class="col-8 nav-menu-text align-self-center">
+                    <a href="/Inscriptions">Réserver</a>
                     <a href="/Event">Le programme</a>
-                    <a href="/Catalogue">Les vélos a tester</a>
+                    <a href="/Catalogue">Les vélos à tester</a>
                     <a href="/Plan">Plan de l'événement</a>
                     <a href="/Infos">Infos pratiques</a>
-                    <br>
-                    <br>
                 </div>
+                <!-- icons -->
+                <span class="iconsgroup align-self-center">
+                    
+                    <!--wishlist's icon-->
+                    <a class="" href="/Wishlist">
+                        <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
+                    </a>
+
+                    <!--test's icon-->
+                    <a class="" href="/Test">
+                        <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:32px;height:32px;">
+                    </a>
+
+                    <!--account's icon-->
+                    <a class="" href="/Check-in">
+                        <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:32px;height:32px;">
+                    </a>
+
+                    <!--account's icon-->
+                    <a class="" href="/Compte">
+                        <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:32px;height:32px;">
+                    </a>
+
+                    <!-- MENU -->
+                    <!-- The overlay -->
+                    <!-- <div id="myNav" class=""> -->
+                    <!-- Button to close the overlay navigation -->
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+                    <!-- Overlay content -->
             </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+
+            <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.height = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.height = "0%";
+                    }
+                </script> -->
             </header>
+        </div>
     </div>
+    </div>
+    <!-- END MENU -->
 
     <div class="container-fluid">
         @yield('contenu')
     </div>
-    
+
     <div class="push"></div>
     <div class="container-fluid">
         @yield('footer')

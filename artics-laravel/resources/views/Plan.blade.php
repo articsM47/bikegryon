@@ -1,6 +1,7 @@
 @extends('template')
 
 @section('contenu')
-<h1>Plan de l'événement</h1>
-
+<div class="container">
+    <h1 class="title-page">Plan de l'événement</h1>
+</div>
 @endsection

@@ -9,7 +9,7 @@ class Test extends Model
 {
     protected $table='tests';
     protected $fillable=['review','client_id','testday_id','bike_id'];
-    const CREATED_AT = 'startTime'; 
+    //const created_at = 'startTime'; 
     use SoftDeletes;
 
     public function bike() {          
