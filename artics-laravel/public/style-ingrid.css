@@ -4,6 +4,7 @@
 #sidebar-block {
     border-right: 1.5px solid #5355FA;
     margin-left: 100px;
+    margin-top: 60px;
 
 }
 
@@ -15,7 +16,7 @@
     color: #2d2d2d !important;
 }
 
-.sidebar-heading {
+.sidebar-title {
     font-size: 1.8rem;
     font-weight: 600;
     padding-bottom: 20px;
@@ -64,6 +65,9 @@
 
 
 /****** Page content ******/
+#welcome-message {
+    margin-top: 50px !important;
+}
 
 #welcomeText {
     font-size: 1.6rem;
@@ -118,31 +122,29 @@
 /*********** inscrption page *************/
 
 /****** Program ******/
-.program-container{
-
-}
-.prog{
+.prog {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    border: none !important; 
-  }
+    border: none !important;
+}
 
-  .visible {
+.visible {
     cursor: pointer;
-    border:none !important;
+    border: none !important;
     font-size: 2rem !important;
-  }
-  .visible {
+}
+
+.visible {
     position: relative;
     display: block;
     padding-left: 30px;
-  }
+}
 
-  .visible::before {
+.visible::before {
     content: "";
     position: absolute;
     width: 0;
@@ -153,29 +155,32 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     margin-top: -8px;
-  }
-.prog:checked ~ h3 label::before {
+}
+
+.prog:checked~h3 label::before {
     border-left: 8px solid transparent;
     border-top: 8px solid black;
     border-right: 8px solid transparent;
     margin-left: -4px;
     margin-top: -4px;
-  }
-  
-  .program-content {
+}
+
+.program-content {
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
     padding-left: 30px;
     transition: max-height 0.4s ease;
-    border:none !important;
-  }
-.prog:checked ~ h3 ~ .program-content {
+    border: none !important;
+}
+
+.prog:checked~h3~.program-content {
     max-height: 100%;
     visibility: visible;
-  }
-.hiddenText{
-  border:none !important;
+}
+
+.hiddenText {
+    border: none !important;
 }
 
 /******* Resarvation bar ******/
@@ -185,26 +190,28 @@
     margin-bottom: 45px;
 }
 
-.email-text{
-  font-size: 1.8rem !important;
+.email-text {
+    font-size: 1.8rem !important;
 }
 
 .normal-text {
     font-size: 1.8rem !important;
 }
-.personTicket{
-    padding-bottom:15px !important;
-}
-#program-text{
-  margin-bottom: 30px !important;
+
+.personTicket {
+    padding-bottom: 15px !important;
 }
 
-.trash-reservation{
-  margin: 15px !important;
+#program-text {
+    margin-bottom: 30px !important;
 }
 
-.trash-reservation:hover{
-  fill: #5355FA ;
+.trash-reservation {
+    margin: 15px !important;
+}
+
+.trash-reservation:hover {
+    fill: #5355FA;
 }
 
 /* The checkBox */
@@ -220,44 +227,44 @@
     -ms-user-select: none;
     user-select: none;
     margin-left: 50px;
-  }
-  
-  .checkBox input {
+}
+
+.checkBox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  .checkmark {
+}
+
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  
-  .checkBox:hover input ~ .checkmark {
+}
+
+.checkBox:hover input~.checkmark {
     background-color: #ccc;
-  }
-  
-  .checkBox input:checked ~ .checkmark {
+}
+
+.checkBox input:checked~.checkmark {
     background-color: #5355FA !important;
-  }
-  
-  .checkmark:after {
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  .checkBox input:checked ~ .checkmark:after {
+}
+
+.checkBox input:checked~.checkmark:after {
     display: block;
-  }
-  
-  .checkBox .checkmark:after {
+}
+
+.checkBox .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -267,17 +274,18 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 /*button*/
 .reserve-button {
     margin-bottom: 30px;
     margin-top: 30px;
-    border:none;
+    border: none;
 }
-.reserve-button span{
-  font-size: 2rem !important;
-  font-weight: 700;
+
+.reserve-button span {
+    font-size: 2rem !important;
+    font-weight: 700;
 }
 
 .email {
@@ -287,113 +295,125 @@
 
 /*********** Create an account page*************/
 
-.user-info{
-  max-width: 70%;
+.user-info {
+    max-width: 70%;
 }
 
-.info-block{
-  width: 100% !important;
-  border:none;
+.info-block {
+    width: 100% !important;
+    border: none;
 }
 
 
-.form-option-text{
-  font-size: 1.3rem !important;
-  font-weight: 700;
-  text-decoration: none !important;
-  color: #2d2d2d;
+.form-option-text {
+    font-size: 1.3rem !important;
+    font-weight: 700;
+    text-decoration: none !important;
+    color: #2d2d2d;
+    margin: 10px;
 }
 
-.form-option-text:hover{
-  color: #5355FA !important;
-  margin: 20px;
+.form-option-text:hover {
+    color: #5355FA !important;
+    margin: 20px;
 }
 
-.new-user{
-  width: 40% !important;
-  padding: 10px 10px;
-  font-size: 1.5rem;
-  border: none !important;
-  color: #ffff !important;
-  font-weight: 400;
-  margin:5px;
-  background-color: #e1e0e6;
+.new-user {
+    width: 40% !important;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    border: none !important;
+    color: #ffff !important;
+    font-weight: 400;
+    margin: 5px;
+    background-color: #e1e0e6;
 }
 
-.create{
-  width: 40% !important;
-  padding: 10px 10px;
-  box-sizing: border-box;
-  border: 1px solid;
-  border-radius: 2px;
-  font-size: 1.5rem;
-  color: #a1a1a1;
-  font-weight: 400;
-  border-radius: 20px;
-  margin:5px;
+.create {
+    width: 40% !important;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #a1a1a1;
+    font-weight: 400;
+    border-radius: 20px;
+    margin: 5px;
 }
 
 /*********** Confirmation page*************/
 /***Button ****/
-#submit-account{
-  border:none !important;
-  background-color: #5355FA;
+#submit-account {
+    border: none !important;
+    background-color: #5355FA;
     padding: 15px 32px;
-    margin : 20px;
+    margin: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 40px;
     transition: all 0.5s;
     cursor: pointer;
-    color:#ffff;
+    color: #ffff;
 }
 
+.message-block {
+    margin-top: 50px ;
+}
 
 #submit-account span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  font-size: 1.6rem;
-  color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: white;
 }
 
 #submit-account span:after {
-  content: '\279C';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\279C';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 #submit-account:hover span {
-  padding-right: 35px;
-  color: white;
+    padding-right: 35px;
+    color: white;
 }
 
 #submit-account:hover span:after {
-  opacity: 1;
-  right: 0;
-  color: white;
+    opacity: 1;
+    right: 0;
+    color: white;
 }
 
 #submit-account:hover:focus:active span {
-  color: white;
+    color: white;
 }
 
-#user-email{
-  font-weight: 700;
+#user-email {
+    font-weight: 700;
+}
+
+.breadcrumb-catalogue.carroussel {
+    font-size: 1.5rem;
+}
+
+#product-carrousel {
+    margin-top: 80px;
 }
 
 /***Form errors ****/
 
-.form-error{
-  font-size: 0.9rem !important;
-  font-weight: 500;
-padding: 10px;
-  color: #ff3c2bff;
+.form-error {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    padding: 10px;
+    color: #ff3c2bff;
 }
