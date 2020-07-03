@@ -308,18 +308,17 @@
 .form-option-text {
     font-size: 1.3rem !important;
     font-weight: 700;
-    text-decoration: none !important;
+    text-decoration: none;
     color: #2d2d2d;
     margin: 10px;
 }
 
 .form-option-text:hover {
-    color: #5355FA !important;
-    margin: 20px;
+    color: #2d2d2d !important;
 }
 
 .new-user {
-    width: 40% !important;
+    
     padding: 10px 10px;
     font-size: 1.5rem;
     border: none !important;

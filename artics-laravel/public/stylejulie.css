@@ -305,3 +305,8 @@ h4 {
 .product-descr-text {
     margin-bottom: 50px;
 }
+
+/********** Création d'un compte *************/
+.container-creation {
+    margin-bottom: 30px;
+}
