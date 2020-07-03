@@ -46,6 +46,11 @@
             </div>
             <input class="btn btn-info pull-right" type="submit" value="Envoyer">
             </form>
+            <div class="panel-heading">Ajout des Vélos via csv</div>
+            <form action="POST">
+
+            <input class="btn btn-info pull-right" type="submit" value="remplir">
+            </form>
         </div>
     </div>
     <a href="javascript:history.back()" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-left"></span>Retour</a>
