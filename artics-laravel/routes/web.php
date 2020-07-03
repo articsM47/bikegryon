@@ -64,6 +64,11 @@ Route::get('Compte', function () {
 Route::get('Attente', function () {
     return view("Attente");
 });
+
+Route::get('MesTests', function () {
+    return view("MesTests");
+});
+
 Route::get('Wishlist', function () {
     return view("Wishlist");
 });

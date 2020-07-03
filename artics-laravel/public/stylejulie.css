@@ -387,3 +387,53 @@ h4 {
     content: "Rechercher" !important;
     border-radius: 20px !important;
 }
+
+/********** Mon compte *************/
+.container-compte {
+    margin-bottom: 70px;
+}
+
+.compte-nav {
+    line-height: 30px;
+}
+
+.container-compte-onglet {
+    margin-left: 20px;
+}
+
+/********** Mes test *************/
+.card-test {
+    border: none !important;
+}
+
+.card-bike-test {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-test-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+    color: #5355FA !important;
+}
+
+.button-test {
+    background-color: #5355FA;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.button-test a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.button-test a:hover {
+    color: white;
+    text-decoration: none;
+}

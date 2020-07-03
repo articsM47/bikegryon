@@ -2,19 +2,18 @@
 
 @section('contenu')
 
-<div class="container">
+<div class="container container-compte">
   <div>
     <div class="row">
       <div class="col col-lg-2" id="sidebar-block">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <div class="sidebar-heading sidebar-title">Mon compte </div>
-          <div id="sidebar-list">
+          <div id="sidebar-list" class="compte-nav">
             <a href="#" class="listGroup">Mot de passe</a><br>
-            <a href="#" class="listGroup">Mes tests</a><br>
+            <a href="/MesTests" class="listGroup">Mes tests</a><br>
             <a href="/Attente" class="listGroup">Mes attentes</a><br>
             <a href="#" class="listGroup">Mes réservations</a><br>
-            <br>
             <br>
             <a href="/Logout" class="listGroup">Me déconnecter</a><br>
           </div>

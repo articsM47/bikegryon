@@ -66,24 +66,23 @@
       <div id="sidebar-wrapper">
         <div class="sidebar-heading sidebar-title"><a href="/Compte" style="color: black">Mon compte</a></div>
         <div id="sidebar-list" class="compte-nav">
-            <a href="#" class="listGroup">Mot de passe</a><br>
-            <a href="/MesTests" class="listGroup">Mes tests</a><br>
-            <a href="/Attente" class="listGroup"><b>Mes attentes</b></a><br>
-            <a href="#" class="listGroup">Mes réservations</a><br>
-            <br>
-            <a href="/Logout" class="listGroup">Me déconnecter</a><br>
+          <a href="#" class="listGroup">Mot de passe</a><br>
+          <a href="#" class="listGroup"><b>Mes tests</b></a><br>
+          <a href="/Attente" class="listGroup">Mes attentes</a><br>
+          <a href="#" class="listGroup">Mes réservations</a><br>
+          <br>
+          <a href="/Logout" class="listGroup">Me déconnecter</a><br>
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
     </div>
-    <div class="col">
+    <div class="col container-compte-onglet">
       <!-- Page Content -->
       <div id="page-content-wrapper ">
-
         <body class="">
           <form class="form-edit">
             <h2 id="welcome-message" class=" mb-3 ">Mes tests</h2>
-            <p id="welcomeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. . </p>
+            <p id="welcomeText">Retrouve ici les tests que tu as effectué au Bike Test Gryon</p>
             <h4 class=" mb-3 ">Filtrer</h4>
 
             <div class="dropdown">
@@ -149,96 +148,68 @@
         </body>
 
         <!-- template review  -->
-        <div class="row">
-
+        <div class="row card-bike card-bike-test">
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card card-test">
               <div class="card-body">
                 <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike1.png" alt="Card image cap">
               </div>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card card-test">
               <div class="card-body">
-                <h5 class="card-title">E-Bike 700</h5>
-                <p class="card-text">BMC</p>
-
-
-
+                <h4 class="card-title">E-Bike 700</h5>
+                <p class="card-test-brand">BMC</p>
                 <div class="container">
                   <div class="row">
                     <div class="rating">
-
                       <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-
                       <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-
                       <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-
                       <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-
                       <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-
                     </div>
                   </div>
                 </div>
-
-                <a href="#" class="btn btn-primary bg-light">Voir le détail</a>
+                <button class="button-test"><a href="#">Voir le détail</a></button>
               </div>
             </div>
           </div>
         </div>
-        <hr>
-      </div>
 
-      <div class="row">
-
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike2.png" alt="Card image cap">
+        <div class="row card-bike card-bike-test">
+          <div class="col-sm-6">
+            <div class="card card-test">
+              <div class="card-body">
+                <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike3.png" alt="Card image cap">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">E-Bike 700</h5>
-              <p class="card-text">BMC</p>
-
-
-
-              <div class="container">
-                <div class="row">
-                  <div class="rating">
-
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="p2-star5" title="Rocks!">5 stars</label>
-
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="p2-star4" title="Pretty good">4 stars</label>
-
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="p2-star3" title="Meh">3 stars</label>
-
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="p2-star2" title="Kinda bad">2 stars</label>
-
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="p2-star1" title="Sucks big time">1 star</label>
-
+          <div class="col-sm-6">
+            <div class="card card-test">
+              <div class="card-body">
+                <h4 class="card-title">E-Bike 700</h5>
+                <p class="card-test-brand">BMC</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </div>
                   </div>
                 </div>
+                <button class="button-test"><a href="#">Voir le détail</a></button>
               </div>
-
-              <a href="#" class="btn btn-primary bg-light">Voir le détail</a>
             </div>
           </div>
         </div>
       </div>
-      <hr>
     </div>
-
-
-
   </div>
-
 
   <script>
     /* When the user clicks on the button,
