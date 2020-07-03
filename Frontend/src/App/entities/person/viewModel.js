@@ -22,7 +22,7 @@ export default class extends ImView {
       //modifier la tache 
       modify(evt) { 
         let email = this.$el.find('.people-input-email').val();
-        let badge = this.$el.find('.people-input-badge').val();
+        //let badge = this.$el.find('.people-input-badge').val();
         this.model.set({email, badge, editable: false});
         this.model.save();
       }
