@@ -13,12 +13,13 @@ document.getElementById("wishlistDel").addEventListener("click", cleanWishlist);
 function cleanWishlist() {
 
   localStorage.removeItem('wishlist');
+  location.reload();
 }
 </script>
 
 
 <!-- grid with wishlist's products -->
-<div id="wishlist" class="row row-cols-1 row-cols-md-3">
+<div id="wishlist_products" class="row row-cols-1 row-cols-md-3">
 
 </div>
 

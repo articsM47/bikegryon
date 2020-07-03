@@ -2,10 +2,6 @@
   <td>{{name}}</td>
   <td>{{firstname}}</td>
   <td>{{birthDay}}</td>
-  <!--
-  <td>{{phone1}}</td>
-  <td>{{badgeNo}}</td>
-  -->
   <td>
   {{#if editable}} 
     <input type="text" class="people-input-email" value="{{email1}}" placeholder="{{email1}}">
@@ -15,11 +11,11 @@
   </td>
 
   <td>
-  {{!-- {{#if editable}}
-    <input type="text" class="people-input-badge" value="{{badgeNo}}" placeholder="{{badgeNo}}">
-  {{else}} --}}
+  {{#if editable}}
+    <input type="text" class="people-input-badge" value="{{badgeNo}}">
+  {{else}}
     {{badgeNo}}
-  {{!-- {{/if}} --}}
+  {{/if}}
 </td>
 
   <td>
