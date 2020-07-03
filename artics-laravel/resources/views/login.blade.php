@@ -14,6 +14,7 @@
           <br>
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" class="inputUser" placeholder="Mot de passe" required>
+          
           <a href="/Confirmation" type="button" class="form-option-text login">Tu as oublié ton mot de passe? </a>
           <!--  
           <div class="checkbox mb-3">

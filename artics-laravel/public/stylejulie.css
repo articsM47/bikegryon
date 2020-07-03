@@ -185,6 +185,7 @@ h4 {
 
 .button-add {
     margin-top: 30px;
+    border:none !important;
 }
 
 .button-add span:after {
