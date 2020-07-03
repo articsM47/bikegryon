@@ -65,7 +65,7 @@
 <div class="col col-lg-2" id="sidebar-block">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
-        <div class="sidebar-heading">Mon compte </div>
+        <div class="sidebar-heading sidebar-title">Mon compte </div>
         <div id="sidebar-list">
           <a href="#" class="listGroup">Mot de passe</a><br>
           <a href="#" class="listGroup">Mes tests</a><br>

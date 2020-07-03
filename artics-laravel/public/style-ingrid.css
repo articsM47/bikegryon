@@ -416,3 +416,27 @@
     padding: 10px;
     color: #ff3c2bff;
 }
+
+/*********** Logout *************/
+/***Button ****/
+.logout-block{
+  height: 10em;
+  position: relative }
+.logout-block{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+/*********** Login*************/
+/*** fields ****/
+
+#login-block{
+  margin: 40px !important;
+}
+
+.form-option-text.login{
+  font-size: 1rem !important;
+}
