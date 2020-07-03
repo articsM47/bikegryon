@@ -136,7 +136,7 @@
         <div>
           <label class="form-check-label checkBox" for="vendredi">
             Vendredi
-            <input type="checkbox" name="vendredi">
+            <input type="checkbox" id="vendredi" name="vendredi">
             <span class="checkmark"></span>
           </label>
         </div>
