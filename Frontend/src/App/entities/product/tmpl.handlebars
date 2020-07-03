@@ -4,12 +4,13 @@
       <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}}>
     </a>
     <div class="card-body catalogue-descr">
-      <a href="/Product/{{id}}">
-        <h5 class="card-title">{{shortDescr}}</h5>
+      <a href="/Product/{{id}}" class="catalogue-product-link">
+        <h4 class="card-title">{{shortDescr}}</h4>
       </a>
 
-      <p class="card-text">{{category}}</p>
-
+      <p class="card-text">
+        {{category}}
+        
     {{#if notWished}}
  <button type="button" class="btn btn-primary float-right wishAdd">
            <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg">
@@ -19,5 +20,7 @@
            <img src="http://127.0.0.1:8000/fonts/wishlist.svg">
           </button>
     {{/if}}
+        </p>
+
     </div>
   </div>
