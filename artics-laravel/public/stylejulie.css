@@ -358,6 +358,11 @@ h4 {
     margin-bottom: 20px;
 }
 
+.add-bike-button:hover  {
+    color: white;
+    text-decoration: none;
+}
+
 .add-bike-panel-csv {
     padding: 20px;
 }
@@ -365,4 +370,20 @@ h4 {
 .add-bike-text-csv {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+}
+
+.add-bike-text-csv li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.custom-file-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 20px !important;
+}
+
+.custom-file-label::after {
+    content: "Rechercher" !important;
+    border-radius: 20px !important;
 }

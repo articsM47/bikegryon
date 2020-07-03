@@ -56,14 +56,14 @@
                         <input class="form-control add-bike-input" placeholder="Brand_id" name="brand_id" type="text" required>
                         {!! $errors->first('picture', '<small class="help-block">:message</small>') !!}
                     </div>
-                    <div style="text-align: center;"><input class="add-bike-button pull-center" type="submit" value="Envoyer"></div>
+                    <div style="text-align: center;"><input class="add-bike-button pull-center" type="submit" value="Ajouter"></div>
                 </form>
             </div>
         </div>
 
         <!--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> -->
         <div class="panel panel-info add-bike-panel">
-            <div class="panel-heading add-bike-title">Ajout des vélos via CSV</div>
+            <div class="panel-heading add-bike-title">Ajout de plusieurs vélos via CSV</div>
 
             <div class="add-bike-panel-csv">
                 <p class="add-bike-text-csv">Pour éviter tout problème avec votre fichier CSV, veuillez bien vérifier d'avoir ces colonne dans l'ordre suivant :
@@ -77,21 +77,23 @@
                         <li>categorie</li>
                         <li>brand_id (demandez à un administrateur votre identifiant de marque)</li>
                     </ul>
+                    <form action="POST" action="{{ url('Creation') }}" accept=".csv">
+                        @csrf
+                        <div class="input-group" style="margin-top: 20px;">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="file" id="inputGroupFile04">
+                                <label class="custom-file-label" for="inputGroupFile04">Rechercher le fichier CSV</label>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <input class="add-bike-button pull-center" type="submit" value="Ajouter">
+                        </div>
+                    </form>
             </div>
-            <form action="POST" action="{{ url('Creation') }}" accept=".csv">
-                @csrf
-                <div class="input-group">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="file" id="inputGroupFile04">
-                        <label class="custom-file-label" for="inputGroupFile04">Rechercher le fichier CSV</label>
-                    </div>
-                    <div class="input-group-append">
-                        <input class="btn btn-info pull-right" type="submit" value="Ajouter">
-                    </div>
-                </div>
-            </form>
         </div>
-        <a href="javascript:history.back()" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-left"></span>Retour</a>
+        <div style="text-align: center; margin-bottom: 50px; margin-top: 50px;">
+            <a href="javascript:history.back()" class="add-bike-button"><span class="glyphicon glyphicon-arrow-left" style="color: white"></span>   Retour</a>
+        </div>
     </div>
 </div>
 </div>
