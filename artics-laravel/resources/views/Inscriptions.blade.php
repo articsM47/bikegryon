@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-lg-12 ">
       <h1 class="mt-5">Réserve ton billet</h1>
-      <h4 id="program-text" class="mt-5">Vendredi 2, samedi 3 et dimanche 4 octobre 2020</h4>
+      <h4 class="mt-5 second-title-page">Vendredi 2, samedi 3 et dimanche 4 octobre 2020</h4>
     </div>
     <div class="container program-container">
       <div class="row">
@@ -179,7 +179,7 @@
   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
   <br>
   <!-- <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a> -->
-  <input class="button reserve-button" type="submit" value="Réserver">
+  <button class="button reserve-button" type="submit" ><span>Réserver</span></button>
 </div>
 
 @endsection

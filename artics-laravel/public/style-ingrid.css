@@ -115,7 +115,7 @@
     font-size: 1.6rem !important;
 }
 
-/*********** Page inscription *************/
+/*********** inscrption page *************/
 
 /****** Program ******/
 .program-container{
@@ -244,7 +244,7 @@
   }
   
   .checkBox input:checked ~ .checkmark {
-    background-color: #5355FA;
+    background-color: #5355FA !important;
   }
   
   .checkmark:after {
@@ -273,6 +273,7 @@
 .reserve-button {
     margin-bottom: 30px;
     margin-top: 30px;
+    border:none;
 }
 .reserve-button span{
   font-size: 2rem !important;
@@ -284,8 +285,7 @@
     display: inline-block;
 }
 
-/*********** Page inscription *************/
-/****** Create account ******/
+/*********** Create an account page*************/
 
 .user-info{
   max-width: 70%;
@@ -306,6 +306,7 @@
 
 .form-option-text:hover{
   color: #5355FA !important;
+  margin: 20px;
 }
 
 .new-user{
@@ -332,12 +333,13 @@
   margin:5px;
 }
 
-
+/*********** Confirmation page*************/
 /***Button ****/
 #submit-account{
   border:none !important;
   background-color: #5355FA;
     padding: 15px 32px;
+    margin : 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -383,3 +385,15 @@
   color: white;
 }
 
+#user-email{
+  font-weight: 700;
+}
+
+/***Form errors ****/
+
+.form-error{
+  font-size: 0.9rem !important;
+  font-weight: 500;
+padding: 10px;
+  color: #ff3c2bff;
+}

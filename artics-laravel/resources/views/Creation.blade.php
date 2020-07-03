@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 text-center ">
             <h1 class="mt-5">Merci pour ta réservation ! </h1>
-            <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : {{$email1 ?? old('email1')}}</p>
+            <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{$email1 ?? old('email1')}}</span></p>
             <p class="mb-5 normal-text">Crée ton compte maintenant en choissant un mot de passe </p>
         </div>
     </div>
@@ -32,7 +32,7 @@
                     <label for="confrimpassword" class="sr-only">Password</label>
                     <input type="password" class="inputUser create" name="password_confirmation" placeholder="Confirmer le mot de passe">
                     @if($errors->has('password'))
-                    <p>Les deux mots de passe ne correspondent pas. </p>
+                    <p class="form-error">Ces deux mots de passe ne correspondent pas </p>
                     @endif
                 </div>
             </div>
@@ -42,7 +42,7 @@
 </div>
 <div class="text-center ">
     <button id="submit-account" type="submit"><span>Continuer</span></button><br>
-    <a href="/Confirmation" class="form-option-text">Ne pas créer de compte</a>
+    <a href="/Catalogue" class="form-option-text">Ne pas créer de compte</a>
 </div>
 </form>
 @endsection
