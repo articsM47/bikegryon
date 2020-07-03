@@ -41,7 +41,8 @@ public function affiche() {
         // todo : validation
         $product = Product::create($data);
         // cration des dépendance
-        return new ProductResource($product);
+        /* return new ProductResource($product); */
+        return redirect(route('articles.index'));
     }
 
     public function create() {

@@ -40,7 +40,8 @@ public function affiche() {
         //$Brand = Brand::create($data)-> where($id =>$data->brand_id);
 
         // cration des dépendance
-        return new BikeResource($Bike);
+        /* return new BikeResource($Bike); */
+        return view("Catalogue");
     }
 
     public function create() {
@@ -163,7 +164,7 @@ public function affiche() {
     }
 
     // Redirect to index
-    return redirect()->action('PoductController@affiche');
+    return redirect()->action('BikesController@affiche');
   }
 }
 

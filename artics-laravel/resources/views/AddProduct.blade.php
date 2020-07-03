@@ -4,7 +4,7 @@
 <BR>
 <div class="col-sm-offset-3 col-sm-6">
     <div class="panel panel-info">
-        <div class="panel-heading">Ajout d'un Produit</div>
+        <div class="panel-heading">Ajout un Vélo au catalogue</div>
         <div class="panel-body addform">
             <form method="POST" action="{{route('Bikes.store')}}" accept-charset="UTF-8">
             @csrf
@@ -45,6 +45,11 @@
                 {!! $errors->first('picture', '<small class="help-block">:message</small>') !!}
             </div>
             <input class="btn btn-info pull-right" type="submit" value="Envoyer">
+            </form>
+            <div class="panel-heading">Ajout des Vélos via csv</div>
+            <form action="POST">
+
+            <input class="btn btn-info pull-right" type="submit" value="remplir">
             </form>
         </div>
     </div>
