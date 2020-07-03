@@ -28,9 +28,10 @@
         <h5 class="card-title">Tu n’as plus qu’à choisir un mot de passe :</h5>
 
         <label for="password" class="sr-only">Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="password" class="form-control" name="password" placeholder="ton mot de passe">
         <label for="confrimpassword" class="sr-only">Password</label>
-        <input type="password" class="form-control" name="confrimpassword" placeholder="confirme Password">
+        <input type="password" class="form-control" name="password_confirmation" placeholder="confirme ton mot de passe">
+
     </div>
 </div>
   </div>

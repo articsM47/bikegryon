@@ -127,7 +127,7 @@
         <div class="form-group col-auto ">
           <input type="date" class="inputUser" name="birthday" placeholder="Ta date de naissance" required>
         @if($errors->has('birthday'))
-    <p>L'inscription est intérdit au moins de 14ans</p>
+    <p>Tu as moins de 14 ans ? À l'événement  tu devras être acompagné <br> de tes parents. Tu peux t'inscrire avec eux </p>
 @endif
         </div>
         <div class="form-group col-auto ">
