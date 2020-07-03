@@ -22,6 +22,28 @@
                     <input type="email" class="form-control d-none" name="email1" value="{{$email1 ?? old('email1')}}" >
         <input class="form-control d-none" type="text" name="firstname" value="{{$nom ?? old('firstname')}}">
         <input class="form-control d-none" type="text" name="surname" value="{{$prenom ?? old('surname')}}">
+
+        <div class="form-check mb-2">
+        <label class="form-check-label checkBox" for="vendredi">
+            Vendredi
+            <input type="checkbox" id="vendredi" name="vendredi" value="{{$vendredi ?? ''}}">
+            <span class="checkmark"></span>
+          </label>
+          </div>
+           <div class="form-check mb-2">
+          <label class="form-check-label checkBox" for="vendredi">
+            Samedi
+            <input type="checkbox" id="samedi" name="samedi" value="{{$samedi ?? ''}}">
+            <span class="checkmark"></span>
+          </label>
+          </div>
+           <div class="form-check mb-2">
+          <label class="form-check-label checkBox" for="vendredi">
+            Dimanche
+            <input type="checkbox" id="dimanche" name="dimanche" value="{{$dimanche ?? ''}}">
+            <span class="checkmark"></span>
+          </label>
+          </div>
                 </div>
         </div>
         <div class="col-lg-6 user-info">

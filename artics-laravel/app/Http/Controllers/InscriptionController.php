@@ -15,6 +15,7 @@ class InscriptionController extends Controller
 
 /*     // Envoi d'un mail
     Mail::send('Email', $request->all(), function($message){
+
 		$message->to('stephane.bondabelo@heig-vd.ch')->subject('Confirmation de Reservation');
     }); */
 

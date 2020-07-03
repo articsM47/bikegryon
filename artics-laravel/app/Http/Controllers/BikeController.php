@@ -111,7 +111,7 @@ public function affiche() {
      * @return \Illuminate\Http\Response
      */
     public function uploadFile(Request $request){
-        dd('upladed');
+
 
     if ($request->input('submit') != null ){
 
@@ -173,6 +173,7 @@ public function affiche() {
                "category"=>$importData[7],
                "brand_id"=>$importData[8],
             );
+            dd("$insertData");
             Bike::insertData($insertData);
 
           }

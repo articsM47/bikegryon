@@ -28,6 +28,9 @@ class InscriptionRequest extends FormRequest
         	'prenom'=>'required|min:2|max:20|alpha',
             'birthday'=>'required|date|before:14 years ago',
             'email1'=>'required|email',
+            'vendredi',
+            'samedi',
+            'dimanche',
         ];
     }
 }

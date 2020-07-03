@@ -71,7 +71,7 @@
     <p> pour éviter tout problème votre CSV dans avoir ces colonne dans l'ordre suivant :<br>
     'nom','description','Entrez le signe distinctif du produit','label de l'image','taille de cadre', <br>
     'unité de mesure du cadre','la category',' votre brand_id (demandé à un administrateur votre identifiant de marque)'
-<form action="POST" action="{{ url('Creation') }}" accept=".csv">
+<form method="POST" action="{{ url('importdata') }}" accept=".csv">
 @csrf
 <div class="input-group">
     <div class="custom-file">
