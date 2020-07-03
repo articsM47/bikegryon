@@ -2,9 +2,24 @@
 
 @section('contenu')
 <BR>
-<div class="col-sm-offset-3 col-sm-6">
+
+
+
+  <div class="col-sm-offset-3 col-sm-6">
     <div class="panel panel-info">
-        <div class="panel-heading">Ajout un Vélo au catalogue</div>
+<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ajout un Vélo au catalogue</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ajout des Vélos via csv</a>
+  </li>
+
+</ul>
+
+ <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
+<div class="panel-heading">Ajout un Vélo au catalogue</div>
         <div class="panel-body addform">
             <form method="POST" action="{{route('Bikes.store')}}" accept-charset="UTF-8">
             @csrf
@@ -29,11 +44,11 @@
                 {!! $errors->first('picture', '<small class="help-block">:message</small>') !!}
             </div>
             <div class="form-group {!! $errors->has('frameSize') ? 'has-error' : '' !!}">
-                <input class="form-control" placeholder="Entrez le framesize du produit" name="frameSize" type="text" required>
+                <input class="form-control" placeholder="Entrez la taille de cadre du produit" name="frameSize" type="text" required>
                 {!! $errors->first('picture', '<small class="help-block">:message</small>') !!}
             </div>
             <div class="form-group {!! $errors->has('frameUnit') ? 'has-error' : '' !!}">
-                <input class="form-control" placeholder="Entrez le frameUnit du produit" name="frameUnit" type="text" required>
+                <input class="form-control" placeholder="Entrez le unité de mesure du cadre (cm, pouce, etc) du produit" name="frameUnit" type="text" required>
                 {!! $errors->first('picture', '<small class="help-block">:message</small>') !!}
             </div>
             <div class="form-group {!! $errors->has('category') ? 'has-error' : '' !!}">
@@ -46,13 +61,41 @@
             </div>
             <input class="btn btn-info pull-right" type="submit" value="Envoyer">
             </form>
-            <div class="panel-heading">Ajout des Vélos via csv</div>
-            <form action="POST">
-
-            <input class="btn btn-info pull-right" type="submit" value="remplir">
-            </form>
         </div>
     </div>
-    <a href="javascript:history.back()" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-left"></span>Retour</a>
+
+<!--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> -->
+ <div class="panel panel-info">
+    <div class="panel-heading">Ajout des Vélos via csv</div>
+
+    <p> pour éviter tout problème votre CSV dans avoir ces colonne dans l'ordre suivant :<br>
+    'nom','description','Entrez le signe distinctif du produit','label de l'image','taille de cadre', <br>
+    'unité de mesure du cadre','la category',' votre brand_id (demandé à un administrateur votre identifiant de marque)'
+<form action="POST" action="{{ url('Creation') }}" accept=".csv">
+@csrf
+<div class="input-group">
+    <div class="custom-file">
+    <input type="file" class="custom-file-input" name="file" id="inputGroupFile04">
+    <label class="custom-file-label" for="inputGroupFile04">entrez votre fichier</label>
+    </div>
+    <div class="input-group-append">
+    <input class="btn btn-info pull-right" type="submit" value="remplir">
+    </div>
+</div>
+</form>
+ <a href="javascript:history.back()" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-left"></span>Retour</a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 </div>
 @endsection

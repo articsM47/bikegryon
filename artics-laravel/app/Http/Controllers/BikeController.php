@@ -20,6 +20,12 @@ class BikeController extends Controller
         return BikeResource::collection(Bike::all());
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Bike  $Bike
+     * @return \Illuminate\Http\Response
+     */
 public function affiche() {
      return view('Catalogue');
 
@@ -44,9 +50,16 @@ public function affiche() {
         return view("Catalogue");
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Bike  $Bike
+     * @return \Illuminate\Http\Response
+     */
     public function create() {
         return view('AddProduct');
     }
+
     /**
      * Display the specified resource.
      *
@@ -64,6 +77,7 @@ public function affiche() {
       return view('Product', compact ('bike'));
       //return view('Product')->with('shortDescr', 'Victoria');
 }
+
     /**
      * Update the specified resource in storage.
      *
@@ -90,7 +104,14 @@ public function affiche() {
         $Bike->delete();
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Bike  $Bike
+     * @return \Illuminate\Http\Response
+     */
     public function uploadFile(Request $request){
+        dd('upladed');
 
     if ($request->input('submit') != null ){
 
@@ -146,8 +167,12 @@ public function affiche() {
                "shortDescr"=>$importData[1],
                "longDescr"=>$importData[2],
                "distinctiveSign"=>$importData[3],
-               "brand_id"=>$importData[4],
-               "picture"=>$importData[5]);
+               "picture"=>$importData[4],
+               "frameSize"=>$importData[5],
+               "frameUnit"=>$importData[6],
+               "category"=>$importData[7],
+               "brand_id"=>$importData[8],
+            );
             Bike::insertData($insertData);
 
           }
@@ -164,7 +189,7 @@ public function affiche() {
     }
 
     // Redirect to index
-    return redirect()->action('BikesController@affiche');
+    return view("Catalogue");
   }
 }
 
