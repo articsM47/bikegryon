@@ -41,6 +41,7 @@ public function affiche() {
 
         // cration des dépendance
         return new BikeResource($Bike);
+        return redirect(route('Catalogue'));
     }
 
     public function create() {
