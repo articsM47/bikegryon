@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class InscriptionRequest extends FormRequest
+class mdpRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,11 +23,9 @@ class InscriptionRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
-            'nom'=>'required|min:2|max:20|alpha',
-        	'prenom'=>'required|min:2|max:20|alpha',
-            'birthday'=>'required|date|before:14 years ago',
-            'email1'=>'required|email',
+            'password' => 'required|confirmed|min:6'
         ];
     }
 }
