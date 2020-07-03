@@ -1,13 +1,13 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import View from 'App/entities/product/viewModel';
+import View from 'App/entities/person/viewModel';
 
 
 export default class extends ImView {
 
-    initialize(attrs) {
-    this.wishlist= attrs.wishlist;
+    initialize() {
+     
         this.listenTo(this.collection, 'add remove reset', this.render);
     }
 
@@ -16,10 +16,9 @@ export default class extends ImView {
         this.$el.empty();
         let models = this.collection.models;
 
-
         for (let model of models) {
             let view = new View({
-                model, wishlist:this.wishlist
+                model
             })
             view.render().$el.appendTo(this.$el);
         }

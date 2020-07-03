@@ -5,11 +5,22 @@
 <h1>Ma liste d'envie</h1>
 <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist">
 
+<!-- clear localstorag wishlist -->
+<button type="button" id= "wishlistDel" class="btn btn-primary float-right">Vider ma liste</button>
+<script>
+document.getElementById("wishlistDel").addEventListener("click", cleanWishlist);
 
-<!-- grid des produits de la wishlist -->
-<Div id="wishlist" class="row row-cols-1 row-cols-md-3">
+function cleanWishlist() {
 
-</Div>
+  localStorage.removeItem('wishlist');
+}
+</script>
+
+
+<!-- grid with wishlist's products -->
+<div id="wishlist" class="row row-cols-1 row-cols-md-3">
+
+</div>
 
     <h1>Les plus aimés dans la communauté</h1>
 
