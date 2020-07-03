@@ -130,8 +130,8 @@ toggle between hiding and showing the dropdown content */
   <!-- Load icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- grid des produits -->
-  <Div id="catalogue" class="row row-cols-1 row-cols-md-3">
+  <!-- grid des produits : affichage de 2 produits par colonne -->
+  <Div id="catalogue" class="row row-cols-1 row-cols-md-2">
 
   </Div>
 </div>
