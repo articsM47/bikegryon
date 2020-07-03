@@ -113,57 +113,58 @@
       </div>
     </div>
   </div>
+
   <div id="reservation">
-  <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
-    @csrf
-    <label for="personne1" class="personTicket">Personne 1</label>
-    <div class="form-row align-items-center reservationBar">
-      <div class="form-group col-auto {!! $errors->has('nom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="nom" value="{{old('nom')}}" placeholder="Ton nom" required>
-        {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-      </div>
-      <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="prenom" value="{{old('prenom')}}" placeholder="Ton prenom" required>
-        {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
-      </div>
-      <div class="form-group col-auto {!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
-        <input type="date" class="inputUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
-         @if($errors->has('birthday'))
-    <p>Tu as moins de 14 ans ? À l'événement  tu devras être acompagné <br> de tes parents. Tu peux t'inscrire avec eux </p>
-@endif
-      </div>
-      <div class="form-group col-auto">
+    <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
+      @csrf
+      <label for="personne1" class="personTicket">Personne 1</label>
+      <div class="form-row align-items-center reservationBar">
+        <div class="form-group col-auto {!! $errors->has('nom') ? 'has-error' : '' !!}">
+          <input type="text" class="inputUser" name="nom" value="{{old('nom')}}" placeholder="Ton nom" required>
+          {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
+        </div>
+        <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">
+          <input type="text" class="inputUser" name="prenom" value="{{old('prenom')}}" placeholder="Ton prenom" required>
+          {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
+        </div>
+        <div class="form-group col-auto {!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
+          <input type="date" class="inputUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
+          @if($errors->has('birthday'))
+          <p class="form-error">Tu as moins de 14 ans ? À l'événement tu devras être acompagné <br> de tes parents. Tu peux t'inscrire avec eux </p>
+          @endif
+        </div>
+        <div class="form-group col-auto">
+          <div>
+            <label class="form-check-label checkBox" for="vendredi">
+              Vendredi
+              <input type="checkbox" name="vendredi">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
         <div>
-          <label class="form-check-label checkBox" for="vendredi">
-            Vendredi
-            <input type="checkbox" name="vendredi">
-            <span class="checkmark"></span>
-          </label>
+          <div class="form-check mb-2">
+            <label class="form-check-label checkBox" for="samedi">
+              Samedi
+              <input type="checkbox" name="samedi">
+              <span class="checkmark"></span>
+            </label>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="form-check mb-2">
-          <label class="form-check-label checkBox" for="samedi">
-            Samedi
-            <input type="checkbox" name="samedi">
-            <span class="checkmark"></span>
-          </label>
+        <div>
+          <div class="form-check mb-2">
+            <label class="form-check-label checkBox" for="dimanche">
+              Dimanche
+              <input type="checkbox" name="dimanche">
+              <span class="checkmark"></span>
+            </label>
+          </div>
         </div>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash trash-reservation" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+        </svg>
       </div>
-      <div>
-        <div class="form-check mb-2">
-          <label class="form-check-label checkBox" for="dimanche">
-            Dimanche
-            <input type="checkbox" name="dimanche">
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </div>
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash trash-reservation" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-      </svg>
-    </div>
   </div>
   <div class="col-lg-12 text-center email-text">
     <hr>
@@ -175,11 +176,11 @@
 </div>
 </div>
 <div class="form-group text-center {!! $errors->has('email1') ? 'has-error' : '' !!}">
-  <input type="email" class="inputUser email" name="email1"  value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" required>
+  <input type="email" class="inputUser email" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" required>
   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
   <br>
   <!-- <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a> -->
-  <input class="button reserve-button" type="submit" value="Réserver">
+  <button id="submit-account" type="submit"><span>Réserver</span></button>
 </div>
 
 @endsection

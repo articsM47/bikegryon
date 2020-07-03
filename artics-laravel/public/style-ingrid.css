@@ -244,7 +244,7 @@
   }
   
   .checkBox input:checked ~ .checkmark {
-    background-color: #5355FA;
+    background-color: #5355FA !important;
   }
   
   .checkmark:after {
@@ -338,6 +338,7 @@
   border:none !important;
   background-color: #5355FA;
     padding: 15px 32px;
+    margin : 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -383,3 +384,15 @@
   color: white;
 }
 
+#user-email{
+  font-weight: 700;
+}
+
+/***From errors ****/
+
+.form-error{
+  font-size: 0.9rem !important;
+  font-weight: 500;
+padding: 10px;
+  color: #ff3c2bff;
+}
