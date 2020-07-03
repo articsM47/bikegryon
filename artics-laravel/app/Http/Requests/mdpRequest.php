@@ -13,7 +13,7 @@ class mdpRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,8 +23,9 @@ class mdpRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
-            //
+            'password' => 'required|confirmed|min:6'
         ];
     }
 }

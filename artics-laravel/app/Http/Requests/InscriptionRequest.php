@@ -26,7 +26,7 @@ class InscriptionRequest extends FormRequest
         return [
             'nom'=>'required|min:2|max:20|alpha',
         	'prenom'=>'required|min:2|max:20|alpha',
-            'birthday'=>'required|date|before:10 years ago',
+            'birthday'=>'required|date|before:14 years ago',
             'email1'=>'required|email',
         ];
     }

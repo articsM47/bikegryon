@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Merci {{$firstname ?? ''}} pour ta réservation ! </h1>
+        <h1 class="mt-5">Merci{{$surname ?? old('surname')}} pour ta réservation ! </h1>
 
     </div>
 </div>

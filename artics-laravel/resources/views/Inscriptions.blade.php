@@ -119,15 +119,15 @@
     <label for="personne1" class="personTicket">Personne 1</label>
     <div class="form-row align-items-center reservationBar">
       <div class="form-group col-auto {!! $errors->has('nom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="nom" placeholder="Ton nom" required>
+        <input type="text" class="inputUser" name="nom" value="{{old('nom')}}" placeholder="Ton nom" required>
         {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
       </div>
       <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="surname" placeholder="Ton prenom" required>
+        <input type="text" class="inputUser" name="prenom" value="{{old('prenom')}}" placeholder="Ton prenom" required>
         {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
       </div>
       <div class="form-group col-auto {!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
-        <input type="date" class="inputUser" name="birthday" placeholder="Ta date de naissance" required>
+        <input type="date" class="inputUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
          @if($errors->has('birthday'))
     <p>Tu as moins de 14 ans ? À l'événement  tu devras être acompagné <br> de tes parents. Tu peux t'inscrire avec eux </p>
 @endif
@@ -175,10 +175,11 @@
 </div>
 </div>
 <div class="form-group text-center {!! $errors->has('email1') ? 'has-error' : '' !!}">
-  <input type="email" class="inputUser email" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+  <input type="email" class="inputUser email" name="email1"  value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" required>
   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
   <br>
-  <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a>
+  <!-- <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a> -->
+  <input class="button reserve-button" type="submit" value="Réserver">
 </div>
 
 @endsection
