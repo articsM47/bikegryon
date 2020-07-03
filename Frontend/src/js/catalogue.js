@@ -6,11 +6,9 @@ let products = new Products();
 let wishlist = new Wishlist(JSON.parse(localStorage.getItem('wishlist')));
 
 wishlist.forEach(wish => {
-   console.log(wish.id);     
+   console.log(wish.id);   
 });
 
-
-console.log(wishlist);
 
 let vproducts = new ViewProducts({
     collection : products,

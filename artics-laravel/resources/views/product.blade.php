@@ -66,13 +66,16 @@
         <div class="card-body">
 
           <p class="card-text">{{$bike -> longDescr}}</p>
-          <button type="button" class="btn btn-primary wishAdd">S’en souvenir</button>
+
+          <button type="button" class="btn btn-primary float-right wishAdd">
+           <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg"> S’en souvenir
+          </button>
         </div>
       </div>
     </div>
   </div>
 
-  <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="..." width = 100%>
+  <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width = 100%>
 
   <!-- grid des produits -->
   <h3>Dans la même catégorie</h3>

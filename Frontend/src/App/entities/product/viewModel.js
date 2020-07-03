@@ -21,14 +21,8 @@ export default class extends ImView {
 
     }
 
-//     toggle() {
-//     if (document.getElementById("wishlist-btn").className == "wishAdd") {
-//         document.getElementById("wishlist-btn").className == "wishDel";
-//     } else {
-//         document.getElementById("wishlist-btn").className == "wishAdd";
-//     }
-// }
 addToWish(){
+    console.log("test");
     this.wishlist.add(this.model);
     let data = JSON.stringify(this.wishlist);
     localStorage.setItem('wishlist', data);
