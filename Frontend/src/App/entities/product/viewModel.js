@@ -16,7 +16,7 @@ export default class extends ImView {
 
             'click .wishAdd': 'addToWish',
             'click .wishDel': 'delFromWish',
-
+            'click .bikeDel': 'delete'
         }
 
     }
@@ -26,7 +26,6 @@ export default class extends ImView {
         let data = JSON.stringify(this.wishlist);
         localStorage.setItem('wishlist', data);
         this.model.set({ notWished: false });
-
     }
 
     delFromWish() {
@@ -34,29 +33,32 @@ export default class extends ImView {
         let data = JSON.stringify(this.wishlist);
         localStorage.setItem('wishlist', data);
         this.model.set({ notWished: true });
-
     }
-
-
 
     edit() {
 
     }
 
-    del() {
-
-    }
+    delete(evt) {
+        if (confirm("Are you sure ?")) {
+          this.model.destroy();
+        }
+      }
 
     restore() {
 
     }
 
-
     render() {
 
-       // let inWishlist = this.wishlist.get(this.model.get('id'));
-       // let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
-       let dom = $(tmpl({...this.model.toJSON()}));
+        let inWishlist = this.wishlist.get(this.model.get('id'));
+        let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
+        
+        console.log(this.model.toJSON());
+        console.log(inWishlist);
+        console.log(inWishlist);
+
+       //let dom = $(tmpl({...this.model.toJSON()}));
         this.$el.replaceWith(dom);
         this.setElement(dom);
         return this;

@@ -1,7 +1,7 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import View from 'App/entities/product/viewModel';
+import View from 'App/entities/wishlist/viewModelWishlist';
 
 
 export default class extends ImView {

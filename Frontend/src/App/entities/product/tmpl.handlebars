@@ -8,10 +8,10 @@
         <h4 class="card-title">{{shortDescr}}</h4>
       </a>
 
-      <p class="card-text">
-        {{category}}
+      <p class="card-text">{{category}}</p>
         
-    {{#if notWished}}
+{{!-- Toggle wishlist --}}
+    {{#if inWishlist}}
  <button type="button" class="btn btn-primary float-right wishAdd">
            <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg">
           </button>
@@ -20,7 +20,12 @@
            <img src="http://127.0.0.1:8000/fonts/wishlist.svg">
           </button>
     {{/if}}
-        </p>
+
+
+{{!-- delete a bike for "rapresentant user" --}}
+ <button type="button" class="btn btn-primary float-right bikeDel">
+           <img src="http://127.0.0.1:8000/fonts/delete.svg">
+          </button>
 
     </div>
   </div>

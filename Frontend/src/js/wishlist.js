@@ -7,6 +7,7 @@ console.log(wishlist);
 
 let view=new ViewWishes({
   collection: wishlist,
+  wishlist,
   el: '#wishlist_products'
 });
 

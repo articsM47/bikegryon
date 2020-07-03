@@ -6,26 +6,16 @@ import tmpl from 'App/entities/product/tmpl_wishlist.handlebars';
 export default class extends ImView {
 
     initialize(attrs, options) {
-        this.wishlist = attrs.wishlist;
+   
         this.model.set({ notWished: true });
         this.listenTo(this.model, 'change', this.render);
     }
 
     events() {
         return {
-
-            'click .wishAdd': 'addToWish',
             'click .wishDel': 'delFromWish',
 
         }
-
-    }
-
-    addToWish() {
-        this.wishlist.add(this.model);
-        let data = JSON.stringify(this.wishlist);
-        localStorage.setItem('wishlist', data);
-        this.model.set({ notWished: false });
 
     }
 
@@ -54,7 +44,7 @@ export default class extends ImView {
 
     render() {
 
-       let inWishlist = this.wishlist.get(this.model.get('id'));
+       let inWishlist = false;
        let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
       // let dom = $(tmpl({...this.model.toJSON()}));
         this.$el.replaceWith(dom);
