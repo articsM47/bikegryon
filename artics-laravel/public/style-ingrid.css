@@ -319,7 +319,7 @@
 }
 
 .new-user {
-    
+
     padding: 10px 10px;
     font-size: 1.5rem;
     border: none !important;
@@ -359,7 +359,7 @@
 }
 
 .message-block {
-    margin-top: 50px ;
+    margin-top: 50px;
 }
 
 #submit-account span {
@@ -416,4 +416,78 @@
     font-weight: 500;
     padding: 10px;
     color: #ff3c2bff;
+}
+
+/*********** Logout *************/
+/***Button ****/
+.logout-block {
+    height: 10em;
+    position: relative
+}
+
+.logout-block {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*********** Login *************/
+/*** fields ****/
+
+#login-block {
+    margin: 40px !important;
+}
+
+.form-option-text.login {
+    font-size: 1rem !important;
+}
+
+/*********** Tests *************/
+
+.button.button-add.test {
+    margin: 30px !important;
+}
+
+/*** Table ****/
+
+#test-headline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid #2d2d2d !important;
+}
+
+.table-border {
+    border: 1px solid #2d2d2d !important;
+    padding: 10px;
+}
+.table-border.content{
+    font-size: 1.2rem;
+
+    }
+.table-content{
+    margin-bottom: 40px;
+}
+/*** Filters ***/
+
+.history {
+    margin: 30px !important;
+    border: none;
+    color: #2d2d2d;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.filters {
+    border: none;
+    color: #2d2d2d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #ffff;
+}
+
+.gray {
+    color: #b6b5b5;
 }
