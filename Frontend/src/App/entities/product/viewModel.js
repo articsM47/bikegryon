@@ -7,7 +7,7 @@ export default class extends ImView {
 
     initialize(attrs, options) {
         this.wishlist = attrs.wishlist;
-        this.model.set({notWished: true});
+        this.model.set({ notWished: true });
         this.listenTo(this.model, 'change', this.render);
     }
 
@@ -21,43 +21,46 @@ export default class extends ImView {
 
     }
 
-addToWish(){
-    console.log("test");
-    this.wishlist.add(this.model);
-    let data = JSON.stringify(this.wishlist);
-    localStorage.setItem('wishlist', data);
-    this.model.set({notWished: false});
+    addToWish() {
+        this.wishlist.add(this.model);
+        let data = JSON.stringify(this.wishlist);
+        localStorage.setItem('wishlist', data);
+        this.model.set({ notWished: false });
 
-}
+    }
 
-delFromWish(){
-    this.wishlist.remove(this.model);
-    let data = JSON.stringify(this.wishlist);
-    localStorage.setItem('wishlist', data);
-    this.model.set({notWished: true});
+    delFromWish() {
+        this.wishlist.remove(this.model);
+        let data = JSON.stringify(this.wishlist);
+        localStorage.setItem('wishlist', data);
+        this.model.set({ notWished: true });
 
-}
-
-
-edit() {
-
-}
-
-del() {
-
-}
-
-restore() {
-
-}
+    }
 
 
-render() {
-    let dom = $(tmpl(this.model.toJSON()));
-    this.$el.replaceWith(dom);
-    this.setElement(dom);
-    return this;
-}
+
+    edit() {
+
+    }
+
+    del() {
+
+    }
+
+    restore() {
+
+    }
+
+
+    render() {
+
+       // let inWishlist = this.wishlist.get(this.model.get('id'));
+       // let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
+       let dom = $(tmpl({...this.model.toJSON()}));
+        this.$el.replaceWith(dom);
+        this.setElement(dom);
+        return this;
+    }
 
 
 }
