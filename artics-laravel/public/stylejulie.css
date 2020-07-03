@@ -293,6 +293,12 @@ h4 {
     font-size: 2rem;
 }
 
+/********** Footer *************/
+.linkFooter:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /********** Product page *************/
 .container-catalogue {
     margin-top: 50px;
@@ -309,4 +315,54 @@ h4 {
 /********** Création d'un compte *************/
 .container-creation {
     margin-bottom: 30px;
+}
+
+/********** Ajouter un vélo *************/
+.add-bike-panel {
+    border-color: #333333;
+    border: 1px solid;
+}
+
+.add-bike-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white !important;
+    background-image: none !important;
+    background-color: #5355FA !important;
+    border: none;
+}
+
+.add-bike-input {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.3rem !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.add-bike-input:focus {
+    border-color: #5355FA !important;
+    font-weight: 700;
+}
+
+.add-bike-button {
+    padding: 15px 32px;
+    background-color: #5355FA;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-bike-panel-csv {
+    padding: 20px;
+}
+
+.add-bike-text-csv {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
 }
