@@ -97,7 +97,8 @@ Route::get('Product/{id}', 'BikeController@afficheproduit');
 Route::get('AddProduct', 'BikeController@create');
 
 
-Route::resource('Bikes', 'BikeController', ['except'=>['show','edit','update']]);
+Route::resource('Bikes', 'BikeController'/* , ['except'=>['show','edit','update']] */);
+Route::post('importdata','BikeController@uploadFile');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
