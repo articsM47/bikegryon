@@ -13,7 +13,7 @@
     <div class="card">
 
         <div class="card-body">
-        <h3 class="card-title text-center">Nous avons envoyé une confirmation à l’adresse : {{$email1 ?? ''}}</h3>
+        <h3 class="card-title text-center second-title-page">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{$email1 ?? old('email1')}}</span></h3>
 
         <Div id="commande" >
         <p class="text-center mb-2"> Nous te conseillons de vérifier les informations contenues dans ce email afin de t’assurer qu’elles soient correctes</p>

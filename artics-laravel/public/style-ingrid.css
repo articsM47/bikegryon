@@ -115,7 +115,7 @@
     font-size: 1.6rem !important;
 }
 
-/*********** Page inscription *************/
+/*********** inscrption page *************/
 
 /****** Program ******/
 .program-container{
@@ -273,6 +273,7 @@
 .reserve-button {
     margin-bottom: 30px;
     margin-top: 30px;
+    border:none;
 }
 .reserve-button span{
   font-size: 2rem !important;
@@ -284,8 +285,7 @@
     display: inline-block;
 }
 
-/*********** Page inscription *************/
-/****** Create account ******/
+/*********** Create an account page*************/
 
 .user-info{
   max-width: 70%;
@@ -306,6 +306,7 @@
 
 .form-option-text:hover{
   color: #5355FA !important;
+  margin: 20px;
 }
 
 .new-user{
@@ -332,7 +333,7 @@
   margin:5px;
 }
 
-
+/*********** Confirmation page*************/
 /***Button ****/
 #submit-account{
   border:none !important;
@@ -388,7 +389,7 @@
   font-weight: 700;
 }
 
-/***From errors ****/
+/***Form errors ****/
 
 .form-error{
   font-size: 0.9rem !important;
