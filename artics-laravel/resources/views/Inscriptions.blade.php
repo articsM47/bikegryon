@@ -145,7 +145,7 @@
         <div class="form-check mb-2">
           <label class="form-check-label checkBox" for="samedi">
             Samedi
-            <input type="checkbox" name="samedi">
+            <input type="checkbox"  id="samedi" name="samedi">
             <span class="checkmark"></span>
           </label>
         </div>
@@ -154,7 +154,7 @@
         <div class="form-check mb-2">
           <label class="form-check-label checkBox" for="dimanche">
             Dimanche
-            <input type="checkbox" name="dimanche">
+            <input type="checkbox"  id="dimanche" name="dimanche">
             <span class="checkmark"></span>
           </label>
         </div>
