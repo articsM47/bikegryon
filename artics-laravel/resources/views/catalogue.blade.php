@@ -4,10 +4,13 @@
 <div class="container">
   <h1 class="title-page">Tous les vélos à tester</h1>
   <h2 class="second-title-page">au Bike Test Gryon 2020 </h2>
+  
+  <a href="/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
 
-  @can('isRole1')
-  <a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a>
-  @endcan
+
+  <!-- @can('isRole1') -->
+  <!-- <a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a> -->
+  <!-- @endcan -->
 
   <!-- <form action="/action_page.php">
     <input type="text" placeholder="Rechercher..." name="search" onkeyup="filterBike()">

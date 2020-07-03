@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12 text-left">
-      <h1 class="mt-5">Programme 2020</h1>
+      <h1 class="title-page">Programme 2020</h1>
     </div>
     <div class="card-deck">
       <div class="card">
@@ -111,7 +111,7 @@
   </div>
 </div>
 
-<div class="container-fluid" style="background-color: #5355FA;">
+<div class="container">
   <div class="row">
     <div class="col-12">
       <img src="http://127.0.0.1:8000/fonts/"></img>
@@ -158,6 +158,7 @@
     </a>
   </div>
 
+  <h3>Quel vélo sur quel parcours</h3>
   <div class="table table-parcours">
 
     <table style="width:100%">
@@ -293,16 +294,18 @@
         <tr>
 
           <th>Road</th>
-          <th>-<th>
+          <th>
             <!-- Add icon library -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-          </th>-<th>
+          </th>
           <th>-</th>
           <th>-</th>
-        </tr>
+          <th>-</th>
+          <th>-</th>
+      </tr>
         <tr>
           <th>VTT</th>
           <th>

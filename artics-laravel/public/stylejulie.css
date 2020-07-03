@@ -39,12 +39,16 @@
 .head-accueil {
     height: 100vh;
     min-height: 500px;
-    background-image: url('fonts/landscape-photography-of-mountains-covered-in-snow-691668.jpg');
+    background-image: url('fonts/homeimage.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }  
+}
 
+.title-home {
+    color: white;
+}
+    
 /********** H1 *************/
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -177,6 +181,14 @@ h4 {
 .button-catalogue:hover {
     background-color: black;
     opacity: 0.5;
+}
+
+.button-add  {
+    margin-top: 30px;
+}
+
+.button-add span:after {
+    content: '\002B' !important;
 }
 
 /********** Filters *************/

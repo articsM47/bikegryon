@@ -11,7 +11,6 @@
     <!--<link rel="apple-touch-icon" sizes="32x32" href="favicon-32x32.png"> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-
     <title>
         Bike test gryon
     </title>
@@ -44,24 +43,7 @@
                 </div>
                 <!-- icons -->
                 <span class="iconsgroup align-self-center">
-                    <!--search -->
-                    <!-- <form id="SearchToggle" style="display:none">
-                        <input id="SearchToggle" type="text" name="searchinput" placeholder="Rechercher...">
-                    </form>
-
-                    <img onclick="openSearch()" src="http://127.0.0.1:8000/fonts/search.svg" alt="search" style="width:32px;height:32px;">
-
-                    <script>
-                        function openSearch() {
-                            var x = document.getElementById("SearchToggle");
-                            if (x.style.display === "none") {
-                                x.style.display = "inline";
-                            } else {
-                                x.style.display = "none";
-                            }
-                        }
-                    </script> -->
-
+                    
                     <!--wishlist's icon-->
                     <a class="" href="/Wishlist">
                         <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
