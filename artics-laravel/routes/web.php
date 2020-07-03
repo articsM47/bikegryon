@@ -35,10 +35,11 @@ Route::get('Event', function () {
     return view("Event");
 });
 
-Route::get('Inscriptions', function () {
-    return view("Inscriptions");
-});
-/* Route::post('Inscriptions', 'InscriptionsController@valideEtTraiteFormulaire'); */
+Route::get('Inscriptions', 'InscriptionController@rendFormulaire');
+
+Route::post('Creation', 'InscriptionController@valideEtTraiteFormulaire');
+
+Route::post('Confirmation', 'InscriptionController@validetoConfirmation');
 
 Route::get('Creation', function () {
     return view("Creation");

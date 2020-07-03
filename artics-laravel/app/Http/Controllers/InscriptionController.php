@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\InscriptionRequest;
+use App\Http\Requests\mdpRequest;
 use Illuminate\Http\Request;
 use Mail;
 class InscriptionController extends Controller
@@ -33,7 +34,7 @@ class InscriptionController extends Controller
 
     return view('Creation', $request->all());
 }
-public function validetoConfirmation(Request $request) {
+public function validetoConfirmation(mdpRequest $request) {
 
     return view('Confirmation', $request->all());
 }
