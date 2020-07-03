@@ -84,7 +84,7 @@
               <img src="http://127.0.0.1:8000/fonts/height_bike.svg" alt="height_bike" width="30px">
             </td>
             <td>
-            <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain" width="40px">
+              <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain" width="40px">
             </td>
           </tr>
           <tr style="text-align: center;">
@@ -103,12 +103,11 @@
       </div>
     </div>
 
-  <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width = 100%>
+    <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
 
     <!-- grid des produits -->
     <h3>Dans la même catégorie</h3>
     <!-- Carousel-->
   </div>
 </div>
-
 @endsection
