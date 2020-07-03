@@ -5,6 +5,13 @@ import Wishlist from 'App/entities/product/collectionWishlist.js';
 let products = new Products();
 let wishlist = new Wishlist(JSON.parse(localStorage.getItem('wishlist')));
 
+wishlist.forEach(wish => {
+   console.log(wish.id);     
+});
+
+
+console.log(wishlist);
+
 let vproducts = new ViewProducts({
     collection : products,
     wishlist: wishlist,

@@ -9,5 +9,3 @@ new ViewWishes({
   el: '#wishlist'
 });
 
-console.log(wishlist);
-console.log('test');

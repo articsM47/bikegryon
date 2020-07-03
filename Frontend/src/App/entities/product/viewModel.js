@@ -2,61 +2,68 @@ import {
     ImView
 } from 'lib/ImBackbone';
 import tmpl from 'App/entities/product/tmpl.handlebars';
-import JsonStorage from "lib/JsonStorage";
-
 
 export default class extends ImView {
 
     initialize(attrs, options) {
         this.wishlist = attrs.wishlist;
-    this.listenTo(this.model, 'change', this.render);
+        this.model.set({notWished: true});
+        this.listenTo(this.model, 'change', this.render);
     }
-
 
     events() {
         return {
+
             'click .wishAdd': 'addToWish',
             'click .wishDel': 'delFromWish',
+
         }
 
     }
 
-    addToWish(){
-        this.wishlist.add(this.model);
-        console.log(JSON.stringify(this.wishlist));  
-        let data=JSON.stringify(this.wishlist); 
-        localStorage.setItem('wishlist', data);
-        console.log("data");  
-        console.log(data);  
-    }
+//     toggle() {
+//     if (document.getElementById("wishlist-btn").className == "wishAdd") {
+//         document.getElementById("wishlist-btn").className == "wishDel";
+//     } else {
+//         document.getElementById("wishlist-btn").className == "wishAdd";
+//     }
+// }
+addToWish(){
+    this.wishlist.add(this.model);
+    let data = JSON.stringify(this.wishlist);
+    localStorage.setItem('wishlist', data);
+    this.model.set({notWished: false});
 
-    delFromWish(){
-        this.wishlist.remove(this.model);
-        let data=JSON.stringify(this.wishlist); 
-        localStorage.setItem('wishlist', data);
-       
-    }
-    
+}
 
-    edit() {
+delFromWish(){
+    this.wishlist.remove(this.model);
+    let data = JSON.stringify(this.wishlist);
+    localStorage.setItem('wishlist', data);
+    this.model.set({notWished: true});
 
-    }
-
-    del() {
-
-    }
-
-    restore() {
-
-    }
+}
 
 
-    render() {
-        let dom = $(tmpl(this.model.toJSON()));
-        this.$el.replaceWith(dom);
-        this.setElement(dom);
-        return this;
-    }
+edit() {
+
+}
+
+del() {
+
+}
+
+restore() {
+
+}
+
+
+render() {
+    let dom = $(tmpl(this.model.toJSON()));
+    this.$el.replaceWith(dom);
+    this.setElement(dom);
+    return this;
+}
 
 
 }

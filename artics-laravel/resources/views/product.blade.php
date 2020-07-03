@@ -66,7 +66,7 @@
         <div class="card-body">
 
           <p class="card-text">{{$bike -> longDescr}}</p>
-          <a href="#" class="btn btn-primary">S’en souvenir</a>
+          <button type="button" class="btn btn-primary wishAdd">S’en souvenir</button>
         </div>
       </div>
     </div>
