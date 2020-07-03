@@ -4,7 +4,7 @@
 <BR>
 <div class="col-sm-offset-3 col-sm-6">
     <div class="panel panel-info">
-        <div class="panel-heading">Ajout d'un Produit</div>
+        <div class="panel-heading">Ajout un Vélo au catalogue</div>
         <div class="panel-body addform">
             <form method="POST" action="{{route('Bikes.store')}}" accept-charset="UTF-8">
             @csrf

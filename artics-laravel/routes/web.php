@@ -96,6 +96,9 @@ Route::get('Product/{id}', 'BikeController@afficheproduit');
 
 Route::get('AddProduct', 'BikeController@create');
 
+
+Route::resource('Bikes', 'BikeController', ['except'=>['show','edit','update']]);
+
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 
 // Auth::routes();
