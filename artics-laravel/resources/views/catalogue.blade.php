@@ -4,7 +4,7 @@
 <div class="container">
   <h1 class="title-page">Tous les vélos à tester</h1>
   <h2 class="second-title-page">au Bike Test Gryon 2020 </h2>
-  
+
   <a href="/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
 
 
@@ -130,8 +130,8 @@ toggle between hiding and showing the dropdown content */
   <!-- Load icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- grid des produits : affichage de 2 produits par colonne -->
-  <Div id="catalogue" class="row row-cols-1 row-cols-md-2">
+  <!-- grid des produits : affichage de 2 produits par colonne-->
+  <div id="catalogue" class="row row-cols-1 row-cols-md-2">
 
   </Div>
 </div>

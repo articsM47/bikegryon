@@ -7,3 +7,4 @@ artics-apache.conf
 .env
 .DS_Store
 artics-laravel/.env.example
+*.icloud

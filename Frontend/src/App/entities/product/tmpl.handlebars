@@ -1,26 +1,29 @@
-<div class="col mb-4">
-  <div class="card h-100 border-0">
-    <a href="/Product/{{id}}">
-      <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}}>
-    </a>
-    <div class="card-body catalogue-descr">
-      <a href="/Product/{{id}}" class="catalogue-product-link">
-        <h4 class="card-title">{{shortDescr}}</h4>
+<div class="" style="padding: 30px;">
+<div class="col card-bike" style="margin-bottom: 50px !important;">
+    <div class="card h-100 border-0 mb-4">
+      <a href="/Product/{{id}}">
+        <img src="http://127.0.0.1:8000/pictures/products/{{picture}}" class="card-img-top" alt={{shortDescr}}>
       </a>
+      <div class="card-body catalogue-descr">
+        <a href="/Product/{{id}}" class="catalogue-product-link">
+          <h4 class="card-title">{{shortDescr}}</h4>
+        </a>
 
-      <p class="card-text">
-        {{category}}
-        
-    {{#if notWished}}
- <button type="button" class="btn btn-primary float-right wishAdd">
-           <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg">
+        <p class="card-text">
+          {{category}}
+
+          {{#if notWished}}
+          <button type="button" class="float-right button-wish wishAdd">
+            <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg" width="40px">
           </button>
-    {{else}}
-      <button type="button" class="btn btn-primary float-right wishDel" data-key="{{key}}">
-           <img src="http://127.0.0.1:8000/fonts/wishlist.svg">
+          {{else}}
+          <button type="button" class="float-right button-wish wishDel" data-key="{{key}}">
+            <img src="http://127.0.0.1:8000/fonts/wishlist_3.svg" width="40px">
           </button>
-    {{/if}}
+          {{/if}}
         </p>
 
+      </div>
     </div>
   </div>
+</div>
