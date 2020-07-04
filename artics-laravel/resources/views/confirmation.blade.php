@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Merci {{$surname ?? old('surname')}} pour ta réservation ! </h1>
+        <h1 class="mt-5">Merci {{ Session::get('prenom')}} pour ta réservation ! </h1>
 
     </div>
 </div>
@@ -13,7 +13,7 @@
     <div class="card">
 
         <div class="card-body">
-        <h3 class="card-title text-center second-title-page">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{$email1 ?? old('email1')}}</span></h3>
+        <h3 class="card-title text-center second-title-page">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{ Session::get('email1')}}</span></h3>
 
         <Div id="commande" >
         <p class="text-center mb-2"> Nous te conseillons de vérifier les informations contenues dans ce email afin de t’assurer qu’elles soient correctes</p>

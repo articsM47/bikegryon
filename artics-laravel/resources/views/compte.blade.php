@@ -26,25 +26,25 @@
 
         <body>
           <form class="form-edit user">
-            <h2 class="h3 mb-3 font-weight-normal">Bonjour Lucie !</h2>
+            <h2 class="h3 mb-3 font-weight-normal">Bonjour {{ Session::get('prenom')}} !</h2>
             <p id="welcomeText">Tu peux voir et mettre à jour tes informations ici. </p>
 
             <div class="form-group row">
               <label class="col-sm-2 inputContent" for="firstname">Nom</label>
               <div>
-                <input type="text" id="firstname" class="inputUser" value="Nom">
+                <input type="text" id="firstname" class="inputUser" value="{{ Session::get('nom')}}">
               </div>
             </div>
             <div class="form-group row">
               <label for="surname" class="col-sm-2 inputContent">Prénom</label>
               <div>
-                <input type="text" id="surname" class="inputUser" value="Prénom">
+                <input type="text" id="surname" class="inputUser" value="{{ Session::get('prenom')}}">
               </div>
             </div>
             <div class="form-group row">
               <label for="Email" class="col-sm-2 inputContent">E-mail</label>
               <div>
-                <input type="text" id="Email" class="inputUser" value="xxxx@xxxx.com">
+                <input type="text" id="Email" class="inputUser" value="{{ Session::get('email1')}}">
               </div>
             </div>
             <button class="buttonSubmit" type="submit">Sauvegarder</button>

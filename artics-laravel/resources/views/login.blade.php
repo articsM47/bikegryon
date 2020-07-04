@@ -26,6 +26,6 @@
 
     </div>
     <div class="form-group text-center ">
-    <a  href="/Login"type="button" class="badge badge-light ">Je n’ai pas encore de compte</a>
+    <a  href="/register"type="button" class="badge badge-light ">Je n’ai pas encore de compte</a>
   </div>
 @endsection

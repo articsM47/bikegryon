@@ -9,6 +9,6 @@
     </div>
 </div>
 <div class="form-group text-center ">
-<a  href="/Login"type="button" class="btn btn-primary ">Se connecter</a>
+<a  href="/login"type="button" class="btn btn-primary ">Se connecter</a>
 </div>
 @endsection

@@ -16,12 +16,11 @@
             <form method="POST" action="{{ url('Confirmation') }}" accept-charset="UTF-8">
                 @csrf
                 <div class="align-content-*-end">
-                    <input class="new-user" type="text" name="fullname" value="{{$nom ?? old('fullname')}} {{$prenom ?? ''}}" readonly><br>
-                    <input class="new-user" type="text" name="birthday" value="{{$birthday ?? old('birthday')}}" readonly><br>
-                    <input class="new-user" type="email" name="email1" value="{{$email1 ?? ''}}"><br>
-                    <input type="email" class="form-control d-none" name="email1" value="{{$email1 ?? old('email1')}}" >
-        <input class="form-control d-none" type="text" name="firstname" value="{{$nom ?? old('firstname')}}">
-        <input class="form-control d-none" type="text" name="surname" value="{{$prenom ?? old('surname')}}">
+                    <input class="new-user" type="text" name="fullname" value="{{ Session::get('nom')}} {{ Session::get('prenom')}}" readonly><br>
+                    <input class="new-user" type="text" name="birthday" value="{{ Session::get('birthday')}}" readonly><br>
+                    <input class="new-user" type="email" name="email1" value="{{ Session::get('email1')}}" readonly ><br>
+                    <input class="form-control d-none" type="text" name="firstname" value="{{ Session::get('nom')}}">
+                    <input class="form-control d-none" type="text" name="surname" value="{{ Session::get('prenom')}}">
 
 
                 </div>

@@ -4,7 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Member;
 use Illuminate\Http\Request;
+use App\Http\Requests\InscriptionRequest;
+use App\Http\Requests\mdpRequest;
 use App\Http\Resources\Member as MemberResource;
+use Mail;
+use Session;
+
 
 class MemberController extends Controller
 {
@@ -24,6 +29,69 @@ public function affiche() {
 
 }
 
+ public function rendFormulaire() {
+	return view('Inscriptions');
+}
+
+ public function valideEtTraiteFormulaire(InscriptionRequest $request) {
+
+/*     // Envoi d'un mail
+    Mail::send('Email', $request->all(), function($message){
+
+		$message->to('stephane.bondabelo@heig-vd.ch')->subject('Confirmation de Reservation');
+    }); */
+
+    // Confirmation de réception
+
+/*     $name = $request->input('name');
+    $email1 = $request->input('email1');
+    $firstname = $request->input('firstname');
+    $birthDay = $request->input('birthDay');
+    session(['$name' => 'name']);
+    session(['$email1' => 'email1']);
+    session(['$firstname' => 'firstname']);
+    session(['$birthDay' => 'birthDay']);
+    echo("$request");
+ */
+/* POST::route('member.store', $request->all()); */
+        $data = $request->only(['nom','prenom','birthday', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
+
+        $data['name']= $data['nom'];
+
+        $data['firstname']= $data['nom'] ;
+
+        $data['birthDay']= $data['birthday'] ;
+
+        $data['address_id']= 1 ;
+
+        // todo : validation
+        Session::put('nom', $request->input('nom') );
+        Session::put('prenom', $request->input('prenom') );
+        Session::put('birthday', $request->input('birthday') );
+        Session::put('email1', $request->input('email1') );
+
+        $Member = Member::create($data);
+
+
+    return view('Creation', $request->all(), );
+}
+
+
+public function validetoConfirmation(mdpRequest $request) {
+
+    $nom = $request->only(['nom']);
+    $data = $request->only(['password']) ;
+    $data['psw'] = $data['password'];
+
+
+    $Member = $request->only(['Member']) ;
+
+
+
+/* ->update($request->all()); */
+
+    return view('Confirmation', $request->all());
+}
     /**
      * Store a newly created resource in storage.
      *
@@ -32,6 +100,7 @@ public function affiche() {
      */
     public function store(Request $request)
     {
+
         $data = $request->only(['name','firstname','birthDay', 'phone1', 'phone2', 'email1', 'email2','comment','address_id','role']) ;
         // todo : validation
         $Member = Member::create($data);

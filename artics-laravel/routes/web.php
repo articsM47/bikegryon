@@ -23,23 +23,27 @@ Route::get('Acceuil', function () {
     return view("Acceuil");
 });
 
-Route::get('Login', function () {
+Route::get('login', function () {
     return view("Login");
 });
 
-Route::get('Logout', function () {
+Route::get('logout', function () {
     return view("Logout");
+});
+
+Route::get('register', function () {
+    return view("Register");
 });
 
 Route::get('Event', function () {
     return view("Event");
 });
 
-Route::get('Inscriptions', 'InscriptionController@rendFormulaire');
+Route::get('Inscriptions', 'MemberController@rendFormulaire');
 
-Route::post('Creation', 'InscriptionController@valideEtTraiteFormulaire');
+Route::post('Creation', 'MemberController@valideEtTraiteFormulaire');
 
-Route::post('Confirmation', 'InscriptionController@validetoConfirmation');
+Route::post('Confirmation', 'MemberController@validetoConfirmation');
 
 Route::get('Creation', function () {
     return view("Creation");
@@ -101,7 +105,7 @@ Route::resource('Bikes', 'BikeController'/* , ['except'=>['show','edit','update'
 Route::post('importdata','BikeController@uploadFile');
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
+/*
+ Auth::routes();
 
-// Auth::routes();
-
-//  Route::get('/home', 'HomeController@index')->name('home');
+  Route::get('/home', 'HomeController@index')->name('home'); */
