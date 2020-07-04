@@ -438,3 +438,26 @@ h4 {
     color: white;
     text-decoration: none;
 }
+
+/********** Attribuer un badge *************/
+.table-people {
+    font-size: 1.5rem;
+}
+
+.add-people-button {
+    font-size: 1.7rem;
+    border: none;
+    margin-right: 10px;
+    padding: 15px 32px !important;
+    border-radius: 20px;
+}
+
+.add-people-button:before {
+    content: '\25be';
+    float: right;
+}
+
+.add-people-button:hover {
+    background-color: #5355FA;
+    color: white;
+}

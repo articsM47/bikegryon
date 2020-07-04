@@ -453,7 +453,7 @@
 
 /*** Table ****/
 
-#test-headline {
+.test-headline {
     font-size: 1.5rem;
     font-weight: 700;
     border: 1px solid #2d2d2d !important;
@@ -463,13 +463,15 @@
     border: 1px solid #2d2d2d !important;
     padding: 10px;
 }
-.table-border.content{
-    font-size: 1.2rem;
 
-    }
-.table-content{
+.table-border.content {
+    font-size: 1.5rem;
+}
+
+.table-content {
     margin-bottom: 40px;
 }
+
 /*** Filters ***/
 
 .history {

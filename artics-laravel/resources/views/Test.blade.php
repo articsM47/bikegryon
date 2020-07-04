@@ -2,7 +2,7 @@
 
 @section('contenu')
 <div class="container">
-  <h1 class="title-page">Test en cours</h1>
+  <h1 class="title-page">Tests en cours</h1>
   <div class="row">
     <div class="col-lg-12 text-right">
       <!-- <a class="float-right" href="/AddTest" class="representant badge badge-light">Ajouter un test</a> -->
@@ -26,7 +26,7 @@
     <div class="col-lg-12 text-center table-content">
       <table class="table-border"style="width:100%">
         <tr>
-          <thead id="test-headline" class="table-border">
+          <thead class="test-headline table-border">
             <th class="table-border">N°</th>
             <th class="table-border">Badge</th>
             <th class="table-border">Distinctive sign</th>
