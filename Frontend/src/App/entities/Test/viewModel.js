@@ -28,9 +28,6 @@ export default class extends ImView {
     // Allows to show "create à new test"'s popup
     create(evt) {
 
-        
-
-
     }
 
     delete() {

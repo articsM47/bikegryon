@@ -115,8 +115,11 @@
                 </tbody>
             </table>
             <footer>
+<!-- Tous les js chargés à partir de la ligne 121 auront la variable baseURL -->
 </body>
-<script type="text/javascript" src="bundle.js"></script>
+<script type="text/javascript">const baseURL = "http://127.0.0.1:8000"</script>
 <script type="text/jquery" src="jquery-3.5.0.min.js"></script>
+<script type="text/javascript" scr="test.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
 
 </html>

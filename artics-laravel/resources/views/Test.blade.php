@@ -10,7 +10,7 @@
       <!-- <a class="float-right" href="/AddTest" class="representant badge badge-light">Ajouter un test</a> -->
       <!-- Button trigger modal -->
       <div id="test-form">
-        <button id="addTest" type="button" class="button button-add test">
+        <button id="add-test" type="button" class="button button-add test">
           <span>Ajouter un test</span>
         </button>
       </div>
@@ -45,21 +45,22 @@
       <div id='popupField' class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog popup" role="document">
           <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nouveau test</h5>
-            <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nouveau test</h5>
+              <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <div class="modal-body">
               <form class="form-signin">
-                <label for="inputEmail" class="sr-only">Numéro client</label>
-                <input type="text" id="inputEmail" class="inputUser" placeholder="Numéro client" required autofocus>
+                <input type="hidden" name="_token" id="csrf-token" value="<?php echo csrf_token() ?>">
+                <label for="input-client-number" class="sr-only">Numéro de badge</label>
+                <input type="text" id="input-client-number" class="input-client-number" placeholder="Numéro de badge" required autofocus>
                 <br>
                 <br>
-                <label for="inputPassword" class="sr-only">Distinctive sign vélo</label>
-                <input type="text" id="inputPassword" class="inputUser" placeholder="Distinctive sign vélo" required>
-                <button id="submit-account" type="submit" data-action="create"><span>Démarrer le test</span></button>
+                <label for="input-bike" class="sr-only">Distinctive sign vélo</label>
+                <input type="text" id="input-bike" class="input-bike" placeholder="Distinctive sign vélo" required>
+                <button id="submit-test" type="button" data-action="create"><span>Démarrer le test</span></button>
               </form>
             </div>
           </div>

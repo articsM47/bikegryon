@@ -103,7 +103,7 @@
             let wishes = [];
             wishlist.forEach(wish => {
               wishes.push(wish.id);
-              if({{$bike -> id}}===wish.id){
+              if({{$bike->id}}===wish.id){
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
               }
             });
