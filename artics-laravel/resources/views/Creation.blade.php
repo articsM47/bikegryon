@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center ">
-            <h1 class="mt-5">Merci pour ta réservation ! </h1>
+            <h1 class="mt-5">Merci {{$prenom ?? old('surname')}} pour ta réservation !</h1>
             <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{$email1 ?? old('email1')}}</span></p>
             <p class="mb-5 normal-text">Crée ton compte maintenant en choissant un mot de passe </p>
         </div>
@@ -23,27 +23,7 @@
         <input class="form-control d-none" type="text" name="firstname" value="{{$nom ?? old('firstname')}}">
         <input class="form-control d-none" type="text" name="surname" value="{{$prenom ?? old('surname')}}">
 
-        <div class="form-check mb-2">
-        <label class="form-check-label checkBox" for="vendredi">
-            Vendredi
-            <input type="checkbox" id="vendredi" name="vendredi" value="{{$vendredi ?? ''}}">
-            <span class="checkmark"></span>
-          </label>
-          </div>
-           <div class="form-check mb-2">
-          <label class="form-check-label checkBox" for="vendredi">
-            Samedi
-            <input type="checkbox" id="samedi" name="samedi" value="{{$samedi ?? ''}}">
-            <span class="checkmark"></span>
-          </label>
-          </div>
-           <div class="form-check mb-2">
-          <label class="form-check-label checkBox" for="vendredi">
-            Dimanche
-            <input type="checkbox" id="dimanche" name="dimanche" value="{{$dimanche ?? ''}}">
-            <span class="checkmark"></span>
-          </label>
-          </div>
+
                 </div>
         </div>
         <div class="col-lg-6 user-info">
