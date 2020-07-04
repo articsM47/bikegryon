@@ -10,8 +10,6 @@ import 'js/wishlist.js';
 //FIRST TEST
 console.log('hello from frontend')
 
-
-
 //CODE
 /* let productsWishlist = new Wishlist();
 let reviews = new Reviews(); 

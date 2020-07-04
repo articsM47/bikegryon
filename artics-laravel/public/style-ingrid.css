@@ -462,13 +462,16 @@
     border: 1px solid #2d2d2d !important;
     padding: 10px;
 }
-.table-border.content{
+
+.table-border.content {
     font-size: 1.2rem;
 
-    }
-.table-content{
+}
+
+.table-content {
     margin-bottom: 40px;
 }
+
 /*** Filters ***/
 
 .history {
@@ -489,4 +492,18 @@
 
 .gray {
     color: #b6b5b5;
+}
+
+/**************Buttons *****************/
+
+.end-test {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: #ffff !important;
+    border: none !important;
+    margin: 10px;
+}
+
+.popup {
+    border-radius: 20px;
 }
