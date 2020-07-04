@@ -2,9 +2,12 @@
 
 @section('contenu')
 <div class="container">
-  <h1 class="title-page">Check-in clients</h1>
   <div class="row">
-    <div class="col-lg-12 text-right">
+    <div class="col-lg-6">
+      
+      <h1 class="title-page">Check-in clients</h1>
+    </div>
+    <div class="col-lg-6  vertical-align-center" style="margin-top: 20px;">
       <a href="/Inscriptions">
         <button type="button" class="button button-add test">
           <span>Ajouter une personne</span>
