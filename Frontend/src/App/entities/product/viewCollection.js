@@ -11,7 +11,6 @@ export default class extends ImView {
         this.listenTo(this.collection, 'add remove reset', this.render);
     }
 
-    // trier ça se passe ici 
     render() {
         this.$el.empty();
         let models = this.collection.models;
