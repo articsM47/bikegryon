@@ -453,12 +453,18 @@ h4 {
     border-radius: 20px;
 }
 
-.add-people-button:before {
-    content: '\25be';
-    float: right;
-}
-
 .add-people-button:hover {
     background-color: #5355FA;
     color: white;
+}
+
+/********** Tests en cours *************/
+.button-end-test {
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #5355FA;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
 }

@@ -2,9 +2,11 @@
 
 @section('contenu')
 <div class="container">
-  <h1 class="title-page">Tests en cours</h1>
   <div class="row">
-    <div class="col-lg-12 text-right">
+    <div class="col-lg-6">
+      <h1 class="title-page">Tests en cours</h1>
+    </div>
+    <div class="col-lg-6 vertical-align-center" style="margin-top: 20px;">
       <!-- <a class="float-right" href="/AddTest" class="representant badge badge-light">Ajouter un test</a> -->
       <!-- Button trigger modal -->
       <div id="test-form">
