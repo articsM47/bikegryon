@@ -18,7 +18,7 @@ function cleanWishlist() {
 </script>
 
 <!-- wishlist's pdf creator -->
-<button type="button" id= "pdf_creator" class="btn btn-primary float-right">Télécharger ma list</button>
+<!-- <button type="button" id= "pdf_creator" class="btn btn-primary float-right">Télécharger ma list</button>
 
 <script>
 document.getElementById("pdf_creator").addEventListener("click", createpdf);
@@ -38,7 +38,7 @@ employees.forEach(function(employee, i){
 });
 doc.save('Test.pdf');
 }
-</script>
+</script> -->
 
 
 <!-- grid with wishlist's products -->

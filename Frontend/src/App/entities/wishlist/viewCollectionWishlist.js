@@ -15,11 +15,9 @@ export default class extends ImView {
     render() {
         this.$el.empty();
         let models = this.collection.models;
-
-
         for (let model of models) {
             let view = new View({
-                model, wishlist:this.wishlist
+                model, wishlist: this.wishlist
             })
             view.render().$el.appendTo(this.$el);
         }
