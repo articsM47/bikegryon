@@ -41,7 +41,8 @@
         <tbody id="tests">
         </tbody>
       </table>
-      <!-- Test modal V2 - Ingrid -->
+      
+      <!-- Test modal V2 Ingrid- add a new test -->
       <div id='popupField' class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog popup" role="document">
           <div class="modal-content">
@@ -66,7 +67,30 @@
         </div>
       </div>
 
-
+      <!-- Test modal V2 Ingrid - add a new review -->
+      <div id='popupField' class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog popup" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Feedback client</h5>
+            <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <form class="form-signin">
+                <label for="inputEmail" class="sr-only">Numéro client</label>
+                <input type="text" id="inputEmail" class="inputUser" placeholder="Numéro client" required autofocus>
+                <br>
+                <br>
+                <label for="inputPassword" class="sr-only">Distinctive sign vélo</label>
+                <input type="text" id="inputPassword" class="inputUser" placeholder="Distinctive sign vélo" required>
+                <button id="submit-test" type="submit" data-action="create"><span>Démarrer le test</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Add Test Modal 
       <div class="modal fade" id="addTestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
