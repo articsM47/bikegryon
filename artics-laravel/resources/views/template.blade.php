@@ -117,5 +117,6 @@
             <footer>
 </body>
 <script type="text/javascript" src="bundle.js"></script>
+<script type="text/jquery" src="jquery-3.5.0.min.js"></script>
 
 </html>

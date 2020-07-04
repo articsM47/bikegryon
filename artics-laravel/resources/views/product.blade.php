@@ -74,7 +74,6 @@
         </div>
       </div>
     </div>
-
     <!-- Product height and category -->
     <div class="row">
       <div class="col-sm-6">
@@ -97,14 +96,11 @@
           </tr>
         </table>
       </div>
-
       <div class="col-sm-6">
         <a href="#" class="button-like">S’en souvenir</a>
       </div>
     </div>
-
     <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
-
     <!-- grid des produits -->
     <h3>Dans la même catégorie</h3>
     <!-- Carousel-->

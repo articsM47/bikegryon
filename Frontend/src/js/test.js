@@ -11,6 +11,13 @@ let vtests= new Testscollection({
     el: '#tests'
 }); 
 
+$("#addTest").on("click", () => {
+    console.log('hellohello');
+    $("#popupField").show();
+        $("#btn-close").on("click", () => {
+            $("#popupField").hide();
+        })
+})
 tests.fetch();
 
 // //New test modal
