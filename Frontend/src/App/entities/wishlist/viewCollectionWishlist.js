@@ -8,6 +8,7 @@ export default class extends ImView {
 
     initialize(attrs) {
     this.wishlist= attrs.wishlist;
+    console.log(this.wishlist);
         this.listenTo(this.collection, 'add remove reset', this.render);
     }
 

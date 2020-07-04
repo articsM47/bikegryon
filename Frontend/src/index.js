@@ -8,7 +8,7 @@ import 'js/wishlist.js';
 
 
 //FIRST TEST
-console.log('hello from frontend')
+//console.log('hello from frontend')
 
 
 

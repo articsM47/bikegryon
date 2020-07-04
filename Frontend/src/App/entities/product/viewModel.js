@@ -7,13 +7,11 @@ export default class extends ImView {
 
     initialize(attrs, options) {
         this.wishlist = attrs.wishlist;
-        this.model.set({ notWished: true });
         this.listenTo(this.model, 'change', this.render);
     }
 
     events() {
         return {
-
             'click .wishAdd': 'addToWish',
             'click .wishDel': 'delFromWish',
             'click .bikeDel': 'delete'
@@ -25,14 +23,14 @@ export default class extends ImView {
         this.wishlist.add(this.model);
         let data = JSON.stringify(this.wishlist);
         localStorage.setItem('wishlist', data);
-        this.model.set({ notWished: false });
+        this.model.set({ inWishlist: false });
     }
 
     delFromWish() {
         this.wishlist.remove(this.model);
         let data = JSON.stringify(this.wishlist);
         localStorage.setItem('wishlist', data);
-        this.model.set({ notWished: true });
+        this.model.set({ inWishlist: true });
     }
 
     edit() {
@@ -40,7 +38,7 @@ export default class extends ImView {
     }
 
     delete(evt) {
-        if (confirm("Are you sure ?")) {
+        if (confirm("Êtes-vous sûr de vouloir supprimer ce vélo?")) {
           this.model.destroy();
         }
       }
@@ -53,12 +51,7 @@ export default class extends ImView {
 
         let inWishlist = this.wishlist.get(this.model.get('id'));
         let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
-        
-        console.log(this.model.toJSON());
-        console.log(inWishlist);
-        console.log(inWishlist);
-
-       //let dom = $(tmpl({...this.model.toJSON()}));
+       // let dom = $(tmpl({...this.model.toJSON()}));
         this.$el.replaceWith(dom);
         this.setElement(dom);
         return this;
