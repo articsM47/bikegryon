@@ -97,7 +97,17 @@
         </table>
       </div>
       <div class="col-sm-6">
-        <a href="#" class="button-like">S’en souvenir</a>
+      <button type="button" id="wish{{$bike -> id}}" class="btn btn-primary">Ajouter à ma liste</button>
+          <script>
+            let wishlist= JSON.parse(localStorage.getItem('wishlist'));
+            let wishes = [];
+            wishlist.forEach(wish => {
+              wishes.push(wish.id);
+              if({{$bike -> id}}===wish.id){
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+              }
+            });
+          </script>
       </div>
     </div>
     <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
