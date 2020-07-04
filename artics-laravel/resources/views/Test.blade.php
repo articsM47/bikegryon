@@ -14,7 +14,7 @@
     <button type="button" class="btn btn-secondary" class="activ" data-filter="new" >Actuels</button>
 
     <button type="button" class="btn btn-secondary" data-filter="old">Historique</button>
-    </div>
+</div>
 
 <table style="width:100%">
   <tr>

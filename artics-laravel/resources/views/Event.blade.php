@@ -132,21 +132,87 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
+
       <div class="carousel-item active">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" class="d-block w-100" alt="...">
+      <div class="card mb-3">
+  <img src="http://127.0.0.1:8000/fonts/verte.jpg" class="card-img-top" alt="parcours_verte">
+  <div class="card-body">
+    <h4 class="card-title">Parcours Verte</h4>
+    <p class="card-text">Départ: place de Barboleuse, descendre la route cantonale sur 100m puis prendre à droite.</p>
+    <p class="card-text">Balisage: flèches vertes et rubalise iXS,</p>
+    <p class="card-text">Distance: 4km env. avec possibilité de couper </p>
+    <p class="card-text">Dénivelé: 130m </p>
+    <p class="card-text">Télecabine: non </p>
+    <p class="card-text">Description: montées, racines, sentiers</p>
+    <p class="card-text">Categorie de vélo: VTT, e-VTT , Gravel </p>
+  </div>
+</div>
       </div>
+
       <div class="carousel-item">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" class="d-block w-100" alt="...">
+      <div class="card mb-3">
+      <img src="http://127.0.0.1:8000/fonts/bleu.jpg" class="card-img-top" alt="parcours_verte">
+  <div class="card-body">
+    <h4 class="card-title">Parcours Bleu (parcours 581)</h4>
+    <p class="card-text">Départ: aux Chaux, sommet de la télécabine. Route forestière par Taveyanne</p>
+    <p class="card-text">Balisage: Flèches bleues, rubalise iXS et panneaux 581.</p>
+    <p class="card-text">Distance: 8km env.</p>
+    <p class="card-text">Dénivelé: 540m en negatif </p>
+    <p class="card-text">Télecabine: oui </p>
+    <p class="card-text">Description: Parcours tout-niveaux.</p>
+    <p class="card-text">Categorie de vélo: VTT, Gravel, Junior </p>
+  </div>
+</div>
       </div>
+
       <div class="carousel-item">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" class="d-block w-100" alt="...">
+      <div class="card mb-3">
+      <img src="http://127.0.0.1:8000/fonts/noir.jpg" class="card-img-top" alt="parcours_verte">
+  <div class="card-body">
+    <h4 class="card-title">Parcours Noir</h4>
+    <p class="card-text">Départ: aux Chaux, sommet de la télécabine.</p>
+    <p class="card-text">Balisage:  flèches noires, rubalise iXS.</p>
+    <p class="card-text">Distance: 8km env. Possibilité de le racourcir à 4km</p>
+    <p class="card-text">Dénivelé: 400 m (200 m si raccourcis) </p>
+    <p class="card-text">Télecabine: non </p>
+    <p class="card-text">Description: Montée sur des chemins et sentiers pour rejoindre la piste de vtt, env 45 minutes</p>
+    <p class="card-text">Categorie de vélo: e-VTT </p>
+  </div>
+</div>
       </div>
+
       <div class="carousel-item">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" class="d-block w-100" alt="...">
+      <div class="card mb-3">     
+        <img src="http://127.0.0.1:8000/fonts/rouge.jpg" class="card-img-top" alt="parcours_verte">
+  <div class="card-body">
+    <h4 class="card-title">Parcours rouge</h4>
+    <p class="card-text">Départ: place de la Barboleuse direction Solalex</p>
+    <p class="card-text">Balisage:  Flèches rouges et rubalise iXS</p>
+    <p class="card-text">Distance: 4.4km env.</p>
+    <p class="card-text">Dénivelé: avec une montée a 19% sur la fin </p>
+    <p class="card-text">Télecabine: non </p>
+    <p class="card-text">Description: sur route</p>
+    <p class="card-text">Categorie de vélo: E-bikes, e-Road </p>
+  </div>
+</div>
       </div>
+
       <div class="carousel-item">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" class="d-block w-100" alt="...">
+      <div class="card mb-3">
+      <img src="http://127.0.0.1:8000/fonts/vtt.jpg" class="card-img-top" alt="parcours_verte">
+  <div class="card-body">
+    <h4 class="card-title">Piste VTT</h4>
+    <p class="card-text">Départ: aux Chaux, sommet de la télécabine. Piste de VTT officiel de Gryon</p>
+    <p class="card-text">Balisage:  Balisage pour la piste VTT</p>
+    <p class="card-text">Distance: 3.8km env.</p>
+    <p class="card-text">Dénivelé: 560m en négatif </p>
+    <p class="card-text">Télecabine: oui </p>
+    <p class="card-text">Description: Parcours pour bikers expérimentés</p>
+    <p class="card-text">Categorie de vélo: VTT</p>
+  </div>
+</div>
       </div>
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>

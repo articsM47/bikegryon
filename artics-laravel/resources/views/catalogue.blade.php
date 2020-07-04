@@ -17,19 +17,6 @@
     <button type="submit"><i class="fa fa-search"></i></button>
   </form> -->
 
-  <!--IMAGES-->
-  <!-- <ul class="categories_photos">
-    <li><a href="">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
-      </a></li>
-    <li><a href="">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
-      </a></li>
-    <li><a href="">
-        <img src="http://127.0.0.1:8000/fonts/mountains.jpg" width="250" height="140" alt="mountains">
-      </a></li>
-  </ul> -->
-
   <!-- Filtre images -->
   <div class="container">
     <div class="row">
@@ -89,18 +76,18 @@ toggle between hiding and showing the dropdown content */
   </script>
 
 
-  <!--  -->
+  <!--  
   <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Marque</button>
     <div id="myDropdown" class="dropdown-content">
       <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-      <a value="E-bike">E-bike (trekking)</a>
+<a value="E-bike">E-bike (trekking)</a>
       <a href="#base">E-Road</a>
       <a href="#blog">E-VTT</a>
       <a href="#contact">Gravel</a>
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
-      <a href="#tools">VTT</a>
+      <a href="#tools">VTT</a> 
       <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
       <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
@@ -110,18 +97,18 @@ toggle between hiding and showing the dropdown content */
     <button onclick="myFunction()" class="dropbtn">Taille du cadre</button>
     <div id="myDropdown" class="dropdown-content">
       <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-      <a value="E-bike">E-bike (trekking)</a>
+   <a value="E-bike">E-bike (trekking)</a>
       <a href="#base">E-Road</a>
       <a href="#blog">E-VTT</a>
       <a href="#contact">Gravel</a>
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
-      <a href="#tools">VTT</a>
+      <a href="#tools">VTT</a> 
       <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
       <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
   </div>
-
+  -->
 
   <br>
 
