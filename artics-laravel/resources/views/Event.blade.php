@@ -105,16 +105,28 @@
     </div>
   </div>
 
-  <!-- fake content -->
-  <div>
-    <h2>Déroulement</h2>
-  </div>
-</div>
-
-<div class="container">
+  <!-- Déroulement -->
   <div class="row">
-    <div class="col-12">
-      <img src="http://127.0.0.1:8000/fonts/"></img>
+    <div class="col-lg-12">
+      <h2>Déroulement</h2>
+    </div>
+    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+      Inscris-toi en ligne ou à l'accueil
+    </div>
+    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+      Sélectionne les vélos que tu veux tester lors de l'événement en les mettant dans ta liste d'envies
+    </div>
+    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+      Paie sur place le prix de la journée (cash ou carte de crédit), et reçois ton bracelet<br>
+    </div>
+    <div class="col-lg-4 event-deroulement-col">
+      Tu peux regarder sur le site si les vélos de ta liste d'envies sont disponibles ou parcourir les stands et te faire conseiller.
+    </div>
+    <div class="col-lg-4 event-deroulement-col">
+      Donne ta carte d'identité en échange du vélo à tester, met ton casque et teste le vélo sur un des 4 parcours à choix.
+    </div>
+    <div class="col-lg-4 event-deroulement-col">
+      Rapporte-le après 1 descente ou 1 boucle. Répète l'operation depuis le point 4 avec un autre modèle, et surtout : amuse-toi bien !
     </div>
   </div>
 </div>
@@ -305,7 +317,7 @@
           <th>-</th>
           <th>-</th>
           <th>-</th>
-      </tr>
+        </tr>
         <tr>
           <th>VTT</th>
           <th>
@@ -334,7 +346,7 @@
         </tr>
       </tbody>
     </table>
-    
+
     <span>
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

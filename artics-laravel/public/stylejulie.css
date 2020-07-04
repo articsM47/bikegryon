@@ -468,3 +468,9 @@ h4 {
     padding: 15px 32px;
     border-radius: 30px;
 }
+
+/********** Page programme *************/
+.event-deroulement-col {
+    font-size: 2rem;
+    text-align: center;
+}
