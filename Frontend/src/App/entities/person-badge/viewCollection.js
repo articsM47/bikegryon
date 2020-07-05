@@ -9,6 +9,7 @@ export default class extends ImView {
     initialize() {
      
         this.listenTo(this.collection, 'add remove reset', this.render);
+       
     }
 
     render() {

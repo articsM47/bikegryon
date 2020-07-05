@@ -654,7 +654,7 @@
 
 }
 
-/******************* Review**********************/
+/******************* Review **********************/
 
 .review-content {
     margin: 40px !important;
@@ -667,4 +667,35 @@
 .row-question {
     border-bottom: 1px solid #5355FA !important;
     margin-bottom: 10px;
+}
+
+/******************* Ajouter un client **********************/
+
+/**** Popup ****/
+
+.input-newUser:focus {
+    outline: 0 !important;
+}
+
+.input-newUser:focus {
+    border-color: #5355FA;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+.input-newUser{
+    width: 80%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #a1a1a1;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.row-days{
+    margin-bottom:20px;
 }

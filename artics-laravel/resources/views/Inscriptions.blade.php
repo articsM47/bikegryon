@@ -184,6 +184,7 @@
   <br>
   <!-- <a href="/Creation" type="button" class="button reserve-button"><span>Réserver</span></a> -->
   <button class="button reserve-button" type="submit" ><span>Réserver</span></button>
+</form>
 </div>
 
 @endsection

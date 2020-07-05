@@ -8,11 +8,9 @@
       <h1 class="title-page">Check-in clients</h1>
     </div>
     <div class="col-lg-6 vertical-align-center" style="margin-top: 20px;">
-      <a href="/Inscriptions">
-        <button type="button" class="button button-add test">
-          <span>Ajouter une personne</span>
-        </button>
-      </a>
+      <button id="add-person" type="button" class="button button-add test">
+        <span>Ajouter une personne</span>
+      </button>
     </div>
   </div>
 
@@ -27,6 +25,54 @@
     </div>
   </div>
 
+  <!-- Test modal - ajouter une personne  -->
+  <div id='popupField' class="modal fade in" tabindex="-1" role="dialog">
+    <div class="modal-dialog popup-box" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Nouvelle personne</h4>
+          <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="{{ url('Creation') }}" accept-charset="UTF-8">
+            @csrf
+            <row>
+              <div class="text-center">
+                <div class="{!! $errors->has('nom') ? 'has-error' : '' !!}">
+                  <input type="text" class="input-newUser" name="nom" value="{{old('nom')}}" placeholder="Nom" required>
+                  {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
+                </div>
+                <div class="{!! $errors->has('prenom') ? 'has-error' : '' !!}">
+                  <input type="text" class="input-newUser" name="prenom" value="{{old('prenom')}}" placeholder="Prénom" required>
+                  {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
+                </div>
+                <div class="{!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
+                  <input type="date" class="input-newUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
+                </div>
+                <div class="{!! $errors->has('email1') ? 'has-error' : '' !!}">
+                  <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" required>
+                  {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
+                </div>
+                <div>
+                <input type="text" id="input-client-badge" class="input-newUser" placeholder="Numéro de badge" required autofocus>
+                </div>
+                <div class="row ">
+                  <div class="col-12 text-center">
+                    <button id="submit-person" type="button" data-action="create" class="button reserve-button"><span>Créer</span></button>
+                  </div>
+                </div>
+              </div>
+            </row>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- grid des personnes -->
   <div class="row">
     <div class="col-lg-12 text-center table-content">
@@ -39,9 +85,9 @@
             <th class="table-border">Email</th>
             <th class="table-border">N° Badge</th>
           </tr>
-          </thead>
-          <tbody id="people-table" class="table-people table-border">
-          </tbody>
+        </thead>
+        <tbody id="people-table" class="table-people table-border">
+        </tbody>
       </table>
     </div>
   </div>
