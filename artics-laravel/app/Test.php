@@ -10,16 +10,28 @@ class Test extends Model
     protected $table='tests';
     protected $fillable=['review','client_id','testday_id','bike_id', 'badgeNo'];
     use SoftDeletes;
-
-    public function bike() {          
-        return $this->belongsTo('App\Bike'); 
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function bike() {
+        return $this->belongsTo('App\Bike');
     }
-
-    public function testday() {          
-        return $this->belongsTo('App\Testday'); 
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function testday() {
+        return $this->belongsTo('App\Testday');
     }
-
-    public function client() {          
-        return $this->belongsTo('App\Client'); 
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function client() {
+        return $this->belongsTo('App\Client');
     }
 }

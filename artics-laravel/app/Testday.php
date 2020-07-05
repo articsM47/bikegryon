@@ -12,12 +12,20 @@ class Testday extends Model
     public $timestamps = false;
 
     use SoftDeletes;
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function clients() {
         return $this->belongsToMany(Client::class);
     }
-
-    public function tests() {          
-        return $this->hasMany('App\Test');  
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function tests() {
+        return $this->hasMany('App\Test');
     }
 }

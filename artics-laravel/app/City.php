@@ -10,12 +10,20 @@ class City extends Model
     public $incrementing = false;
     public $timestamps=false;
     protected $fillable=['id','postalCode','cityName','canton','country_id'];
-
-    public function country() {          
-        return $this->belongsTo('App\Country'); 
-    } 
-
-    public function addresses() {          
-        return $this->hasMany('App\Address');  
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function country() {
+        return $this->belongsTo('App\Country');
+    }
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function addresses() {
+        return $this->hasMany('App\Address');
     }
 }

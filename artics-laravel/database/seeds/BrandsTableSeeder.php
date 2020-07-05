@@ -5,6 +5,11 @@ use Carbon\Carbon;
 
 class BrandsTableSeeder extends Seeder
 {
+     /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randDate() {
         $nbJours = rand(-365,0);
         return Carbon::now()->addDays($nbJours);

@@ -10,12 +10,20 @@ class Address extends Model
     protected $table='addresses';
     protected $fillable=['street1','street2','streetNo','poBox','city_id'];
     use SoftDeletes;
-
-    public function city() {          
-        return $this->belongsTo('App\City'); 
-    } 
-
-    public function persons() {          
-        return $this->hasMany('App\Member');  
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function city() {
+        return $this->belongsTo('App\City');
+    }
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function persons() {
+        return $this->hasMany('App\Member');
     }
 }

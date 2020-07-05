@@ -19,7 +19,11 @@ class TestController extends Controller
     {
         return TestResource::collection(Test::with('bike', 'testday')->get());
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function affiche()
     {
         return view('Test');
@@ -39,7 +43,11 @@ class TestController extends Controller
         // cration des dépendance
         return new TestResource($Test);
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function create(Request $request)
     {
         $bike = $this->findBike($request->distinctiveSign);
@@ -59,7 +67,11 @@ class TestController extends Controller
     {
         return new TestResource($Test);
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function afficheproduit(Test $Test)
     {
         return view('Test');
@@ -89,21 +101,33 @@ class TestController extends Controller
     {
         $Test->delete();
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     protected function findBike($distinctiveSign)
     {
         return Bike::where('distinctiveSign', $distinctiveSign)
             // Pour retourner le premier bike
             ->first();
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     protected function findClient($badgeNumber)
     {
         return ClientTestday::where('badgeNo', $badgeNumber)
             // Pour retourner le premier clienttestday
             ->first();
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     protected function createTest($bike, $clientTestDay)
     {
         $test = new Test();

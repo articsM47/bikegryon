@@ -10,8 +10,12 @@ class Country extends Model
     public $incrementing = false;
     public $timestamps=false;
     protected $fillable=['id','code','alpha2','alpha3','nameFR','nameEN','nameDE' ,'nameIT','sortingSequence'];
-
-    public function cities() {          
-        return $this->hasMany('App\City');  
-    }    
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function cities() {
+        return $this->hasMany('App\City');
+    }
 }

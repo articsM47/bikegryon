@@ -4,6 +4,11 @@ use Illuminate\Database\Seeder;
 
 class StaffsTableSeeder extends Seeder
 {
+     /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randJob() {
         $job = ["Accueil", "Autre", "Bar", "Information", "Direction"];
         return $job[rand(0,count($job)-1)];

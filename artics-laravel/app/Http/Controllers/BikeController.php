@@ -70,7 +70,11 @@ public function affiche() {
     {
         return new BikeResource($Bike);
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function afficheproduit($Bike) {
 
       $bike = Bike::findOrFail($Bike);

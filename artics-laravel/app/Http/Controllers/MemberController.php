@@ -22,17 +22,29 @@ class MemberController extends Controller
     {
         return MemberResource::collection(Member::all());
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
 public function affiche() {
      return view('People');
 
 
 }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
  public function rendFormulaire() {
 	return view('Inscriptions');
 }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
  public function valideEtTraiteFormulaire(InscriptionRequest $request) {
 
 /*     // Envoi d'un mail
@@ -76,7 +88,11 @@ public function affiche() {
     return view('Creation', $request->all(), );
 }
 
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
 public function validetoConfirmation(mdpRequest $request) {
 
     $nom = $request->only(['nom']);
@@ -121,7 +137,11 @@ public function validetoConfirmation(mdpRequest $request) {
     {
         return new MemberResource($Member);
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function afficheproduit(Member $Member) {
      return view('Member');
 }
