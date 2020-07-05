@@ -9,6 +9,7 @@ export default class extends ImView {
     initialize() {
         this.listenTo(this.collection, 'add remove reset', this.render);
         this.initAddBadgePopup();
+        this.initAddPersonPopup();
     }
 
     render() {
@@ -39,6 +40,25 @@ export default class extends ImView {
             $("#popup-add-badge").hide();
         });
     }
+
+    initAddPersonPopup() {
+        console.log('hellohello')
+        let self = this;
+        $("#add-person").on("click", () => {
+            //self.resetAddPersonPopup();
+            $("#popupField").show();
+        });
+
+        $("#submit-person").on("click", () => {
+            $("#popupField").hide();
+        });
+    }
+
+    //resetAddPersonPopup() {
+        // Remise à 0 des inputs
+       // $('#input-client-number').val('');
+       // $('#input-bike').val('');
+    //}
 
     resetAddBadgePopup(event) {
         $('#input-client-badge').val('');
