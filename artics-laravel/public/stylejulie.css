@@ -526,3 +526,17 @@ h4 {
     top: 2px;
     left: 2px;
 }
+
+/********** Ajouter un badge *************/
+.button-add-badge {
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #5355FA;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

@@ -5,7 +5,7 @@ let people = new People();
 
 let vpeople = new Peoplecollection({
     collection : people,
-    el: '#people'
+    el: '#people-table'
 }); 
 
 people.fetch();
