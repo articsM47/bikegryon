@@ -21,6 +21,7 @@ class Test extends JsonResource
             'testday_id' => $this->testday_id,
             'bike_id' => $this->bike_id,
             'created_at' => $this->created_at,
+            'creation_time' => strtotime($this->created_at),
             'endTime' => $this->endTime,
             'distinctiveSign' => $this->bike->distinctiveSign,
             'badgeNo' => $this->badgeNo

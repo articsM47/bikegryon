@@ -3,13 +3,13 @@ import {
 } from 'lib/ImBackbone';
 import View from 'App/entities/Test/viewModel';
 
-
 export default class extends ImView {
 
     initialize() {
         this.listenTo(this.collection, 'add remove reset', this.render);
         this.initAddTestPopup();
         this.initTestReviewPopup();
+
     }
 
     render() {
@@ -22,6 +22,7 @@ export default class extends ImView {
             })
             view.render().$el.appendTo(this.$el);
         }
+        this.allDuration();
         return this;
     }
 
@@ -121,4 +122,39 @@ export default class extends ImView {
             }
         });
     }
+
+    allDuration(){
+        let self=this;
+        this.$el.find('tr').each((index, value)=>{
+            let tr = $(value);
+            let creationDate = new Date(tr.data('creationtime'));
+            let creationTime = Math.round(creationDate.getTime() / 1000);
+            let nowDate = new Date ();
+            let nowTime = Math.round(nowDate.getTime() / 1000);
+            
+            let duration = self.formatDuration(nowTime-creationTime);
+
+            tr.find('.data-chronometer').text(duration);
+
+
+        })
+    }
+
+    formatDuration(duration){
+        console.log(duration)
+
+            var sec_num = parseInt(duration, 10); // don't forget the second param
+            var hours   = Math.floor(sec_num / 3600);
+            var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+            var seconds = sec_num - (hours * 3600) - (minutes * 60);
+        
+            if (hours   < 10) {hours   = "0"+hours;}
+            if (minutes < 10) {minutes = "0"+minutes;}
+            if (seconds < 10) {seconds = "0"+seconds;}
+
+            return hours+':'+minutes+':'+seconds;
+
+    }
+
+
 }

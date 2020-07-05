@@ -171,7 +171,7 @@
     overflow: hidden;
     visibility: hidden;
     padding-left: 30px;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.1s ease;
     border: none !important;
 }
 
@@ -445,7 +445,7 @@
     font-size: 1rem !important;
 }
 
-/*********** Tests *************/
+/**************** Tests ****************/
 
 .button.button-add.test {
     margin: 30px !important;
@@ -493,4 +493,178 @@
 
 .gray {
     color: #b6b5b5;
+}
+
+/******** Pop up *********/
+#popupField {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-popup:focus {
+    outline: 0 !important;
+}
+
+.input-popup:focus {
+    border-color: #5355FA;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+.input-popup {
+    width: 60%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #a1a1a1;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.modal-title{
+    margin: 10px !important;
+}
+
+.modal-content {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+}
+
+.modal-header{
+    border:none !important;
+}
+.fade.in {
+    opacity: 1 !important;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-backdrop .fade .in {
+    opacity: 0.5 !important;
+}
+
+#popupField .modal-dialog {
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+/****************** Info pratiques ************************/
+
+.input-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.info-title {
+    cursor: pointer;
+    font-size: 3rem !important;
+}
+
+.info-title {
+    position: relative;
+    padding-left: 30px;
+
+}
+
+.info-title::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 10px;
+    border-left: 8px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-top: -8px;
+}
+
+.input-info:checked~h3 label::before {
+    border-left: 8px solid transparent;
+    border-top: 8px solid black;
+    border-right: 8px solid transparent;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+
+.info-content ul {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 30px;
+    transition: max-height 0.2s ease;
+    font-size: 1.8rem;
+}
+
+.input-info:checked~h3~.info-content ul {
+    max-height: 100%;
+    visibility: visible;
+}
+
+.info-block-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.info-border {
+    border-bottom: 2px solid #5355FA !important;
+    margin-bottom: 20px;
+}
+
+/******************* Plan des stands **********************/
+
+.plan {
+    margin: 50px;
+}
+
+#dropdownMenuButton {
+    background-color: #5355FA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #ffff;
+    border: none !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem !important;
+
+}
+
+/******************* Review**********************/
+
+.review-content {
+    margin: 40px !important;
+}
+
+.review-question {
+    font-size: 1.4rem;
+}
+
+.row-question {
+    border-bottom: 1px solid #5355FA !important;
+    margin-bottom: 10px;
 }
