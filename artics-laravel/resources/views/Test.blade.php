@@ -29,16 +29,16 @@
   <div class="row">
     <div class="col-lg-12 text-center table-content">
       <table class="table-border" style="width:100%">
-        <tr>
-          <thead class="test-headline table-border">
+        <thead class="test-headline table-border">
+          <tr>
             <th class="table-border">N°</th>
             <th class="table-border">Badge</th>
             <th class="table-border">Distinctive sign</th>
             <th class="table-border">Temps d'essai</th>
             <th class="table-border">Action</th>
-        </tr>
+          </tr>
         </thead>
-        <tbody id="tests">
+        <tbody id="tests-table">
         </tbody>
       </table>
       
@@ -68,25 +68,72 @@
         </div>
       </div>
 
-      <!-- Test modal- add a new review -->
-      <div id='popupField' class="modal fade" tabindex="-1" role="dialog">
+      <!-- Pop-up Terminer un test, ajouter une review-->
+      <div id='popUpReview' class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog popup" role="document">
           <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Feedback client</h5>
-            <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+            <div class="modal-header">
+              <h5 class="modal-title" id="">Avis du client</h5>
+              <button id="close-review" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <div class="modal-body">
               <form class="form-signin">
-                <label for="inputEmail" class="sr-only">Numéro client</label>
-                <input type="text" id="inputEmail" class="inputUser" placeholder="Numéro client" required autofocus>
+                <input type="hidden" name="_token" id="csrf-token" value="<?php echo csrf_token() ?>">
+                <input type="hidden" name="testid" id="test-id">
+                <div class="row">
+                  <div class="col-6 align-self-center">
+                    <label>Question 1 : manoeuvrabilité</label>
+                  </div>
+                  <div class="col-6 rating align-self-center">
+                    <input type="radio" id="question1-star5" name="question1" value="5" /><label for="question1-star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="question1-star4" name="question1" value="4" /><label for="question1-star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="question1-star3" name="question1" value="3" /><label for="question1-star3" title="Meh">3 stars</label>
+                    <input type="radio" id="question1-star2" name="question1" value="2" /><label for="question1-star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="question1-star1" name="question1" value="1" /><label for="question1-star1" title="Sucks big time">1 star</label>
+                  </div>
+                </div>
                 <br>
+                <div class="row">
+                  <div class="col-6 col-6 align-self-center">
+                    <label>Question 2 : freins</label>
+                  </div>
+                  <div class="col-6 rating align-self-center">
+                    <input type="radio" id="question2-star5" name="question2" value="5" /><label for="question2-star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="question2-star4" name="question2" value="4" /><label for="question2-star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="question2-star3" name="question2" value="3" /><label for="question2-star3" title="Meh">3 stars</label>
+                    <input type="radio" id="question2-star2" name="question2" value="2" /><label for="question2-star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="question2-star1" name="question2" value="1" /><label for="question2-star1" title="Sucks big time">1 star</label>
+                  </div>
+                </div>
                 <br>
-                <label for="inputPassword" class="sr-only">Distinctive sign vélo</label>
-                <input type="text" id="inputPassword" class="inputUser" placeholder="Distinctive sign vélo" required>
-                <button id="submit-test" type="submit" data-action="create"><span>Démarrer le test</span></button>
+                <div class="row">
+                  <div class="col-6 col-6 align-self-center">
+                    <label>Question 3 : transmission</label>
+                  </div>
+                  <div class="col-6 rating align-self-center">
+                    <input type="radio" id="question3-star5" name="question3" value="5" /><label for="question3-star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="question3-star4" name="question3" value="4" /><label for="question3-star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="question3-star3" name="question3" value="3" /><label for="question3-star3" title="Meh">3 stars</label>
+                    <input type="radio" id="question3-star2" name="question3" value="2" /><label for="question3-star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="question3-star1" name="question3" value="1" /><label for="question3-star1" title="Sucks big time">1 star</label>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-6 col-6 align-self-center">
+                    <label>Question 4 : confort</label>
+                  </div>
+                  <div class="col-6 rating align-self-center">
+                    <input type="radio" id="question4-star5" name="question4" value="5" /><label for="question4-star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="question4-star4" name="question4" value="4" /><label for="question4-star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="question4-star3" name="question4" value="3" /><label for="question4-star3" title="Meh">3 stars</label>
+                    <input type="radio" id="question4-star2" name="question4" value="2" /><label for="question4-star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="question4-star1" name="question4" value="1" /><label for="question4-star1" title="Sucks big time">1 star</label>
+                  </div>
+                </div>
+                <button id="submit-review" type="button" data-action="create"><span>Enregistrer l'avis</span></button>
               </form>
             </div>
           </div>

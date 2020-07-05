@@ -186,7 +186,7 @@ h4 {
 
 .button-add {
     margin-top: 30px;
-    border:none !important;
+    border: none !important;
 }
 
 .button-add span:after {
@@ -240,7 +240,7 @@ h4 {
 }
 
 .card-bike:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* .card-img-top {
@@ -360,7 +360,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-.add-bike-button:hover  {
+.add-bike-button:hover {
     color: white;
     text-decoration: none;
 }
@@ -418,7 +418,8 @@ h4 {
     font-size: 2rem;
 }
 
-.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
     color: #5355FA !important;
 }
 
@@ -473,4 +474,55 @@ h4 {
 .event-deroulement-col {
     font-size: 2rem;
     text-align: center;
+}
+
+.rating {
+    float: left;
+}
+
+/********** Reviews étoiles *************/
+.rating:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 300%;
+    color: #ddd;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rating>input:checked~label {
+    color: dodgerblue;
+
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: dodgerblue;
+
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: dodgerblue;
+
+}
+
+.rating>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
