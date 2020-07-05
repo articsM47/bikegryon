@@ -171,7 +171,7 @@
     overflow: hidden;
     visibility: hidden;
     padding-left: 30px;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.1s ease;
     border: none !important;
 }
 
@@ -537,7 +537,7 @@
     max-height: 0;
     overflow: hidden;
     padding-left: 30px;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.2s ease;
     font-size: 1.8rem;
   }
 .input-info:checked ~h3~.info-content ul {
@@ -553,4 +553,31 @@
 .info-border{
     border-bottom: 2px solid #5355FA !important;
     margin-bottom: 20px;
+}
+
+/******************* Plan des stands **********************/
+
+.plan{
+    margin: 50px;    
+}
+
+#dropdownMenuButton{
+    background-color: #5355FA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color:#ffff;
+    border:none !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.dropdown-menu{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem !important;
+
 }
