@@ -9,6 +9,7 @@ export default class extends ImView {
         this.listenTo(this.collection, 'add remove reset', this.render);
         this.initAddTestPopup();
         this.initTestReviewPopup();
+        this.initChronometer();
 
     }
 
@@ -58,6 +59,14 @@ export default class extends ImView {
         $("#close-review").on("click", () => {
             $("#popUpReview").hide();
         });
+    }
+    initChronometer(){
+        let self=this;
+
+        setInterval(() => {    
+            self.allDuration(); 
+          }, 1000);
+
     }
 
     resetTestReviewPopup() {
@@ -129,16 +138,13 @@ export default class extends ImView {
         let self=this;
         this.$el.find('tr').each((index, value)=>{
             let tr = $(value);
-            let creationDate = new Date(tr.data('creationtime'));
-            let creationTime = Math.round(creationDate.getTime() / 1000);
+            let creationTime = tr.data('creationtime');
             let nowDate = new Date ();
             let nowTime = Math.round(nowDate.getTime() / 1000);
             
             let duration = self.formatDuration(nowTime-creationTime);
 
             tr.find('.data-chronometer').text(duration);
-
-
         })
     }
 
