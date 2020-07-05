@@ -22,7 +22,8 @@ class Test extends JsonResource
             'bike_id' => $this->bike_id,
             'created_at' => $this->created_at,
             'endTime' => $this->endTime,
-
+            'distinctiveSign' => $this->bike->distinctiveSign,
+            'badgeNo' => $this->badgeNo
         ];
     }
 }

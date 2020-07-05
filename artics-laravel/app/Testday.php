@@ -14,7 +14,7 @@ class Testday extends Model
     use SoftDeletes;
 
     public function clients() {
-        return $this->belongsToMany(Client::class); //return $this->belongsToMany('App\Motcle.php');
+        return $this->belongsToMany(Client::class);
     }
 
     public function tests() {          

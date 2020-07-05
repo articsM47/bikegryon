@@ -17,8 +17,7 @@ class TestController extends Controller
      */
     public function index()
     {
-
-        return TestResource::collection(Test::all());
+        return TestResource::collection(Test::with('bike', 'testday')->get());
     }
 
     public function affiche()
@@ -46,7 +45,7 @@ class TestController extends Controller
         $bike = $this->findBike($request->distinctiveSign);
         $clientTestDay = $this->findClient($request->badgeNo);
         $this->createTest($bike, $clientTestDay);
-        
+
         return 'OK';
     }
 
@@ -107,11 +106,11 @@ class TestController extends Controller
 
     protected function createTest($bike, $clientTestDay)
     {
-        error_log(print_r($bike->id, true));
         $test = new Test();
         $test->bike_id = $bike->id;
         $test->client_id = $clientTestDay->client_id;
         $test->testday_id = $clientTestDay->testday_id;
+        $test->badgeNo = $clientTestDay->badgeNo;
         $test->save();
     }
 }
