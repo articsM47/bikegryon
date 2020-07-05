@@ -36,7 +36,7 @@ class TestController extends Controller
         $data = $request->only(['review', 'client_id', 'testday_id', 'bike_id', 'endTime', 'startTime']);
         // todo : validation
         $Test = Test::create($data);
-        // cration des dépendance
+        // création des dépendance
         return new TestResource($Test);
     }
 
@@ -45,7 +45,14 @@ class TestController extends Controller
         $bike = $this->findBike($request->distinctiveSign);
         $clientTestDay = $this->findClient($request->badgeNo);
         $this->createTest($bike, $clientTestDay);
+        return 'OK';
+    }
 
+    public function submitReview(Request $request) {
+        error_log(print_r($request->all(), true));
+        $test = $this->findTest($request->testId);
+        $test->review = Test::buildReview($request->question1, $request->question2, $request->question3, $request->question4);
+        $test->save();
         return 'OK';
     }
 
@@ -112,5 +119,11 @@ class TestController extends Controller
         $test->testday_id = $clientTestDay->testday_id;
         $test->badgeNo = $clientTestDay->badgeNo;
         $test->save();
+    }
+
+    protected function findTest($testId)
+    {
+        return Test::where('id', $testId)
+            ->first();
     }
 }

@@ -78,7 +78,7 @@ Route::get('Test', function () {
 });
 
 Route::post('Test', 'TestController@create');
-
+Route::post('Test/Review', 'TestController@submitReview');
 
 Route::get('Infos', function () {
     return view("Infos");
