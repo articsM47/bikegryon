@@ -52,12 +52,9 @@
   </div>
 
   <script>
-    /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("Catégories").classList.toggle("show");
     }
-
     function filterCategories() {
       var input, filter, ul, li, a, i;
       input = document.getElementById("myInput");
@@ -74,7 +71,6 @@ toggle between hiding and showing the dropdown content */
       }
     }
   </script>
-
 
   <!--  
   <div class="dropdown">
