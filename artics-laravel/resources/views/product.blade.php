@@ -97,16 +97,54 @@
         </table>
       </div>
       <div class="col-sm-6">
-      <button type="button" id="wish{{$bike -> id}}" class="btn btn-primary">Ajouter à ma liste</button>
+          <button type="button" id=  "wish{{$bike -> id}}" class="btn btn-primary notWished" onClick="addOrDelWish()">Ajouter à ma liste</button>
           <script>
             let wishlist= JSON.parse(localStorage.getItem('wishlist'));
             let wishes = [];
+            let product = {
+                "id": {{$bike -> id}},
+                "shortDescr": "{{$bike -> shortDescr}}",
+                "longDescr": "{{$bike -> longDescr}}",
+                "distinctiveSign": "{{$bike -> distinctiveSign}}",
+                "brand_id": "{{$bike -> brand_id}}",
+                "picture": "{{$bike -> picture}}",
+                "frameSize": "{{$bike -> frameSize}}",
+                "frameUnit": "{{$bike -> frameUnit}}",
+                "category": "{{$bike -> category}}"
+                };
+
+            // Initial button 
             wishlist.forEach(wish => {
-              wishes.push(wish.id);
-              if({{$bike->id}}===wish.id){
+              if({{$bike -> id}}===wish.id){
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary wished";
               }
             });
+            
+            //button action & name
+            function wishlistAdd(){
+              wishlist.push(product);
+              let data = JSON.stringify(wishlist);
+              localStorage.setItem('wishlist', data);
+            }
+            function wishlistDel(){
+              wishlist = wishlist.filter(ele =>  ele.id!=product.id);
+              let data = JSON.stringify(wishlist);
+              localStorage.setItem('wishlist', data);
+            }
+            function addOrDelWish(){
+              if(document.getElementById("wish{{$bike -> id}}").className== "btn btn-primary notWished"){
+                wishlistAdd();
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary wished";
+              }else if(document.getElementById("wish{{$bike -> id}}").className== "btn btn-primary wished"){
+                wishlistDel();
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Ajouter à ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary notWished";
+              }else{
+                console.log("Cette condition ne devrait jamais avoir lieu !");
+              }
+            }
           </script>
       </div>
     </div>
@@ -116,4 +154,6 @@
     <!-- Carousel-->
   </div>
 </div>
+
 @endsection
+
