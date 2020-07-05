@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Resources\Test as TestResource;
 use App\Bike;
 use App\ClientTestday;
+use Carbon\Carbon;
 
 class TestController extends Controller
 {
@@ -16,9 +17,10 @@ class TestController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return TestResource::collection(Test::with('bike', 'testday')->get());
+    { 
+        return TestResource::collection(Test::where('endTime', null)->get());
     }
+
 
     public function affiche()
     {
@@ -52,10 +54,11 @@ class TestController extends Controller
         error_log(print_r($request->all(), true));
         $test = $this->findTest($request->testId);
         $test->review = Test::buildReview($request->question1, $request->question2, $request->question3, $request->question4);
+        $test->endTime = Carbon::now();
         $test->save();
         return 'OK';
     }
-
+ 
     /**
      * Display the specified resource.
      *

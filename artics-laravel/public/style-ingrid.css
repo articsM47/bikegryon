@@ -495,12 +495,12 @@
 }
 
 /******** Pop up *********/
-#popupField{
+#popupField {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 .input-popup:focus {
     outline: 0 !important;
@@ -512,7 +512,7 @@
     font-weight: 400;
 }
 
-.input-popup{
+.input-popup {
     width: 60%;
     padding: 10px 10px;
     box-sizing: border-box;
@@ -524,31 +524,41 @@
     border-radius: 20px;
 }
 
-.modal-content  {
-    -webkit-border-radius: 15px !important;
-    -moz-border-radius: 15px !important;
-    border-radius: 15px !important; 
+.modal-title{
+    margin: 10px !important;
 }
 
+.modal-content {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+}
+
+.modal-header{
+    border:none !important;
+}
 .fade.in {
     opacity: 1 !important;
-  }
-  .modal.in .modal-dialog {
+}
+
+.modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
-  }
-  
-  .modal-backdrop .fade .in {
+}
+
+.modal-backdrop .fade .in {
     opacity: 0.5 !important;
-  }
+}
+
 #popupField .modal-dialog {
-    -webkit-transform: translate(0,-50%);
-    -o-transform: translate(0,-50%);
-    transform: translate(0,-50%);
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     top: 50%;
     margin: 0 auto;
 }
+
 /****************** Info pratiques ************************/
 
 .input-info {
@@ -558,17 +568,20 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-  }
-  .info-title{
+}
+
+.info-title {
     cursor: pointer;
     font-size: 3rem !important;
-  }
-  .info-title{
+}
+
+.info-title {
     position: relative;
     padding-left: 30px;
- 
-  }
-  .info-title::before {
+
+}
+
+.info-title::before {
     content: "";
     position: absolute;
     width: 0;
@@ -579,44 +592,46 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     margin-top: -8px;
-  }
-.input-info:checked ~ h3 label::before {
+}
+
+.input-info:checked~h3 label::before {
     border-left: 8px solid transparent;
     border-top: 8px solid black;
     border-right: 8px solid transparent;
     margin-left: -4px;
     margin-top: -4px;
-  }
-  
-  .info-content ul  {
+}
+
+.info-content ul {
     max-height: 0;
     overflow: hidden;
     padding-left: 30px;
     transition: max-height 0.2s ease;
     font-size: 1.8rem;
-  }
-.input-info:checked ~h3~.info-content ul {
+}
+
+.input-info:checked~h3~.info-content ul {
     max-height: 100%;
     visibility: visible;
-  }
+}
 
-.info-block-content{
+.info-block-content {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.info-border{
+.info-border {
     border-bottom: 2px solid #5355FA !important;
     margin-bottom: 20px;
 }
 
 /******************* Plan des stands **********************/
 
-.plan{
-    margin: 50px;    
+.plan {
+    margin: 50px;
 }
 
-#dropdownMenuButton{
+#dropdownMenuButton {
     background-color: #5355FA;
     padding: 15px 32px;
     text-align: center;
@@ -625,14 +640,30 @@
     border-radius: 40px;
     transition: all 0.5s;
     cursor: pointer;
-    color:#ffff;
-    border:none !important;
+    color: #ffff;
+    border: none !important;
     font-size: 1.4rem;
     font-weight: 600;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     text-decoration: none;
     display: inline-block;
     font-size: 1.4rem !important;
 
+}
+
+/******************* Review**********************/
+
+.review-content {
+    margin: 40px !important;
+}
+
+.review-question {
+    font-size: 1.4rem;
+}
+
+.row-question {
+    border-bottom: 1px solid #5355FA !important;
+    margin-bottom: 10px;
 }
