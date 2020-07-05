@@ -6,7 +6,14 @@ import tmpl from 'App/entities/person/tmpl.handlebars';
 
 export default class extends ImView {
 
-  
+  //methodes obbligatoire
+      //va sauver le modèle sur this.model
+      initialize(attrs, options) {
+        
+        this.listenTo(this.model, 'change', this.render);
+      }
+
+
     events() {
         return {
           'click [data-action="edit"]': 'edit',
@@ -23,15 +30,10 @@ export default class extends ImView {
       modify(evt) { 
         let email = this.$el.find('.people-input-email').val();
         //let badge = this.$el.find('.people-input-badge').val();
-        this.model.set({email, badge, editable: false});
+        this.model.set({email, editable: false});
         this.model.save();
       }
     
-      //methodes obbligatoire
-      //va sauver le modèle sur this.model
-      initialize(attrs, options) {
-        this.listenTo(this.model, 'change', this.render);
-      }
     
       //affichage de la vue
       render() {

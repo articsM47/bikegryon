@@ -6,7 +6,6 @@ from 'lib/ImBackbone';
 export default class extends ImModel {
 
     //todo : validate 
-    //exmeple
     /* validate(attrs) {
         let props = ['class', 'label', 'room', 'start', 'end', 'id'];
         let errors = [];
