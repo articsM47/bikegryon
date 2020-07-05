@@ -452,6 +452,7 @@ h4 {
     margin-right: 10px;
     padding: 15px 32px !important;
     border-radius: 20px;
+    background-color: #DDDFDE;
 }
 
 .add-people-button:hover {
@@ -502,13 +503,13 @@ h4 {
 }
 
 .rating>input:checked~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
 .rating:not(:checked)>label:hover,
 .rating:not(:checked)>label:hover~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
@@ -517,7 +518,7 @@ h4 {
 .rating>input:checked~label:hover,
 .rating>input:checked~label:hover~label,
 .rating>label:hover~input:checked~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
@@ -526,3 +527,26 @@ h4 {
     top: 2px;
     left: 2px;
 }
+
+/********** Ajouter un badge *************/
+.button-add-badge {
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #5355FA;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    }
+    .modal-backdrop.fade.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    }

@@ -13,8 +13,6 @@ export default class extends ImView {
 
     }
 
-    // trier ça se passe ici 
-
     render() {
         this.$el.empty();
         let models = this.collection.models;
@@ -48,7 +46,7 @@ export default class extends ImView {
     initTestReviewPopup() {
         let self = this;
         $("#tests-table").on("click", ".end-test-review", (event) => {
-            self.resetTestReviewPopup();
+            self.resetTestReviewPopup(event);
             $("#popUpReview").show();
         })
 
@@ -69,7 +67,7 @@ export default class extends ImView {
 
     }
 
-    resetTestReviewPopup() {
+    resetTestReviewPopup(event) {
         $('input[name="question1"]').prop('checked', false);
         $('input[name="question2"]').prop('checked', false);
         $('input[name="question3"]').prop('checked', false);

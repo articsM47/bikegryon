@@ -14,6 +14,14 @@ class Member extends JsonResource
      */
     public function toArray($request)
     {
+        if(isset($request->badgeMapping[$this->id])) {
+            $mapping = $request->badgeMapping[$this->id];
+            $badgeNo = isset($mapping['badgeNo']) ? $mapping['badgeNo'] : '';
+            $clientId = $mapping['clientId'];
+        } else {
+            $badgeNo = '';
+            $clientId = 0;
+        }
         return [
             'name' => $this->name,
             'firstname' => $this->firstname,
@@ -24,7 +32,10 @@ class Member extends JsonResource
             'email2' => $this->email2,
             'comment' => $this->comment,
             'address_id' => $this->address_id,
-            'role' => $this->role
+            'role' => $this->role,
+            'badgeNo' => $badgeNo,
+            'clientId' => $clientId,
+            'testDayId' => $request->testDayId
         ];
     }
 }
