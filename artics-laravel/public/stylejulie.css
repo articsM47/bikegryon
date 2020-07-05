@@ -503,13 +503,13 @@ h4 {
 }
 
 .rating>input:checked~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
 .rating:not(:checked)>label:hover,
 .rating:not(:checked)>label:hover~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
@@ -518,7 +518,7 @@ h4 {
 .rating>input:checked~label:hover,
 .rating>input:checked~label:hover~label,
 .rating>label:hover~input:checked~label {
-    color: dodgerblue;
+    color: #5355FA;
 
 }
 
@@ -541,3 +541,12 @@ h4 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    }
+    .modal-backdrop.fade.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    }
