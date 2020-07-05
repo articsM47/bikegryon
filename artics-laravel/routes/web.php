@@ -77,6 +77,9 @@ Route::get('Test', function () {
     return view("Test");
 });
 
+Route::post('Test', 'TestController@create');
+
+
 Route::get('Infos', function () {
     return view("Infos");
 });
@@ -94,16 +97,17 @@ Route::resource('Products', 'ProductController', ['except'=>['show','edit','upda
 
 Route::get('Catalogue', 'ProductController@affiche');
 
-
-
-
 Route::get('Product/{id}', 'BikeController@afficheproduit');
 
 Route::get('AddProduct', 'BikeController@create');
 
-
 Route::resource('Bikes', 'BikeController'/* , ['except'=>['show','edit','update']] */);
+
 Route::post('importdata','BikeController@uploadFile');
+
+Route::get('infophp', function() {
+    phpinfo();
+});
 
 /* Route::get('import_data', 'ProductController@uploadFile'); */
 

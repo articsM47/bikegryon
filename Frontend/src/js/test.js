@@ -11,22 +11,34 @@ let vtests= new Testscollection({
     el: '#tests'
 }); 
 
-$("#addTest").on("click", () => {
-    console.log('hellohello');
+$("#add-test").on("click", () => {
+    $('#input-client-number').val('');
+    $('#input-bike').val('');
     $("#popupField").show();
-        $("#btn-close").on("click", () => {
-            $("#popupField").hide();
-        })
 })
-tests.fetch();
 
-// //New test modal
-// $('#addTestModal').modal({
-//     show: true
-// })
-// $('#startTest').modal({
-//     show: false
-// })
+$("#submit-test").on("click", () => {
+    let inputClientNumber = $('#input-client-number').val();
+    let inputBike = $('#input-bike').val();
+    let csrfToken =$('#csrf-token').val();
+    $.ajax({
+        type: "POST",
+        url: baseURL + "/Test",
+        data: {_token: csrfToken, badgeNo: inputClientNumber, distinctiveSign: inputBike},
+        success: () => {
+            tests.fetch(); // On refresh au moment de la réponse du serveur
+        },
+        complete: () => {
+            $("#popupField").hide();
+        }
+    });
+})
+
+$("#btn-close").on("click", () => {
+    $("#popupField").hide();
+})
+
+tests.fetch();
 
 
 

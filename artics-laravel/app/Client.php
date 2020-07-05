@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Client extends Model
 {
     protected $table='clients';
     protected $fillable=['member_id','canton'];
-    protected $primaryKey = 'member_id';//The primary key associated with the table
+    protected $primaryKey = 'id';
     use SoftDeletes;
 
     public function member() {
@@ -16,7 +17,7 @@ class Client extends Model
     }
 
     public function testdays() {
-        return $this->belongsToMany(Testday::class); //return $this->belongsToMany('App\Motcle.php');
+        return $this->belongsToMany(Testday::class);
     }
 
     public function test() {          

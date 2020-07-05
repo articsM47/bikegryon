@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Test;
 use Illuminate\Http\Request;
 use App\Http\Resources\Test as TestResource;
+use App\Bike;
+use App\ClientTestday;
+
 class TestController extends Controller
 {
     /**
@@ -14,15 +17,13 @@ class TestController extends Controller
      */
     public function index()
     {
-
-        return TestResource::collection(Test::all());
+        return TestResource::collection(Test::with('bike', 'testday')->get());
     }
 
-public function affiche() {
-     return view('Test');
-
-
-}
+    public function affiche()
+    {
+        return view('Test');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -32,16 +33,22 @@ public function affiche() {
      */
     public function store(Request $request)
     {
-        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime', 'startTime']) ;
+        $data = $request->only(['review', 'client_id', 'testday_id', 'bike_id', 'endTime', 'startTime']);
         // todo : validation
         $Test = Test::create($data);
         // cration des dépendance
         return new TestResource($Test);
     }
 
-    public function create() {
-        return view('AddTest');
+    public function create(Request $request)
+    {
+        $bike = $this->findBike($request->distinctiveSign);
+        $clientTestDay = $this->findClient($request->badgeNo);
+        $this->createTest($bike, $clientTestDay);
+
+        return 'OK';
     }
+
     /**
      * Display the specified resource.
      *
@@ -53,10 +60,10 @@ public function affiche() {
         return new TestResource($Test);
     }
 
-    public function afficheproduit(Test $Test) {
-
+    public function afficheproduit(Test $Test)
+    {
         return view('Test');
-}
+    }
     /**
      * Update the specified resource in storage.
      *
@@ -66,7 +73,7 @@ public function affiche() {
      */
     public function update(Request $request, Test $Test)
     {
-        $data = $request->only(['review','client_id','testday_id', 'bike_id', 'endTime', 'startTime']) ;
+        $data = $request->only(['review', 'client_id', 'testday_id', 'bike_id', 'endTime', 'startTime']);
         // todo : validation
         $Test->update($data);
         return new TestResource($Test);
@@ -83,6 +90,27 @@ public function affiche() {
         $Test->delete();
     }
 
+    protected function findBike($distinctiveSign)
+    {
+        return Bike::where('distinctiveSign', $distinctiveSign)
+            // Pour retourner le premier bike
+            ->first();
+    }
 
+    protected function findClient($badgeNumber)
+    {
+        return ClientTestday::where('badgeNo', $badgeNumber)
+            // Pour retourner le premier clienttestday
+            ->first();
+    }
+
+    protected function createTest($bike, $clientTestDay)
+    {
+        $test = new Test();
+        $test->bike_id = $bike->id;
+        $test->client_id = $clientTestDay->client_id;
+        $test->testday_id = $clientTestDay->testday_id;
+        $test->badgeNo = $clientTestDay->badgeNo;
+        $test->save();
+    }
 }
-
