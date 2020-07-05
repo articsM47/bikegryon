@@ -10,7 +10,7 @@
       <!-- <a class="float-right" href="/AddTest" class="representant badge badge-light">Ajouter un test</a> -->
       <!-- Button trigger modal -->
       <div id="test-form">
-        <button id="add-test" type="button" class="button button-add test">
+        <button id="add-test" type="button" class="button button-add test" data-toggle="modal" data-target="popupField">
           <span>Ajouter un test</span>
         </button>
       </div>
@@ -42,34 +42,34 @@
         </tbody>
       </table>
       
-      <!-- Test modal V2 Ingrid- add a new test -->
-      <div id='popupField' class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog popup" role="document">
+      <!-- Test modal - add a new test -->
+      <div id='popupField' class="modal fade in" tabindex="-1" role="dialog">
+        <div class="modal-dialog popup-box" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nouveau test</h5>
+              <h4 class="modal-title" id="exampleModalLabel">Nouveau test</h4>
               <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
               </button>
             </div>
             <div class="modal-body">
               <form class="form-signin">
                 <input type="hidden" name="_token" id="csrf-token" value="<?php echo csrf_token() ?>">
                 <label for="input-client-number" class="sr-only">Numéro de badge</label>
-                <input type="text" id="input-client-number" class="input-client-number" placeholder="Numéro de badge" required autofocus>
+                <input type="text" id="input-client-number" class="input-client-number input-popup" placeholder="Numéro de badge" required autofocus>
                 <br>
                 <br>
                 <label for="input-bike" class="sr-only">Distinctive sign vélo</label>
-                <input type="text" id="input-bike" class="input-bike" placeholder="Distinctive sign vélo" required>
-                <button id="submit-test" type="button" data-action="create"><span>Démarrer le test</span></button>
+                <input type="text" id="input-bike" class="input-bike input-popup" placeholder="Distinctive sign vélo" required>
+                <button id="submit-test" type="button" data-action="create" class="button reserve-button"><span>Démarrer le test</span></button>
               </form>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Test modal V2 Ingrid - add a new review -->
-      <div id='popupField' class="modal" tabindex="-1" role="dialog">
+      <!-- Test modal- add a new review -->
+      <div id='popupField' class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog popup" role="document">
           <div class="modal-content">
           <div class="modal-header">
@@ -92,33 +92,6 @@
           </div>
         </div>
       </div>
-      <!-- Add Test Modal 
-      <div class="modal fade" id="addTestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Nouveau test</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <input type="number" class="form-control" id="badgeNo" min="1000" max="9999" placeholder="Numéro client">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="distinctiveSign" placeholder="Distinctive sign vélo">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="startTest">Démarrer le test</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
     </div>
   </div>
 </div>

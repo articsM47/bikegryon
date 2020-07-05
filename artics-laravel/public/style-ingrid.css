@@ -445,7 +445,7 @@
     font-size: 1rem !important;
 }
 
-/*********** Tests *************/
+/**************** Tests ****************/
 
 .button.button-add.test {
     margin: 30px !important;
@@ -494,6 +494,61 @@
     color: #b6b5b5;
 }
 
+/******** Pop up *********/
+#popupField{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.input-popup:focus {
+    outline: 0 !important;
+}
+
+.input-popup:focus {
+    border-color: #5355FA;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+.input-popup{
+    width: 60%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #a1a1a1;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.modal-content  {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important; 
+}
+
+.fade.in {
+    opacity: 1 !important;
+  }
+  .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  
+  .modal-backdrop .fade .in {
+    opacity: 0.5 !important;
+  }
+#popupField .modal-dialog {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 50%;
+    margin: 0 auto;
+}
 /****************** Info pratiques ************************/
 
 .input-info {
