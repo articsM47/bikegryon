@@ -74,7 +74,6 @@
         </div>
       </div>
     </div>
-
     <!-- Product height and category -->
     <div class="row">
       <div class="col-sm-6">
@@ -84,7 +83,7 @@
               <img src="http://127.0.0.1:8000/fonts/height_bike.svg" alt="height_bike" width="30px">
             </td>
             <td>
-            <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain" width="40px">
+              <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain" width="40px">
             </td>
           </tr>
           <tr style="text-align: center;">
@@ -97,18 +96,24 @@
           </tr>
         </table>
       </div>
-
       <div class="col-sm-6">
-        <a href="#" class="button-like">S’en souvenir</a>
+      <button type="button" id="wish{{$bike -> id}}" class="btn btn-primary">Ajouter à ma liste</button>
+          <script>
+            let wishlist= JSON.parse(localStorage.getItem('wishlist'));
+            let wishes = [];
+            wishlist.forEach(wish => {
+              wishes.push(wish.id);
+              if({{$bike->id}}===wish.id){
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+              }
+            });
+          </script>
       </div>
     </div>
-
-  <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width = 100%>
-
+    <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
     <!-- grid des produits -->
     <h3>Dans la même catégorie</h3>
     <!-- Carousel-->
   </div>
 </div>
-
 @endsection

@@ -7,26 +7,26 @@
   <td>{{badgeNo}}</td>
   -->
   <td>
-  {{#if editable}} 
+    {{#if editable}}
     <input type="text" class="people-input-email" value="{{email1}}" placeholder="{{email1}}">
- {{else}} 
-   {{email1}}
+    {{else}}
+    {{email1}}
     {{/if}}
   </td>
 
   <td>
-  {{#if editable}}
+    {{#if editable}}
     <input type="text" class="people-input-badge" value="{{badgeNo}}" placeholder="{{badgeNo}}">
-  {{else}}
+    {{else}}
     {{badgeNo}}
-  {{/if}}
-</td>
+    {{/if}}
+  </td>
 
   <td>
-  {{#if editable}}
-   <button data-action="modify">Enregistrer</button>
-  {{else}}
- <button data-action="edit">Modifier</button>
-  {{/if}}
-</td>
+    {{#if editable}}
+    <button class="button-end-test" data-action="modify">Enregistrer</button>
+    {{else}}
+    <button class="button-end-test" data-action="edit">Modifier</button>
+    {{/if}}
+  </td>
 </tr>

@@ -15,6 +15,7 @@
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .2);
 }
 
+
 .nav-menu-text a {
     color: black;
     font-family: 'Open Sans', sans-serif;
@@ -48,7 +49,7 @@
 .title-home {
     color: white;
 }
-    
+
 /********** H1 *************/
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -183,12 +184,18 @@ h4 {
     opacity: 0.5;
 }
 
-.button-add  {
+.button-add {
     margin-top: 30px;
+    border:none !important;
 }
 
 .button-add span:after {
     content: '\002B' !important;
+}
+
+.button-wish {
+    border: none;
+    background-color: transparent;
 }
 
 /********** Filters *************/
@@ -224,8 +231,16 @@ h4 {
     margin-top: 30px;
 }
 
-.catalogue-descr {
-    max-height: 100px;
+.card-bike {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 30px !important;
+}
+
+.card-bike:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* .card-img-top {
@@ -280,6 +295,12 @@ h4 {
     font-size: 2rem;
 }
 
+/********** Footer *************/
+.linkFooter:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /********** Product page *************/
 .container-catalogue {
     margin-top: 50px;
@@ -291,4 +312,165 @@ h4 {
 
 .product-descr-text {
     margin-bottom: 50px;
+}
+
+/********** Création d'un compte *************/
+.container-creation {
+    margin-bottom: 30px;
+}
+
+/********** Ajouter un vélo *************/
+.add-bike-panel {
+    border-color: #333333;
+    border: 1px solid;
+}
+
+.add-bike-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white !important;
+    background-image: none !important;
+    background-color: #5355FA !important;
+    border: none;
+}
+
+.add-bike-input {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.3rem !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.add-bike-input:focus {
+    border-color: #5355FA !important;
+    font-weight: 700;
+}
+
+.add-bike-button {
+    padding: 15px 32px;
+    background-color: #5355FA;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-bike-button:hover  {
+    color: white;
+    text-decoration: none;
+}
+
+.add-bike-panel-csv {
+    padding: 20px;
+}
+
+.add-bike-text-csv {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.add-bike-text-csv li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.custom-file-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 20px !important;
+}
+
+.custom-file-label::after {
+    content: "Rechercher" !important;
+    border-radius: 20px !important;
+}
+
+/********** Mon compte *************/
+.container-compte {
+    margin-bottom: 70px;
+}
+
+.compte-nav {
+    line-height: 30px;
+}
+
+.container-compte-onglet {
+    margin-left: 20px;
+}
+
+/********** Mes test *************/
+.card-test {
+    border: none !important;
+}
+
+.card-bike-test {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-test-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+    color: #5355FA !important;
+}
+
+.button-test {
+    background-color: #5355FA;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.button-test a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.button-test a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/********** Attribuer un badge *************/
+.table-people {
+    font-size: 1.5rem;
+}
+
+.add-people-button {
+    font-size: 1.7rem;
+    border: none;
+    margin-right: 10px;
+    padding: 15px 32px !important;
+    border-radius: 20px;
+}
+
+.add-people-button:hover {
+    background-color: #5355FA;
+    color: white;
+}
+
+/********** Tests en cours *************/
+.button-end-test {
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #5355FA;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+}
+
+/********** Page programme *************/
+.event-deroulement-col {
+    font-size: 2rem;
+    text-align: center;
 }

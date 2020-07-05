@@ -4,13 +4,14 @@
 	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#FFFFFF;}
+	.st1{fill:#333333;}
+	.st2{fill:#FFFFFF;}
 </style>
 <g>
 	<rect class="st0" width="24" height="24"/>
 </g>
-<circle cx="11.9" cy="11.9" r="11.9"/>
+<circle class="st1" cx="11.9" cy="11.9" r="11.9"/>
 <g>
-	<polygon class="st1" points="12.7,7 15.3,7 11.9,3.7 8.5,7 11,7 11,15.6 8.5,15.6 11.9,18.9 15.3,15.6 12.7,15.6 	"/>
+	<polygon class="st2" points="12.7,7 15.3,7 11.9,3.7 8.5,7 11,7 11,15.6 8.5,15.6 11.9,18.9 15.3,15.6 12.7,15.6 	"/>
 </g>
 </svg>

@@ -1,37 +1,36 @@
-import {
-    ImView
-} from 'lib/ImBackbone';
+import { ImView } from 'lib/ImBackbone';
 import tmpl from 'App/entities/Test/tmpl_review.handlebars';
 
 
 export default class extends ImView {
 
     initialize(attrs, options) {
-    this.listenTo(this.model, 'change', this.render);
+        this.listenTo(this.model, 'change add remove reset', this.render);
     }
 
-/* // pas fini
     events() {
         return {
-            'click [data-action="show-product"]': 'show-product',
-            'click [data-action="remove-from-cart"]': 'removeFromCart',
+            'click [data-action="create"]': 'create',
+            'click [data-action="delete"]': 'delete'
         }
+    }
 
-    } */
-/* // pas fini 
-      showProduct(id) {
-          // prendre le produit
-          let id = this.model.id;
-          console.log(product)
-          modal .show 
-          this.view.add(product);
-      }
- */
-    edit() {
+    /* // pas fini 
+          showProduct(id) {
+              // prendre le produit
+              let id = this.model.id;
+              console.log(product)
+              modal .show 
+              this.view.add(product);
+          }
+     */
+
+    // Allows to show "create à new test"'s popup
+    create(evt) {
 
     }
 
-    del() {
+    delete() {
 
     }
 

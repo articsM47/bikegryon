@@ -103,9 +103,7 @@ form button {
     }
     .linkFooter{
       color: #ffff; 
-      text-decoration: none !important;
       font-size: 1.5rem; 
-      text-decoration: none;
     }
     .linkFooter :hover{
       color: #ffff !important; 

@@ -172,6 +172,10 @@
   <div class="col-lg-12 text-center email-text">
     <hr>
     </hr>
+    <div class="text-left">
+        <button href="#" class="button-breadcrumb"><a href="#"><img src="http://127.0.0.1:8000/fonts/add_circle.svg" alt="add_circle"></a></button>
+        <a href="#" class="breadcrumb-catalogue carroussel">Ajouter une personne</a>
+    </div>
     <p class="mt-5">Il nous faut juste ton adresse e-mail pour
       confirmer ta réservation</p>
   </div>
