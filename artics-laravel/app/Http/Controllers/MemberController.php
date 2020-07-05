@@ -71,6 +71,7 @@ class MemberController extends Controller
     {
         return view('Member');
     }
+
     /**
      * Update the specified resource in storage.
      *
@@ -103,7 +104,7 @@ class MemberController extends Controller
     }
 
     protected function findClientMembers() {
-        return Member::where('role', 'client')->get();
+        return Member::where('role', 'client')->orderBy('name', 'ASC')->get();
     }
 
     protected function buildBadgeMapping($testDayId)

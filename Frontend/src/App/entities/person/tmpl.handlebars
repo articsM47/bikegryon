@@ -1,24 +1,14 @@
 <tr data-client-id="{{clientId}}" data-test-day-id="{{testDayId}}">
-  <td>{{name}}</td>
-  <td>{{firstname}}</td>
-  <td>{{birthDay}}</td>
-  <td>
-    {{#if editable}}
-    <input type="text" class="people-input-email" value="{{email1}}" placeholder="{{email1}}">
-    {{else}}
-    {{email1}}
-    {{/if}}
-  </td>
+  <td class="table-border content"><b>{{name}}</b></td>
+  <td class="table-border content"><b>{{firstname}}</b></td>
+  <td class="table-border content"><b>{{birthDay}}</b></td>
+  <td class="table-border content"><b>{{email1}}</b></td>
 
-  <td>
-    {{#if editable}}
-    <input type="text" class="people-input-badge" value="{{badgeNo}}">
-    {{else}}
+  <td class="table-border content">
     {{#if badgeNo}}
-    {{badgeNo}}
+    <b>{{badgeNo}}</b>
     {{else}}
     <button type="button" class="button-add-badge">Ajouter</button>
-    {{/if}}
     {{/if}}
   </td>
 </tr>
