@@ -17,13 +17,12 @@
   </div>
 
   <!-- <h2>Pour quel jour de l'événement?</h2> -->
-
   <div class="row">
     <div class="col-lg-12 text-center history">
       <div class="check_in-filters btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="add-people-button">Vendredi 2 Octobre </button>
-        <button type="button" class="add-people-button">Samedi 3 Octobre</button>
-        <button type="button" class="add-people-button">Dimanche 4 Octobre</button>
+        <button type="button" class="add-people-button">Vendredi 2 octobre </button>
+        <button type="button" class="add-people-button">Samedi 3 octobre</button>
+        <button type="button" class="add-people-button">Dimanche 4 octobre</button>
       </div>
     </div>
   </div>
