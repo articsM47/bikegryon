@@ -21,13 +21,13 @@
   <div class="container">
     <div class="row">
       <div class="col-4 button-text">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button></a>
+        <a href="#montagne"><button id= "filterMountain" class="button-catalogue" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button></a>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button></a>
+        <a href="#vile"><button id= "filterCity" class="button-catalogue" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button></a>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button></a>
+        <a href="#eBike"><button id= "filterEBike" class="button-catalogue" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button></a>
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@ toggle between hiding and showing the dropdown content */
   <!-- grid des produits : affichage de 2 produits par colonne-->
   <div id="catalogue" class="row row-cols-1 row-cols-md-2">
 
-  </Div>
+  </div>
 </div>
 
 @endsection
