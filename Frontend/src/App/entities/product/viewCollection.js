@@ -9,6 +9,7 @@ export default class extends ImView {
     initialize(attrs) {
         this.wishlist = attrs.wishlist;
         this.listenTo(this.collection, 'add remove reset', this.render);
+        this.initializeFilters();
     }
 
     render() {
@@ -21,6 +22,15 @@ export default class extends ImView {
             view.render().$el.appendTo(this.$el);
         }
         return this;
+    }
+
+    initializeFilters() {
+        var collection = this.collection;
+        $('.button-catalogue').on('click', (event) => {
+            var category = $(event.target).data('category');
+            collection.meta('category', category);
+            collection.fetch();
+        });
     }
 
 }

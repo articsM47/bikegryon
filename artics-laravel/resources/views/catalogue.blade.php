@@ -7,7 +7,6 @@
 
   <a href="/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
 
-
   <!-- @can('isRole1') -->
   <!-- <a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a> -->
   <!-- @endcan -->
@@ -21,13 +20,13 @@
   <div class="container">
     <div class="row">
       <div class="col-4 button-text">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button></a>
+        <button class="button-catalogue" data-category="Montagne" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button></a>
+        <button class="button-catalogue" data-category="Route" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button>
       </div>
       <div class="col-4">
-        <a href="#"><button class="button-catalogue" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button></a>
+        <button class="button-catalogue" data-category="e-Route" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button>
       </div>
     </div>
   </div>

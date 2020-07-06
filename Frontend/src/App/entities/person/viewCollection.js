@@ -42,10 +42,9 @@ export default class extends ImView {
     }
 
     initAddPersonPopup() {
-        console.log('hellohello')
         let self = this;
         $("#add-person").on("click", () => {
-            //self.resetAddPersonPopup();
+            // self.resetAddPersonPopup();
             $("#popupField").show();
         });
 
@@ -81,7 +80,7 @@ export default class extends ImView {
                 collection.fetch(); // On refresh au moment de la réponse du serveur
             },
             complete: () => {
-                $("#popUpReview").hide();
+                $("#popup-add-badge").hide();
             }
         });
     }

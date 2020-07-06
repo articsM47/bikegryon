@@ -30,7 +30,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title" id="exampleModalLabel">Nouvelle personne</h4>
-          <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button id="btn-close-add-person" type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
           </button>
         </div>
@@ -39,6 +39,7 @@
             @csrf
             <row>
               <div class="text-center">
+                <!-- ça ne sert à rien de mettre les $errors->has etc., ni l'url('Creation) -->
                 <div class="{!! $errors->has('nom') ? 'has-error' : '' !!}">
                   <input type="text" class="input-newUser" name="nom" value="{{old('nom')}}" placeholder="Nom" required>
                   {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
@@ -51,11 +52,11 @@
                   <input type="date" class="input-newUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
                 </div>
                 <div class="{!! $errors->has('email1') ? 'has-error' : '' !!}">
-                  <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" >
+                  <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email">
                   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
                 </div>
                 <div>
-                <input type="text" id="input-client-badge" class="input-newUser" placeholder="Numéro de badge" required autofocus>
+                  <input type="text" id="input-add-person-badge" class="input-newUser" placeholder="Numéro de badge" required autofocus>
                 </div>
                 <div class="row ">
                   <div class="col-12 text-center">
