@@ -35,11 +35,11 @@
   <h3>Filtrer</h3>
   <!-- filters -->
   <!-- categories -->
-  <div class="dropdown">
+  <!-- <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Marque</button>
     <div id="brands" class="dropdown-content">
       <form>
-        <!-- <input type="text" placeholder="Search..." id="myInput" onkeyup="filterBrands()"> -->
+        <input type="text" placeholder="Search..." id="myInput" onkeyup="filterBrands()"> 
         <input type="checkbox" id="BMC" name="brand" value="2">
         <label for="BMC"> BMC</label><br>
         <input type="checkbox" id="Centurion" name="brand" value="5">
@@ -76,7 +76,7 @@
         }
       }
     }
-  </script>
+  </script> -->
 
   <!--
   <div class="dropdown">

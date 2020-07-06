@@ -51,7 +51,6 @@ export default class extends ImView {
 
         let inWishlist = this.wishlist.get(this.model.get('id'));
         let dom = $(tmpl({ ...this.model.toJSON(), inWishlist}));
-       // let dom = $(tmpl({...this.model.toJSON()}));
         this.$el.replaceWith(dom);
         this.setElement(dom);
         return this;

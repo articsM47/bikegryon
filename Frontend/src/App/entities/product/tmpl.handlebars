@@ -12,7 +12,7 @@
         <p class="card-text">
           {{category}}
 
-          {{#if notWished}}
+          {{#if inWishlist}}
           <button type="button" class="float-right button-catalogue-like wishAdd">
             <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg" width="40px">
           </button>
@@ -21,6 +21,7 @@
             <img src="http://127.0.0.1:8000/fonts/wishlist_3.svg" width="40px">
           </button>
           {{/if}}
+          
           {{!-- delete a bike for "rapresentant" user --}}
           <button type="button" class="float-right bikeDel button-wish">
             <img src="http://127.0.0.1:8000/fonts/delete.svg "width="40px" height="40">
