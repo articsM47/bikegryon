@@ -123,7 +123,7 @@
         {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
       </div>
       <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="prenom" value="{{old('prenom')}}" placeholder="Ton prenom" required>
+        <input type="text" class="inputUser" name="prenom" value="{{old('prenom')}}" placeholder="Ton prénom" required>
         {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
       </div>
       <div class="form-group col-auto {!! $errors->has('Ta date de naissance') ? 'has-error' : '' !!}">
