@@ -147,13 +147,19 @@
             }
           </script>
       </div>
+      
     </div>
     <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
     <!-- grid des produits -->
-    <h3>Dans la même catégorie</h3>
+    <!-- <h3>Dans la même catégorie</h3> -->
     <!-- Carousel-->
+    
   </div>
+
+  
 </div>
+
+
 
 @endsection
 

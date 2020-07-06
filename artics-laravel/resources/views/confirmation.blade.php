@@ -11,10 +11,10 @@
             </div>
         </div>
 
-  </div>
+    </div>
 
 
-  <!-- grid des produits -->
+  <!-- grid carousel -->
 <h3 >Les vélos que tu pourras essayer à l’événement </h1>
 <div class="form-group text-right ">
     <a  href="/Catalogue"type="button" class="badge badge-light ">Voir plus</a>
