@@ -36,34 +36,39 @@
   <!-- filters -->
   <!-- categories -->
   <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Catégorie</button>
-    <div id="Catégories" class="dropdown-content">
-      <input type="text" placeholder="Search..." id="myInput" onkeyup="filterCategories()">
-      <a value="E-bike">E-bike (trekking)</a>
-      <a href="#base">E-Road</a>
-      <a href="#blog">E-VTT</a>
-      <a href="#contact">Gravel</a>
-      <a href="#custom">Junior</a>
-      <a href="#support">Road</a>
-      <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
-    </div>
+    <button onclick="myFunction()" class="dropbtn">Marque</button>
+    <div id="brands" class="dropdown-content">
+      <form>
+        <!-- <input type="text" placeholder="Search..." id="myInput" onkeyup="filterBrands()"> -->
+        <input type="checkbox" id="BMC" name="brand" value="2">
+        <label for="BMC"> BMC</label><br>
+        <input type="checkbox" id="Centurion" name="brand" value="5">
+        <label for="Centurion"> Centurion</label><br>
+        <input type="checkbox" id="Lapierre" name="brand" value="1">
+        <label for="Lapierre"> Lapierre</label><br>
+        <input type="checkbox" id="Merida" name="brand" value="4">
+        <label for="Merida"> Merida</label><br>
+        <input type="checkbox" id="Scott" name="brand" value="3">
+        <label for="Scott"> Scott</label><br>
+        <input type="checkbox" id="Wilier" name="brand" value="3">
+        <label for="Wilier"> Wilier</label><br>
+        <input type="submit" value="Enregistrer" onclick="brandFilter()">
+      </form>
   </div>
 
   <script>
     /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
     function myFunction() {
-      document.getElementById("Catégories").classList.toggle("show");
+      document.getElementById("brands").classList.toggle("show");
     }
 
-    function filterCategories() {
-      var input, filter, ul, li, a, i;
+    function filterBrands()() {
+      var input, filter, ul, li, option, i;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
-      div = document.getElementById("Catégories");
-      a = div.getElementsByTagName("a");
+      div = document.getElementById("brands");
+      a = div.getElementsByTagName("input");
       for (i = 0; i < a.length; i++) {
         txtValue = a[i].textContent || a[i].innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
