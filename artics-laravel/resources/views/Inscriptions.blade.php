@@ -119,7 +119,7 @@
     <label for="personne1" class="personTicket">Personne 1</label>
     <div class="form-row align-items-center reservationBar">
       <div class="form-group col-auto {!! $errors->has('nom') ? 'has-error' : '' !!}">
-        <input type="text" class="inputUser" name="nom" value="{{old('nom')}}" placeholder="Ton nom" required>
+        <input type="text" class="inputUser" name="nom" value="{{old('nom')}}" placeholder="Ton nom" autofocus required>
         {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
       </div>
       <div class="form-group col-auto {!! $errors->has('prenom') ? 'has-error' : '' !!}">

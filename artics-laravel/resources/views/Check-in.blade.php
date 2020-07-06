@@ -51,7 +51,7 @@
                   <input type="date" class="input-newUser" name="birthday" value="{{old('birthday')}}" value="1990-01-01" required>
                 </div>
                 <div class="{!! $errors->has('email1') ? 'has-error' : '' !!}">
-                  <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" required>
+                  <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email" >
                   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
                 </div>
                 <div>
