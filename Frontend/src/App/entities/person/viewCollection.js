@@ -54,12 +54,6 @@ export default class extends ImView {
         });
     }
 
-    //resetAddPersonPopup() {
-        // Remise à 0 des inputs
-       // $('#input-client-number').val('');
-       // $('#input-bike').val('');
-    //}
-
     resetAddBadgePopup(event) {
         $('#input-client-badge').val('');
         const clientId = $(event.target).closest("tr").data("client-id");

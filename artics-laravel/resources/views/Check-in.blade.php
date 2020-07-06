@@ -4,7 +4,6 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-
       <h1 class="title-page">Check-in clients</h1>
     </div>
     <div class="col-lg-6 vertical-align-center" style="margin-top: 20px;">
