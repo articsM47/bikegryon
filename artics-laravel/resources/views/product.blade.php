@@ -97,7 +97,7 @@
         </table>
       </div>
       <div class="col-sm-6">
-          <button type="button" id=  "wish{{$bike -> id}}" class="btn btn-primary notWished" onClick="addOrDelWish()">Ajouter à ma liste</button>
+          <button type="button" id=  "wish{{$bike -> id}}" class="button-wish notWished" onClick="addOrDelWish()"><span>Ajouter à ma liste</span></button>
           <script>
             let wishlist= JSON.parse(localStorage.getItem('wishlist'));
             let wishes = [];
@@ -115,10 +115,9 @@
 
             // Initial button
             wishlist.forEach(wish => {
-              wishes.push(wish.id);
-              if({{$bike->id}}===wish.id){
+              if({{$bike -> id}}===wish.id){
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
-                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary wished";
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish wished";
               }
             });
 
@@ -134,14 +133,14 @@
               localStorage.setItem('wishlist', data);
             }
             function addOrDelWish(){
-              if(document.getElementById("wish{{$bike -> id}}").className== "btn btn-primary notWished"){
+              if(document.getElementById("wish{{$bike -> id}}").className== "button-wish notWished"){
                 wishlistAdd();
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
-                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary wished";
-              }else if(document.getElementById("wish{{$bike -> id}}").className== "btn btn-primary wished"){
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish wished";
+              }else if(document.getElementById("wish{{$bike -> id}}").className== "button-wish wished"){
                 wishlistDel();
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Ajouter à ma liste";
-                document.getElementById("wish{{$bike -> id}}").className = "btn btn-primary notWished";
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish notWished";
               }else{
                 console.log("Cette condition ne devrait jamais avoir lieu !");
               }

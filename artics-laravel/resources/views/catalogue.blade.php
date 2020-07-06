@@ -57,14 +57,12 @@
   </div>
 
   <script>
-    /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("brands").classList.toggle("show");
     }
 
-    function filterBrands()() {
-      var input, filter, ul, li, option, i;
+    function filterBrands() {
+      var input, filter, ul, li, a, i;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
       div = document.getElementById("brands");
@@ -80,8 +78,7 @@ toggle between hiding and showing the dropdown content */
     }
   </script>
 
-
-  <!--  
+  <!--
   <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Marque</button>
     <div id="myDropdown" class="dropdown-content">
@@ -92,7 +89,7 @@ toggle between hiding and showing the dropdown content */
       <a href="#contact">Gravel</a>
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
-      <a href="#tools">VTT</a> 
+      <a href="#tools">VTT</a>
       <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
       <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
@@ -108,7 +105,7 @@ toggle between hiding and showing the dropdown content */
       <a href="#contact">Gravel</a>
       <a href="#custom">Junior</a>
       <a href="#support">Road</a>
-      <a href="#tools">VTT</a> 
+      <a href="#tools">VTT</a>
       <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
       <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
     </div>
