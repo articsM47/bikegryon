@@ -186,7 +186,7 @@ h4 {
 
 .button-add {
     margin-top: 30px;
-    border:none !important;
+    border: none !important;
 }
 
 .button-add span:after {
@@ -196,6 +196,7 @@ h4 {
 .button-wish {
     border: none;
     background-color: transparent;
+    color: #5355FA;
 }
 
 /********** Filters *************/
@@ -240,7 +241,7 @@ h4 {
 }
 
 .card-bike:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* .card-img-top {
@@ -360,7 +361,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-.add-bike-button:hover  {
+.add-bike-button:hover {
     color: white;
     text-decoration: none;
 }
@@ -418,7 +419,8 @@ h4 {
     font-size: 2rem;
 }
 
-.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
     color: #5355FA !important;
 }
 
@@ -451,6 +453,7 @@ h4 {
     margin-right: 10px;
     padding: 15px 32px !important;
     border-radius: 20px;
+    background-color: #DDDFDE;
 }
 
 .add-people-button:hover {
@@ -474,3 +477,77 @@ h4 {
     font-size: 2rem;
     text-align: center;
 }
+
+.rating {
+    float: left;
+}
+
+/********** Reviews étoiles *************/
+.rating:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 300%;
+    color: #ddd;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rating>input:checked~label {
+    color: #5355FA;
+
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #5355FA;
+
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #5355FA;
+
+}
+
+.rating>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/********** Ajouter un badge *************/
+.button-add-badge {
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #5355FA;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    }
+    .modal-backdrop.fade.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    }
