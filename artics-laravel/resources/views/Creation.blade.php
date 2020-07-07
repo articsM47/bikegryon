@@ -7,7 +7,8 @@
             <div class="col-lg-12 text-center ">
                 <h1 class="mt-5 title-page">Merci {{ Session::get('prenom')}} pour ta réservation pour </h1>
                 <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{ Session::get('email1')}}</span></p>
-                <p class="mb-5 normal-text">Crée ton compte maintenant en choissant un mot de passe </p>
+                <p class="normal-text">Avec un compte, tu pourras facilement revoir tous les vélos que tu aura essayé au Bike Test!</p>
+                <p class="normal-text">Crée ton compte maintenant en choissant un mot de passe </p>
             </div>
         </div>
     </div>
