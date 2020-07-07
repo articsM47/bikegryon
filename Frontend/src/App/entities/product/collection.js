@@ -22,10 +22,20 @@ export default class extends ImCollection {
         // si category est présent on l'ajoute à l'appel
         // return 'http://127.0.0.1:8000/api/bikes?category='+this.category;
         let category = this.meta('category');
+        let brand_id = this.meta('brand');
         if (category) {
-            return 'http://127.0.0.1:8000/api/bikes?category=' + category;
+            if(brand_id){
+                return 'http://127.0.0.1:8000/api/bikes?category=' + category + '&brand_id='+ brand_id;
+            }else{
+                return 'http://127.0.0.1:8000/api/bikes?category=' + category;
+            }
         } else {
-            return 'http://127.0.0.1:8000/api/bikes/';
+            if(brand_id){
+                return 'http://127.0.0.1:8000/api/bikes?brand_id=' + brand_id;
+            }else{
+                return 'http://127.0.0.1:8000/api/bikes/';
+            }
+            
         }
     }
 

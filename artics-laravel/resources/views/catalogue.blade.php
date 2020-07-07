@@ -28,110 +28,25 @@
       <div class="col-4">
         <button class="button-catalogue" id="eBikeFilter" data-category="e-Route" data-category-origin="e-Route" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button>
       </div>
-      <!-- <div class="col-4">
-        <button class="button-catalogue notSelected" id="eBikeFilter" data-category="" style="background-image: url(fonts/ebike_filter.jpg);">All</button>
-      </div> -->
     </div>
   </div>
-  <script>
-    // function mountainFilter() {
-    //   if (document.getElementById("mountainFilter").className == "button-catalogue notSelected") {
-    //     document.getElementById("mountainFilter").setAttribute("data-category", "");
-    //     document.getElementById("mountainFilter").className = "button-catalogue selected";
-    //     console.log(document.getElementById("mountainFilter").getAttribute("data-category"));
-    //     console.log("hey");
-    //     //document.getElementById("mountainFilter").removeAttribute("data-category");
-    //   } else if (document.getElementById("mountainFilter").className == "button-catalogue selected") {
-    //     document.getElementById("mountainFilter").setAttribute("data-category", "Montagne");
-    //     document.getElementById("mountainFilter").className = "button-catalogue notSelected";
-    //     console.log(document.getElementById("mountainFilter").getAttribute("data-category"));
-    //     console.log("hey2");
-
-    //   } else {
-    //     console.log("Cette condition ne devrait jamais avoir lieu !");
-    //   }
-    // }
-  </script>
 
   <h3>Filtrer</h3>
   <!-- filters -->
   <!-- categories -->
-  <!-- <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Marque</button>
-    <div id="brands" class="dropdown-content">
-      <form>
-        <input type="text" placeholder="Search..." id="myInput" onkeyup="filterBrands()"> 
-        <input type="checkbox" id="BMC" name="brand" value="2">
-        <label for="BMC"> BMC</label><br>
-        <input type="checkbox" id="Centurion" name="brand" value="5">
-        <label for="Centurion"> Centurion</label><br>
-        <input type="checkbox" id="Lapierre" name="brand" value="1">
-        <label for="Lapierre"> Lapierre</label><br>
-        <input type="checkbox" id="Merida" name="brand" value="4">
-        <label for="Merida"> Merida</label><br>
-        <input type="checkbox" id="Scott" name="brand" value="3">
-        <label for="Scott"> Scott</label><br>
-        <input type="checkbox" id="Wilier" name="brand" value="3">
-        <label for="Wilier"> Wilier</label><br>
-        <input type="submit" value="Enregistrer" onclick="brandFilter()">
-      </form>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marque</button>
+  <div class="dropdown-menu" id="brands" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" data-brand="2" href="#BMC">BMC</a>
+    <a class="dropdown-item" data-brand="5" href="#Centurion">Centurion</a>
+    <a class="dropdown-item" data-brand="1" href="#Lapierre">Lapierre</a>
+    <a class="dropdown-item" data-brand="4"href="#Merida">Merida</a>
+    <a class="dropdown-item" data-brand="3" href="#Scott">Scott</a>
+    <a class="dropdown-item" data-brand="6" href="#Wilier">Wilier</a>
+    <a class="dropdown-item" data-brand="" href="#">Toutes les marques</a>
   </div>
+</div>
 
-  <script>
-    function myFunction() {
-      document.getElementById("brands").classList.toggle("show");
-    }
-
-    function filterBrands() {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      div = document.getElementById("brands");
-      a = div.getElementsByTagName("input");
-      for (i = 0; i < a.length; i++) {
-        txtValue = a[i].textContent || a[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          a[i].style.display = "";
-        } else {
-          a[i].style.display = "none";
-        }
-      }
-    }
-  </script> -->
-
-  <!--
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Marque</button>
-    <div id="myDropdown" class="dropdown-content">
-      <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-<a value="E-bike">E-bike (trekking)</a>
-      <a href="#base">E-Road</a>
-      <a href="#blog">E-VTT</a>
-      <a href="#contact">Gravel</a>
-      <a href="#custom">Junior</a>
-      <a href="#support">Road</a>
-      <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Taille du cadre</button>
-    <div id="myDropdown" class="dropdown-content">
-      <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-   <a value="E-bike">E-bike (trekking)</a>
-      <a href="#base">E-Road</a>
-      <a href="#blog">E-VTT</a>
-      <a href="#contact">Gravel</a>
-      <a href="#custom">Junior</a>
-      <a href="#support">Road</a>
-      <a href="#tools">VTT</a>
-      <button onclick="myFunction()" class="dropbtn-options">Réinitialiser</button>
-      <button onclick="myFunction()" class="dropbtn-options">Enregistrer</button>
-    </div>
-  </div>
-  -->
 
   <br>
 
