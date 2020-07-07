@@ -253,10 +253,11 @@
     </a>
   </div>
 -->
-  <h2 style="margin: 30px">Quel vélo pour quel parcours ?</h2>
-  <div class="table table-parcours">
+<h2 style="margin: 30px">Quel vélo pour quel parcours ?</h2>
+<div class="container">
 
-    <table style="width:100%">
+  <div class="table table-parcours">
+    <table>
       <thead>
         <tr>
           <th>Type de vélos</th>
@@ -430,32 +431,29 @@
       </tbody>
     </table>
 
-    <span>
+    <div>
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Recommandé</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
-    </span>
-    <span>
+
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Oui c'est possible</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star "></span>
-    </span>
-    <span>
+
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Ça passe encore</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star "></span>
       <span class="fa fa-star "></span>
-    </span>
+    </div>
   </div>
-
 </div>
 
 @endsection
