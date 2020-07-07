@@ -20,7 +20,7 @@ class TestController extends Controller
     {
         return TestResource::collection(Test::where('endTime', null)->get());
     }
- /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -44,7 +44,7 @@ class TestController extends Controller
         // création des dépendance
         return new TestResource($Test);
     }
- /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -57,7 +57,8 @@ class TestController extends Controller
         return 'OK';
     }
 
-    public function submitReview(Request $request) {
+    public function submitReview(Request $request)
+    {
         error_log(print_r($request->all(), true));
         $test = $this->findTest($request->testId);
         $test->review = Test::buildReview($request->question1, $request->question2, $request->question3, $request->question4);
@@ -76,7 +77,7 @@ class TestController extends Controller
     {
         return new TestResource($Test);
     }
- /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -112,7 +113,7 @@ class TestController extends Controller
     }
 
 
- /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -123,7 +124,7 @@ class TestController extends Controller
             // Pour retourner le premier bike
             ->first();
     }
- /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -134,7 +135,7 @@ class TestController extends Controller
             // Pour retourner le premier clienttestday
             ->first();
     }
- /**
+    /**
      * Run the migrations.
      *
      * @return void
