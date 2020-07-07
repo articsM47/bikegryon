@@ -17,7 +17,11 @@ class ProductController extends Controller
     {
         return ProductResource::collection(Product::all());
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
 public function affiche() {
      return view('Catalogue');
 
@@ -44,7 +48,11 @@ public function affiche() {
         /* return new ProductResource($product); */
         return redirect(route('articles.index'));
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function create() {
 
        /*  if (!Gate::allows('isRole1')) {
@@ -62,7 +70,11 @@ public function affiche() {
     {
         return new ProductResource($product);
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function afficheproduit(Product $product) {
       //$bike = Bike::findOrFail($product);
      //return view('Product', compact ('bike'));
@@ -97,7 +109,11 @@ public function affiche() {
     {
         $product->delete();
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function uploadFile(Request $request){
 
         /* if (!Gate::allows('isRole1')) {

@@ -5,10 +5,20 @@ use Carbon\Carbon;
 
 class TestsTableSeeder extends Seeder
 {
+     /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randDay() {
         $day = ["2020-10-02", "2020-10-03", "2020-10-04"];
         return $day[rand(0,count($day)-1)];
     }
+     /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randTime() {//HH:MM:SS
         $time = ["10:", "11:","12:", "13:","14:", "15:"];
         return $time[rand(0,count($time)-1)];

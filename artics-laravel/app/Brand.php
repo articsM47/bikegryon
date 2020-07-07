@@ -10,12 +10,20 @@ class Brand extends Model
     protected $table='brands';
     protected $fillable=['shortDescr','longDescr','picture','stand','company_id'];
     use SoftDeletes;
-
-    public function company() {          
-        return $this->belongsTo('App\Company'); 
-    } 
-
-    public function bikes() {          
-        return $this->hasMany('App\Bike');  
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function company() {
+        return $this->belongsTo('App\Company');
+    }
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function bikes() {
+        return $this->hasMany('App\Bike');
     }
 }

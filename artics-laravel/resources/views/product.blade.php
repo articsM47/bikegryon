@@ -30,37 +30,37 @@
             <h1 class="card-title product-title">{{$bike -> shortDescr}}</h3>
 
               <!-- categories's icons -> add "@" before if and elseif
-          
+
           if ({{$bike -> category}} === "Mountain"||{{$bike -> category}} === "e-Mountain"){
             <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain_icon" width = 100%>
             <p class="card-text">{{$bike -> category}}</p>
           }
-          
+
           elseif ({{$bike -> category}} === "Road"||{{$bike -> category}} === "e-Road"){
             <img src="http://127.0.0.1:8000/fonts/street.svg" alt="street_icon" width = 100%>
             <p class="card-text">{{$bike -> category}}</p>
           }
-          
+
           elseif ({{$bike -> category}} === "Junior"){
             <img src="http://127.0.0.1:8000/fonts/toy.svg" alt="junior_icon" width = 100%>
             <p class="card-text">{{$bike -> category}}</p>
           }
-          
+
           elseif ({{$bike -> category}} === "Gravel"){
             <img src="http://127.0.0.1:8000/fonts/street.svg" alt="street_icon" width = 100%>
             <img src="http://127.0.0.1:8000/fonts/mountain.svg" alt="mountain_icon" width = 100%>
             <p class="card-text">{{$bike -> category}}</p>
           }
-          
+
           elseif ({{$bike -> category}} === "E-Bike"||{{$bike -> category}} === "e-Road"||{{$bike -> category}} === "e-Mountain"){
             <img src="http://127.0.0.1:8000/fonts/electric_bike.svg" alt="e-bike_icon" width = 100%>
             <p>Attention: test possible a partire de 14 ans</p>
           }
-          
+
           else{
             <p>Caegorie pas disponible</p>
           }
-          
+
           endif-->
 
           </div>
@@ -97,23 +97,69 @@
         </table>
       </div>
       <div class="col-sm-6">
-      <button type="button" id="wish{{$bike -> id}}" class="btn btn-primary">Ajouter à ma liste</button>
+          <button type="button" id=  "wish{{$bike -> id}}" class="button-wish notWished" onClick="addOrDelWish()"><span>Ajouter à ma liste</span></button>
           <script>
             let wishlist= JSON.parse(localStorage.getItem('wishlist'));
             let wishes = [];
+            let product = {
+                "id": {{$bike -> id}},
+                "shortDescr": "{{$bike -> shortDescr}}",
+                "longDescr": "{{$bike -> longDescr}}",
+                "distinctiveSign": "{{$bike -> distinctiveSign}}",
+                "brand_id": "{{$bike -> brand_id}}",
+                "picture": "{{$bike -> picture}}",
+                "frameSize": "{{$bike -> frameSize}}",
+                "frameUnit": "{{$bike -> frameUnit}}",
+                "category": "{{$bike -> category}}"
+                };
+
+            // Initial button
             wishlist.forEach(wish => {
-              wishes.push(wish.id);
-              if({{$bike->id}}===wish.id){
+              if({{$bike -> id}}===wish.id){
                 document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish wished";
               }
             });
+
+            //button action & name
+            function wishlistAdd(){
+              wishlist.push(product);
+              let data = JSON.stringify(wishlist);
+              localStorage.setItem('wishlist', data);
+            }
+            function wishlistDel(){
+              wishlist = wishlist.filter(ele =>  ele.id!=product.id);
+              let data = JSON.stringify(wishlist);
+              localStorage.setItem('wishlist', data);
+            }
+            function addOrDelWish(){
+              if(document.getElementById("wish{{$bike -> id}}").className== "button-wish notWished"){
+                wishlistAdd();
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Retirer de ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish wished";
+              }else if(document.getElementById("wish{{$bike -> id}}").className== "button-wish wished"){
+                wishlistDel();
+                document.getElementById("wish{{$bike -> id}}").innerHTML = "Ajouter à ma liste";
+                document.getElementById("wish{{$bike -> id}}").className = "button-wish notWished";
+              }else{
+                console.log("Cette condition ne devrait jamais avoir lieu !");
+              }
+            }
           </script>
       </div>
+      
     </div>
     <img src="http://127.0.0.1:8000/pictures/products/{{$bike -> picture}}" alt="{{$bike -> shortDescr}}" width=100%>
     <!-- grid des produits -->
-    <h3>Dans la même catégorie</h3>
+    <!-- <h3>Dans la même catégorie</h3> -->
     <!-- Carousel-->
+    
   </div>
+
+  
 </div>
+
+
+
 @endsection
+

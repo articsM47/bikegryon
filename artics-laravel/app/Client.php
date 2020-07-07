@@ -11,16 +11,28 @@ class Client extends Model
     protected $fillable=['member_id','canton'];
     protected $primaryKey = 'id';
     use SoftDeletes;
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function member() {
         return $this->belongsTo('App\Member');
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function testdays() {
         return $this->belongsToMany(Testday::class);
     }
-
-    public function test() {          
-        return $this->hasMany('App\Test');  
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function test() {
+        return $this->hasMany('App\Test');
     }
 }

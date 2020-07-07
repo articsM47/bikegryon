@@ -1,24 +1,21 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import View from 'App/entities/person/viewModel';
+import View from 'App/entities/advice/viewModel';
 
 
 export default class extends ImView {
 
-    initialize() {
-     
+    initialize(attrs) {
         this.listenTo(this.collection, 'add remove reset', this.render);
-       
     }
 
     render() {
         this.$el.empty();
         let models = this.collection.models;
-
         for (let model of models) {
             let view = new View({
-                model
+                model,
             })
             view.render().$el.appendTo(this.$el);
         }

@@ -1,28 +1,14 @@
-<tr>
-  <td>{{name}}</td>
-  <td>{{firstname}}</td>
-  <td>{{birthDay}}</td>
-  <td>
-  {{#if editable}} 
-    <input type="text" class="people-input-email" value="{{email1}}" placeholder="{{email1}}">
- {{else}} 
-   {{email1}}
+<tr data-client-id="{{clientId}}" data-test-day-id="{{testDayId}}">
+  <td class="table-border content"><b>{{name}}</b></td>
+  <td class="table-border content"><b>{{firstname}}</b></td>
+  <td class="table-border content"><b>{{birthDay}}</b></td>
+  <td class="table-border content"><b>{{email1}}</b></td>
+
+  <td class="table-border content">
+    {{#if badgeNo}}
+    <b>{{badgeNo}}</b>
+    {{else}}
+    <button type="button" class="button-add-badge">Ajouter</button>
     {{/if}}
   </td>
-
-  <td>
-  {{#if editable}}
-    <input type="text" class="people-input-badge" value="{{badgeNo}}">
-  {{else}}
-    1234 <!--{{badgeNo}} when other table is jointed -->
-  {{/if}}
-</td>
-
-  <td>
-  {{#if editable}}
-   <button data-action="modify">Enregistrer</button>
-  {{else}}
- <button data-action="edit">Modifier</button>
-  {{/if}}
-</td>-->
 </tr>

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center ">
-                <h1 class="mt-5 title-page">Merci {{ Session::get('prenom')}} pour ta réservation ! </h1>
+                <h1 class="mt-5 title-page">Merci {{ Session::get('prenom')}} pour ta réservation pour </h1>
                 <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{ Session::get('email1')}}</span></p>
                 <p class="mb-5 normal-text">Crée ton compte maintenant en choissant un mot de passe </p>
             </div>
@@ -16,7 +16,7 @@
             <div class="col-lg-6 float-right">
                 <form method="POST" action="{{ url('Confirmation') }}" accept-charset="UTF-8" class="float-right">
                     @csrf
-                        <input class="new-user" type="text" name="fullname" value="{{ Session::get('nom')}} {{ Session::get('prenom')}}" readonly><br>
+                        <input class="new-user" type="text" name="fullname" value="{{ Session::get('nom')}} {{ Session::get('prenom')}}" autofocus readonly><br>
                         <input class="new-user" type="text" name="birthday" value="{{ Session::get('birthday')}}" readonly><br>
                         <input class="new-user" type="email" name="email1" value="{{ Session::get('email1')}}" readonly ><br>
                         <!-- <input class="new-user" type="email" name="email1" value="{{$email1 ?? ''}}"><br>

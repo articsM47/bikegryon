@@ -82,7 +82,9 @@ Route::get('Test', function () {
 });
 
 Route::post('Test', 'TestController@create');
+Route::post('Test/Review', 'TestController@submitReview');
 
+Route::post('Member/Badge', 'MemberController@submitBadge');
 
 Route::get('Infos', function () {
     return view("Infos");

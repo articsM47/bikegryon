@@ -1,21 +1,9 @@
-  <tr>
+  <tr data-creationtime="{{creation_time}}">
     <th class="table-border content" >{{id}}</th>
     <th class="table-border content">{{badgeNo}}</th>
     <th class="table-border content">{{distinctiveSign}}</th>
-    <th class="table-border content">{{created_at}}</th>
+    <th class="table-border content data-chronometer">00:00:00</th>
     <th class="table-border"> 
-        <button id="btn-delete" class="button button-end-test"data-toggle="modal" data-target="#exampleModal"data-action="delete">Terminer</button>
+        <button class="end-test-review button button-end-test">Terminer</button>
     </th>
-    {{!-- <th>{{endTime}}</th>  --}}
-    {{!-- {{#if actual}}
-            <th>{{startTime}}</th> <!--COUNTER TEMP -->
-    {{else}}
-            <th>{{startTime}}</th> <!-- TEMP DE DEPART-->
-    {{/if}} --}}
-    {{!-- {{#if actual}}
-            <th> <button data-action="stop_test">Terminer test</button></th> <!-- STOP TEST TEST -->
-    {{else}}
-            <th> <button data-action="look_review">Voir l'avis du client</button></th>  <!--LOOK REVIEW -->
-    {{/if}} --}}
-
   </tr>

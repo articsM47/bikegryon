@@ -5,13 +5,21 @@ use Carbon\Carbon;
 
 class ProductsTableSeeder extends Seeder
 {
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randPicture() {
         $nbPicture = rand(1,5);
         $picture = 'bike' . $nbPicture . '.png';
         return $picture;
     }
-
+ /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     private function randDate() {
         $nbJours = rand(-2800,0);
         return Carbon::now()->addDays($nbJours);
