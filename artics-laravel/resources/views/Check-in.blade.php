@@ -30,7 +30,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title" id="exampleModalLabel">Nouvelle personne</h4>
-          <button id="btn-close-add-person" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
           </button>
         </div>
@@ -55,12 +55,9 @@
                   <input type="email" class="input-newUser" name="email1" value="{{old('email1')}}" aria-describedby="emailHelp" placeholder="Email">
                   {!! $errors->first('email1', '<small class="help-block">:message</small>') !!}
                 </div>
-                <div>
-                  <input type="text" id="input-add-person-badge" class="input-newUser" placeholder="Numéro de badge" required autofocus>
-                </div>
                 <div class="row ">
                   <div class="col-12 text-center">
-                    <button id="submit-person" type="button" data-action="create" class="button reserve-button"><span>Créer</span></button>
+                    <button id="submit-person" type="submit" data-action="create" class="button reserve-button"><span>Créer</span></button>
                   </div>
                 </div>
               </div>

@@ -20,58 +20,54 @@
     <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/stylejulie.css">
     <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style-ingrid.css">
 </head>
+
 <body>
-    <div class="container-fluid container-nav">
-        <div class="container">
-            <div class="row">
-                <!--logo bike test -->
-                <div class="col-2">
-                    <a href="/">
-                        <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
-                    </a>
-                </div>
-                <!-- menu -->
-                <div class="col-8 nav-menu-text align-self-center">
-                    <a href="/Inscriptions">Réserver</a>
-                    <a href="/Event">Le programme</a>
-                    <a href="/Catalogue">Les vélos à tester</a>
-                    <a href="/Plan">Plan de l'événement</a>
-                    <a href="/Infos">Infos pratiques</a>
-                </div>
-                <!-- icons -->
-                <span class="iconsgroup align-self-center">
-
-                    <!--wishlist's icon-->
-                    <a class="" href="/Wishlist">
-                        <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
-                    </a>
-
-                    <!--test's icon-->
-                    <a class="" href="/Test">
-                        <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:32px;height:32px;">
-                    </a>
-
-                    <!--account's icon-->
-                    <a class="" href="/Check-in">
-                        <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:32px;height:32px;">
-                    </a>
-
-                    <!--account's icon-->
-                    <a class="" href="/Compte">
-                        <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:32px;height:32px;">
-                    </a>
-
-                    <!-- MENU -->
-                    <!-- The overlay -->
-                    <!-- <div id="myNav" class=""> -->
-                    <!-- Button to close the overlay navigation -->
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
-                    <!-- Overlay content -->
+    <div class="container container-nav">
+        <div class="row">
+            <!--logo bike test -->
+            <div class="col-2">
+                <a href="/">
+                    <img src="http://127.0.0.1:8000/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
+                </a>
             </div>
-            <!-- Use any element to open/show the overlay navigation menu -->
+            <!-- menu -->
+            <div class="col-8 nav-menu-text align-self-center">
+                <a href="/Inscriptions">Réserver</a>
+                <a href="/Event">Le programme</a>
+                <a href="/Catalogue">Les vélos à tester</a>
+                <a href="/Plan">Plan de l'événement</a>
+                <a href="/Infos">Infos pratiques</a>
+            </div>
+            <!-- icons -->
+            <div class="col-2 iconsgroup align-self-center">
+                <!--wishlist's icon-->
+                <a class="" href="/Wishlist">
+                    <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
+                </a>
+                <!--test's icon-->
+                <a class="" href="/Test">
+                    <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:32px;height:32px;">
+                </a>
+                <!--account's icon-->
+                <a class="" href="/Check-in">
+                    <img src="http://127.0.0.1:8000/fonts/check-in.svg" alt="person" style="width:32px;height:32px;">
+                </a>
+                <!--account's icon-->
+                <a class="" href="/Compte">
+                    <img src="http://127.0.0.1:8000/fonts/person.svg" alt="person" style="width:32px;height:32px;">
+                </a>
+                <!-- MENU -->
+                <!-- The overlay -->
+                <!-- <div id="myNav" class=""> -->
+                <!-- Button to close the overlay navigation -->
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
-            <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+                <!-- Overlay content -->
+            </div>
+        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+
+        <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
 
                 <script>
                     function openNav() {
@@ -82,41 +78,37 @@
                         document.getElementById("myNav").style.height = "0%";
                     }
                 </script> -->
-            </header>
-        </div>
-    </div>
     </div>
     <!-- END MENU -->
-
-    <div class="container-fluid">
-        @yield('contenu')
+    @yield('contenu')
+    <div class="push">
+        <div class="container-fluid">
+            @yield('footer')
+            <!-- FOOTER -->
+            <br>
+            <footer id="sticky-footer">
+                <table class="footer" class="footer-block" style="width:100%">
+                    <tbody>
+                        <tr class="d-flex justify-content-between align-items-center">
+                            <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt="logo_2" style="width:80px;height:80px;"></img></td>
+                            <td>
+                                <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
+                            </td>
+                            <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
+                            <td>
+                                <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
+                                <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </footer>
+        </div>
     </div>
-
-    <div class="push"></div>
-    <div class="container-fluid">
-        @yield('footer')
-        <!-- FOOTER -->
-        <br>
-        <footer id="sticky-footer">
-            <table class="footer" class="footer-block" style="width:100%">
-                <tbody>
-                    <tr class="d-flex justify-content-between align-items-center">
-                        <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt="logo_2" style="width:80px;height:80px;"></img></td>
-                        <td>
-                            <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
-                        </td>
-                        <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
-                        <td>
-                            <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
-                            <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <footer>
-<!-- Tous les js chargés à partir de la ligne 121 auront la variable baseURL -->
 </body>
-<script type="text/javascript">const baseURL = "http://127.0.0.1:8000"</script>
+<script type="text/javascript">
+    const baseURL = "http://127.0.0.1:8000"
+</script>
 <script type="text/jquery" src="jquery-3.5.0.min.js"></script>
 <script type="text/javascript" scr="test.js"></script>
 <script type="text/javascript" src="bundle.js"></script>

@@ -99,9 +99,9 @@ Route::get('Check-in', function () {
 });
 
 
-Route::resource('Products', 'ProductController', ['except'=>['show','edit','update']]);
+Route::resource('Products', 'BikeController', ['except'=>['show','edit','update']]);
 
-Route::get('Catalogue', 'ProductController@affiche');
+Route::get('Catalogue', 'BikeController@affiche');
 
 Route::get('Product/{id}', 'BikeController@afficheproduit');
 
