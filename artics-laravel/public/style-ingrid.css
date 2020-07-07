@@ -699,3 +699,20 @@
 .row-days{
     margin-bottom:20px;
 }
+
+/******************* Icons catalogue **********************/
+
+.wishAdd{
+    border:none !important;
+    background-color: #ffff!important;
+}
+
+.wishDel{
+    border:none !important;
+    background-color: #ffff!important;
+}
+
+.bike-trash{
+    border:none !important;
+    background-color: #ffff!important;
+}

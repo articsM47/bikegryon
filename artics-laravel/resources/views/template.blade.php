@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/stylejulie.css">
     <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/style-ingrid.css">
 </head>
-
 <body>
     <div class="container-fluid container-nav">
         <div class="container">

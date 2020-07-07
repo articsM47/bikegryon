@@ -72,9 +72,8 @@
   </div>
 
 
-
   <!-- grid des personnes -->
-  <div class="row">
+  <div class="row ">
     <div class="col-lg-12 text-center table-content">
       <table class="table-border" style="width:100%">
         <thead class="test-headline table-border">
@@ -98,19 +97,18 @@
   <div class="modal-dialog popup" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ajouter un badge</h5>
+        <h4 class="modal-title" id="exampleModalLabel">Ajouter un badge</h4>
         <button id="btn-close-add-badge" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <form class="form-signin">
           <input type="hidden" name="_token" id="csrf-token" value="<?php echo csrf_token() ?>">
           <input type="hidden" name="clientId" id="client-id">
           <input type="hidden" name="testDayId" id="test-day-id">
-          <label for="input-client-badge">Numéro de badge</label>
-          <input type="text" id="input-client-badge" class="input-client-badge" placeholder="Numéro de badge" required autofocus>
-          <button id="submit-badge" type="button" data-action="create"><span>Ajouter un badge</span></button>
+          <input type="text" id="input-client-badge" class="input-client-badge input-newUser" placeholder="Numéro de badge" required autofocus>
+          <button id="submit-badge" type="button" data-action="create" class="button reserve-button"><span>Ajouter un badge</span></button>
         </form>
       </div>
     </div>
