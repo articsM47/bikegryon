@@ -633,25 +633,37 @@
 }
 
 #dropdownMenuButton {
-    background-color: #5355FA;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 40px;
-    transition: all 0.5s;
-    cursor: pointer;
-    color: #ffff;
-    border: none !important;
-    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #2d2d2d;
+    background-color: transparent;
+    border: 2px solid #2d2d2d;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    font-size: 1.7rem; 
+}
+
+#dropdownMenuButton:hover {
+    background-color: #2d2d2d;
+    color: white;
 }
 
 .dropdown-menu {
     text-decoration: none;
     display: inline-block;
-    font-size: 1.4rem !important;
+    font-size: 1.7rem !important;
+    line-height: 3rem;
+}
 
+.dropdown.show #dropdownMenuButton {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+#brands {
+    border-radius: 10px;
+    padding: 15px;
 }
 
 /******************* Review **********************/

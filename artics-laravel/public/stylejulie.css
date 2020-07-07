@@ -310,8 +310,9 @@ a .card-title {
     color: black;
 }
 
-.selected{
-    filter: brightness(20%);
+.button-catalogue.selected{
+    background-color: black;
+    opacity: 0.5;
 }
 /********** Cards *************/
 .card-text {
