@@ -20,16 +20,38 @@
   <div class="container">
     <div class="row">
       <div class="col-4 button-text">
-        <button class="button-catalogue" data-category="Montagne" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button>
+        <button class="button-catalogue" id="mountainFilter" data-category="Montagne" data-category-origin="Montagne" style="background-image: url(fonts/mountain_filter2.jpg);">Plutôt montagne</button>
       </div>
       <div class="col-4">
-        <button class="button-catalogue" data-category="Route" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button>
+        <button class="button-catalogue" id="roadFilter" data-category="Route" data-category-origin="Route" style="background-image: url(fonts/city_filter.jpg);">Plutôt ville</button>
       </div>
       <div class="col-4">
-        <button class="button-catalogue" data-category="e-Route" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button>
+        <button class="button-catalogue" id="eBikeFilter" data-category="e-Route" data-category-origin="e-Route" style="background-image: url(fonts/ebike_filter.jpg);">E-bike</button>
       </div>
+      <!-- <div class="col-4">
+        <button class="button-catalogue notSelected" id="eBikeFilter" data-category="" style="background-image: url(fonts/ebike_filter.jpg);">All</button>
+      </div> -->
     </div>
   </div>
+  <script>
+    // function mountainFilter() {
+    //   if (document.getElementById("mountainFilter").className == "button-catalogue notSelected") {
+    //     document.getElementById("mountainFilter").setAttribute("data-category", "");
+    //     document.getElementById("mountainFilter").className = "button-catalogue selected";
+    //     console.log(document.getElementById("mountainFilter").getAttribute("data-category"));
+    //     console.log("hey");
+    //     //document.getElementById("mountainFilter").removeAttribute("data-category");
+    //   } else if (document.getElementById("mountainFilter").className == "button-catalogue selected") {
+    //     document.getElementById("mountainFilter").setAttribute("data-category", "Montagne");
+    //     document.getElementById("mountainFilter").className = "button-catalogue notSelected";
+    //     console.log(document.getElementById("mountainFilter").getAttribute("data-category"));
+    //     console.log("hey2");
+
+    //   } else {
+    //     console.log("Cette condition ne devrait jamais avoir lieu !");
+    //   }
+    // }
+  </script>
 
   <h3>Filtrer</h3>
   <!-- filters -->
