@@ -9,7 +9,7 @@ export default class extends ImView {
     initialize(attrs) {
         this.wishlist = attrs.wishlist;
         this.listenTo(this.collection, 'add remove reset', this.render);
-        this.initializeFilters();
+        this.initializeFiltersCategory();
     }
 
     render() {
@@ -24,10 +24,24 @@ export default class extends ImView {
         return this;
     }
 
-    initializeFilters() {
-        var collection = this.collection;
+    initializeFiltersCategory() {
+        let collection = this.collection;
         $('.button-catalogue').on('click', (event) => {
-            var category = $(event.target).data('category');
+            
+            let classes= $(event.target).attr('class');
+            $('.button-catalogue').removeClass("selected");
+            if(classes=="button-catalogue selected"){
+                
+            }else{
+                $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
+                $(event.target).addClass("selected");
+            }
+            let category = $(event.target).attr('data-category');
+            if(category!=""){
+                $(event.target).attr('data-category',"");
+            }else{
+                $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
+            }
             collection.meta('category', category);
             collection.fetch();
         });

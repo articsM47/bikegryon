@@ -21,7 +21,7 @@ export default class extends ImCollection {
     url() {
         // si category est présent on l'ajoute à l'appel
         // return 'http://127.0.0.1:8000/api/bikes?category='+this.category;
-        var category = this.meta('category');
+        let category = this.meta('category');
         if (category) {
             return 'http://127.0.0.1:8000/api/bikes?category=' + category;
         } else {
