@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::apiResources([
     'addresses' => 'AddressController', // to do
     'badges' => 'BadgeController', // to do
-    'bikes' => 'BikeController', // to do
+    'bikes' => 'BikeController',
     'brands' => 'BrandController', // to do
     'clients' => 'ClientController', // to do
     'compagnies' => 'CompagnyController', // to do
@@ -31,11 +31,11 @@ Route::apiResources([
     'exponents' => 'ExponentController', // to do
     'feedbacks' => 'FeedbackController', // to do
     'happenings' => 'HappeningController', // to do
-    'people' => 'MemberController', // to do
+    'people' => 'MemberController',
     'products' => 'ProductController', // test silver boulet
     'questions' => 'QuestionController', // to do
     'staffs' => 'StaffController', // to do
-    'tests' => 'TestController', // to do
+    'tests' => 'TestController',
     'testdays' => 'TestdayController', // to do
 
 

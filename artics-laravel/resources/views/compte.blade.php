@@ -25,26 +25,27 @@
         <div id="page-content-wrapper">
 
           <body>
-            <form class="form-edit user">
+            <form class="form-edit user" method="POST" action="{{ url('upCompte') }}" accept-charset="UTF-8">
+            @csrf
               <h2 id="welcome-message" class="h3 mb-3 font-weight-normal">Bonjour {{ Session::get('prenom')}} !</h2>
               <p id="welcomeText">Tu peux voir et mettre à jour tes informations ici. </p>
 
               <div class="form-group row">
                 <label class="col-sm-2 inputContent" for="firstname">Nom</label>
                 <div>
-                  <input type="text" id="firstname" class="inputUser" value="{{ Session::get('nom')}}">
+                  <input type="text" name="nom" class="inputUser" value="{{ Session::get('nom')}}">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="surname" class="col-sm-2 inputContent">Prénom</label>
                 <div>
-                  <input type="text" id="surname" class="inputUser" value="{{ Session::get('prenom')}}">
+                  <input type="text" name="prenom" class="inputUser" value="{{ Session::get('prenom')}}">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="Email" class="col-sm-2 inputContent">E-mail</label>
                 <div>
-                  <input type="text" id="Email" class="inputUser" value="{{ Session::get('email1')}}">
+                  <input type="text" name="email1" class="inputUser" value="{{ Session::get('email1')}}">
                 </div>
               </div>
               <button class="buttonSubmit" type="submit">Sauvegarder</button>

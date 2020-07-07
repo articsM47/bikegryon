@@ -214,4 +214,14 @@ public function validetoConfirmation(mdpRequest $request) {
     protected function findClientTestDay($clientId, $testDayId) {
         return ClientTestday::where('client_id', $clientId)->where('testday_id', $testDayId)->first();
     }
+
+    public function submitcompte(Request $request) {
+
+        Session::put('nom', $request->input('nom') );
+        Session::put('prenom', $request->input('prenom') );
+        Session::put('birthday', $request->input('birthday') );
+        Session::put('email1', $request->input('email1') );
+
+        return view('Compte') ;
+    }
 }
