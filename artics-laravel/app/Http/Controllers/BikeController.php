@@ -18,15 +18,25 @@ class BikeController extends Controller
   public function index(Request $request)
   {
     $category = $request->category;
-    return BikeResource::collection($this->findBikes($category));
+    $brand_id = $request->brand_id;//
+    return BikeResource::collection($this->findBikes($category,$brand_id));//
   }
 
-  protected function findBikes($category)
+  protected function findBikes($category,$brand_id)//brand
   {
     if (empty($category)) {
-      return Bike::all();
+      if(empty($brand_id)){//
+        return Bike::all();
+      }else{//
+        return Bike::where('brand_id', $brand_id)->get();//
+      }//
     } else {
-      return Bike::where('category', $category)->get();
+      if(empty($brand_id)){//
+        return Bike::where('category', $category)->get();//
+      }else{//
+        return Bike::where('category', $category)->where('brand_id', $brand_id)->get();//
+      }//
+      
     }
   }
 
