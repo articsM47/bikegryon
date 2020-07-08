@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="32x32" href="http://pingouin1.heig-vd.ch/artics/fonts/favicon-32x32.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-    <meta name="description" content="le Bike test gryon est un événement de test de vélon à gryon">
+    <meta name="description" content="Au Bike Test Gryon, tu peux essayer tous les vélos que tu veux pour seulement CHF 20.- /jour. Réserver un billet!">
     <meta name="author" content="artics, COMEM+ M47 2020, projarticulation">
     <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
