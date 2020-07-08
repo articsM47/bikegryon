@@ -66,7 +66,7 @@ Route::get('Confirmation', function () {
 });
 
 Route::get('Compte', function () {
-    return view("Compte");
+    return view("compte");
 });
 
 Route::post('upCompte', 'MemberController@submitcompte' );

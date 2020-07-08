@@ -34,7 +34,7 @@ class BikeController extends Controller
       }else{//
         return Bike::where('category', $category)->where('brand_id', $brand_id)->get();//
       }//
-      
+
     }
   }
 
@@ -46,10 +46,10 @@ class BikeController extends Controller
    */
   public function affiche()
   {
-    return view('Catalogue');
+    return view('catalogue');
   }
 
-  
+
   /**
    * Store a newly created resource in storage.
    *
