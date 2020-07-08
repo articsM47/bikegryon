@@ -27,7 +27,7 @@
 
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/1">
+                <a href="/artics/Product/1">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike7.png" class="card-img-top" alt="Roadmachine THREE">
                 </a>
                 <div class="card-body catalogue-descr">
