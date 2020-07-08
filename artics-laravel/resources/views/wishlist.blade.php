@@ -23,7 +23,8 @@
     <div id="wishlist_products" class="row row-cols-1 row-cols-md-3">
     </div>
   </div>
-
+  <hr>
+    </hr>
   <!-- product's carousel -->
   <h2>Voir aussi</h2>
   <div class="text-right">

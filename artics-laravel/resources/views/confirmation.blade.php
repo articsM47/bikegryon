@@ -6,11 +6,10 @@
     <div class="col-lg-12 text-center">
       <h1 class="mt-5">Ton compte a été créé {{ Session::get('prenom')}} !</h1>
       <div id="commande" class="message-block">
-        <p class="mt-5 normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{ Session::get('email1')}}</span></p>
-        <p class="normal-text">Nous te conseillons de vérifier les informations contenues dans cet email <br>afin de t’assurer qu’elles soient correctes</p>
+        <p class=" normal-text">Nous avons envoyé une confirmation à l’adresse : <span id="user-email">{{ Session::get('email1')}}</span></p>
+        <p class="mt-5 normal-text" style="margin-bottom:80px">Nous te conseillons de vérifier les informations contenues dans cet email <br>afin de t’assurer qu’elles soient correctes</p>
       </div>
     </div>
-
   </div>
 
 
@@ -140,6 +139,5 @@
 
     </div>
 </div>
-
 
 @endsection

@@ -22,8 +22,8 @@
 </head>
 
 <body>
-    <div class="container-fluid container-nav">
-        <div class="container ">
+    <div class="container-fluid  container-nav">
+        <div class="container">
             <div class="row">
                 <!--logo bike test -->
                 <div class="col-2">
@@ -70,11 +70,9 @@
                     <!-- Overlay content -->
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Use any element to open/show the overlay navigation menu -->
+            <!-- Use any element to open/show the overlay navigation menu -->
 
-    <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
+            <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
 
                 <script>
                     function openNav() {
@@ -85,6 +83,7 @@
                         document.getElementById("myNav").style.height = "0%";
                     }
                 </script> -->
+        </div>
     </div>
     <!-- END MENU -->
     @yield('contenu')
