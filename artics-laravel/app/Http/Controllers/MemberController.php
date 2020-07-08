@@ -93,7 +93,7 @@ public function affiche() {
         $Member = Member::create($data);
 
 
-    return view('Creation', $request->all(), );
+    return view('Creation', $request->all());
 }
 
  /**

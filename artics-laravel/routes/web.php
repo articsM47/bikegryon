@@ -19,6 +19,10 @@ Route::get('/', function () {
 });
 
 
+Route::get('artics/', function () {
+    return view('Acceuil');
+});
+
 Route::get('Acceuil', function () {
     return view("Acceuil");
 });
