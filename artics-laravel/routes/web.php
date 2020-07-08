@@ -105,6 +105,10 @@ Route::resource('Products', 'BikeController', ['except'=>['show','edit','update'
 
 Route::get('Catalogue', 'BikeController@affiche');
 
+Route::get('Cataloguerp', function () {
+    return view("catalogue_representant");
+});
+
 Route::get('Product/{id}', 'BikeController@afficheproduit');
 
 Route::get('AddProduct', 'BikeController@create');
