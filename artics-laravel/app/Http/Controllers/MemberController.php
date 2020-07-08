@@ -235,6 +235,6 @@ public function validetoConfirmation(mdpRequest $request) {
         Session::put('birthday', $request->input('birthday') );
         Session::put('email1', $request->input('email1') );
 
-        return view('Compte') ;
+        return view('compte') ;
     }
 }
