@@ -93,18 +93,15 @@
         </div>
         <h4 class="card-footer text-center">20.-</h4>
       </div>
-
     </div>
-
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-xs-12" style="text-align: center;">
-          <a type="button" class="button button-event" href="/Inscriptions"><span>Je réserve un billet !</span></a>
+          <a type="button" class="button button-event" href="/artics/Inscriptions"><span>Je réserve un billet !</span></a>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Déroulement -->
   <div class="row" style="margin:30px">
     <div class="col-lg-12">

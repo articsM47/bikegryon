@@ -26,33 +26,33 @@
             <div class="row">
                 <!--logo bike test -->
                 <div class="col-2">
-                    <a href="/">
+                    <a href="/artics/">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
                     </a>
                 </div>
                 <!-- menu -->
                 <div class="col-8 nav-menu-text align-self-center">
-                    <a href="/Inscriptions">Réserver</a>
-                    <a href="/Event">Le programme</a>
-                    <a href="/Catalogue">Les vélos à tester</a>
-                    <a href="/Plan">Plan de l'événement</a>
-                    <a href="/Infos">Infos pratiques</a>
+                    <a href="/artics/Inscriptions">Réserver</a>
+                    <a href="/artics/Event">Le programme</a>
+                    <a href="/artics/Catalogue">Les vélos à tester</a>
+                    <a href="/artics/Plan">Plan de l'événement</a>
+                    <a href="/artics/Infos">Infos pratiques</a>
                 </div>
                 <!-- icons -->
                 <div class="col-2 iconsgroup align-self-center">
 
                     <!--test's icon-->
-                    <a class="" href="/Test">
+                    <a class="" href="/artics/Test">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/review.svg" alt="review" style="width:32px;height:32px;">
                     </a>
                     <!--account's icon-->
                     @can('isRole2')
-                    <a class="" href="/Check-in">
+                    <a class="" href="/artics/Check-in">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/check-in.svg" alt="person" style="width:32px;height:32px;">
                     </a>
                     @endcan
                     <!--account's icon-->
-                    <a class="" href="/Compte">
+                    <a class="" href="/artics/Compte">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/person.svg" alt="person" style="width:32px;height:32px;">
                     </a>
                 </div>

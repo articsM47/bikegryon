@@ -59,30 +59,10 @@
                     <a class="" href="/artics/Compte">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/person.svg" alt="person" style="width:32px;height:32px;">
                     </a>
-                    <!-- MENU -->
-                    <!-- The overlay -->
-                    <!-- <div id="myNav" class=""> -->
-                    <!-- Button to close the overlay navigation -->
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
-                    <!-- Overlay content -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Use any element to open/show the overlay navigation menu -->
-
-    <!-- <img onclick="openNav()" src="http://127.0.0.1:8000/fonts/menu.svg" alt="menu" style="width:42px;height:42px;">
-
-                <script>
-                    function openNav() {
-                        document.getElementById("myNav").style.height = "100%";
-                    }
-
-                    function closeNav() {
-                        document.getElementById("myNav").style.height = "0%";
-                    }
-                </script> -->
     </div>
     <!-- END MENU -->
     @yield('contenu')
@@ -99,7 +79,7 @@
                             <td>
                                 <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
                             </td>
-                            <td><a href="/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
+                            <td><a href="/artics/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
                             <td>
                                 <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
                                 <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>

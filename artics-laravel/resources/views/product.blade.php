@@ -7,8 +7,8 @@
     <div class="row">
       <div class="col-sm-12">
         <ul class="breadcrumb">
-          <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_back.svg" alt="arrow_back"></a></button>
-          <li><a href="/Catalogue" class="breadcrumb-catalogue">Les vélos à tester</a> <span class="divider"></span></li>
+          <button href="/artics/Catalogue" class="button-breadcrumb"><a href="/artics/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_back.svg" alt="arrow_back"></a></button>
+          <li><a href="/artics/Catalogue" class="breadcrumb-catalogue">Les vélos à tester</a> <span class="divider"></span></li>
           <li class="breadcrumb-catalogue">{{$bike -> category}}<span class="divider"></span></li>
           <li class="active">{{$bike -> shortDescr}}</li>
         </ul>

@@ -42,7 +42,7 @@
     </div>
     <div class="text-center ">
         <button id="submit-account" type="submit"><span>Continuer</span></button><br>
-        <a href="/Catalogue" class="form-option-text">Ne pas créer de compte</a>
+        <a href="/artics/Catalogue" class="form-option-text">Ne pas créer de compte</a>
     </div>
 </form>
 </div>

@@ -114,16 +114,10 @@ Route::get('Product/{id}', 'BikeController@afficheproduit');
 
 Route::get('AddProduct', 'BikeController@create');
 
-Route::resource('Bikes', 'BikeController'/* , ['except'=>['show','edit','update']] */);
+Route::resource('Bikes', 'BikeController');
 
 Route::post('importdata','BikeController@uploadFile');
 
 Route::get('infophp', function() {
     phpinfo();
 });
-
-/* Route::get('import_data', 'ProductController@uploadFile'); */
-/*
- Auth::routes();
-
-  Route::get('/home', 'HomeController@index')->name('home'); */
