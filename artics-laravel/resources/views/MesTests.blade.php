@@ -4,7 +4,7 @@
 <div class="container container-compte">
   <!-- style etoile  -->
   <style>
-    
+
   </style>
 
   <div class="row">
@@ -14,8 +14,8 @@
         <div class="sidebar-heading sidebar-title"><a href="/Compte" style="color: black">Mon compte</a></div>
         <div id="sidebar-list" class="compte-nav">
           <a href="#" class="listGroup">Mot de passe</a><br>
-          <a href="#" class="listGroup"><b>Mes tests</b></a><br>
-          <a href="/Attente" class="listGroup">Mes attentes</a><br>
+          <a href="MesTests" class="listGroup"><b>Mes tests</b></a><br>
+          <a href="#" class="listGroup">Mes attentes</a><br>
           <a href="#" class="listGroup">Mes réservations</a><br>
           <br>
           <a href="/Logout" class="listGroup">Me déconnecter</a><br>

@@ -67,9 +67,6 @@ Route::get('Compte', function () {
 
 Route::post('upCompte', 'MemberController@submitcompte' );
 
-Route::get('Attente', function () {
-    return view("Attente");
-});
 
 Route::get('MesTests', function () {
     return view("MesTests");
