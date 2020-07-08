@@ -2,7 +2,7 @@
 import {
     ImView
 } from 'lib/ImBackbone';
-import View from 'App/entities/product_rp/viewModel';
+import View from 'App/entities/productrp/viewModel';
 
 //CODE
 //EXPORT CLASS ImView
@@ -10,7 +10,6 @@ export default class extends ImView {
 
     //Initialise
     initialize(attrs) {
-        this.wishlist = attrs.wishlist;
         this.listenTo(this.collection, 'add remove reset', this.render);
         this.initializeFiltersCategory();
         this.initializeFiltersBrand();
@@ -22,7 +21,7 @@ export default class extends ImView {
         let models = this.collection.models;
         for (let model of models) {
             let view = new View({
-                model, wishlist: this.wishlist
+                model,
             })
             view.render().$el.appendTo(this.$el);
         }

@@ -3,7 +3,7 @@ import {
     ImCollection
 }
 from 'lib/ImBackbone';
-import Model from 'App/entities/product_rp/model';
+import Model from 'App/entities/productrp/model';
 
 //CODE
 //EXPORT CLASS ImView
@@ -25,8 +25,6 @@ export default class extends ImCollection {
 
     //call for the api
     url() {
-        // si category est présent on l'ajoute à l'appel
-        // return 'http://127.0.0.1:8000/api/bikes?category='+this.category;
         let category = this.meta('category');
         let brand_id = this.meta('brand');
         if (category) {

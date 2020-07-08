@@ -56,7 +56,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- grid des produits : affichage de 2 produits par colonne-->
-  <div id="catalogue_rp" class="row row-cols-1 row-cols-md-2">
+  <div id="cataloguerp" class="row row-cols-1 row-cols-md-2">
 
   </Div>
 </div>

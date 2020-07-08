@@ -9,21 +9,8 @@
           <h4 class="card-title">{{shortDescr}}</h4>
         </a>
       </div>
-
       <p class="card-text">
         {{category}}
-
-        {{#if inWishlist}}
-        <button type="button" class="float-right button-catalogue-like wishDel" data-key="{{key}}">
-          <img src="http://127.0.0.1:8000/fonts/wishlist_3.svg" width="40px">
-        </button>
-
-        {{else}}
-        <button type="button" class="float-right button-catalogue-like wishAdd">
-          <img src="http://127.0.0.1:8000/fonts/wishlist_2.svg" width="40px">
-        </button>
-        {{/if}}
-
         <button type="button" class="float-right bikeDel bike-trash">
           <img src="http://127.0.0.1:8000/fonts/delete.svg " width="40px" height="40">
         </button>

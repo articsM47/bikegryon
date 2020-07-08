@@ -6,8 +6,6 @@ use App\Bike;
 use Illuminate\Http\Request;
 use App\Http\Resources\Bike as BikeResource;
 
-
-
 class BikeController extends Controller
 {
   /**
