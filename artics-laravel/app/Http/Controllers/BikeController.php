@@ -98,7 +98,7 @@ class BikeController extends Controller
   {
 
     $bike = Bike::findOrFail($Bike);
-    return view('Product', compact('bike'));
+    return view('product', compact('bike'));
     //return view('Product')->with('shortDescr', 'Victoria');
   }
 
