@@ -31,7 +31,7 @@
         <div class="modal-header">
           <h4 class="modal-title" id="exampleModalLabel">Nouvelle personne</h4>
           <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
+            <span aria-hidden="true"><img src="http://pingouin1.heig-vd.ch/artics/fonts/close.svg" alt="close_cross"></span>
           </button>
         </div>
         <div class="modal-body">
@@ -96,7 +96,7 @@
       <div class="modal-header">
         <h4 class="modal-title" id="exampleModalLabel">Ajouter un badge</h4>
         <button id="btn-close-add-badge" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
+          <span aria-hidden="true"><img src="http://pingouin1.heig-vd.ch/artics/fonts/close.svg" alt="close_cross"></span>
         </button>
       </div>
       <div class="modal-body text-center">

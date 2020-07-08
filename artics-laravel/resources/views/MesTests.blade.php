@@ -2,7 +2,6 @@
 
 @section('contenu')
 <div class="container container-compte">
-  <!-- style etoile  -->
   <style>
 
   </style>
@@ -26,6 +25,7 @@
     <div class="col container-compte-onglet">
       <!-- Page Content -->
       <div id="page-content-wrapper ">
+
         <body class="">
           <form class="form-edit">
             <h2 id="welcome-message" class=" mb-3 ">Mes tests</h2>
@@ -99,7 +99,7 @@
           <div class="col-sm-6">
             <div class="card card-test">
               <div class="card-body">
-                <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike1.png" alt="Card image cap">
+                <img class="card-img-top" src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike1.png" alt="Card image cap">
               </div>
             </div>
           </div>
@@ -107,19 +107,19 @@
             <div class="card card-test">
               <div class="card-body">
                 <h4 class="card-title">E-Bike 700</h5>
-                <p class="card-test-brand">BMC</p>
-                <div class="container">
-                  <div class="row">
-                    <div class="rating">
-                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                  <p class="card-test-brand">BMC</p>
+                  <div class="container">
+                    <div class="row">
+                      <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <button class="button-test"><a href="#">Voir le détail</a></button>
+                  <button class="button-test"><a href="#">Voir le détail</a></button>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
           <div class="col-sm-6">
             <div class="card card-test">
               <div class="card-body">
-                <img class="card-img-top" src="http://127.0.0.1:8000/pictures/products/bike3.png" alt="Card image cap">
+                <img class="card-img-top" src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike3.png" alt="Card image cap">
               </div>
             </div>
           </div>
@@ -137,19 +137,19 @@
             <div class="card card-test">
               <div class="card-body">
                 <h4 class="card-title">E-Bike 700</h5>
-                <p class="card-test-brand">BMC</p>
-                <div class="container">
-                  <div class="row">
-                    <div class="rating">
-                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                  <p class="card-test-brand">BMC</p>
+                  <div class="container">
+                    <div class="row">
+                      <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <button class="button-test"><a href="#">Voir le détail</a></button>
+                  <button class="button-test"><a href="#">Voir le détail</a></button>
               </div>
             </div>
           </div>
@@ -159,8 +159,7 @@
   </div>
 
   <script>
-    /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+    /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("Catégories").classList.toggle("show").preventDefault();
     }

@@ -11,11 +11,11 @@
           <div class="sidebar-heading sidebar-title">Mon compte </div>
           <div id="sidebar-list" class="compte-nav">
             <a href="#" class="listGroup">Mot de passe</a><br>
-            <a href="/MesTests" class="listGroup">Mes tests</a><br>
+            <a href="/articss/MesTests" class="listGroup">Mes tests</a><br>
             <a href="#" class="listGroup">Mes attentes</a><br>
             <a href="#" class="listGroup">Mes réservations</a><br>
             <br>
-            <a href="/Logout" class="listGroup">Me déconnecter</a><br>
+            <a href="/artics/Logout" class="listGroup">Me déconnecter</a><br>
           </div>
         </div>
         <!-- /#sidebar-wrapper -->

@@ -16,14 +16,6 @@
           <input type="password" id="inputPassword" class="inputUser" placeholder="Mot de passe" required>
 
           <a href="/Confirmation" type="button" class="form-option-text login">Tu as oublié ton mot de passe? </a>
-          <!--
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-      </div>
-      -->
           <button id="submit-account" type="submit"><span>Se connecter</span></button>
           <div class="form-group text-center ">
             <a href="/Login" type="button" class="form-option-text">Je n’ai pas encore de compte</a>

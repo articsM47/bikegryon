@@ -5,10 +5,8 @@
   <h1 class="title-page">Tous les vélos à tester</h1>
   <h2 class="second-title-page">au Bike Test Gryon 2020 </h2>
 @can('isRole1')
-  <a href="/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
+  <a href="/artics/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
 @endcan
-
-
 
   <!-- Filtre images -->
   <div class="container">
@@ -40,10 +38,7 @@
     <a class="dropdown-item" data-brand="" href="#">Toutes les marques</a>
   </div>
 </div>
-
-
   <br>
-
   <br>
 
   <!-- Load icon library -->
@@ -51,8 +46,7 @@
 
   <!-- grid des produits : affichage de 2 produits par colonne-->
   <div id="catalogue" class="row row-cols-1 row-cols-md-2">
-
-  </Div>
+  </div>
 </div>
 
 @endsection

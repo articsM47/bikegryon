@@ -11,7 +11,7 @@
                     <h3> <label class="info-title" for="faq-1">Les tests</label></h3>
                     <div class="info-content">
                         <ul>
-                            <li> Casque obligatoire <img src="http://127.0.0.1:8000/fonts/error_outline.svg" alt="add_circle"> 
+                            <li> Casque obligatoire <img src="http://pingouin1.heig-vd.ch/artics/fonts/error_outline.svg" alt="add_circle"> 
                             Prends ton casque et si possible tes pédales pour faciliter la préparation du vélo.</li>
                             <li>Ta carte d’identité te sera demandé avant un test</li>
                             <li>Un Bike-Wash est à disposition avec des produits de nettoyage! Du coup, merci

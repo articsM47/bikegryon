@@ -4,18 +4,6 @@
 <div class="container title-page">
     <div class="col-sm-offset-2 col-sm-8">
         <div class="panel panel-info add-bike-panel">
-            <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ajout un Vélo au catalogue</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ajout des Vélos via csv</a>
-  </li>
-
-</ul>
-
- <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
             <div class="panel-heading add-bike-title">Ajouter un vélo au catalogue</div>
             <div class="panel-body addform">
                 <form method="POST" action="{{route('Bikes.store')}}" accept-charset="UTF-8">
@@ -60,8 +48,6 @@
                 </form>
             </div>
         </div>
-
-        <!--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> -->
         <div class="panel panel-info add-bike-panel">
             <div class="panel-heading add-bike-title">Ajout de plusieurs vélos via CSV</div>
 
@@ -92,7 +78,7 @@
             </div>
         </div>
         <div style="text-align: center; margin-bottom: 50px; margin-top: 50px;">
-            <a href="javascript:history.back()" class="add-bike-button"><span class="glyphicon glyphicon-arrow-left" style="color: white"></span>   Retour</a>
+            <a href="javascript:history.back()" class="add-bike-button"><span class="glyphicon glyphicon-arrow-left" style="color: white"></span> Retour</a>
         </div>
     </div>
 </div>

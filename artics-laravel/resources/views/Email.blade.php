@@ -132,7 +132,7 @@ legend {
   <h1>Salut {{$prenom ?? ''}} !</h1>
   <p>Bike Test Gryon 2020 aura lieu dans Quelques jours !</p>
   <p> Vu que tu n’as pas encore de compte sur bikegryon.ch, on t’offre un moyen de pouvoir visualiser ta wishlist sur n’importe lesquels de tes appareil électroniques pendant l’événement. Cool non ?</p>
-  <button href="http://127.0.0.1:8000/Catalogue">Voir ma wishlist</button>
+  <button href="/artics/Catalogue">Voir ma wishlist</button>
 </header>
 
 
@@ -155,7 +155,7 @@ legend {
             <span class="checkmark"></span>
           </label>
 </form>
-<button href="http://127.0.0.1:8000/Catalogue">Voir ma wishlist</button>
+<button href="/artics/Catalogue">Voir ma wishlist</button>
 
 
 

@@ -7,7 +7,6 @@
       <h1 class="title-page">Tests en cours</h1>
     </div>
     <div class="col-lg-6 vertical-align-center" style="margin-top: 20px;">
-      <!-- <a class="float-right" href="/AddTest" class="representant badge badge-light">Ajouter un test</a> -->
       <!-- Button trigger modal -->
       <div id="test-form">
         <button id="add-test" type="button" class="button button-add test" data-toggle="modal" data-target="popupField">
@@ -49,7 +48,7 @@
             <div class="modal-header">
               <h4 class="modal-title" id="exampleModalLabel">Nouveau test</h4>
               <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
+                <span aria-hidden="true"><img src="http://pingouin1.heig-vd.ch/artics/fonts/close.svg" alt="close_cross"></span>
               </button>
             </div>
             <div class="modal-body">
@@ -75,7 +74,7 @@
             <div class="modal-header">
               <h4 class="modal-title">Avis du client</h4>
               <button id="close-review" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><img src="http://127.0.0.1:8000/fonts/close.svg" alt="close_cross"></span>
+                <span aria-hidden="true"><img src="http://pingouin1.heig-vd.ch/artics/fonts/close.svg" alt="close_cross"></span>
               </button>
             </div>
             <div class="modal-body">
