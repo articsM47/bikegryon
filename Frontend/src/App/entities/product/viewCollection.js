@@ -32,16 +32,15 @@ export default class extends ImView {
     initializeFiltersCategory() {
         let collection = this.collection;
         $('.button-catalogue').on('click', (event) => {
-            
             let classes= $(event.target).attr('class');
-            $('.button-catalogue').removeClass("selected");
-            if(classes=="button-catalogue selected"){
-                
+            $('.button-catalogue').removeClass("select");
+            if(classes=="button-catalogue select selected"){// Undefined source for the selected class
             }else{
                 $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
-                $(event.target).addClass("selected");
+                $(event.target).addClass('select');
             }
             let category = $(event.target).attr('data-category');
+            console.log(category);
             if(category!=""){
                 $(event.target).attr('data-category',"");
             }else{

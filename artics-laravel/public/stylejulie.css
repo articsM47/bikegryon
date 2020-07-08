@@ -311,7 +311,7 @@ a .card-title {
     color: black;
 }
 
-.button-catalogue.selected{
+.button-catalogue.select{
     background-color: black;
     opacity: 0.5;
 }
