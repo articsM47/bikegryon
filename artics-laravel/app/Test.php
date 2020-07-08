@@ -34,16 +34,7 @@ class Test extends Model
     public function client() {
         return $this->belongsTo('App\Client');
     }
-    
-    /**
-     * buildReview with questions
-     *
-     * @param  mixed $question1
-     * @param  mixed $question2
-     * @param  mixed $question3
-     * @param  mixed $question4
-     * @return void
-     */
+
     public static function buildReview($question1, $question2, $question3, $question4) {
         $review = array();
         $review['question1'] = array('about' => 'maneuverability', 'grade' => $question1);

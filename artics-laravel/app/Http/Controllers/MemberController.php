@@ -131,12 +131,7 @@ public function validetoConfirmation(mdpRequest $request) {
         // cration des dépendance
         return new MemberResource($Member);
     }
-    
-    /**
-     * create
-     *
-     * @return void
-     */
+
     public function create()
     {
         return view('AddMember');
@@ -167,13 +162,7 @@ public function validetoConfirmation(mdpRequest $request) {
 
         return 'OK';
     }
-    
-    /**
-     * afficheproduit
-     *
-     * @param  mixed $Member
-     * @return void
-     */
+
     public function afficheproduit(Member $Member)
     {
         return view('Member');
@@ -204,33 +193,16 @@ public function validetoConfirmation(mdpRequest $request) {
     {
         $Member->delete();
     }
-    
-    /**
-     * findClients
-     *
-     * @param  mixed $testDayId
-     * @return void
-     */
+
     protected function findClients($testDayId)
     {
         return ClientTestday::with('client')->where('testday_id', $testDayId)->get();
     }
-    
-    /**
-     * findClientMembers
-     *
-     * @return void
-     */
+
     protected function findClientMembers() {
         return Member::where('role', 'client')->orderBy('name', 'ASC')->get();
     }
-    
-    /**
-     * buildBadgeMapping
-     *
-     * @param  mixed $testDayId
-     * @return void
-     */
+
     protected function buildBadgeMapping($testDayId)
     {
         $allClientsTestDay = $this->findClients($testDayId);
@@ -244,24 +216,11 @@ public function validetoConfirmation(mdpRequest $request) {
         }
         return $badgeMapping;
     }
-    
-    /**
-     * findClientTestDay
-     *
-     * @param  mixed $clientId
-     * @param  mixed $testDayId
-     * @return void
-     */
+
     protected function findClientTestDay($clientId, $testDayId) {
         return ClientTestday::where('client_id', $clientId)->where('testday_id', $testDayId)->first();
     }
-    
-    /**
-     * submitcompte submit an account
-     *
-     * @param  mixed $request
-     * @return void
-     */
+
     public function submitcompte(Request $request) {
 
         Session::put('nom', $request->input('nom') );

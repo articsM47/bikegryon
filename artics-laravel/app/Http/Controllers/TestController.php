@@ -10,19 +10,18 @@ use App\ClientTestday;
 use Carbon\Carbon;
 
 class TestController extends Controller
-{   
+{
     /**
-     * return a collection where endtime of test is null
+     * Display a listing of the resource.
      *
-     * @return void
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         return TestResource::collection(Test::where('endTime', null)->get());
     }
-
-    /**
-     * return the view of test page
+ /**
+     * Run the migrations.
      *
      * @return void
      */
@@ -30,12 +29,12 @@ class TestController extends Controller
     {
         return view('Test');
     }
-   
+
     /**
-     * store the new test of the client
+     * Store a newly created resource in storage.
      *
-     * @param  mixed $request
-     * @return void
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -45,11 +44,9 @@ class TestController extends Controller
         // création des dépendance
         return new TestResource($Test);
     }
-       
-    /**
-     * create a new test
+ /**
+     * Run the migrations.
      *
-     * @param  mixed $request
      * @return void
      */
     public function create(Request $request)
@@ -59,13 +56,7 @@ class TestController extends Controller
         $this->createTest($bike, $clientTestDay);
         return 'OK';
     }
-    
-    /**
-     * submitReview of a test
-     *
-     * @param  mixed $request
-     * @return void
-     */
+
     public function submitReview(Request $request) {
         error_log(print_r($request->all(), true));
         $test = $this->findTest($request->testId);
@@ -74,20 +65,19 @@ class TestController extends Controller
         $test->save();
         return 'OK';
     }
-  
+
     /**
-     * show a test
+     * Display the specified resource.
      *
-     * @param  mixed $Test
-     * @return void
+     * @param  \App\Test  $Test
+     * @return \Illuminate\Http\Response
      */
     public function show(Test $Test)
     {
         return new TestResource($Test);
     }
-
-    /**
-     * Return the view of all the tests
+ /**
+     * Run the migrations.
      *
      * @return void
      */
@@ -95,13 +85,12 @@ class TestController extends Controller
     {
         return view('Test');
     }
-        
     /**
-     * update the specified resource in storage.
+     * Update the specified resource in storage.
      *
-     * @param  mixed $request
-     * @param  mixed $Test
-     * @return void
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Test  $Test
+     * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Test $Test)
     {
@@ -110,35 +99,33 @@ class TestController extends Controller
         $Test->update($data);
         return new TestResource($Test);
     }
- 
+
     /**
-     * destroy the specified test
+     * Remove the specified resource from storage.
      *
-     * @param  mixed $Test
-     * @return void
+     * @param  \App\Test  $Test
+     * @return \Illuminate\Http\Response
      */
     public function destroy(Test $Test)
     {
         $Test->delete();
     }
-   
-    /**
-     * findBike from distinctiveSign
+
+
+ /**
+     * Run the migrations.
      *
-     * @param  mixed $distinctiveSign
      * @return void
      */
     protected function findBike($distinctiveSign)
     {
         return Bike::where('distinctiveSign', $distinctiveSign)
-           //just the first
+            // Pour retourner le premier bike
             ->first();
     }
-   
-    /**
-     * findClient from badgenumber
+ /**
+     * Run the migrations.
      *
-     * @param  mixed $badgeNumber
      * @return void
      */
     protected function findClient($badgeNumber)
@@ -147,12 +134,9 @@ class TestController extends Controller
             // Pour retourner le premier clienttestday
             ->first();
     }
-  
-    /**
-     * createTest create a test for a specified client for a specified testday
+ /**
+     * Run the migrations.
      *
-     * @param  mixed $bike
-     * @param  mixed $clientTestDay
      * @return void
      */
     protected function createTest($bike, $clientTestDay)
@@ -164,13 +148,7 @@ class TestController extends Controller
         $test->badgeNo = $clientTestDay->badgeNo;
         $test->save();
     }
-  
-    /**
-     * findTest find a test with the id of input
-     *
-     * @param  mixed $testId
-     * @return void
-     */
+
     protected function findTest($testId)
     {
         return Test::where('id', $testId)
