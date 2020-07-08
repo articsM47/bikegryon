@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/artics/', function () {
+Route::get('artics/', function () {
     return view('Acceuil');
 });
 
