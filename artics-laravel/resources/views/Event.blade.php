@@ -110,43 +110,66 @@
     <div class="col-lg-12">
       <h2>Déroulement</h2>
     </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/outlined_flag.svg">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/outlined_flag.svg">
+          </div>
+          <div class="col-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/verified.svg">
+          </div>
+          <div class="col-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/heart_wishlist_purple.svg">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            Inscris-toi en ligne ou à l'accueil
+          </div>
+          <div class="col-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            Sélectionne les vélos que tu veux tester lors de l'événement en les mettant dans ta liste d'envies
+          </div>
+          <div class="co-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            Paie sur place le prix de la journée <br>
+            et reçois ton bracelet
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      Inscris-toi en ligne ou à l'accueil
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/verified.svg">
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      Sélectionne les vélos que tu veux tester lors de l'événement en les mettant dans ta liste d'envies
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/heart_wishlist_purple.svg">
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      Paie sur place le prix de la journée (cash ou carte de crédit), et reçois ton bracelet
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/bicycle_Wash.svg">
-    </div>
-    <div class="col-lg-4 event-deroulement-col">
-      Tu peux regarder sur le site si les vélos de ta liste d'envies sont disponibles ou parcourir les stands et te faire conseiller.
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/directions_bike.svg">
-    </div>
-    <div class="col-lg-4 event-deroulement-col">
-      Donne ta carte d'identité en échange du vélo à tester, met ton casque et teste le vélo sur un des 4 parcours à choix.
-    </div>
-    <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
-      <img src="http://127.0.0.1:8000/fonts/rate_review.svg">
-    </div>
-    <div class="col-lg-4 event-deroulement-col">
-      Rapporte-le après 1 descente ou 1 boucle. Répète l'operation depuis le point 4 avec un autre modèle, et surtout : amuse-toi bien !
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/bicycle_Wash.svg">
+          </div>
+          <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/directions_bike.svg">
+          </div>
+          <div class="col-lg-4 event-deroulement-col" style="margin-top: 20px; margin-bottom:20px;">
+            <img src="http://127.0.0.1:8000/fonts/rate_review.svg">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 event-deroulement-col">
+            Tu peux regarder sur le site si les vélos de ta liste d'envies sont disponibles ou parcourir les stands et te faire conseiller.
+          </div>
+          <div class="col-lg-4 event-deroulement-col">
+            Donne ta carte d'identité en échange du vélo à tester, met ton casque et teste le vélo sur un des 4 parcours à choix.
+          </div>
+
+          <div class="col-lg-4 event-deroulement-col">
+            Rapporte-le après 1 descente ou 1 boucle. Répète l'operation depuis le point 4 avec un autre modèle, et surtout : amuse-toi bien !
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 </div>
 <!--  
 <div class="container">
@@ -453,8 +476,8 @@
       <span class="fa fa-star "></span>
     </div>
     -->
-  
-  </div>
+
+</div>
 </div>
 
 @endsection
