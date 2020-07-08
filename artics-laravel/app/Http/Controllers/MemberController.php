@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\InscriptionRequest;
 use App\Http\Requests\mdpRequest;
 use App\Http\Resources\Member as MemberResource;
+use Illuminate\Support\Facades\DB;
 use Mail;
 use Session;
 
@@ -151,9 +152,14 @@ public function validetoConfirmation(mdpRequest $request) {
      * @return void
      */
     public function submitBadge(Request $request) {
-        $clientTestDay = $this->findClientTestDay($request->clientId, $request->testDayId);
-        $clientTestDay->badgeNo = $request->badgeNo;
-        $clientTestDay->save();
+        // on utilise une requete SQL à la palce d'Eloquent parce
+        // qu'Eloquent ne supporte pas les clés primaires composites
+        DB::update("UPDATE 'client_testday' SET badgeNo = ? WHERE client_id = ? AND testday_id = ?", array(
+            $request->badgeNo,
+            $request->clientId, 
+            $request->testDayId
+        ));
+
         return 'OK';
     }
 

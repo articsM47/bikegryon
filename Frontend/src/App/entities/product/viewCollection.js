@@ -13,6 +13,7 @@ export default class extends ImView {
         this.wishlist = attrs.wishlist;
         this.listenTo(this.collection, 'add remove reset', this.render);
         this.initializeFiltersCategory();
+        this.initializeFiltersBrand();
     }
 
     //render of view with the wishlist
@@ -47,6 +48,37 @@ export default class extends ImView {
                 $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
             }
             collection.meta('category', category);
+            collection.fetch();
+        });
+    }
+
+    initializeFiltersBrand() {
+        let collection = this.collection;
+        $('.dropdown-item').on('click', (event) => {
+            let brand_id = $(event.target).attr('data-brand');
+            switch (brand_id) {
+                case "1":
+                    $('#dropdownMenuButton').text("Lapierre");
+                  break;
+                  case "2":
+                    $('#dropdownMenuButton').text("BMC");
+                  break;
+                  case "3":
+                    $('#dropdownMenuButton').text("Scott");
+                  break;
+                  case "4":
+                    $('#dropdownMenuButton').text("Merida");
+                  break;
+                  case "5":
+                    $('#dropdownMenuButton').text("Centurion");
+                  break;
+                  case "6":
+                    $('#dropdownMenuButton').text("Wilier");
+                  break;
+                default:
+                    $('#dropdownMenuButton').text("Marque");
+              }
+            collection.meta('brand', brand_id);
             collection.fetch();
         });
     }

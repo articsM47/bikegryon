@@ -99,7 +99,7 @@ class BikesTableSeeder extends Seeder
     public function run()
     {
         //DB::table('bikes')->delete();
-        for ($i = 1; $i <= 15; $i++) {
+        for ($i = 1; $i <= 30; $i++) {
             $date=$this->randDate();
             $size=$this->randFrameSize();
             DB::table('bikes')->insert([
