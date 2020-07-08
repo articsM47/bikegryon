@@ -12,7 +12,6 @@
     </div>
   </div>
 
-
   <!-- grid carousel -->
   <h3>Les vélos que tu pourras essayer à l’événement </h1>
     <div class="text-right">
