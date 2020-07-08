@@ -15,8 +15,8 @@
   <!-- grid carousel -->
   <h3>Les vélos que tu pourras essayer à l’événement </h1>
     <div class="text-right">
-      <a href="/Catalogue" class="breadcrumb-catalogue carroussel">Liste complète</a>
-      <button href="/Catalogue" class="button-breadcrumb"><a href="/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_right.svg" alt="arrow_back"></a></button>
+      <a href="/artics/Catalogue" class="breadcrumb-catalogue carroussel">Liste complète</a>
+      <button href="/artics/Catalogue" class="button-breadcrumb"><a href="/artics/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_right.svg" alt="arrow_back"></a></button>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -27,11 +27,11 @@
 
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/1">
+                <a href="/artics/Product/1">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike7.png" class="card-img-top" alt="Roadmachine THREE">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Roadmachine THREE</h4>
                   </a>
                   <p class="card-text">Route</p>
@@ -42,11 +42,11 @@
 
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/2">
+                <a href="/artics/Product/2">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike6.png" class="card-img-top" alt="Agonist TWO">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Agonist TWO</h4>
                   </a>
                   <p class="card-text">e-Montagne</p>
@@ -58,11 +58,11 @@
 
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/3">
+                <a href="/artics/Product/3">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike8.png" class="card-img-top" alt="Alpenchallenge TWO">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Alpenchallenge TWO</h4>
                   </a>
                   <p class="card-text">Montagne</p>
@@ -78,42 +78,37 @@
 
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/1">
+                <a href="/artics/Product/1">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike7.png" class="card-img-top" alt="Roadmachine THREE">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Roadmachine THREE</h4>
                   </a>
                   <p class="card-text">Route</p>
                 </div>
               </div>
             </div>
-
-
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/2">
+                <a href="/artics/Product/2">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike6.png" class="card-img-top" alt="Agonist TWO">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Agonist TWO</h4>
                   </a>
                   <p class="card-text">e-Montagne</p>
                 </div>
               </div>
             </div>
-
-
-
             <div class="col mb-4">
               <div class="card h-100 border-0">
-                <a href="/Product/3">
+                <a href="/artics/Product/3">
                   <img src="http://pingouin1.heig-vd.ch/artics/pictures/products/bike8.png" class="card-img-top" alt="Alpenchallenge TWO">
                 </a>
                 <div class="card-body catalogue-descr">
-                  <a href="/Product/1" class="catalogue-product-link">
+                  <a href="/artics/Product/1" class="catalogue-product-link">
                     <h4 class="card-title">Alpenchallenge TWO</h4>
                   </a>
                   <p class="card-text">Montagne</p>

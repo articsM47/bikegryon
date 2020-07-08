@@ -5,7 +5,6 @@
     <title>Bike test gryon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" href="http://pingouin1.heig-vd.ch/artics/fonts/favicon-white.png">
@@ -27,8 +26,8 @@
             <div class="row">
                 <!--logo bike test -->
                 <div class="col-2">
-                    <a href="/">
-                        <img src="http://pingouin1.heig-vd.ch/artics/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
+                    <a href="/artics/">
+                        <img src="http://pingouin1.heig-vd.ch/artics/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
                     </a>
                 </div>
                 <!-- menu -->

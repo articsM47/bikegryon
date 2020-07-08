@@ -11,7 +11,7 @@
           <div class="sidebar-heading sidebar-title">Mon compte </div>
           <div id="sidebar-list" class="compte-nav">
             <a href="#" class="listGroup">Mot de passe</a><br>
-            <a href="/articss/MesTests" class="listGroup">Mes tests</a><br>
+            <a href="/artics/MesTests" class="listGroup">Mes tests</a><br>
             <a href="#" class="listGroup">Mes attentes</a><br>
             <a href="#" class="listGroup">Mes réservations</a><br>
             <br>

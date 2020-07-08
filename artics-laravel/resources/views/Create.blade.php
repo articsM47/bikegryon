@@ -27,9 +27,9 @@
 
     <div class="form-group text-center ">
     <button type="submit" class="btn btn-primary mb-2">Crée un compte </button>
-    <a  href="/Confirmation"type="button" class="badge badge-light">continuer sans compte</a>
+    <a  href="/artics/Confirmation"type="button" class="badge badge-light">continuer sans compte</a>
     </div>
     <div class="form-group text-center ">
-    <a  href="/Login"type="button" class="badge badge-light ">j'ai déjà un compte</a>
+    <a  href="/artics/Login"type="button" class="badge badge-light ">j'ai déjà un compte</a>
   </div>
 @endsection

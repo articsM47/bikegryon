@@ -19,24 +19,22 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::apiResources([
-    'addresses' => 'AddressController', // to do
-    'badges' => 'BadgeController', // to do
+    'addresses' => 'AddressController',
+    'badges' => 'BadgeController',
     'bikes' => 'BikeController',
-    'brands' => 'BrandController', // to do
-    'clients' => 'ClientController', // to do
-    'compagnies' => 'CompagnyController', // to do
-    'countries' => 'CountryController', // to do
-    'cities' => 'CityController', // to do
-    'editions' => 'EditionController', // to do
-    'exponents' => 'ExponentController', // to do
-    'feedbacks' => 'FeedbackController', // to do
-    'happenings' => 'HappeningController', // to do
+    'brands' => 'BrandController',
+    'clients' => 'ClientController',
+    'compagnies' => 'CompagnyController',
+    'countries' => 'CountryController',
+    'cities' => 'CityController',
+    'editions' => 'EditionController',
+    'exponents' => 'ExponentController',
+    'feedbacks' => 'FeedbackController',
+    'happenings' => 'HappeningController',
     'people' => 'MemberController',
-    'products' => 'ProductController', // test silver boulet
-    'questions' => 'QuestionController', // to do
-    'staffs' => 'StaffController', // to do
+    'products' => 'ProductController',
+    'questions' => 'QuestionController',
+    'staffs' => 'StaffController',
     'tests' => 'TestController',
-    'testdays' => 'TestdayController', // to do
-
-
+    'testdays' => 'TestdayController',
 ]);
