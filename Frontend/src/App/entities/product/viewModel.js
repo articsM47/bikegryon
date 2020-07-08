@@ -19,7 +19,7 @@ export default class extends ImView {
         return {
             'click .wishAdd': 'addToWish',
             'click .wishDel': 'delFromWish',
-            'click .bikeDel': 'delete'
+            //'click .bikeDel': 'delete'
         }
 
     }
@@ -40,12 +40,12 @@ export default class extends ImView {
         this.model.set({ inWishlist: true });
     }
 
-    //fonction for delete a bike on the catalogue
-    delete(evt) {
-        if (confirm("Êtes-vous sûr de vouloir supprimer ce vélo?")) {
-          this.model.destroy();
-        }
-      }
+    // //fonction for delete a bike on the catalogue
+    // delete(evt) {
+    //     if (confirm("Êtes-vous sûr de vouloir supprimer ce vélo?")) {
+    //       this.model.destroy();
+    //     }
+    //   }
 
     //render of the model with the management of the status of the bikes in the Localstorage
     render() {
