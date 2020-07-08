@@ -41,6 +41,7 @@ export default class extends ImView {
             let category = $(event.target).attr('data-category');
             console.log(category);
             if(category!=""){
+                console.log(11);
                 $(event.target).attr('data-category',"");
             }else{
                 console.log(22);
