@@ -25,7 +25,6 @@
         <div class="container">
             <div class="row">
                 <!--logo bike test -->
-                <!--logo bike test -->
                 <div class="col-2">
                     <a href="/artics/">
                         <img src="http://pingouin1.heig-vd.ch/artics/fonts/logo_biketest.svg" alt="logo_biketest" style="width:100px;height:100px;">
