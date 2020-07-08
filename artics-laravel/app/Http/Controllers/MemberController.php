@@ -22,7 +22,7 @@ class MemberController extends Controller
      */
     public function index(Request $request)
     {
-        $testDayId = 1; // Hardcodé pour le Proof Of Concept
+        $testDayId = 1; // Hardcodé for the Proof Of Concept
         $badgeMapping = $this->buildBadgeMapping($testDayId);
         $request->merge([
             'badgeMapping' => $badgeMapping,
