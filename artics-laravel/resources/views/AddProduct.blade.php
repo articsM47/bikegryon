@@ -63,7 +63,7 @@
                         <li>categorie</li>
                         <li>brand_id (demandez à un administrateur votre identifiant de marque)</li>
                     </ul>
-                    <form action="POST" action="{{ url('Creation') }}" accept=".csv">
+                    <form method="POST" action="{{ url('importdata') }}" accept=".csv">
                         @csrf
                         <div class="input-group" style="margin-top: 20px;">
                             <div class="custom-file">
