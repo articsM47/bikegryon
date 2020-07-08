@@ -106,7 +106,7 @@
   </div>
 
   <!-- Déroulement -->
-  <div class="row">
+  <div class="row" style="margin:30px">
     <div class="col-lg-12">
       <h2>Déroulement</h2>
     </div>
@@ -252,7 +252,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
--->
+
 <h2 style="margin: 30px">Quel vélo pour quel parcours ?</h2>
 <div class="container">
 
@@ -275,7 +275,6 @@
           <th>E-Bike (trekking)</th>
           <th>-</th>
           <th>
-            <!-- Add icon library -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -290,7 +289,7 @@
           <th>E-Road</th>
           <th>-</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -304,21 +303,21 @@
         <tr>
           <th>E-VTT</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star "></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -332,14 +331,14 @@
         <tr>
           <th>Gravel</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -347,14 +346,14 @@
           </th>
           <th>-</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star "></span>
@@ -364,7 +363,7 @@
         <tr>
           <th>Junior</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -373,14 +372,14 @@
           <th>-</th>
           <th>-</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -391,7 +390,7 @@
 
           <th>Road</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -405,7 +404,7 @@
         <tr>
           <th>VTT</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -414,14 +413,14 @@
           <th>-</th>
           <th>-</th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </th>
           <th>
-            <!-- Add icon library -->
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -432,27 +431,29 @@
     </table>
 
     <div>
-      <!-- Add icon library -->
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Recommandé</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
 
-      <!-- Add icon library -->
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Oui c'est possible</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star "></span>
 
-      <!-- Add icon library -->
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span>Ça passe encore</span>
       <span class="fa fa-star checked "></span>
       <span class="fa fa-star "></span>
       <span class="fa fa-star "></span>
     </div>
+    -->
+  
   </div>
 </div>
 
