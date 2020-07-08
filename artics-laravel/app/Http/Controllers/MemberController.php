@@ -156,7 +156,7 @@ public function validetoConfirmation(mdpRequest $request) {
         // qu'Eloquent ne supporte pas les clés primaires composites
         DB::update("UPDATE 'client_testday' SET badgeNo = ? WHERE client_id = ? AND testday_id = ?", array(
             $request->badgeNo,
-            $request->clientId, 
+            $request->clientId,
             $request->testDayId
         ));
 
@@ -221,6 +221,13 @@ public function validetoConfirmation(mdpRequest $request) {
         return ClientTestday::where('client_id', $clientId)->where('testday_id', $testDayId)->first();
     }
 
+
+    /**
+     * submitcompte submit an account
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function submitcompte(Request $request) {
 
         Session::put('nom', $request->input('nom') );

@@ -49,6 +49,7 @@ class BikeController extends Controller
     return view('Catalogue');
   }
 
+  
   /**
    * Store a newly created resource in storage.
    *
