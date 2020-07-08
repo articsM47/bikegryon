@@ -9,7 +9,7 @@ use App\Http\Resources\Bike as BikeResource;
 class BikeController extends Controller
 {
   /**
-   * Display a listing of the resource.
+   * Display a listing of bikes of the right category.
    *
    * @return \Illuminate\Http\Response
    */
@@ -20,7 +20,13 @@ class BikeController extends Controller
     return BikeResource::collection($this->findBikes($category,$brand_id));//
   }
 
-  protected function findBikes($category,$brand_id)//brand
+  /**
+   * findBikes of right category
+   *
+   * @param  mixed $category
+   * @return void
+   */
+  protected function findBikes($category)
   {
     if (empty($category)) {
       if(empty($brand_id)){//
@@ -34,12 +40,12 @@ class BikeController extends Controller
       }else{//
         return Bike::where('category', $category)->where('brand_id', $brand_id)->get();//
       }//
-      
+
     }
   }
 
   /**
-   * Remove the specified resource from storage.
+   * it put all of the data in de right view "Catalogue"
    *
    * @param  \App\Bike  $Bike
    * @return \Illuminate\Http\Response
@@ -50,25 +56,20 @@ class BikeController extends Controller
   }
 
   /**
-   * Store a newly created resource in storage.
+   * store
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
+   * @param  mixed $request
+   * @return void
    */
   public function store(Request $request)
   {
     $data = $request->only(['shortDescr', 'longDescr', 'distinctiveSign', 'picture', 'frameSize', 'frameUnit', 'category', 'brand_id']);
-    // todo : validation
     $Bike = Bike::create($data);
-    //$Brand = Brand::create($data)-> where($id =>$data->brand_id);
-
-    // cration des dépendance
-    /* return new BikeResource($Bike); */
     return view("Catalogue");
   }
 
   /**
-   * Remove the specified resource from storage.
+   * view of the right page
    *
    * @param  \App\Bike  $Bike
    * @return \Illuminate\Http\Response
@@ -79,23 +80,24 @@ class BikeController extends Controller
   }
 
   /**
-   * Display the specified resource.
+   * Display the specified bike.
    *
-   * @param  \App\Bike  $Bike
-   * @return \Illuminate\Http\Response
+   * @param  mixed $Bike
+   * @return void
    */
   public function show(Bike $Bike)
   {
     return new BikeResource($Bike);
   }
+
   /**
-   * Run the migrations.
+   * afficheproduit
    *
+   * @param  mixed $Bike
    * @return void
    */
   public function afficheproduit($Bike)
   {
-
     $bike = Bike::findOrFail($Bike);
     return view('Product', compact('bike'));
     //return view('Product')->with('shortDescr', 'Victoria');
@@ -104,23 +106,22 @@ class BikeController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  \App\Bike  $Bike
-   * @return \Illuminate\Http\Response
+   * @param  mixed $request
+   * @param  mixed $Bike
+   * @return void
    */
   public function update(Request $request, Bike $Bike)
   {
     $data = $request->only(['shortDescr', 'longDescr', 'distinctiveSign', 'picture', 'frameSize', 'frameUnit', 'category', 'brand_id']);
-    // todo : validation
     $Bike->update($data);
     return new BikeResource($Bike);
   }
 
   /**
-   * Remove the specified resource from storage.
+   * Remove the specified bike from storage.
    *
-   * @param  \App\Bike  $Bike
-   * @return \Illuminate\Http\Response
+   * @param  mixed $Bike
+   * @return void
    */
   public function destroy(Bike $Bike)
   {
@@ -128,15 +129,13 @@ class BikeController extends Controller
   }
 
   /**
-   * Remove the specified resource from storage.
+   * uploadFile csv of bikes
    *
-   * @param  \App\Bike  $Bike
-   * @return \Illuminate\Http\Response
+   * @param  mixed $request
+   * @return void
    */
   public function uploadFile(Request $request)
   {
-
-
     if ($request->input('submit') != null) {
 
       $file = $request->file('file');
@@ -160,9 +159,6 @@ class BikeController extends Controller
         // Check file size
         if ($fileSize <= $maxFileSize) {
 
-
-
-
           // Reading file
           $file = fopen($filepath, "r");
 
@@ -172,11 +168,6 @@ class BikeController extends Controller
           while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
             $num = count($filedata);
 
-            // Skip first row (Remove below comment if you want to skip the first row)
-            /*if($i == 0){
-                $i++;
-                continue;
-             }*/
             for ($c = 0; $c < $num; $c++) {
               $importData_arr[$i][] = $filedata[$c];
             }
@@ -209,7 +200,6 @@ class BikeController extends Controller
         Session::flash('message', 'Invalid File Extension.');
       }
     }
-
     // Redirect to index
     return view("Catalogue");
   }

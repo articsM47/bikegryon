@@ -11,7 +11,12 @@ class ClientTestday extends Model
     protected $fillable=['badgeNo', 'client_id', 'testday_id'];
     protected $primaryKey = 'client_id'; // eloquent ne supporte pas les clés composites
     use SoftDeletes;
-
+    
+    /**
+     * client
+     *
+     * @return void
+     */
     public function client() {
         return $this->belongsTo('App\Client');
     }

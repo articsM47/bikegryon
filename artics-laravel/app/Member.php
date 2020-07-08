@@ -44,7 +44,13 @@ class Member extends Model
     public function address() {
         return $this->belongsTo('App\Address');
     }
-
+    
+    /**
+     * setPswAttribute
+     *
+     * @param  mixed $psw
+     * @return void
+     */
     public function setPswAttribute($psw) {
         $this->attributes['psw'] = Hash::make($psw);
     }
