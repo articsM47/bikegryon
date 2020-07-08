@@ -29,7 +29,7 @@
   <h2>Voir aussi</h2>
   <div class="text-right">
     <a href="/artics/Catalogue" class="breadcrumb-catalogue carroussel">Liste complète</a>
-    <button href="/Catalogue" class="button-breadcrumb"><a href="/artics/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_right.svg" alt="arrow_back"></a></button>
+    <button href="/artics/Catalogue" class="button-breadcrumb"><a href="/artics/Catalogue"><img src="http://pingouin1.heig-vd.ch/artics/fonts/arrow_right.svg" alt="arrow_back"></a></button>
   </div>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

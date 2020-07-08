@@ -10,14 +10,14 @@
     <div class="col col-lg-2" id="sidebar-block">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
-        <div class="sidebar-heading sidebar-title"><a href="/Compte" style="color: black">Mon compte</a></div>
+        <div class="sidebar-heading sidebar-title"><a href="/artics/Compte" style="color: black">Mon compte</a></div>
         <div id="sidebar-list" class="compte-nav">
           <a href="#" class="listGroup">Mot de passe</a><br>
-          <a href="MesTests" class="listGroup"><b>Mes tests</b></a><br>
+          <a href="/artics/MesTests" class="listGroup"><b>Mes tests</b></a><br>
           <a href="#" class="listGroup">Mes attentes</a><br>
           <a href="#" class="listGroup">Mes réservations</a><br>
           <br>
-          <a href="/Logout" class="listGroup">Me déconnecter</a><br>
+          <a href="/artics/Logout" class="listGroup">Me déconnecter</a><br>
         </div>
       </div>
       <!-- /#sidebar-wrapper -->

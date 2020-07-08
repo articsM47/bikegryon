@@ -5,7 +5,6 @@
     <title>Bike test gryon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" href="http://pingouin1.heig-vd.ch/artics/fonts/favicon-white.png">
