@@ -43,6 +43,7 @@ export default class extends ImView {
             if(category!=""){
                 $(event.target).attr('data-category',"");
             }else{
+                console.log(22);
                 $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
             }
             collection.meta('category', category);
