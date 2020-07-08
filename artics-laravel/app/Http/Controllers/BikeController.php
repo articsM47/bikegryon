@@ -212,6 +212,6 @@ class BikeController extends Controller
     }
 
     // Redirect to index
-    return view("Catalogue");
+    return view("catalogue_representant");
   }
 }
