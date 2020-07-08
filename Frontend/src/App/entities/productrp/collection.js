@@ -29,15 +29,15 @@ export default class extends ImCollection {
         let brand_id = this.meta('brand');
         if (category) {
             if(brand_id){
-                return 'http://127.0.0.1:8000/api/bikes?category=' + category + '&brand_id='+ brand_id;
+                return 'http://pingouin1.heig-vd.ch/artics/api/bikes?category=' + category + '&brand_id='+ brand_id;
             }else{
-                return 'http://127.0.0.1:8000/api/bikes?category=' + category;
+                return 'http://pingouin1.heig-vd.ch/artics/api/bikes?category=' + category;
             }
         } else {
             if(brand_id){
-                return 'http://127.0.0.1:8000/api/bikes?brand_id=' + brand_id;
+                return 'http://pingouin1.heig-vd.ch/artics/api/bikes?brand_id=' + brand_id;
             }else{
-                return 'http://127.0.0.1:8000/api/bikes/';
+                return 'http://pingouin1.heig-vd.ch/artics/api/bikes/';
             }
             
         }
