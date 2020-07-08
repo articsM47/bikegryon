@@ -62,7 +62,7 @@ Route::get('Create', function () {
 });
 
 Route::get('Confirmation', function () {
-    return view("Confirmation");
+    return view("confirmation");
 });
 
 Route::get('Compte', function () {
