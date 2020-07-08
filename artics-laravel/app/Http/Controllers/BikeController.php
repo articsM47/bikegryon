@@ -47,6 +47,7 @@ class BikeController extends Controller
     return view('Catalogue');
   }
 
+  
   /**
    * store
    *

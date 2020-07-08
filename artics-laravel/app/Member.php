@@ -45,6 +45,7 @@ class Member extends Model
         return $this->belongsTo('App\Address');
     }
     
+    
     /**
      * setPswAttribute
      *

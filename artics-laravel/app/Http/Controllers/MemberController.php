@@ -250,6 +250,7 @@ public function validetoConfirmation(mdpRequest $request) {
         return ClientTestday::where('client_id', $clientId)->where('testday_id', $testDayId)->first();
     }
     
+    
     /**
      * submitcompte submit an account
      *
