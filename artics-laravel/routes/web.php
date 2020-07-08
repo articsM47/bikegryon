@@ -77,7 +77,7 @@ Route::get('MesTests', function () {
 });
 
 Route::get('Wishlist', function () {
-    return view("Wishlist");
+    return view("wishlist");
 });
 
 Route::get('Test', function () {
