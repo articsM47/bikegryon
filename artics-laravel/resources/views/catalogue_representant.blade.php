@@ -1,14 +1,20 @@
-@extends('template')
+@extends('templaterp')
 @section('contenu')
 
 <div class="container">
   <h1 class="title-page">Tous les vélos à tester</h1>
   <h2 class="second-title-page">au Bike Test Gryon 2020 </h2>
-@can('isRole1')
+
   <a href="/AddProduct" type="button" class="button button-add"><span>Ajouter un vélo</span></a>
-@endcan
 
+  <!-- @can('isRole1') -->
+  <!-- <a href="/AddProduct" class="representant badge badge-light">Ajouter un vélo</a> -->
+  <!-- @endcan -->
 
+  <!-- <form action="/action_page.php">
+    <input type="text" placeholder="Rechercher..." name="search" onkeyup="filterBike()">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form> -->
 
   <!-- Filtre images -->
   <div class="container">
@@ -50,7 +56,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- grid des produits : affichage de 2 produits par colonne-->
-  <div id="catalogue" class="row row-cols-1 row-cols-md-2">
+  <div id="catalogue_rp" class="row row-cols-1 row-cols-md-2">
 
   </Div>
 </div>

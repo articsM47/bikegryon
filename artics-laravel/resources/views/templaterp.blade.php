@@ -41,16 +41,11 @@
                 </div>
                 <!-- icons -->
                 <div class="col-2 iconsgroup align-self-center">
-                    <!--wishlist's icon-->
-                    <a class="" href="/Wishlist">
-                        <img src="http://127.0.0.1:8000/fonts/wishlist.svg" alt="wishlist" style="width:32px;height:32px;">
-                    </a>
+
                     <!--test's icon-->
-                    @can('isRole1')
                     <a class="" href="/Test">
                         <img src="http://127.0.0.1:8000/fonts/review.svg" alt="review" style="width:32px;height:32px;">
                     </a>
-                    @endcan
                     <!--account's icon-->
                     @can('isRole2')
                     <a class="" href="/Check-in">
