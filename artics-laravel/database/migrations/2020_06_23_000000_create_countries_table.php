@@ -15,7 +15,6 @@ class CreateCountriesTable extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->primary('id');
-            $table->bigIncrements('id')->unique();
             $table->integer('code'); //must be unique
             $table->string('alpha2',2);
             $table->string('alpha3',3);
