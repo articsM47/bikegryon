@@ -65,7 +65,7 @@ class BikeController extends Controller
 
     // cration des dépendance
     /* return new BikeResource($Bike); */
-    return view("Catalogue");
+    return view("catalogue");
   }
 
   /**
