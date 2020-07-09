@@ -62,7 +62,7 @@ class TestsTableSeeder extends Seeder
             DB::table('tests')->insert([
                 'created_at' => $startTime,
                 'endTime' => $endTime,
-                'review' => $json,
+                /* 'review' => $json, */
                 'client_id' => rand(1,20),
                 'testday_id' => rand(1,3),
                 'bike_id' => rand(1,15)
