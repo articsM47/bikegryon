@@ -75,14 +75,14 @@
                 <table class="footer" class="footer-block" style="width:100%">
                     <tbody>
                         <tr class="d-flex justify-content-between align-items-center">
-                            <td><img src="http://127.0.0.1:8000/fonts/logo-biketest-blanc.svg" alt="logo_2" style="width:80px;height:80px;"></img></td>
+                            <td><img src="http://pingouin1.heig-vd.ch/artics/fonts/logo-biketest-blanc.svg" alt="logo_2" style="width:80px;height:80px;"></img></td>
                             <td>
                                 <a href="mailto:info@biketestgryon.ch" class='linkFooter'>Contactez-nous</a>
                             </td>
                             <td><a href="/artics/Inscriptions" class='linkFooter'>Réserver un billet</a></td>
                             <td>
-                                <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://127.0.0.1:8000/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
-                                <a href="https://www.facebook.com/BikeGryon/"><img src="http://127.0.0.1:8000/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>
+                                <a href="https://www.instagram.com/explore/tags/biketestgryon/"><img src="http://pingouin1.heig-vd.ch/artics/fonts/logo-insta-blanc.svg" alt="instagram_logo" style="width:30px;height:30px;" id='instaFooter'></img> </a>
+                                <a href="https://www.facebook.com/BikeGryon/"><img src="http://pingouin1.heig-vd.ch/artics/fonts/logo-fb-blanc.svg" alt="facebook_logo" style="width:30px;height:30px;"></img> </a>
                             </td>
                         </tr>
                     </tbody>
