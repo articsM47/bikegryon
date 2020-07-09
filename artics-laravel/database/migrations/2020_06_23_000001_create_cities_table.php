@@ -15,7 +15,7 @@ class CreateCitiesTable extends Migration
     {
         Schema::create('cities', function (Blueprint $table) {
             $table->primary('id');
-            $table->integer('id')->unique();
+            $table->bigIncrements('id')->unique();
             $table->integer('postalCode');//must be unique for a country
             $table->string('cityName');
             $table->string('canton',2)->nullable();
