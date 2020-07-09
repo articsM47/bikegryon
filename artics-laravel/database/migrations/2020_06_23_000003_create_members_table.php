@@ -27,9 +27,9 @@ class CreateMembersTable extends Migration
             $table->string('role')->nullable(); // admin, staff, client, exponent
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->foreignId('address_id')->constrained()
+            $table->foreignId('address_id')->constrained();
                     //->onDelete('restrict')
-                    ->onUpdate('restrict');
+                    //->onUpdate('restrict');
         });
     }
 
