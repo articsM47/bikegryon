@@ -2,8 +2,6 @@
 
 ## ProjArt - Heig-vd - 09.07.20
 
---------------------------------------------------------------------------------------------------
-
 Pour installer la solution, la première étape est de récupérer le code disponible ici sur GitHub :
 https://github.com/articsM47/bikegryon
 
