@@ -47,7 +47,7 @@
               <img src="http://pingouin1.heig-vd.ch/artics/fonts/height_bike.svg" alt="height_bike" width="30px">
             </td>
             <td>
-              <img src="http://pingouin1.heig-vd.ch/artics/mountain.svg" alt="mountain" width="40px">
+              <img src="http://pingouin1.heig-vd.ch/artics/fonts/mountain.svg" alt="mountain" width="40px">
             </td>
           </tr>
           <tr style="text-align: center;">
