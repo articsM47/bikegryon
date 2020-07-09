@@ -8,3 +8,4 @@ artics-apache.conf
 .DS_Store
 artics-laravel/.env.example
 *.icloud
+/artics-laravel/nbproject/private/

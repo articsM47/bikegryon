@@ -154,7 +154,7 @@ public function validetoConfirmation(mdpRequest $request) {
     public function submitBadge(Request $request) {
         // on utilise une requete SQL à la palce d'Eloquent parce
         // qu'Eloquent ne supporte pas les clés primaires composites
-        DB::update("UPDATE 'client_testday' SET badgeNo = ? WHERE client_id = ? AND testday_id = ?", array(
+        DB::update("UPDATE client_testday SET badgeNo = ? WHERE client_id = ? AND testday_id = ?", array(
             $request->badgeNo,
             $request->clientId,
             $request->testDayId
