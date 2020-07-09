@@ -91,7 +91,7 @@ export default class extends ImView {
         let csrfToken = $('#csrf-token').val();
         $.ajax({
             type: "POST",
-            url: baseURL + "/Test",
+            url: baseURL + "/artics/Test",
             data: {
                 _token: csrfToken,
                 badgeNo: inputClientNumber,
