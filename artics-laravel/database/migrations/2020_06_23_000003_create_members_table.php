@@ -28,8 +28,8 @@ class CreateMembersTable extends Migration
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
             $table->foreignId('address_id')->constrained()
-                    ->onDelete('cascade')
-                    ->onUpdate('cascade');
+                    ->onDelete('restrict')
+                    ->onUpdate('restrict');
         });
     }
 

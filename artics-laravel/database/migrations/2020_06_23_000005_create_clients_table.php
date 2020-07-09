@@ -20,8 +20,8 @@ class CreateClientsTable extends Migration
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
             $table->foreignId('member_id')->constrained()
-                    ->onDelete('cascade')
-                    ->onUpdate('cascade');
+                    ->onDelete('restrict')
+                    ->onUpdate('restrict');
         });
     }
 
