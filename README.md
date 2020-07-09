@@ -25,8 +25,8 @@ Il faudra ensuite modifier le fichier “.env.exemple” pour obtenir un fichier
 Pour rendre le site disponible, retourner ensuite dans l’interface de ligne de commande, dans le dossier artics laravel et exécuter :
 
 ```
-php artisan key : generate
-php artisan migrate : install
+php artisan key:generate
+php artisan migrate:install
 php artisan migrate
 ```
 
@@ -36,6 +36,6 @@ Si vous utilisez SQLite, le programme DB Browser for SQLite vous permettra de le
 Pour obtenir des données de test, en ligne de commande dans le dossier “artics-laravel” :
 
 ```
-php artisan db : seed
+php artisan db:seed
 ```
 
