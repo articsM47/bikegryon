@@ -14,7 +14,7 @@ class CreateBikesTable extends Migration
     public function up()
     {
         Schema::create('bikes', function (Blueprint $table) {
-            $table->increments('id'); //autoincrement
+            $table->bigIncrements('id'); //autoincrement
             $table->string('shortDescr');
             $table->text('longDescr')->nullable();//optional
             $table->string('distinctiveSign')->nullable();
@@ -36,7 +36,7 @@ class CreateBikesTable extends Migration
      * @return void
      */
     public function down()
-    {   
+    {
         // Pas supporté par sqlite
         //Schema::table('bikes', function(Blueprint $table) {
         //    $table->dropForeign('bikes_brand_id_foreign');

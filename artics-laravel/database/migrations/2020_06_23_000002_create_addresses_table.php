@@ -14,7 +14,7 @@ class CreateAddressesTable extends Migration
     public function up()
     {
         Schema::create('addresses', function (Blueprint $table) {
-            $table->increments('id'); //autoincrement
+            $table->bigIncrements('id'); //autoincrement
             $table->string('street1');
             $table->string('street2')->nullable();//optional
             $table->integer('streetNo')->nullable();

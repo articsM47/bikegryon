@@ -15,7 +15,7 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             //$table->primary('member_id');
-            $table->increments('id'); //autoincrement
+            $table->bigIncrements('id'); //autoincrement
             $table->string('canton',2)->nullable(); //optional
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management

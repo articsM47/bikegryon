@@ -14,7 +14,8 @@ class CreateMembersTable extends Migration
     public function up()
     {
         Schema::create('members', function (Blueprint $table) {
-            $table->increments('id'); //autoincrement
+
+            $table->bigIncrements('id'); //autoincrement
             $table->string('name');
             $table->string('firstname');
             $table->dateTime('birthDay');
@@ -28,8 +29,8 @@ class CreateMembersTable extends Migration
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
             $table->foreignId('address_id')->constrained()
-                    ->onDelete('restrict')
-                    ->onUpdate('restrict');
+                    ->onDelete('cascade')
+                    ->onUpdate('cascade');
         });
     }
 

@@ -14,7 +14,7 @@ class CreateTestsTable extends Migration
     public function up()
     {
         Schema::create('tests', function (Blueprint $table) {
-            $table->increments('id'); //autoincrement
+            $table->bigIncrements('id'); //autoincrement
             $table->dateTime('endTime')->nullable();//optional, AAAA-MM-JJ HH:MM:SS
             $table->json('review')->nullable();
             $table->timestamps();//created_At is the start_time
