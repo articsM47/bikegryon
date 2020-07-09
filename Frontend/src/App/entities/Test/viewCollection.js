@@ -145,6 +145,7 @@ export default class extends ImView {
             let creationTime = tr.data('creationtime');
             let nowDate = new Date();
             let nowTime = Math.round(nowDate.getTime() / 1000);
+            console.log(creationTime)
 
             let duration = self.formatDuration(nowTime - creationTime);
 
