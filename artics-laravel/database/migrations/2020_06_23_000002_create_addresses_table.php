@@ -21,9 +21,9 @@ class CreateAddressesTable extends Migration
             $table->string('poBox')->nullable();
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-/*             $table->foreignId('city_id')->constrained()
+            $table->foreignId('city_id')->constrained()
                     ->onDelete('cascade')
-                    ->onUpdate('cascade'); */
+                    ->onUpdate('cascade');
         });
     }
 
