@@ -17,7 +17,7 @@ class CreateMembersTable extends Migration
             $table->increments('id'); //autoincrement
             $table->string('name');
             $table->string('firstname');
-            $table->dateTime('birthDay', 8);
+            $table->dateTime('birthDay');
             $table->string('phone1')->nullable();
             $table->string('phone2')->nullable();
             $table->string('email1')->nullable();
