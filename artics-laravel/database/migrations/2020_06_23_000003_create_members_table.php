@@ -27,9 +27,9 @@ class CreateMembersTable extends Migration
             $table->string('role')->nullable(); // admin, staff, client, exponent
             $table->timestamps();
             $table->softDeletes();// timestamp for deletion management
-            $table->foreignId('address_id')->constrained();
-                    //->onDelete('restrict')
-                    //->onUpdate('restrict');
+            $table->foreignId('address_id')->constrained()
+                    ->onDelete('restrict')
+                    ->onUpdate('restrict');
         });
     }
 
@@ -41,9 +41,9 @@ class CreateMembersTable extends Migration
     public function down()
     {
         // Pas supporté par sqlite
-        //Schema::table('members', function(Blueprint $table) {
-        //    $table->dropForeign('members_address_id_foreign');
-        //});
+        Schema::table('members', function(Blueprint $table) {
+            $table->dropForeign('members_address_id_foreign');
+        });
 
         Schema::dropIfExists('members');
     }
