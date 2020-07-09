@@ -114,7 +114,7 @@ public function validetoConfirmation(mdpRequest $request) {
 
 /* ->update($request->all()); */
 
-    return view('Confirmation', $request->all());
+    return view('confirmation', $request->all());
 }
     /**
      * Store a newly created resource in storage.
