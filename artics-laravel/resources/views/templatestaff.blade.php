@@ -92,7 +92,7 @@
     </div>
 </body>
 <script type="text/javascript">
-    const baseURL = "http://127.0.0.1:8000"
+    const baseURL = "http://pingouin1.heig-vd.ch/artics/"
 </script>
 <script type="text/jquery" src="jquery-3.5.0.min.js"></script>
 <script type="text/javascript" scr="test.js"></script>
