@@ -39,13 +39,13 @@ export default class extends ImView {
                 $(event.target).addClass('select');
             }
             let category = $(event.target).attr('data-category');
-            console.log(category);
-            console.log(00);
+
+
             if(category!=""){
-                console.log(11);
+ 
                 $(event.target).attr('data-category',"");
             }else{
-                console.log(22);
+
                 $(event.target).attr('data-category',$(event.target).attr('data-category-origin'));
             }
             collection.meta('category', category);
