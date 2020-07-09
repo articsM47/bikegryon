@@ -146,8 +146,8 @@ export default class extends ImView {
             let nowDate = new Date();
             let nowTime = Math.round(nowDate.getTime() / 1000);
             console.log(creationTime)
-
-            let duration = self.formatDuration(nowTime - creationTime);
+            let retard = 120000; // retard serveur de présentation 
+            let duration = self.formatDuration(nowTime - creationTime + retard);
 
             tr.find('.data-chronometer').text(duration);
         })
@@ -158,6 +158,7 @@ export default class extends ImView {
         var sec_num = parseInt(duration, 10); // don't forget the second param
         var hours = Math.floor(sec_num / 3600);
         var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+        
         var seconds = sec_num - (hours * 3600) - (minutes * 60);
 
         if (hours < 10) { hours = "0" + hours; }
