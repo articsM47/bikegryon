@@ -1,25 +1,45 @@
-#Téléchager git desktop  
+ARTICS
 
-Cloner le repo  
+ProjArt - Heiv-vd - 09.07.20
 
-#Commande d’'instalation  
+--------------------------------------------------------------------------------------------------
 
-Git pull  
+Pour installer la solution, la première étape est de récupérer
+le code disponible ici sur GitHub :
+https://github.com/articsM47/bikegryon
 
-aller dans laravel -> Composer install  
+Il faudra ensuite cloner le dossier (aussi appelé “repository”
+sur GitHub).
 
-Aller dans frontend -> npm ci  
+Le projet est séparé en deux parties : la partie backend
+(artics-laravel) et la partie frontend (Frontend).
+Sur un interface en ligne de commande, dans le dossier
+artics-laravel, exécuter ensuite la fonction :
+Composer install
 
-changer le .env vers sqllite pour les test ou vers msql pour le deployment 
+Il faut ensuite se déplacer dans le dossier /Frontend et exécuter
+la commande :
+npm ci
 
-php artisan key:generate pour rendre le site disponible 
+Il faudra ensuite modifier le fichier “.env.exemple” pour obtenir
+un fichier “.env” de votre infrastructure si vous n’avez pas
+de base de donnée. Une base de donnée SQLite est à votre
+disposition dans le dossier “laravel/database”.
 
-php artisan migrate:install 
+Pour rendre le site disponible, retourner ensuite dans
+l’interface de ligne de commande, dans le dossier artics-laravel
+et exécuter :
+php artisan key : generate
+php artisan migrate : install
 php artisan migrate
 
-intégrer les SQL cities_countries
+Afin d’intégrer les pays et les villes de la base de données,
+insérer via un page d’administration de base de donnée dans le
+dossier “laravel/database” le fichier :
+cities_countries.sql
 
-php artisan db:seed
-
-
-
+Si vous utilisez SQLite, le programme DB Browser for SQLite
+vous permettra de le faire.
+Pour obtenir des données de test, en ligne de commande
+dans le dossier “artics-laravel” :
+php artisan db : seed
