@@ -40,7 +40,7 @@ class TestsTableSeeder extends Seeder
             $grade2= rand(0,5);
             $grade3= rand(0,5);
             $grade4= rand(0,5);
-            $json = "review:{
+/*             $json = "review:{
                 question1: {
                     about : maneuverability
                     grade: ". $grade1 ."
@@ -58,7 +58,7 @@ class TestsTableSeeder extends Seeder
                     grade: ". $grade4 ."
                 }
             }
-            ";
+            "; */
             DB::table('tests')->insert([
                 'created_at' => $startTime,
                 'endTime' => $endTime,
