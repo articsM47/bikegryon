@@ -146,7 +146,7 @@ export default class extends ImView {
             let nowDate = new Date();
             let nowTime = Math.round(nowDate.getTime() / 1000);
             console.log(creationTime)
-            let retard = 120000; // retard serveur de présentation 
+            let retard = 120; // retard serveur de présentation 
             let duration = self.formatDuration(nowTime - creationTime + retard);
 
             tr.find('.data-chronometer').text(duration);
